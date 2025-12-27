@@ -26,3 +26,10 @@ DOMAIN-KEYWORD,usage
 DOMAIN-SUFFIX,vungle.com
 DOMAIN-KEYWORD,wlmonitor
 DOMAIN-KEYWORD,zjtoolbar
+DOMAIN-SUFFIX,log.tbs.qq.com
+DOMAIN-SUFFIX,android.bugly.qq.com
+DOMAIN-SUFFIX,chaojidianjiqi.com
+DOMAIN-SUFFIX,zkapi.hexiny.com
+DOMAIN-SUFFIX,update.baidu.com
+DOMAIN-SUFFIX,update.pan.baidu.com
+DOMAIN-SUFFIX,hexiny1.com
