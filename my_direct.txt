@@ -1,0 +1,6 @@
+# test
+DOMAIN-SUFFIX,homelab
+DOMAIN-SUFFIX,torrentmac.net
+DOMAIN-KEYWORD,mac-torrent-download
+PROCESS-NAME,xdm
+IP-CIDR,154.9.253.41/32
