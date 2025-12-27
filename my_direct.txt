@@ -4,3 +4,6 @@ DOMAIN-SUFFIX,torrentmac.net
 DOMAIN-KEYWORD,mac-torrent-download
 PROCESS-NAME,xdm
 IP-CIDR,154.9.253.41/32
+# xyqh5
+DOMAIN-SUFFIX,who.easebar.com
+DOMAIN-SUFFIX,who.nie.easebar.com
