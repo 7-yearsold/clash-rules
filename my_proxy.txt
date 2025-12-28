@@ -1,3 +1,6 @@
 DOMAIN-SUFFIX,xyqh5.com
 DOMAIN-SUFFIX,gate-global.xyqh5.com
 DOMAIN-SUFFIX,g102na.gsf.easebar.com
+# 面板
+DOMAIN-SUFFIX,metacubex.one
+DOMAIN-SUFFIX,board.zash.run.place
