@@ -4,3 +4,4 @@ DOMAIN-SUFFIX,hentaiverse.org
 DOMAIN-SUFFIX,juejin.cn
 DOMAIN-KEYWORD,qihaoyx.com
 DOMAIN-KEYWORD,5wufun.com
+DOMAIN-SUFFIX,hexiny.com
