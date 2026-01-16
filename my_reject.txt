@@ -2,3 +2,5 @@
 DOMAIN-SUFFIX,update.baidu.com
 DOMAIN-SUFFIX,update.pan.baidu.com
 DOMAIN-SUFFIX,app-measurement.com
+IP-CIDR,154.89.148.122/32
+DOMAIN-KEYWORD,154.89.148.122
