@@ -1,7 +1,3 @@
-DOMAIN-SUFFIX,18comic.vip
-DOMAIN-SUFFIX,18comic.org
-DOMAIN-SUFFIX,hentaiverse.org
-DOMAIN-SUFFIX,juejin.cn
 #qh
 DOMAIN-KEYWORD,qihaoyx.com
 DOMAIN-KEYWORD,5wufun.com
