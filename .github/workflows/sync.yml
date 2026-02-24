@@ -1,0 +1,89 @@
+name: Sync Aegis Rules
+
+on:
+  schedule:
+    - cron: "0 0 */2 * *"
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: main
+
+      #######################################################################
+      # 1. 抓取 Aegis 仓库 rules 目录
+      #######################################################################
+      - name: Sync Aegis rules
+        run: |
+          echo "=== Syncing Aegis rules ==="
+
+          repo_url="https://github.com/Thoseyearsbrian/Aegis"
+          branch="main"
+          subdir="rules"
+          target="Thoseyearsbrian/rules"
+
+          rm -rf tmp_repo
+          git clone --depth=1 --branch "$branch" "$repo_url" tmp_repo
+
+          mkdir -p "$target"
+          cp -r tmp_repo/"$subdir"/* "$target"/
+
+          rm -rf tmp_repo
+          rm -rf "$target/.git" "$target/.github"
+
+      #######################################################################
+      # 2. 自动为没有掩码位的 IP-CIDR 添加 /32
+      #######################################################################
+      - name: Fix IP-CIDR missing mask
+        run: |
+          echo "=== Adding /32 mask to IP-CIDR entries without mask ==="
+
+          find Thoseyearsbrian/rules -type f `\( -name "*.list" -o -name "*.txt" \)` | while read file; do
+            sed -i -E 's/(IP-CIDR,[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+)([[:space:]]|$)/\1\/32\2/' "$file"
+          done
+
+      #######################################################################
+      # 3. 检查变更
+      #######################################################################
+      - name: Check for changes
+        id: changes
+        run: |
+          git add .
+          if git diff --cached --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      #######################################################################
+      # 4. 创建 PR
+      #######################################################################
+      - name: Create Pull Request
+        if: steps.changes.outputs.changed == 'true'
+        id: cpr
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: "Sync Aegis rules + auto-fix IP-CIDR mask"
+          title: "Update Aegis rules"
+          body: "Synced from Aegis repository and auto-fixed IP-CIDR mask."
+          branch: sync-aegis-rules
+          delete-branch: true
+
+      #######################################################################
+      # 5. 自动合并
+      #######################################################################
+      - name: Auto-merge PR
+        if: steps.changes.outputs.changed == 'true'
+        uses: peter-evans/enable-pull-request-automerge@v3
+        with:
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+          merge-method: squash
