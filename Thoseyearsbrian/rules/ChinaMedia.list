@@ -1,0 +1,947 @@
+# > ChinaMedia.list（国内流媒体平台规则集）
+# - 分类：中国大陆流媒体服务 / 视频平台 / 音乐音频应用
+# - 来源：主流平台域名抓包 / 社区规则整理 / 手动校验补充
+# - 特征：涵盖常用大陆视频、音乐、电台平台域名
+# - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
+# - 维护：https://github.com/Thoseyearsbrian/Aegis
+# - 更新时间：2026-02-23
+
+# > 抖音（字节跳动） 相关域名
+
+DOMAIN-SUFFIX,doudian.com # 抖店主域名，用于电商商家后台与订单管理服务
+DOMAIN-SUFFIX,jinritemai.com # 抖音电商主域名，用于商品展示与电商活动页面访问
+DOMAIN-SUFFIX,lfxshop.com # 抖店前端页面与活动相关服务域名
+DOMAIN-SUFFIX,bytedance.net # 字节跳动通用基础服务域名，用于跳转、认证与服务支持
+DOMAIN-SUFFIX,toutiao.com # 今日头条主站域名，用于内容访问与账号相关服务
+DOMAIN-SUFFIX,toutiaoimg.com # 今日头条图像与媒体资源 CDN 域名
+DOMAIN-SUFFIX,toutiaocloud.com # 字节跳动内容相关云服务域名，用于部分中间层与接口服务
+DOMAIN-SUFFIX,douyinstatic.com # 抖音官方静态资源与媒体内容分发 CDN 域名
+DOMAIN-SUFFIX,applogcdn.com # 字节跳动前端静态资源 CDN 域名
+DOMAIN-SUFFIX,huoshanstatic.com # 火山引擎对象存储 CDN 域名
+DOMAIN-SUFFIX,byteeffecttos.com # 字节跳动特效资源 CDN 域名
+DOMAIN-SUFFIX,ndcpp.com # 字节跳动视频计算与边缘基础设施服务域名
+DOMAIN-SUFFIX,ndcimgs.com # 字节跳动媒体资源 CDN 主域，用于视频封面、动态图像与多媒体内容分发
+DOMAIN-SUFFIX,djvod.ndcimgs.com # 字节跳动视频点播媒体资源 CDN 域，用于视频封面、切片与播放相关资源加载
+DOMAIN-SUFFIX,k0u3aydfyd1y18z.djvod.ndcimgs.com # 字节跳动视频媒体资源 CDN 节点，用于具体视频封面与多媒体资源分发
+DOMAIN-SUFFIX,k0u3aydfyd1y10zw240ex979x802x311xx10z.djvod.ndcimgs.com # 字节跳动视频媒体资源 CDN 细分节点，用于高分辨率封面与视频相关静态资源加载
+DOMAIN-SUFFIX,douyinliving.com # 抖音生活服务业务平台相关域名
+DOMAIN-SUFFIX,snssdk.com # 字节跳动通用客户端 SDK 服务接口域名
+DOMAIN-SUFFIX,pstatp.com # 字节跳动产品通用静态资源分发域名
+DOMAIN-SUFFIX,ibytedapm.com # 字节跳动应用运行状态相关服务接口域名
+DOMAIN-SUFFIX,byteimg.com # 字节跳动图像内容分发 CDN 域名
+DOMAIN-SUFFIX,bytedns.net # 字节跳动内容调度与加速服务域名
+DOMAIN-SUFFIX,365yg.com # 字节跳动内容服务主域名，覆盖头条与视频内容访问
+DOMAIN-SUFFIX,bytepluscdn.com # BytePlus 静态资源与内容分发 CDN 域名
+DOMAIN-SUFFIX,bdxiguaimg.com # 字节跳动西瓜视频图片与静态资源 CDN 域名
+DOMAIN-SUFFIX,iesdouyin.com # 抖音核心业务与服务接口域名
+DOMAIN-SUFFIX,bytedance.com # 字节跳动集团官网与通用服务接口域名
+DOMAIN-SUFFIX,byteintl.com # 字节跳动国际化服务相关域名
+DOMAIN-SUFFIX,volcengine.com # 火山引擎云服务品牌与控制台入口域名
+DOMAIN-SUFFIX,bytetos.com # 字节跳动对象存储与静态资源服务域名
+DOMAIN-SUFFIX,bytescm.com # 字节跳动内容分发与资源加速 CDN 域名
+DOMAIN-SUFFIX,byteacctimg.com # 字节跳动账号头像与标识资源 CDN 域名
+DOMAIN-SUFFIX,bytefcdnrd.com # 字节跳动内容分发与静态资源 CDN 域名
+DOMAIN-SUFFIX,douyincdn.com # 抖音官方内容分发与静态资源 CDN 域名
+DOMAIN-SUFFIX,bytednsdoc.com # 字节跳动文档与静态资源分发域名
+DOMAIN-SUFFIX,douyinvod.com # 抖音视频内容分发 CDN 域名
+DOMAIN-SUFFIX,amemv.com # 抖音直播与实时通信相关服务域名
+DOMAIN-SUFFIX,zijieapi.com # 字节跳动官方 API 服务主域名，用于客户端同步、SDK 服务与业务接口通信
+DOMAIN-SUFFIX,awemeugwave.com # 抖音用户激励与增长相关服务域名，用于活动、激励与运营功能支持
+DOMAIN-SUFFIX,bytehwm.com # 字节跳动官方前端字体与样式资源分发域名，用于抖音等产品字体与 UI 资源加载
+DOMAIN-SUFFIX,douyinpic.com # 抖音图片与签名资源分发域名，用于图片、封面与签名资源加载
+DOMAIN-SUFFIX,bytegecko.com # 字节跳动内容与静态资源分发 CDN 域名
+DOMAIN-SUFFIX,toutiaovod.com # 今日头条 / 抖音体系视频点播（VOD）主域名，用于视频内容存储、分发与播放服务
+DOMAIN-SUFFIX,api.toutiaoapi.com # 今日头条核心业务 API 接口，用于信息流请求、内容加载、用户状态与业务数据交互
+DOMAIN-SUFFIX,toutiaostatic.com # 今日头条前端静态资源与内容分发主域名，用于页面资源、脚本与样式加载
+DOMAIN-SUFFIX,smtcdns.com # 字节跳动统计与内容调度 CDN 域名，用于请求分发、流量调度与访问质量优化
+DOMAIN-SUFFIX,vegslb.com # 火山引擎（Volcengine / 字节跳动）SLB 负载均衡基础设施域名
+DOMAIN-SUFFIX,ecombdapi.com # 字节跳动电商核心 API 服务域名，用于商品、订单与业务接口通信
+DOMAIN-SUFFIX,bdurl.net # 字节跳动短链与跳转基础域名，用于内容分发、链接跳转与服务重定向
+DOMAIN-SUFFIX,dig.bdurl.net # 字节跳动短链解析与跳转子域，用于内容追踪式跳转与链路分发
+DOMAIN-SUFFIX,idouyinvod.com # 抖音视频点播 CDN 域名
+DOMAIN-SUFFIX,webcast.amemv.com # 抖音直播服务域，用于直播控制信令与会话管理
+DOMAIN-SUFFIX,tos-quic-lf.douyin.com # 抖音 QUIC 传输协议 CDN 子域，用于高效传输静态/媒体内容
+DOMAIN-SUFFIX,lf-webcast-sourcecdn-tos.bytegecko.com # 抖音直播源站级媒体 CDN 域名
+DOMAIN-SUFFIX,p3-developer.bytemaimg.com # 字节跳动开发者平台图片与静态资源 CDN
+DOMAIN-SUFFIX,lf6-font-sign.bytehwm.com # 字节跳动字体签名与前端字体资源校验服务域名
+DOMAIN-SUFFIX,pull-x2-t5.douyincdn.com # 抖音直播 FLV 拉流 CDN 子域
+DOMAIN-SUFFIX,lf3-static.bytednsdoc.com # 字节跳动文档与前端静态资源 CDN
+DOMAIN-SUFFIX,lf-zt.douyin.com # 抖音专题页（专题/活动页）资源加载域名，用于运营活动页面、专题内容与前端静态资源分发
+DOMAIN-SUFFIX,bytelink100-ws.douyin.com # 抖音 WebSocket 实时通信子域，用于直播互动、消息推送与数据长连接通道服务
+IP-CIDR,1.82.234.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,1.194.30.0/24 # 字节跳动移动端 SDK 通信节点
+IP-CIDR,1.194.172.0/24 # 抖音视频点播 CDN 实际服务节点
+IP-CIDR,1.194.217.0/24 # 抖音短视频音视频内容分发 CDN 节点
+IP-CIDR,1.194.234.0/24 # 抖音直播 thirdgame 第三方游戏链路 FLV 拉流 CDN 实际服务节点（/thirdgame/stream-*.flv）
+IP-CIDR,14.22.20.0/24 # 抖音直播 Third 路径拉流 CDN 节点（pull-x2-t5.douyincdn.com）
+IP-CIDR,14.29.51.0/24 # lf-icp.awemeugwave.com 抖音媒体分发节点
+IP-CIDR,14.215.57.0/24 # 字节跳动开发者平台图片与静态资源节点（bytemaimg）
+IP-CIDR,27.21.227.0/24 # 抖音图片资源签名 CDN 节点
+IP-CIDR,27.148.184.0/24 # 抖音直播资源签名与鉴权服务节点
+IP-CIDR,27.148.200.0/24 # 字节跳动直播内容分发 CDN 节点
+IP-CIDR,27.159.90.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,27.185.233.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（pull-flv-c11.douyincdn.com /stage/stream-*.flv）
+IP-CIDR,27.221.11.0/24 # 抖音图片签名与资源访问节点（douyinpic）
+IP-CIDR,27.222.15.0/24 # 抖音图片签名校验服务节点（douyinpic）
+IP-CIDR,36.25.242.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,36.25.245.0/24 # 抖音直播 FLV 拉流 CDN 实际服务节点，用于音视频流分发与播放
+IP-CIDR,36.25.253.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,36.41.168.0/24 # 字节跳动流媒体内容分发节点
+IP-CIDR,36.99.191.0/24 # 抖音直播 Stage 流媒体 CDN 节点（Stage0T000sd5）
+IP-CIDR,36.99.189.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（pull-flv-t95.douyincdn.com /stage/stream-*.flv）
+IP-CIDR,36.99.227.0/24 # 字节跳动安全与风控接入节点（tnc）
+IP-CIDR,36.104.133.0/24 # 抖音直播 FLV 拉流 CDN 实际服务节点
+IP-CIDR,42.100.38.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,42.100.51.0/24 # 抖音直播 third 第三方边缘 FLV 拉流 CDN 实际服务节点（/third/stream-*.flv）
+IP-CIDR,42.123.107.0/24 # 抖音直播 third 第三方边缘 FLV 拉流 CDN 实际服务节点（/third/stream-*.flv）
+IP-CIDR,42.123.118.0/24 # 抖音直播 Stage 流媒体分发节点
+IP-CIDR,42.202.136.0/24 # 抖音视频点播 CDN 实际服务节点（v5-ex-x.douyinvod.com）
+IP-CIDR,42.202.223.0/24 # 抖音直播 FLV Stage 拉流 CDN 实际服务节点（stage/stream-*.flv）
+IP-CIDR,49.7.47.0/24 # 字节跳动边缘调度与内容分发节点
+IP-CIDR,49.67.72.0/24 # 字节跳动性能监测与调优分析节点
+IP-CIDR,49.67.73.0/24 # 字节跳动通用内容分发 CDN 节点
+IP-CIDR,49.79.134.0/24 # 字节跳动业务接口与内容聚合服务节点
+IP-CIDR,49.79.229.0/24 # 字节跳动抖音 CDN 节点
+IP-CIDR,49.79.240.0/24 # 字节跳动火山引擎（Volcengine）直播流媒体节点
+IP-CIDR,49.82.40.0/24 # 抖音直播 Third FLV 拉流 CDN 实际服务节点
+IP-CIDR,58.22.102.0/24 # 字节跳动静态/资源分发 CDN 节点（lf6-pitaya.bytetos.com）
+IP-CIDR,58.42.11.0/24 # 抖音直播 ThirdGame/Qcloud 分发节点
+IP-CIDR,58.42.59.0/24 # 抖音图片资源 CDN 实际服务节点 IP
+IP-CIDR,58.49.187.0/24 # 抖音直播 third 第三方边缘 FLV 拉流 CDN 实际服务节点（/third/stream-*.flv）
+IP-CIDR,58.49.230.0/24 # 抖音图片签名校验与资源访问节点（douyinpic）
+IP-CIDR,58.58.80.0/24 # 抖音图片签名与访问鉴权 CDN 实际服务节点（p3-webcast-sign.douyinpic.com）
+IP-CIDR,58.211.12.0/24 # 抖音视频点播 CDN 节点（douyinvod）
+IP-CIDR,58.211.13.0/24 # 抖音直播 FLV 高速拉流 CDN 实际服务节点（pull-hs-f5.flive.douyincdn.com）
+IP-CIDR,58.211.15.0/24 # 抖音直播 FLV 拉流 CDN 节点（douyincdn）
+IP-CIDR,58.216.9.0/24 # 抖音直播 Stage/Qcloud 分发节点
+IP-CIDR,58.216.22.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,58.217.204.0/24 # 抖音直播 Webcast 静态资源与内容分发节点 IP（lf1-webcastcdn-tos.douyinstatic.com）
+IP-CIDR,58.221.33.0/24 # 抖音视频点播 CDN 节点（douyinvod）
+IP-CIDR,58.221.54.0/24 # 抖音直播 third 第三方边缘 FLV 拉流 CDN 实际服务节点（/third/stream-*.flv）
+IP-CIDR,58.215.50.0/24 # 抖音图片与多媒体资源 CDN 节点
+IP-CIDR,58.215.79.0/24 # 抖音电商支付服务节点（api.doupay.com）
+IP-CIDR,58.211.83.0/24 # 抖音直播源站媒体 CDN 实际服务节点
+IP-CIDR,58.215.134.0/24 # 字节跳动 TOS / CDN 内容分发节点（bytegecko）
+IP-CIDR,58.215.122.0/24 # 字节跳动直播源内容分发 CDN 节点
+IP-CIDR,58.215.145.0/24 # 字节跳动基础日志回传服务节点
+IP-CIDR,58.215.210.0/24 # ByteDance Source CDN QoS 控制节点（bytegecko）
+IP-CIDR,58.216.2.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,58.216.4.0/24 # 抖音直播 FLV 流媒体分发节点
+IP-CIDR,58.216.6.0/24 # 抖音直播图片签名服务节点（webcast-sign）
+IP-CIDR,58.216.7.0/24 # 字节跳动字体资源签名校验节点
+IP-CIDR,58.216.23.0/24 # 抖音视频点播 CDN 节点（douyinvod）
+IP-CIDR,58.216.25.0/24 # 抖音直播 FLV Stage 拉流 CDN 实际服务节点（pull-flv-l1.douyincdn.com /stage/stream-*.flv）
+IP-CIDR,58.216.32.0/24 # 字节跳动电商商品资源分发节点（ecombdimg）
+IP-CIDR,58.216.84.0/24 # 抖音图片签名与鉴权服务节点（douyinpic）
+IP-CIDR,58.216.107.0/24 # 抖音直播图片与展示资源分发节点
+IP-CIDR,58.216.110.0/24 # 抖音图片资源 CDN 节点（douyinpic）
+IP-CIDR,58.216.118.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,58.217.200.0/24 # 字节跳动对象存储 CDN 节点
+IP-CIDR,58.218.56.0/24 # 抖音直播 FLV 拉流 CDN 实际服务节点（pull-f3.douyincdn.com）
+IP-CIDR,58.218.65.0/24 # 抖音直播 FLV Stage 拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,58.218.200.0/24 # 字节跳动核心业务调度节点（Pitaya）
+IP-CIDR,58.218.204.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,58.220.40.0/24 # 抖音图片与多媒体资源 CDN 节点（douyinpic）
+IP-CIDR,58.220.44.0/24 # 抖音直播 FLV Stage 冷启动拉流 CDN 实际服务节点
+IP-CIDR,58.220.78.0/24 # 抖音直播 FLV 拉流 CDN 节点（pull-flv-f1.douyincdn.com）
+IP-CIDR,58.220.178.0/24 # 字节跳动电商用户服务节点（ecomuser.snssdk.com）
+IP-CIDR,58.220.179.0/24 # 抖音直播 FLV 第三方边缘分发节点（/third/stream-*.flv）
+IP-CIDR,58.221.30.0/24 # 抖音图片与多媒体资源 CDN 节点（douyinpic）
+IP-CIDR,58.221.32.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,58.221.33.0/24 # 字节跳动官方文档与静态资源分发节点
+IP-CIDR,58.221.45.0/24 # 抖音图片与多媒体资源 CDN 节点（douyinpic）
+IP-CIDR,58.221.77.0/24 # 字节跳动图片签名与媒体资源校验 CDN 实际服务节点（p9-dy-gm-yp-sign.byteimg.com）
+IP-CIDR,58.222.18.0/24 # 抖音直播 third 第三方边缘 FLV 拉流 CDN 实际服务节点（/third/stream-*.flv）
+IP-CIDR,58.222.20.0/24 # 抖音直播 FLV 拉流 CDN 实际服务节点
+IP-CIDR,58.222.25.0/24 # 抖音视频点播 CDN 实际服务节点
+IP-CIDR,58.222.29.0/24 # 抖音电商（巨量千川/抖音小店）业务接口与资源服务节点
+IP-CIDR,58.222.35.0/24 # 抖音图片与多媒体静态资源内容分发 CDN 节点
+IP-CIDR,58.222.51.0/24 # 字节跳动核心业务接口节点
+IP-CIDR,58.223.168.0/24 # 抖音图片签名校验服务节点（douyinpic）
+IP-CIDR,58.223.176.0/24 # 字节跳动客户端监控与杂项通信节点
+IP-CIDR,59.36.97.0/24 # 字节跳动直播内容分发 CDN 节点
+IP-CIDR,59.42.240.0/24 # 字节跳动 TNC 风控与环境校验节点
+IP-CIDR,59.47.237.0/24 # 字节跳动直播 CDN 节点（bytegecko）
+IP-CIDR,59.52.142.0/24 # 字节跳动客户端后台同步服务节点（bsync）
+IP-CIDR,60.25.96.129/32 # 字节跳动 Pitaya 服务边缘节点（lf6-pitaya.bytetos.com）
+IP-CIDR,60.169.3.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,60.170.11.0/24 # 支付宝静态资源 CDN 节点（mdn.alipayobjects.com）
+IP-CIDR,60.188.66.0/24 # 抖音直播 Stage FLV 分发节点
+IP-CIDR,60.188.100.0/24 # 抖音直播源站媒体 CDN 实际服务节点（lf1-webcastcdn-tos.douyinstatic.com）
+IP-CIDR,61.54.15.0/24 # 抖音图片签名与资源加载节点 IP（p6.douyinpic.com）
+IP-CIDR,61.128.150.0/24 # 抖音 Webcast 图片签名 CDN 节点（p11-webcast-sign.douyinpic.com）
+IP-CIDR,61.147.88.0/24 # 抖音图片与多媒体资源 CDN 节点
+IP-CIDR,61.147.204.0/24 # 抖音直播第三方边缘分发节点
+IP-CIDR,61.147.214.0/24 # 抖音直播 third 第三方边缘 FLV 拉流 CDN 实际服务节点（/third/stream-*.flv）
+IP-CIDR,61.147.231.0/24 # 字节跳动字体资源签名校验节点（bytehwm）
+IP-CIDR,61.152.119.0/24 # 字节跳动内容聚合与分发服务节点（aggr / zijieapi）
+IP-CIDR,61.155.39.0/24 # 字节跳动核心接入与边缘优化服务网段
+IP-CIDR,61.156.12.0/24 # 抖音图片与多媒体资源 CDN 节点
+IP-CIDR,61.160.192.0/24 # 抖音直播 FLV Stage 拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,61.160.193.0/24 # 字节跳动直播媒体 CDN 实际服务节点
+IP-CIDR,61.160.202.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,61.160.230.0/24 # 抖音图片与多媒体资源 CDN 节点（p11.douyinpic.com）
+IP-CIDR,61.160.234.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,61.160.238.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,61.162.8.0/24 # 抖音直播 FLV 拉流第三方边缘分发节点（/third/stream-*.flv）
+IP-CIDR,61.164.115.0/24 # 字节跳动 API / SDK 通信节点
+IP-CIDR,61.170.66.0/24 # 抖音图片与多媒体资源 CDN 节点（douyinpic）
+IP-CIDR,61.170.88.0/24 # 抖音直播 Stage 分发流媒体 CDN 节点（stage 流媒体资源）
+IP-CIDR,61.170.77.0/24 # 字节跳动 TOS / CDN 内容分发网段
+IP-CIDR,61.170.79.0/24 # 字节跳动广告与效果内容分发节点
+IP-CIDR,61.172.180.0/24 # 抖音视频内容分发 CDN 实际服务节点 IP
+IP-CIDR,61.174.8.0/24 # 抖音直播 FLV 拉流 CDN 实际服务节点，用于音视频流分发
+IP-CIDR,61.174.43.0/24 # 字节跳动平台业务校验与策略服务接口
+IP-CIDR,61.190.114.0/24 # 字节跳动客户端数据同步与状态回传节点（bsync3-normal-hj.zijieapi.com）
+IP-CIDR,106.8.244.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,101.69.123.0/24 # 抖音图片 CDN 节点（p3.douyinpic.com）
+IP-CIDR,101.89.125.0/24 # 字节跳动电商用户服务接口节点（snssdk）
+IP-CIDR,101.226.27.0/24 # 抖音直播媒体签名 CDN 节点 IP
+IP-CIDR,101.226.41.0/24 # 字节跳动直播 CDN 实时分发节点
+IP-CIDR,101.227.3.0/24 # 抖音直播 thirdgame FLV 拉流 CDN 实际服务节点（pull-x2-t5.douyincdn.com /thirdgame/stream-*.flv）
+IP-CIDR,101.227.20.0/24 # 字节跳动官方业务服务节点（客户端数据同步）
+IP-CIDR,101.227.21.0/24 # 字节跳动 ABTest / 实验配置服务节点
+IP-CIDR,101.227.22.0/24 # 抖音图片与封面资源加载节点
+IP-CIDR,101.227.46.0/24 # 抖音直播调度与边缘分发节点（pull-flv-t95.douyincdn.com）
+IP-CIDR,103.27.27.0/24 # 字节跳动核心业务服务节点（Pitaya）
+IP-CIDR,103.236.83.0/24 # 抖音直播 FLV Stage 拉流 CDN 实际服务节点
+IP-CIDR,103.254.79.0/24 # 抖音直播 FLV Stage 拉流 CDN 实际服务节点（pull-flv-h26.douyincdn.com）
+IP-CIDR,106.38.222.0/24 # 字节跳动实时通信 WebSocket 服务网段
+IP-CIDR,106.42.192.0/24 # 抖音直播 radio 音频流媒体 FLV 拉流 CDN 实际服务节点（/radio/stream-*.flv）
+IP-CIDR,106.111.146.0/24 # 抖音直播 fantasy 高等级/VIP 流媒体 CDN 实际服务节点（/fantasy/stream-*.flv）
+IP-CIDR,106.227.20.0/24 # 抖音直播 FLV Stage 拉流 CDN 实际服务节点（pull-h3.douyincdn.com /stage/stream-*.flv）
+IP-CIDR,106.227.66.0/24 # 抖音直播拉流 CDN 节点（pull-flv-l95.douyincdn.com）
+IP-CIDR,106.227.98.0/24 # 字节跳动开发者与静态资源节点
+IP-CIDR,106.225.221.0/24 # 抖音图片签名校验服务节点（douyinpic）
+IP-CIDR,106.225.217.0/24 # 字节跳动电商资质与商家校验签名节点（ecombdimg）
+IP-CIDR,106.225.233.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,111.19.223.0/24 # 抖音视频点播 CDN 实际服务节点（v5-gzb2-x.douyinvod.com）
+IP-CIDR,111.77.199.0/24 # 抖音直播 fantasy 高等级/VIP 流媒体 CDN 实际服务节点（pull-f3.douyinliving.com /fantasy/stream-*.flv）
+IP-CIDR,111.123.58.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（stage/stream-*.flv）
+IP-CIDR,111.123.250.0/24 # 抖音直播 Third 流媒体分发节点
+IP-CIDR,111.170.165.0/24 # 抖音直播 Stage 流媒体调度节点
+IP-CIDR,111.170.168.0/24 # 抖音视频点播 CDN 实际服务节点
+IP-CIDR,112.46.52.0/24 # 抖音视频点播 CDN 实际服务节点（douyinvod）
+IP-CIDR,113.96.136.0/24 # 抖音直播 Stage 流媒体分发节点
+IP-CIDR,113.125.192.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,113.125.208.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,113.125.213.0/24 # 抖音直播 third 第三方边缘 FLV 拉流 CDN 实际服务节点（/third/stream-*.flv）
+IP-CIDR,113.125.234.0/24 # 抖音直播 FLV 冷启动调度与边缘分发节点（pull-t5.douyincdn.com / stage 链路）
+IP-CIDR,113.142.25.0/24 # 抖音视频点播 CDN 实际服务节点
+IP-CIDR,113.142.39.0/24 # 抖音直播 FLV Stage 拉流 CDN 实际服务节点（stage/stream-*.flv）
+IP-CIDR,113.142.162.0/24 # 字节跳动直播 CDN 节点（bytegecko）
+IP-CIDR,113.142.200.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,113.142.220.0/24 # 抖音直播 FLV 冷启动 / Stage 预发布拉流 CDN 实际服务节点
+IP-CIDR,113.219.153.0/24 # 抖音视频点播 CDN 实际服务节点（v5-gzb2-x.douyinvod.com）
+IP-CIDR,113.219.164.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,113.219.237.0/24 # 字节跳动媒体资源签名 CDN 节点 IP
+IP-CIDR,113.249.69.0/24 # 抖音直播 FLV 第三方边缘分发 CDN 实际服务节点（/third/stream-*.flv）
+IP-CIDR,114.80.10.0/24 # 字节跳动电商 API 实际服务节点（ecombdapi）
+IP-CIDR,114.80.11.0/24 # 抖音直播与 API 服务网段
+IP-CIDR,114.80.12.0/24 # 抖音直播拉流 CDN 节点（pull-hs-f5.flive.douyincdn.com）
+IP-CIDR,114.80.13.0/24 # 字节跳动业务接口节点（zijieapi / aggr）
+IP-CIDR,114.80.13.0/24 # 字节跳动业务接口节点（zijieapi）
+IP-CIDR,114.80.26.0/24 # 字节跳动字体资源签名 CDN 实际服务节点 IP
+IP-CIDR,114.80.149.0/24 # 抖音图片签名校验与资源分发节点
+IP-CIDR,114.80.235.0/24 # 字节跳动直播源站 CDN 节点
+IP-CIDR,114.80.252.0/24 # 字节跳动平台后台服务节点（zijieapi）
+IP-CIDR,114.230.138.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,114.230.205.0/24 # 字节跳动（抖音）视频 CDN 实际服务节点
+IP-CIDR,114.230.213.0/24 # 字节跳动电商内容分发 CDN 节点
+IP-CIDR,114.232.92.0/24 # 抖音视频点播（VOD）CDN 实际服务节点
+IP-CIDR,115.150.31.0/24 # 抖音图片签名 CDN 节点 IP
+IP-CIDR,115.152.217.0/24 # 抖音直播 radio 音频流媒体 FLV 拉流 CDN 实际服务节点（/radio/stream-*.flv）
+IP-CIDR,115.152.219.0/24 # 抖音直播 third 第三方边缘 FLV 拉流 CDN 实际服务节点（/third/stream-*.flv）
+IP-CIDR,115.223.4.0/24 # 抖音直播 Third 路径 FLV 分发节点
+IP-CIDR,115.223.8.0/24 # 抖音直播 Radio 流媒体分发节点
+IP-CIDR,115.231.18.0/24 # 字节电商商品图片与内容分发 CDN 实际服务节点（p3-item.ecombdimg.com）
+IP-CIDR,115.231.39.0/24 # 抖音直播 third 第三方边缘 FLV 拉流 CDN 实际服务节点（/third/stream-*.flv）
+IP-CIDR,115.231.71.0/24 # 抖音图片签名与资源校验节点（douyinpic）
+IP-CIDR,115.231.184.0/24 # 字节跳动直播 CDN 节点（bytegecko）
+IP-CIDR,115.223.59.0/24 # 抖音直播核心服务节点 IP
+IP-CIDR,115.223.60.0/24 # 字节跳动图片 CDN 实际服务节点
+IP-CIDR,115.238.155.0/24 # 字节跳动（抖音）图片签名与资源 CDN 实际服务节点
+IP-CIDR,115.238.171.0/24 # 字节跳动 tnc 网络调度节点，用于客户端连接优化与服务调度（tnc0-aliec2.zijieapi.com）
+IP-CIDR,115.238.197.0/24 # 字节跳动图片签名与媒体资源校验 CDN 实际服务节点（p3-dy-gm-yp-sign.byteimg.com）
+IP-CIDR,115.238.187.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,115.238.220.0/24 # 抖音直播 FLV 媒体拉流实际服务节点（third 路径）
+IP-CIDR,115.238.237.0/24 # p6-dy-gm-yp-sign.byteimg.com 抖音图片签名分发节点
+IP-CIDR,117.21.230.0/24 # 抖音直播图片签名与访问鉴权 CDN 实际服务节点（p3-webcast-sign.douyinpic.com）
+IP-CIDR,117.21.189.0/24 # 抖音图片与封面资源 CDN 实际服务节点
+IP-CIDR,117.24.169.0/24 # 抖音直播图片签名校验节点
+IP-CIDR,117.27.148.0/24 # 抖音视频点播 CDN 实际服务节点
+IP-CIDR,117.44.75.0/24 # 抖音直播 third 第三方边缘 FLV 拉流 CDN 实际服务节点（/third/stream-*.flv）
+IP-CIDR,117.66.42.0/24 # 字节字体签名资源分发节点（lf6-font-sign.bytehwm.com）
+IP-CIDR,117.66.44.0/24 # 抖音直播 Stage 流媒体分发节点
+IP-CIDR,117.66.50.0/24 # 字节跳动字体资源签名校验节点
+IP-CIDR,117.68.5.0/24 # 字节跳动字体与前端资源加载节点
+IP-CIDR,117.68.32.0/24 # 字节跳动/抖音电商用户服务节点（ecomuser.snssdk.com）
+IP-CIDR,117.68.33.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,117.68.34.0/24 # 字节跳动电商用户服务接口节点（ecomuser.snssdk.com）
+IP-CIDR,117.68.37.0/24 # 字节系 Pitaya 服务节点 IP，用于内容调度与接口分发（lf26-pitaya.bytetos.com）
+IP-CIDR,117.68.50.0/24 # 抖音直播 Stage 流媒体分发节点
+IP-CIDR,117.68.54.0/24 # 抖音直播 pull-flv 拉流节点
+IP-CIDR,117.68.56.0/24 # 抖音直播 Stage 流媒体分发节点
+IP-CIDR,117.68.59.0/24 # 抖音直播 Stage 流媒体分发节点
+IP-CIDR,117.68.64.0/24 # 抖音直播 Third 分发链路节点 IP（third/*.flv）
+IP-CIDR,117.68.75.0/24 # 抖音直播 Webcast CDN 分发节点
+IP-CIDR,117.68.68.0/24 # 抖音视频点播分发节点（v5-x.douyinvod.com）
+IP-CIDR,117.68.125.0/24 # 字节跳动图片资源签名服务节点
+IP-CIDR,117.69.72.0/24 # 抖音直播 FLV 拉流 CDN 实际服务节点（pull-flv-f11.douyincdn.com）
+IP-CIDR,117.85.69.0/24 # 支付宝静态资源与业务网关节点
+IP-CIDR,117.86.183.0/24 # 字节跳动电商业务接口服务节点
+IP-CIDR,117.91.195.0/24 # 抖音官方直播 FLV CDN 实际服务节点
+IP-CIDR,117.92.139.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,117.92.241.0/24 # 抖音直播 third 第三方边缘 FLV 拉流 CDN 实际服务节点（/third/stream-*.flv）
+IP-CIDR,117.92.245.0/24 # 抖音直播 FLV 拉流实际服务节点
+IP-CIDR,117.93.230.0/24 # 抖音 QUIC CDN 边缘节点 IP（tos-quic-lf.douyin.com）
+IP-CIDR,118.122.13.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,118.213.159.0/24 # 抖音直播第三方边缘 FLV 拉流 CDN 实际服务节点（/third/stream-*.flv）
+IP-CIDR,119.42.231.0/24 # 支付宝移动数据分析与业务调度节点（mdap）
+IP-CIDR,119.84.131.0/24 # 抖音直播第三方边缘拉流 CDN 实际服务节点（/third/stream-*.flv）
+IP-CIDR,119.84.162.0/24 # 抖音直播 Stage 流媒体分发节点
+IP-CIDR,119.96.16.0/24 # 抖音直播 Stage 流媒体分发节点 IP（stage/*.flv）
+IP-CIDR,119.101.148.0/24 # 抖音直播 third 第三方边缘 FLV 拉流 CDN 实际服务节点（/third/stream-*.flv）
+IP-CIDR,119.147.113.0/24 # 抖音图片与直播签名鉴权节点（p11-webcast-sign.douyinpic.com）
+IP-CIDR,119.147.120.0/24 # 抖音直播 FLV Stage 拉流 CDN 实际服务节点（pull-flv-t1.douyincdn.com /stage/stream-*.flv）
+IP-CIDR,119.147.129.0/24 # 抖音签名鉴权与媒体分发节点（p9-dy-gm-yp-sign.byteimg.com）
+IP-CIDR,119.167.135.0/24 # 抖音图片 CDN 实际服务节点
+IP-CIDR,119.167.198.0/24 # 字节跳动特效素材分发节点
+IP-CIDR,119.188.69.0/24 # 抖音直播 FLV 拉流调度分发节点（dispatch 通道）
+IP-CIDR,120.39.206.0/24 # 抖音直播 third 第三方边缘 FLV 拉流 CDN 实际服务节点（/third/stream-*.flv）
+IP-CIDR,120.255.45.0/24 # 字节跳动核心业务服务节点（Pitaya）
+IP-CIDR,121.204.232.0/24 # 抖音直播 Third 路径 FLV 拉流分发节点
+IP-CIDR,121.228.190.0/24 # 抖音直播 thirdgame FLV 拉流 CDN 实际服务节点
+IP-CIDR,121.233.195.0/24 # 抖音直播 FLV 拉流 CDN 实际服务节点
+IP-CIDR,122.14.236.0/24 # 字节跳动 Frontier 边缘服务节点
+IP-CIDR,122.225.209.0/24 # 抖音图片 CDN 鉴权节点
+IP-CIDR,122.225.216.0/24 # 抖音平台运行支撑节点
+IP-CIDR,122.226.74.0/24 # 字节跳动媒体资源 CDN 实际服务节点
+IP-CIDR,122.226.181.0/24 # 抖音直播 Stage/Qcloud 分发节点
+IP-CIDR,122.227.254.0/24 # 字节跳动字体签名与前端资源校验 CDN 实际服务节点（bytehwm）
+IP-CIDR,122.228.15.0/24 # 字节跳动 TOS 内容分发与 QoS 控制节点（lf-dy-sourcecdn-tos-qos-control.bytegecko.com）
+IP-CIDR,122.228.115.0/24 # 抖音直播 third 第三方边缘 FLV 拉流 CDN 实际服务节点（/third/stream-*.flv）
+IP-CIDR,122.228.205.0/24 # 抖音图片资源签名 CDN 节点
+IP-CIDR,122.228.221.0/24 # 抖音直播 webcastcdn 分发节点
+IP-CIDR,122.246.3.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,122.247.211.0/24 # 字节跳动开发者平台图片签名与鉴权 CDN 节点
+IP-CIDR,122.247.213.0/24 # 抖音直播 / Webcast 图片资源分发节点
+IP-CIDR,122.247.255.0/24 # 抖音直播 Stage 预发布/冷启动 FLV 拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,123.54.196.0/24 # 抖音视频点播（VOD）CDN 实际服务节点（v5-x.douyinvod.com）
+IP-CIDR,123.54.197.0/24 # 抖音直播 Stage 流媒体分发节点
+IP-CIDR,123.54.199.0/24 # 抖音图片签名与访问鉴权 CDN 实际服务节点
+IP-CIDR,123.54.214.0/24 # 抖音直播 Third 流媒体分发节点
+IP-CIDR,123.172.121.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,123.184.28.0/24 # 抖音图片与签名鉴权节点（p11.douyinpic.com）
+IP-CIDR,123.184.218.0/24 # 字节跳动直播/媒体 CDN 边缘节点
+IP-CIDR,123.235.34.0/24 # 抖音图片签名校验服务节点
+IP-CIDR,123.235.40.0/24 # 抖音图片签名 CDN 节点（p3-sign.douyinpic.com）
+IP-CIDR,124.115.13.0/24 # 抖音直播 third 第三方边缘 FLV 拉流 CDN 实际服务节点（/third/stream-*.flv）
+IP-CIDR,124.129.4.0/24 # 抖音图片资源 CDN 实际服务节点
+IP-CIDR,124.232.129.0/24 # 抖音直播 Radio FLV 拉流 CDN 实际服务节点
+IP-CIDR,124.236.94.0/24 # 抖音图片与签名鉴权节点（p11.douyinpic.com）
+IP-CIDR,124.236.114.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（pull-x2-t5.douyincdn.com /stage/stream-*.flv）
+IP-CIDR,124.239.94.0/24 # 抖音直播 FLV Stage 拉流 CDN 实际服务节点（pull-x2-t5.douyincdn.com /stage/stream-*.flv）
+IP-CIDR,124.239.239.0/24 # 字节跳动电商聚合与多业务资源节点（ecombdimg）
+IP-CIDR,124.248.76.0/24 # 抖音直播 Stage 流媒体分发节点
+IP-CIDR,125.70.174.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,125.74.30.0/24 # 抖音直播 third 第三方边缘 FLV 拉流 CDN 实际服务节点（pull-x2-t5.douyincdn.com /third/stream-*.flv）
+IP-CIDR,125.94.42.0/24 # 抖音直播流媒体 CDN 节点 IP
+IP-CIDR,125.124.252.0/24 # 抖音直播 Stage FLV 拉流 CDN 实际服务节点（pull-flv-t95.douyincdn.com）
+IP-CIDR,125.208.19.0/24 # 抖音直播拉流 CDN 分发节点（pull-flv-t96.douyincdn.com）
+IP-CIDR,140.249.8.0/24 # 抖音图片与多媒体资源签名鉴权 CDN 节点
+IP-CIDR,140.249.30.0/24 # 抖音直播 Third 路径 Qcloud 分发节点
+IP-CIDR,140.249.85.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,140.249.87.0/24 # 字节跳动监控与杂项服务实际节点 IP
+IP-CIDR,140.249.99.0/24 # 字节跳动核心业务调度节点（Pitaya）
+IP-CIDR,140.249.108.0/24 # 抖音直播核心服务节点
+IP-CIDR,140.249.111.0/24 # 字节跳动移动端 SDK 通信节点（mssdk3）
+IP-CIDR,140.249.144.0/24 # 字节系字体签名与静态资源分发节点 IP（lf6-font-sign.bytehwm.com）
+IP-CIDR,140.249.226.0/24 # 抖音直播图片签名服务节点（webcast-sign）
+IP-CIDR,140.249.251.0/24 # 抖音直播 FLV Stage 拉流 CDN 实际服务节点（pull-flv-t95.douyincdn.com /stage/stream-*.flv）
+IP-CIDR,144.48.214.0/24 # 抖音直播 third 第三方边缘 FLV 拉流 CDN 实际服务节点（/third/stream-*.flv）
+IP-CIDR,150.138.42.0/24 # 抖音直播 Stage 超清流媒体 CDN 节点（Stage0T100uhd5）
+IP-CIDR,150.138.86.0/24 # 字节跳动通知与资源分发 CDN 节点（p3-notice.byteimg.com）
+IP-CIDR,150.138.174.0/24 # 抖音直播流媒体 CDN 实际分发节点
+IP-CIDR,150.138.179.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（pull-flv-l11.douyincdn.com /stage/stream-*.flv）
+IP-CIDR,150.138.237.0/24 # 抖音直播 radio 音频流媒体 FLV 拉流 CDN 实际服务节点（/radio/stream-*.flv）
+IP-CIDR,150.138.253.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,150.139.247.0/24 # 抖音电商签名与图片分发节点
+IP-CIDR,171.43.202.0/24 # 抖音直播 radio 音频流媒体 FLV 拉流 CDN 实际服务节点（/radio/stream-*.flv）
+IP-CIDR,171.111.157.0/24 # 抖音直播 thirdgame 第三方游戏链路 FLV 拉流 CDN 实际服务节点（/thirdgame/stream-*.flv）
+IP-CIDR,175.4.42.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,175.4.48.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,175.12.102.0/24 # 字节跳动活动页与内容展示资源节点（byteimg）
+IP-CIDR,175.12.127.0/24 # 抖音直播 Stage 流媒体分发节点
+IP-CIDR,180.97.165.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,180.97.171.0/24 # 字节跳动抖音源站 CDN 节点
+IP-CIDR,180.97.198.0/24 # 抖音直播 third 第三方边缘 FLV 拉流 CDN 实际服务节点（/third/stream-*.flv）
+IP-CIDR,180.97.209.0/24 # 字节电商图片与资源分发 CDN 节点
+IP-CIDR,180.97.241.0/24 # 字节跳动 TOS / CDN 实际服务节点（bytegecko）
+IP-CIDR,180.97.246.0/24 # 字节跳动特效资源分发节点（byteeffecttos）
+IP-CIDR,180.97.248.0/24 # 抖音直播源站 CDN 节点（bytegecko）
+IP-CIDR,180.97.251.0/24 # 字节跳动 TNC 安全风控与环境校验服务节点
+IP-CIDR,180.97.253.0/24 # 抖音直播 third 第三方边缘 FLV 拉流 CDN 实际服务节点（/third/stream-*.flv）
+IP-CIDR,180.101.150.0/24 # 字节跳动 TOS 对象存储与核心业务内容分发 CDN 实际服务节点（lf9-pitaya.bytetos.com）
+IP-CIDR,180.101.151.0/24 # 抖音直播 FLV 拉流实际服务节点
+IP-CIDR,180.101.199.0/24 # 抖音图片与多媒体资源 CDN 节点
+IP-CIDR,180.105.58.0/24 # 字节跳动核心业务与服务调度网段（Pitaya / 核心接口）
+IP-CIDR,180.112.45.0/24 # 抖音视频点播 CDN 节点（douyinvod）
+IP-CIDR,180.112.50.0/24 # 抖音图片与封面资源 CDN 节点（p26.douyinpic.com）
+IP-CIDR,180.112.189.0/24 # 字节跳动 Effect 特效与素材分发服务节点
+IP-CIDR,180.114.162.0/24 # ByteDance IM 表情与多媒体资源分发节点
+IP-CIDR,180.119.119.0/24 # 抖音视频 CDN 中国区节点
+IP-CIDR,180.153.168.0/24 # 字节跳动 SourceCDN 媒体源站加速节点 IP
+IP-CIDR,180.153.169.0/24 # 抖音视频点播 CDN 实际节点（douyinvod）
+IP-CIDR,180.153.197.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,180.163.132.0/24 # 字节跳动内容聚合与电商调度服务节点
+IP-CIDR,180.163.132.0/24 # 抖音图片资源 CDN 节点
+IP-CIDR,180.163.142.0/24 # 字节跳动字体资源签名校验节点（lf26-font-sign.bytehwm.com）
+IP-CIDR,180.163.145.0/24 # 字节跳动字体与前端资源分发节点
+IP-CIDR,180.163.148.0/24 # 字节跳动业务接口与系统服务网段
+IP-CIDR,180.163.200.0/24 # 抖音直播拉流 CDN 节点（pull-flv-t95.douyincdn.com）
+IP-CIDR,182.40.23.0/24 # 抖音运营 / 激励 / 特效素材分发网段
+IP-CIDR,182.40.50.0/24 # 字节跳动文档与静态资源 CDN 实际服务节点（bytednsdoc）
+IP-CIDR,182.40.62.0/24 # 抖音直播 Stage 分发节点
+IP-CIDR,182.40.78.0/24 # 抖音图片签名校验服务节点
+IP-CIDR,182.40.112.0/24 # 字节跳动移动端 SDK 与状态服务通信网段（mssdk / 状态同步）
+IP-CIDR,182.40.116.0/24 # 抖音直播 third 第三方边缘 FLV 拉流 CDN 实际服务节点（/third/stream-*.flv）
+IP-CIDR,182.40.143.0/24 # 字节跳动静态资源 CDN 节点（lf3-static.bytednsdoc.com）
+IP-CIDR,182.106.149.0/24 # 抖音图片与多媒体资源 CDN 节点
+IP-CIDR,182.106.158.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,183.2.168.0/24 # 抖音直播 Stage 流媒体分发节点
+IP-CIDR,183.57.145.0/24 # 抖音直播拉流 CDN 节点（pull-flv-q11.douyincdn.com）
+IP-CIDR,183.61.124.0/24 # 抖音直播 Thirdgame FLV 拉流 CDN 实际服务节点
+IP-CIDR,183.66.105.0/24 # 抖音图片与多媒体资源分发节点
+IP-CIDR,183.131.44.0/24 # 抖音直播 FLV Stage 拉流 CDN 实际服务节点（pull-x2-t5.douyincdn.com /stage/stream-*.flv）
+IP-CIDR,183.131.62.0/24 # 抖音直播 FLV 内容分发 CDN 实际服务节点（fantasy 直播链路）
+IP-CIDR,183.131.64.0/24 # 抖音直播 thirdgame 第三方游戏链路 FLV 拉流 CDN 实际服务节点（/thirdgame/stream-*.flv）
+IP-CIDR,183.131.80.0/24 # 抖音直播流媒体实际拉流节点，承载 FLV/RTM 音视频内容分发
+IP-CIDR,183.131.191.0/24 # 抖音图片与封面资源 CDN 节点（p11.douyinpic.com）
+IP-CIDR,183.134.10.0/24 # 抖音直播 Stage/Qcloud 分发节点
+IP-CIDR,183.134.39.0/24 # 抖音直播 FLV Stage 拉流 CDN 实际服务节点
+IP-CIDR,183.134.42.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,183.134.44.0/24 # 抖音直播 Stage 预发布/冷启动 FLV 拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,183.136.137.0/24 # 抖音直播 FLV Stage 拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,183.136.201.0/24 # 字节跳动图片签名与加密资源节点（byteimg）
+IP-CIDR,183.136.203.0/24 # 字节跳动 SDK 与跨应用链接服务节点（ugsdk / zlink）
+IP-CIDR,183.146.26.0/24 # 字节跳动媒体资源 CDN 实际服务节点（p3-notice.byteimg.com）
+IP-CIDR,192.140.172.0/24 # 抖音直播第三方边缘 FLV 拉流 CDN 服务节点，用于视频流媒体内容分发
+IP-CIDR,202.110.99.0/24 # 抖音图片资源 CDN 节点（p3.douyinpic.com）
+IP-CIDR,202.102.11.0/24 # 抖音图片签名校验服务节点（douyinpic）
+IP-CIDR,203.209.247.0/24 # 支付宝核心业务数据通信节点（amdc）
+IP-CIDR,203.209.251.0/24 # 支付宝第三方接口节点（amdc-thirdparty.alipay.com）
+IP-CIDR,211.100.8.0/24 # 抖音直播 Webcast 图片签名节点（p3-webcast-sign.douyinpic.com）
+IP-CIDR,218.2.83.0/24 # 字节跳动 Pitaya CDN 边缘节点（lf6-pitaya.bytetos.com）
+IP-CIDR,218.57.238.0/24 # 抖音图片签名校验服务节点
+IP-CIDR,218.92.141.0/24 # 抖音图片签名与媒体资源 CDN 节点
+IP-CIDR,218.92.147.0/24 # 抖音直播 third 第三方边缘 FLV 拉流 CDN 实际服务节点（/third/stream-*.flv）
+IP-CIDR,218.92.226.0/24 # 抖音直播 FLV 拉流 CDN 实际服务节点
+IP-CIDR,218.93.133.0/24 # 抖音 thirdgame 直播流媒体分发节点
+IP-CIDR,218.94.231.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,219.83.170.0/24 # 字节跳动 API 服务节点（ma5-normal-lq.zijieapi.com）
+IP-CIDR,219.151.136.0/24 # 抖音直播 FLV 拉流 CDN 实际服务节点
+IP-CIDR,220.160.45.0/24 # 抖音直播图片签名与资源鉴权 CDN 实际服务节点（p3-webcast-sign.douyinpic.com）
+IP-CIDR,220.167.106.0/24 # 抖音官方 FLV 拉流 CDN 实际服务节点（pull-flv-q1.douyincdn.com）
+IP-CIDR,220.180.244.0/24 # 抖音直播 Stage 流媒体 CDN 节点 IP（qcloud_v2 分发链路）
+IP-CIDR,220.185.164.0/24 # 抖音图片签名与内容校验服务节点
+IP-CIDR,220.185.168.0/24 # 字节跳动图片资源 CDN 节点（p3-piu.byteimg.com）
+IP-CIDR,220.195.134.0/24 # 字节跳动（抖音）图片资源 CDN 实际服务节点
+IP-CIDR,220.205.6.0/24 # 抖音图片签名与资源鉴权 CDN 实际服务节点（p3-sign.douyinpic.com）
+IP-CIDR,220.205.7.0/24 # 抖音图片签名与资源访问节点（p3-sign.douyinpic.com）
+IP-CIDR,221.204.86.0/24 # 抖音视频分发 CDN 节点
+IP-CIDR,221.228.193.0/24 # 抖音直播 FLV Stage 预发布/冷启动拉流 CDN 实际服务节点（/stage/stream-*.flv）
+IP-CIDR,221.228.217.0/24 # 字节跳动（抖音）图片 CDN 实际服务节点
+IP-CIDR,221.228.219.0/24 # 抖音直播 third 第三方边缘 FLV 拉流 CDN 实际服务节点（/third/stream-*.flv）
+IP-CIDR,221.229.77.0/24 # 抖音/字节跳动电商前端静态资源 CDN 实际服务节点
+IP-CIDR,221.229.162.0/24 # 抖音图片签名与媒体资源服务节点
+IP-CIDR,221.229.165.0/24 # 字节跳动 ByteGecko CDN 节点
+IP-CIDR,221.229.209.0/24 # 字节跳动电商评论图片签名资源节点
+IP-CIDR,221.230.244.0/24 # 字节跳动 Pitaya 核心业务服务节点
+IP-CIDR,221.231.47.0/24 # 抖音图片与多媒体资源 CDN 实际节点（douyinpic）
+IP-CIDR,221.231.83.0/24 # 字节跳动安全与风控接入节点（tnc）
+IP-CIDR,221.231.92.0/24 # 字节跳动电商前端静态资源 CDN 节点（lf3-fe.ecombdstatic.com）
+IP-CIDR,222.81.124.0/24 # 抖音视频点播 CDN 实际服务节点（v5-gzb2-x.douyinvod.com）
+IP-CIDR,222.138.208.0/24 # 抖音图片与多媒体资源 CDN 实际服务节点 IP
+IP-CIDR,222.184.83.0/24 # 抖音直播回放（stagereplay）分发节点
+IP-CIDR,222.184.96.0/24 # 抖音直播 FLV 拉流 CDN 实际服务节点（stage 直播链路）
+IP-CIDR,222.185.229.0/24 # 抖音直播 FLV 拉流 CDN 实际服务节点（pull-flv-f26.douyincdn.com）
+IP-CIDR,222.186.17.0/24 # 字节跳动开发者平台图片 CDN 实际服务节点（bytemaimg）
+IP-CIDR,222.186.163.0/24 # 抖音图片签名与媒体资源服务节点
+IP-CIDR,222.188.8.0/24 # 字节跳动内容聚合与业务调度节点（aggr）
+IP-CIDR,222.210.36.0/24 # 抖音直播 FLV Stage 拉流 CDN 实际服务节点（stage/stream-*.flv）
+IP-CIDR,222.210.37.0/24 # 抖音直播 thirdgame 第三方游戏链路 FLV 拉流 CDN 实际服务节点（/thirdgame/stream-*.flv）
+IP-CIDR,222.218.85.0/24 # 抖音 Webcast 图片签名与直播资源分发 CDN 节点（p11-webcast-sign.douyinpic.com）
+IP-CIDR,223.111.116.0/24 # 字节跳动直播与多媒体内容分发 CDN 节点
+IP-CIDR,223.144.130.0/24 # 抖音直播 thirdgame 第三方游戏链路 FLV 拉流 CDN 实际服务节点（/thirdgame/stream-*.flv）
+IP-CIDR,223.215.189.0/24 # 抖音直播 FLV 拉流实际服务节点
+IP-CIDR,223.244.13.0/24 # 抖音直播 FLV 拉流 CDN 实际服务节点（pull-x2-t5.douyincdn.com）
+IP-CIDR,223.244.41.0/24 # 字节跳动业务调度与服务接口节点（pitaya.bytedance.com），用于客户端任务调度与后台通信
+IP-CIDR,223.244.186.0/24 # 字节跳动内容聚合与行为数据接口节点（aggr5-normal-s19.amemv.com）
+IP-CIDR,223.244.187.0/24 # 字节跳动聚合服务节点（aggr5-normal-s19.amemv.com）
+IP-CIDR,223.247.106.0/24 # 抖音图片签名与资源访问节点（p26-sign.douyinpic.com）
+IP-CIDR,223.247.116.0/24 # 抖音直播 FLV 拉流 CDN 实际服务节点（pull-t5.douyincdn.com）
+
+# > 字节跳动相关行为指纹（当前采用 ChinaMedia 路由策略）
+
+DOMAIN-SUFFIX,lf3-config.bytetcc.com # 字节跳动配置下发域名，用于 App 启动参数、A/B 策略、开关配置与 SDK 初始化信息加载
+DOMAIN-SUFFIX,log-api.pangolin-sdk-toutiao.com # 字节跳动穿山甲广告 SDK 日志接口
+DOMAIN-SUFFIX,mon.snssdk.com # 字节跳动行为统计与设备指纹接口
+DOMAIN-SUFFIX,log.snssdk.com # 字节跳动行为日志与事件上传接口
+DOMAIN-SUFFIX,api5-normal-lf.amemv.com # 抖音行为监控接口（API5 通道）
+DOMAIN-SUFFIX,api5-normal-lq.amemv.com # 抖音行为监控接口（备用线路）
+DOMAIN-SUFFIX,sf16-muse-va.ibytedtos.com # 字节跳动日志上报与 SDK 签名验证域
+DOMAIN-SUFFIX,ib.snssdk.com # 字节跳动行为数据回传主站
+DOMAIN-SUFFIX,data.bytedance.net # 字节跳动数据上传与分析平台
+DOMAIN-SUFFIX,log-api.pangolin-sdk-toutiao.com # 字节跳动穿山甲广告 SDK 接口
+DOMAIN-SUFFIX,mssdk.volces.com # 火山引擎 MSSDK 数据接口，用于移动行为数据采集与上传
+DOMAIN-SUFFIX,is.snssdk.com # 今日头条内容推荐请求接口
+DOMAIN-SUFFIX,bytedapm.com # 字节跳动 APM（Application Performance Monitoring）性能监控主域，用于前端性能、错误日志与稳定性数据上报
+DOMAIN-SUFFIX,sf16-short-sg.bytedapm.com # 字节 APM 新加坡区域上报节点，用于测速、崩溃日志与实时埋点事件采集
+IP-CIDR,1.194.30.0/24 # 字节跳动客户端监控节点
+IP-CIDR,36.110.186.0/24 # 字节跳动 Frontier 接入节点（frontier-aweme.snssdk.com），用于客户端接入调度、请求分发与行为环境控制
+IP-CIDR,49.67.73.0/24 # 字节跳动行为策略与数据接口节点（zijieapi）
+IP-CIDR,49.79.134.0/24 # ByteDance 内部日志与运行状态上报节点（amemv），用于直播链路稳定性与服务监控
+IP-CIDR,58.215.92.0/24 # 字节跳动直播业务行为与控制通信节点（非内容分发）
+IP-CIDR,58.216.14.0/24 # 字节跳动 ABTest 与实验配置服务节点（abtest3-misc-hj.zijieapi.com）
+IP-CIDR,58.216.15.0/24 # 字节跳动客户端行为通信节点
+IP-CIDR,58.216.106.0/24 # 字节跳动客户端监控节点
+IP-CIDR,58.218.65.0/24 # 字节跳动客户端行为数据聚合节点（aggr 通道）
+IP-CIDR,58.222.35.0/24 # 字节跳动 ABTest 与实验配置服务节点，用于功能实验、参数下发与配置控制
+IP-CIDR,58.222.51.0/24 # 字节跳动业务策略与实验配置接口（zijieapi）
+IP-CIDR,58.223.176.0/24 # 字节跳动客户端监控服务节点（mon11-misc-hl.amemv.com）
+IP-CIDR,59.82.113.0/24 # 阿里系广告与用户行为统计网络节点，用于行为埋点、访问路径与效果分析数据回传
+IP-CIDR,59.82.121.0/24 # 行为分析与策略数据回传中继节点，可能被多业务 SDK 用于遥测与统计通信
+IP-CIDR,60.163.128.0/24 # 字节跳动客户端监控与杂项通信节点
+IP-CIDR,61.147.216.0/24 # 抖音行为数据聚合与策略通信接口节点（amemv）
+IP-CIDR,61.147.235.0/24 # 字节跳动行为数据聚合与日志回传节点，用于客户端运行状态与行为信息通信
+IP-CIDR,101.226.26.0/24 # 抖音业务通用通信节点，常用于数据服务分发与追踪上报
+IP-CIDR,106.225.217.0/24 # 字节跳动客户端监控与运行状态上报节点
+IP-CIDR,106.225.243.0/24 # 字节跳动客户端监控与杂项服务节点
+IP-CIDR,114.80.73.0/24 # 字节跳动日志回传服务实际节点 IP（logbk.amemv.com）
+IP-CIDR,117.21.229.0/24 # 字节跳动客户端监控与杂项服务节点，用于运行状态、性能指标与基础行为数据上报
+IP-CIDR,115.223.42.0/24 # 字节跳动 amemv 监控与杂项服务实际节点（mon0-misc-hl），用于客户端日志与运行状态上报
+IP-CIDR,117.40.89.0/24 # 字节跳动客户端监控节点
+IP-CIDR,117.68.32.161/32 # 字节跳动客户端运行日志 & 诊断上报节点（logbk.amemv.com）
+IP-CIDR,117.91.177.0/24 # 字节跳动内部服务协调与链路控制节点（klink.amemv.com）
+IP-CIDR,119.42.231.0/24 # 阿里系数据分析与行为遥测通信节点，可能用于客户端日志、设备信息与统计数据回传
+IP-CIDR,123.53.44.0/24 # 字节跳动日志与杂项服务节点（log0-misc-hl.amemv.com），用于客户端运行日志上报、故障诊断及系统稳定性分析通信
+IP-CIDR,123.183.233.0/24 # 字节跳动日志与遥测上报节点（amemv），用于客户端运行状态与行为日志收集
+IP-CIDR,117.68.38.0/24 # 字节系 A/B 测试与配置实验分发节点 IP（abtest3-misc-hj.zijieapi.com）
+IP-CIDR,140.249.108.0/24 # 字节跳动日志与遥测上报节点
+IP-CIDR,180.97.214.0/24 # 字节跳动 A/B 测试服务，涉及抖音实验配置与策略下发
+IP-CIDR,180.97.232.0/24 # 字节跳动 Polaris 策略与推荐调度节点，用于行为分析与内容分发决策
+IP-CIDR,180.97.251.0/24 # 字节跳动客户端监控与状态上报节点（mon0-misc）
+IP-CIDR,180.101.199.0/24 # 字节跳动 ABTest 实验配置节点，用于功能灰度、策略对照与行为分析
+IP-CIDR,180.101.218.0/24 # 字节跳动客户端监控与状态上报节点（mon0-misc-hl.amemv.com）
+IP-CIDR,180.105.58.0/24 # 抖音聚合与行为策略接口节点（amemv）
+IP-CIDR,203.119.238.0/24 # 阿里广告网络归属 IP，疑似用于行为分析与广告数据传输
+IP-CIDR,221.230.244.0/24 # 字节跳动客户端日志回传服务节点（log-lq.snssdk.com）
+IP-CIDR,221.231.47.0/24 # 字节跳动监控与遥测服务节点（mon.toutiaocloud.net）
+IP-CIDR,221.231.83.0/24 # 字节跳动客户端杂项监控节点（mon0-misc-hl.amemv.com）
+IP-CIDR,221.194.131.0/24 # 字节跳动日志回传服务节点（log0-misc.amemv.com），用于客户端日志与诊断数据上传
+IP-CIDR,222.186.177.0/24 # 字节跳动客户端监控与杂项服务节点（mon0-misc.amemv.com），用于运行状态、性能指标与基础行为上报
+
+# > 小红书 相关域名
+
+DOMAIN-SUFFIX,xiaohongshu.com # 小红书主站
+DOMAIN-SUFFIX,xhslink.com # 小红书跳转短链域名
+DOMAIN-SUFFIX,picasso-static.xiaohongshu.com # 小红书 Picasso UI 库资源域名，用于加载组件样式与图形资源
+DOMAIN-SUFFIX,rn-resource-app.xiaohongshu.com # 小红书 RN 资源接口，用于移动端小程序与模块动态加载
+DOMAIN-SUFFIX,ci.xiaohongshu.com # 小红书 CI 数据接口，用于前端配置、环境参数与调试信息加载
+DOMAIN-SUFFIX,rec.xiaohongshu.com # 小红书推荐算法接口域名，用于获取首页推荐、瀑布流内容分发
+DOMAIN-SUFFIX,qimg.xiaohongshu.com # 小红书图像加载服务，用于笔记封面与社区图片内容展示
+DOMAIN-SUFFIX,growth-img.xhscdn.com # 小红书增长运营图像 CDN，用于用户成长任务、积分奖励等活动图像加载
+DOMAIN-SUFFIX,fe-platform.xhscdn.com # 小红书平台级静态资源加载域名，用于页面公共组件与框架初始化
+DOMAIN-SUFFIX,apm-fe.xiaohongshu.com # 小红书前端性能监控域名，用于上报页面加载性能与前端错误信息
+DOMAIN-SUFFIX,xhsurl.com # 小红书短链跳转域名，用于外链分享与 App 跳转 
+DOMAIN-SUFFIX,shuwen.com # 小红书早期注册公司主域名，部分老旧服务仍在使用 
+DOMAIN-SUFFIX,xiaohongshucloud.com # 小红书云服务接口，支持日志与内容缓存 
+DOMAIN-SUFFIX,redcdn.net # 小红书内容分发 CDN，用于加载图像与视频资源
+DOMAIN-SUFFIX,api.xiaohongshu.com # 小红书核心 API 接口，用于加载笔记、评论等动态内容
+DOMAIN-SUFFIX,thumbnails.xhscdn.com # 小红书图像缩略图 CDN 域名
+DOMAIN-SUFFIX,fe-video-qc.xhscdn.com # 小红书前端视频资源 CDN，加速视频内容加载
+DOMAIN-SUFFIX,sns-webpic-qc.xhscdn.com # 小红书社交媒体图像 CDN，承载图文笔记中的嵌入图片
+DOMAIN-SUFFIX,fe-static.xhscdn.com # 小红书前端静态资源域名，用于页面样式与框架加载
+DOMAIN-SUFFIX,pages.xiaohongshu.com # 小红书活动页与商品页跳转域名
+DOMAIN-SUFFIX,sns-na-i6.xhscdn.com # 小红书图片加载 CDN
+DOMAIN-SUFFIX,sns-video-qc.xhscdn.com # 小红书视频加载 CDN
+DOMAIN-SUFFIX,sns-avatar-qc.xhscdn.com # 小红书用户头像 CDN
+DOMAIN-SUFFIX,passport.xiaohongshu.com # 小红书登录与认证接口域名，用于账号验证与会话维护
+DOMAIN-SUFFIX,link.xiaohongshu.com # 小红书内容跳转与短链中转域名（link服务），常用于 App 内跳转逻辑
+DOMAIN-SUFFIX,sns-img-qc.xhscdn.com # 小红书图像 CDN 子域，用于图片加载（与 sns-na-i6 平行存在）
+DOMAIN-SUFFIX,edith.xiaohongshu.com # 小红书编辑器与内容管理接口，笔记编辑、封面上传等均依赖此域名
+DOMAIN-SUFFIX,store.xiaohongshu.com # 小红书商城系统入口，用于商品页加载与电商服务
+DOMAIN-SUFFIX,sns-na-i11.xhscdn.com # 小红书图像加载 CDN 节点，用于笔记内容中图片资源加载
+DOMAIN-SUFFIX,sns-na-i8.xhscdn.com # 小红书图像 CDN 域名，承载图文笔记中图片资源加载与分发任务
+DOMAIN-SUFFIX,sns-na-i4.xhscdn.com # 小红书内容分发 CDN 节点, 北美线路 I4，用于视频加载 
+DOMAIN-SUFFIX,sns-na-i3.xhscdn.com # 小红书内容分发 CDN 节点, 北美线路 I3，用于视频加载 
+DOMAIN-SUFFIX,sns-na-i2.xhscdn.com # 小红书内容分发 CDN 节点, 北美线路 I2，用于视频加载 
+DOMAIN-SUFFIX,sns-na-i1.xhscdn.com # 小红书内容分发 CDN 节点, 北美线路 I1，用于视频加载 
+IP-CIDR,115.227.40.106/32 # 小红书电商通信节点, 中国电信，浙江金华 
+IP-CIDR,222.73.33.13/32 # 小红书视频 CDN 节点, 中国电信，上海 
+IP-CIDR,180.153.82.67/32 # 小红书视频 CDN 节点, 中国电信，上海 
+IP-CIDR,61.170.100.69/32 # 小红书视频 CDN 节点, 中国电信，江苏常州 
+IP-CIDR,222.73.33.12/32 # 小红书视频 CDN 节点, 中国电信，上海 
+IP-CIDR,222.73.33.15/32 # 小红书视频 CDN 节点, 中国电信，上海 
+IP-CIDR,111.172.236.90/32 # 小红书视频 CDN 节点, 中国联通，山东青岛 
+IP-CIDR,61.170.100.67/32 # 小红书视频 CDN 节点, 华为云，江苏常州 
+IP-CIDR,114.80.252.202/32 # 小红书视频 CDN 节点, 中国电信，上海 
+IP-CIDR,222.73.33.9/32 # 小红书视频 CDN 节点, 百度云，上海 
+IP-CIDR,114.80.26.88/32 # 小红书视频 CDN 节点, 中国电信，上海青浦 
+IP-CIDR,61.170.100.68/32 # 小红书视频 CDN 节点, 华为云，江苏常州 
+IP-CIDR,115.223.25.191/32 # 小红书视频 CDN 节点, 中国电信，浙江杭州 
+IP-CIDR,114.80.252.212/32 # 小红书视频 CDN 节点, 中国电信，上海 
+IP-CIDR,61.170.66.199/32 # 小红书静态资源节点, 中国电信，江苏常州 
+IP-CIDR,47.97.192.58/32 # 小红书异常端口通信节点, 阿里云，浙江杭州 
+IP-CIDR,106.15.236.125/32 # 小红书直播服务节点, 阿里云，浙江杭州 
+IP-CIDR,1.13.111.166/32 # 小红书直播服务节点, 腾讯云，广东广州 
+IP-CIDR,121.46.45.31/32 # 小红书视频 CDN 节点, 中国联通，广东广州 
+IP-CIDR,222.73.33.11/32 # 小红书视频 CDN 节点, 百度 / 阿里共用，上海 
+IP-CIDR,101.132.183.67/32 # 小红书内容资源节点, 阿里云，浙江杭州 
+IP-CIDR,140.249.108.28/32 # 小红书视频 CDN 节点, 阿里云，北京 
+IP-CIDR,1.13.117.181/32 # 小红书 GSLB 服务节点, 腾讯云，广东广州 
+IP-CIDR,117.88.123.99/32 # 小红书主接口节点, 中国电信，江苏南京 
+IP-CIDR,101.227.133.99/32 # 小红书主站服务节点, 中国联通，上海 
+IP-CIDR,61.170.100.65/32 # 小红书视频 CDN 节点, 中国电信，江苏常州 
+
+# > Bilibili 相关域名
+
+DOMAIN-SUFFIX,bilibili.com # Bilibili 主站
+DOMAIN-SUFFIX,hdslb.com # Bilibili 静态资源与视频流
+DOMAIN-SUFFIX,acg.tv # Bilibili 旧版短链接域名
+DOMAIN-SUFFIX,bilivideo.com # Bilibili 视频内容分发与对象存储主域名
+DOMAIN-SUFFIX,member.bilibili.com # 哔哩哔哩用户中心域名，用于会员信息、账户管理与身份认证服务
+DOMAIN-SUFFIX,mall.bilibili.com # 哔哩哔哩会员购商城域名，用于加载商品详情与交易页面 
+DOMAIN-SUFFIX,upos-sz-mirror08c.bilvideo.com # 哔哩哔哩视频 CDN 加速节点
+DOMAIN-SUFFIX,api.vc.bilibili.com # Bilibili 小视频服务接口，用于加载 Story 模块与短视频内容 
+DOMAIN-SUFFIX,api.live.bilibili.com # Bilibili 直播服务接口，用于弹幕、直播间内容与互动数据加载 
+DOMAIN-SUFFIX,app.bilibili.com # Bilibili 主应用接口域名，提供首页内容、频道推荐等功能 
+DOMAIN-SUFFIX,api.bilibili.com # 哔哩哔哩主站核心接口，用于内容获取、用户交互与功能请求
+DOMAIN-SUFFIX,archive.biliimg.com # Bilibili 静态资源域名，用于加载历史图像与媒体内容
+DOMAIN-SUFFIX,mcdn.bilivideo.cn # 哔哩哔哩视频 CDN 域名，用于分发视频内容
+DOMAIN-SUFFIX,xy223x247x68x214xy.mcdn.bilivideo.cn # Bilibili 视频分发 CDN 节点（移动端专用）
+DOMAIN-SUFFIX,xy36x163x193x66xy.mcdn.bilivideo.cn # 哔哩哔哩视频 CDN 域名，分发高清视频内容
+DOMAIN-SUFFIX,aecj3mcuk4jou6cs.nexusedgeio.com # Bilibili 视频内容加速节点，托管于第三方 CDN 服务（NexusEdge）
+DOMAIN-SUFFIX,upos-sz-302ppio.bilivideo.com # Bilibili UPOS 上传/下载服务节点（深圳分区）
+DOMAIN-SUFFIX,xy183x94x183x71xy.mcdn.bilivideo.cn # Bilibili CDN 子域，疑似混淆节点，用于视频传输与请求分析
+DOMAIN-SUFFIX,upos-sz-mirrorcoso1.bilivideo.com # Bilibili 视频 CDN 镜像节点，用于深圳区域内容分发与资源加载 
+DOMAIN-SUFFIX,upos-sz-estgcos.bilivideo.com # 哔哩哔哩 CDN 节点（深圳区域），用于视频内容上传与分发（UP 主上传 / 点播资源）
+DOMAIN-SUFFIX,hw-v2-web-player-tracker.biliapi.net # 哔哩哔哩播放器行为追踪域名，用于收集网页播放器使用数据（行为分析与监控模块）
+DOMAIN-SUFFIX,cn-gddg-ct-01-10.bilivideo.com # 哔哩哔哩中国节点 CDN 域名（广东电信），用于内容分发与缓存服务（可能涉及 HTTPS 流量代理）
+DOMAIN-SUFFIX,grpc.biliapi.net # Bilibili 通用 gRPC 通道，承载用户行为与个性化内容请求
+DOMAIN-SUFFIX,app.biliapi.net # Bilibili App 级行为接口
+DOMAIN-SUFFIX,h​​w-v2-web-player-tracker.biliapi.net # Bilibili 网页播放器追踪接口，用于收集播放行为与观看数据
+DOMAIN-SUFFIX,upos-sz-mirrorcos.bilivideo.com # Bilibili 视频 CDN 节点，用于内容分发与资源镜像加载 
+DOMAIN-SUFFIX,upos-sz-estghw.bilivideo.com # Bilibili 视频 CDN 节点，用于内容分发与边缘资源加速 
+DOMAIN-SUFFIX,line3-h5-mobile-api.biligame.com # 哔哩哔哩游戏接口域名，用于移动端登录与游戏数据请求
+DOMAIN-SUFFIX,upos-sz-staticcos.bilivideo.com # Bilibili 视频存储 CDN 节点，用于静态资源加载（如封面图、字幕）
+DOMAIN-SUFFIX,upos-sz-mirrorzos.bilivideo.com # Bilibili 视频内容 CDN 节点，用于视频文件的加速分发与区域镜像
+DOMAIN-SUFFIX,upos-sz-estgoss.bilivideo.com # Bilibili UPOS 视频对象存储节点（深圳），用于视频文件分片与流媒体内容分发
+DOMAIN-SUFFIX,upos-sz-mirroralib.bilivideo.com # Bilibili UPOS 视频镜像节点（阿里云线路），用于视频缓存、加速与稳定性保障
+IP-CIDR,203.107.1.65/32 # 阿里云公共解析节点（AliDNS），用于域名 upos-sz-mirrorcos.bilivideo.com 的解析请求
+IP-CIDR,61.170.65.76/32 # Bilibili 静态内容 CDN 节点，对应域名 upos-sz-staticcos.bilivideo.com，用于分发视频与资源文件
+IP-CIDR,61.147.236.0/24 # 哔哩哔哩视频点播（VOD）m4s 分段流媒体 CDN 实际服务节点（/upgcxcode/*.m4s）
+
+# > Bilibili 行为分析服务域名（当前采用 ChinaMedia 路由策略）
+
+DOMAIN-SUFFIX,dataflow.biliapi.com # Bilibili 数据流日志接口域名，用于客户端事件上报与行为分析 
+DOMAIN-SUFFIX,data.bilibili.com # Bilibili 数据采集与分析接口，用于用户行为统计与日志上传 
+DOMAIN-SUFFIX,ali-web-player-tracker.biliapi.net # 哔哩哔哩播放器追踪接口，用于采集网页端播放行为、埋点与用户互动数据
+DOMAIN-SUFFIX,cm.bilibili.com # 哔哩哔哩客户端行为统计与事件上报域名，用于播放、点击、曝光等用户行为数据采集与推荐系统反馈
+
+# > 爱奇艺 相关域名
+
+DOMAIN-SUFFIX,iqiyi.com # 爱奇艺 主站
+DOMAIN-SUFFIX,iq.com # 爱奇艺国际版
+DOMAIN-SUFFIX,iqiyipic.com # 爱奇艺图片与封面资源 CDN 主域，用于视频封面、海报与推荐位图片加载
+DOMAIN-SUFFIX,pic0.iqiyipic.com # 爱奇艺图片 CDN 节点 0，用于视频封面与静态图片分发
+DOMAIN-SUFFIX,pic1.iqiyipic.com # 爱奇艺图片 CDN 节点 1，用于视频封面与静态图片分发
+DOMAIN-SUFFIX,pic2.iqiyipic.com # 爱奇艺图片 CDN 节点 2，用于视频封面与静态图片分发
+DOMAIN-SUFFIX,pic3.iqiyipic.com # 爱奇艺图片 CDN 节点 3，用于视频封面与静态图片分发
+
+# > 苏宁体育 / PP 体育 相关域名
+
+DOMAIN-SUFFIX,ssports.com # 苏宁体育（PP 体育）官方平台域名，提供体育赛事内容、直播与相关服务
+DOMAIN-SUFFIX,show.ssports.com # 苏宁体育赛事展示与直播页面，用于体育内容与专题展示
+DOMAIN-SUFFIX,data.ssports.com # 苏宁体育赛事数据与比分统计服务，用于比赛数据与技术统计展示
+
+# > 腾讯视频（Tencent Video）相关域名
+
+DOMAIN-SUFFIX,v.qq.com # 腾讯视频主域名，用于 Web 端视频内容访问与页面加载
+DOMAIN-SUFFIX,video.qq.com # 腾讯视频内容服务域名，用于视频播放页、接口调用与内容分发
+DOMAIN-SUFFIX,vm.gtimg.cn # 腾讯视频媒体资源 CDN 域名，用于视频切片、封面与播放相关静态资源加载
+DOMAIN-SUFFIX,vi.gtimg.cn # 腾讯视频图片与静态资源 CDN 域名，用于封面图、缩略图与 UI 资源分发
+DOMAIN-SUFFIX,om.gtimg.cn # 腾讯视频运营与页面静态资源 CDN，用于活动页与展示资源加载
+DOMAIN-SUFFIX,tlivesource.com # 腾讯云直播分发源域名，用于直播流媒体数据调度与内容分发
+
+# > 腾讯 QQ 音乐
+
+DOMAIN-SUFFIX,y.qq.com # QQ 音乐官方域名，用于音乐播放入口、榜单、歌单浏览及相关音乐内容访问
+DOMAIN-SUFFIX,adcdn6.tencentmusic.com # 腾讯音乐广告内容分发 CDN，用于音频/客户端场景下的广告素材与推广资源加载
+DOMAIN-SUFFIX,y.tencentmusic.com # 腾讯音乐官方主站域名，用于音乐内容入口、歌单浏览、在线播放与平台访问
+DOMAIN-SUFFIX,tmecp.tencentmusic.com # 腾讯音乐娱乐集团核心业务与平台控制接口域名，用于 QQ 音乐等产品的服务调度、配置与权限校验
+
+# > 腾讯全民 K 歌（WeSing）
+
+DOMAIN-SUFFIX,kg.qq.com # 腾讯全民 K 歌官方域名，用于在线 K 歌、音频内容播放、作品浏览与社区互动服务
+
+# > 酷我音乐（Kuwo Music）
+
+DOMAIN-SUFFIX,kuwo.cn # 酷我音乐主域
+DOMAIN-SUFFIX,kuwo.com # 酷我音乐备用域
+DOMAIN-SUFFIX,kwimgs.com # 酷我音乐 CDN
+
+# > Fan 直播伴侣软件下载与分发服务
+
+DOMAIN-SUFFIX,tfogc.com # Fan 直播伴侣官方域名，用于软件下载安装、更新分发与产品相关资源访问
+
+# > 当贝（Dangbei）智能电视应用与内容分发平台
+
+DOMAIN-SUFFIX,dangbei.com # 当贝智能电视应用与内容分发平台官方域名，用于电视应用市场访问、软件下载与内容服务
+DOMAIN-SUFFIX,jt5.dangbei.net # 当贝应用与内容分发节点，用于电视端应用包、更新资源与相关内容分发
+DOMAIN-SUFFIX,yq.qun7.com # 当贝官方设备辅助与用户服务域名，用于遥控器找回、设备绑定及相关功能支持
+DOMAIN-SUFFIX,ccc-x.jd.com # 当贝京东旗舰店网站域名，用于品牌官方旗舰店页面访问与相关服务
+DOMAIN-SUFFIX,webpic.dangbei.net # 当贝图片与前端静态资源 CDN 域名，用于应用封面、海报、UI 资源与页面素材加载
+DOMAIN-SUFFIX,jt.dangbei.net # 当贝应用与内容分发服务域名，用于电视端应用资源、接口请求及相关内容加载
+DOMAIN-SUFFIX,mallpic.dangbei.net # 当贝商城图片与静态资源分发域名，用于商品图片、宣传素材及商城页面资源加载
+
+# > 酷狗音乐（Kugou Music）
+
+DOMAIN-SUFFIX,kugou.com # 酷狗音乐官方主站域名，用于音乐播放、搜索、榜单、歌单及相关音乐内容访问
+DOMAIN-SUFFIX,join.tencentmusic.com # 腾讯音乐娱乐集团官方招聘与加入页面，用于人才招聘、岗位信息展示与企业雇主品牌访问
+DOMAIN-SUFFIX,webimg.kgimg.com # 酷狗音乐前端图片与静态资源 CDN，用于网页端封面图、歌单图片与 UI 资源加载
+DOMAIN-SUFFIX,s3fx.kgimg.com # 酷狗音乐音效与播放器特效资源 CDN，用于播放音效、界面动效与相关多媒体资源加载
+DOMAIN-SUFFIX,s4fx.kgimg.com # 酷狗音乐音效与特效资源 CDN，用于播放器音效、界面动效与相关多媒体资源加载
+DOMAIN-SUFFIX,p3fx.kgimg.com # 酷狗音乐特效与多媒体资源分发节点，用于音效组件、动画与播放器视觉效果
+DOMAIN-SUFFIX,fxbssdl.kgimg.com # 酷狗音乐资源下载与分发节点，用于音效包、特效资源与相关组件文件下载
+DOMAIN-SUFFIX,tui.kugou.com # 酷狗音乐官方推广与活动入口域名，用于音乐推荐、活动页面与内容推广展示
+
+# > 腾讯音乐娱乐集团（Tencent Music Entertainment）
+
+DOMAIN-SUFFIX,tencentmusic.com # 腾讯音乐娱乐集团官方网站主域名，用于集团信息、产品矩阵展示与企业相关内容访问
+
+# > 土豆网（Tudou）视频平台
+
+DOMAIN-SUFFIX,tudou.com # 土豆网官方域名，用于视频点播、内容访问与用户界面服务
+
+# > 芒果 TV（MGTV）视频平台
+
+DOMAIN-SUFFIX,mgtv.com # 芒果 TV 官方主域名，用于视频点播、直播、节目页面与用户访问入口
+DOMAIN-SUFFIX,hitv.com # 芒果 TV 图片与静态资源 CDN 主域，用于封面图、剧照与页面素材分发
+DOMAIN-SUFFIX,static.hitv.com # 芒果 TV 前端静态资源 CDN，用于 JS、CSS 与页面基础资源加载
+DOMAIN-SUFFIX,cmsimgali.hitv.com # 芒果 TV 内容管理系统图片 CDN（阿里云线路），用于节目封面与运营素材分发
+DOMAIN-SUFFIX,img1.hitv.com # 芒果 TV 图片 CDN 节点 1，用于视频封面与静态图片加载
+DOMAIN-SUFFIX,img2.hitv.com # 芒果 TV 图片 CDN 节点 2，用于视频封面与静态图片加载
+DOMAIN-SUFFIX,img3.hitv.com # 芒果 TV 图片 CDN 节点 3，用于视频封面与静态图片加载
+DOMAIN-SUFFIX,img4.hitv.com # 芒果 TV 图片 CDN 节点 4，用于视频封面与静态图片加载
+
+# > 乐视视频（LeTV / Le.com）视频平台
+
+DOMAIN-SUFFIX,le.com # 乐视视频官方主站域名，用于视频内容浏览、点播服务与页面访问
+DOMAIN-SUFFIX,joy.cn # 乐视视频旧域
+DOMAIN-SUFFIX,tv.le.com # 乐视视频电视端与视频播放入口域名，用于视频播放页与内容服务接入
+DOMAIN-SUFFIX,letvcdn.com # 乐视视频官方静态资源与内容分发 CDN 域名，用于页面脚本、样式与多媒体资源加载
+DOMAIN-SUFFIX,wstatic.letvcdn.com # 乐视视频 Web 端静态资源服务域名，用于页面脚本、样式表与基础前端资源加载
+DOMAIN-SUFFIX,fe-go.letv.com # 乐视视频前端工程与页面逻辑服务域名，用于 Web 端页面功能、交互逻辑与前端模块加载
+DOMAIN-SUFFIX,dc.letv.com # 乐视视频数据采集与统计服务域名，用于页面访问统计、基础运营数据与服务调度分析
+DOMAIN-SUFFIX,ark.letv.com # 乐视视频核心播放与业务支撑服务域名，用于视频播放架构、能力调度及相关内部服务调用
+DOMAIN-SUFFIX,job.le.com # 乐视集团官方招聘平台域名，用于岗位发布、人才招聘、简历投递与雇主信息展示
+DOMAIN-SUFFIX,letv.com # 乐视集团核心业务域名，用于视频平台、内容服务及集团相关业务入口
+DOMAIN-SUFFIX,g3.letv.cn # 乐视视频国内加速与内容分发节点，用于视频播放与多媒体资源加载
+DOMAIN-SUFFIX,lemall.com # 乐视商城官方域名，用于电商销售、硬件产品与相关服务访问
+DOMAIN-SUFFIX,g3.letv.cn # 乐视视频国内内容分发与加速节点，用于视频播放与多媒体资源加载
+
+# > CIBN 互联网电视（OTT）视频播放与内容分发服务
+
+DOMAIN-SUFFIX,ott.cibntv.net # CIBN 互联网电视（OTT）官方内容服务域名，用于视频播放、内容分发与终端电视业务接入
+
+# > 搜狐视频（Sohu Video）与综合门户服务
+
+DOMAIN-SUFFIX,sohu.com # 搜狐集团主域名，涵盖门户资讯、搜狐视频、新闻、社区与综合互联网服务
+DOMAIN-SUFFIX,tv.sohu.com # 搜狐视频官方子域，用于视频在线播放、节目页面与相关视频内容服务
+DOMAIN-SUFFIX,css.tv.itc.cn # 搜狐视频 Web 端 CSS 样式资源域名，用于页面样式与布局加载
+DOMAIN-SUFFIX,js.tv.itc.cn # 搜狐视频 Web 端 JavaScript 脚本资源域名，用于播放器逻辑、页面交互与功能初始化
+
+# > 56 视频（56.com）内容分发与播放服务
+
+DOMAIN-SUFFIX,56.com # 56 视频官方主域名，用于视频内容浏览、点播与平台入口访问
+DOMAIN-SUFFIX,sp.qf.56.com # 56 视频流媒体播放与内容分发服务域名，用于视频请求、播放控制与资源加载
+
+# > 网易云音乐（NetEase Cloud Music）
+
+DOMAIN-SUFFIX,netease.com # 网易主站，NetEase 主域
+DOMAIN-SUFFIX,music.163.com # 网易云音乐主站
+DOMAIN-SUFFIX,interface.music.163.com # 网易云音乐 API 接口服务
+DOMAIN-SUFFIX,interface3.music.163.com # 网易云音乐 API 接口服务
+DOMAIN-SUFFIX,api.iplay.163.com # 网易云音乐相关 API
+DOMAIN-SUFFIX,apm.music.163.com # 网易云音乐 APM 监控上报
+DOMAIN-SUFFIX,apm3.music.163.com # 网易云音乐 APM 监控上报
+DOMAIN-SUFFIX,music.126.net # 网易云音乐资源 CDN
+
+# > NetEase LOOK 直播 / 内容服务（基于 163.com）
+
+DOMAIN-SUFFIX,look.163.com # 网易 LOOK 直播 / 音乐视频推广主域名，用于用户访问相关页面与内容服务
+DOMAIN-SUFFIX,api.look.163.com # LOOK 内容服务 API 接口域名，用于页面功能调用与数据获取
+DOMAIN-SUFFIX,crush.163.com # 网易内容分发辅助域，用于图像、视频等资源加载与静态资源分发
+DOMAIN-SUFFIX,iplay.163.com # 网易相关音视频推广内容页与入口域名（常与 LOOK 直播关联）
+DOMAIN-SUFFIX,netease.com # NetEase 公司主体域名，用于主站访问与业务入口
+
+# > 网易天音 AI 音乐创作平台
+
+DOMAIN-SUFFIX,tianyin.music.163.com # 网易天音 AI 音乐创作平台域名，用于在线音乐创作服务
+DOMAIN-SUFFIX,tianyin.163.com # 网易天音官方网站入口域名，用于服务跳转与访问
+
+# > PPTV（PP视频） 官方视频平台与内容分发服务
+
+DOMAIN-SUFFIX,pptv.com # PPTV 主域名，用于在线视频播放、直播频道、点播内容与用户访问服务  
+DOMAIN-SUFFIX,pptv.net # PPTV 视频内容分发与静态资源 CDN 主域，用于视频文件、封面图与媒体资源加速分发
+DOMAIN-SUFFIX,api.pptv.com # PPTV 核心业务 API 接口域名，用于视频播放、用户信息与请求调度  
+DOMAIN-SUFFIX,media.pptv.com # PPTV 媒体资源服务域名，用于封面、片段、缩略图等媒体资产分发  
+DOMAIN-SUFFIX,cdn.pptv.com # PPTV 静态资源 CDN 域名，用于加速脚本、样式、图片等内容加载  
+DOMAIN-SUFFIX,video.pptv.com # PPTV 视频内容访问域名，用于视频流服务与播放功能
+DOMAIN-SUFFIX,v-img.pplive.cn # PPTV 媒体内容静态资源加载子域，用于视频封面图、缩略图等图像资源访问  
+DOMAIN-SUFFIX,img24.pplive.cn # PPTV 多媒体静态资源 CDN 子域，用于静态图像、页面媒体素材分发  
+DOMAIN-SUFFIX,img3.pplive.cn # PPTV 静态图像 CDN 子域，用于封面图、广告位素材及页面媒体资源
+DOMAIN-SUFFIX,player.pplive.cn # PPTV 媒体播放入口与播放器资源域名（常见前端播放功能调用）
+DOMAIN-SUFFIX,static.pplive.cn # PPTV 静态资源域名，用于脚本、样式及公共资源加载
+DOMAIN-SUFFIX,osswc.pplive.cn # PPTV 媒体资源 CDN 子域，用于视频/页面媒体文件的静态资源分发
+DOMAIN-SUFFIX,kefu.pptv.com # PPTV 客服/帮助页面入口，用于用户支持服务访问
+DOMAIN-SUFFIX,article.pptv.com # PPTV 平台文章/资讯内容域名，用于展示帮助文档与内容相关文章
+
+# > 蜻蜓FM（Qingting FM） 在线音频与广播平台
+
+DOMAIN-SUFFIX,qingting.fm # 蜻蜓FM 主站域名，用于在线收听广播、播客、音乐与音频内容
+DOMAIN-SUFFIX,tingapi.com # 蜻蜓FM 移动应用 / Web API 接口域名，用于音频数据请求与客户端服务交互
+DOMAIN-SUFFIX,open.qingting.fm # 蜻蜓FM 开放平台域名，用于开放 API / 广播接入服务接入与第三方合作方案
+
+# > 新浪微博（Weibo） 相关域名
+
+DOMAIN-SUFFIX,weibo.com # 新浪微博主域名，用于微博平台内容访问、用户主页及社交互动服务
+DOMAIN-SUFFIX,weibo.cn # 新浪微博国内备用域名，用于微博内容访问与登录入口
+DOMAIN-SUFFIX,weibocdn.com # 微博媒体资源 CDN 主域，用于加速图片/视频等静态多媒体资源分发
+DOMAIN-SUFFIX,f.video.weibocdn.com # 微博视频静态分发子域，用于视频文件访问与播放
+DOMAIN-SUFFIX,dm.video.weibocdn.com # 微博视频多媒体资源子域（如弹幕/投放视频）
+DOMAIN-SUFFIX,live.video.weibocdn.com # 微博直播视频分发子域，用于直播视频推流/播放
+DOMAIN-SUFFIX,video.weibocdn.com # 通用微博视频 CDN 子域，用于视频片段及播放支持
+DOMAIN-SUFFIX,tu.video.weibocdn.com # 微博图像/视频资源 CDN 子域（静态视频/图片存取）
+DOMAIN-SUFFIX,fb.video.weibocdn.com # 微博多媒体资源加速 CDN 子域（与视频有关）
+DOMAIN-SUFFIX,gslb.video.weibocdn.com # 视频全局负载均衡（GSLB）子域，用于智能调度视频节点
+DOMAIN-SUFFIX,img.weibocdn.com # 微博通用图片/CDN 子域，用于图片资源加速
+DOMAIN-SUFFIX,simg.weibo.com # 微博主体图像托管域，用于用户头像/图片展示
+DOMAIN-SUFFIX,api.weibo.com # 微博 API 接口域，用于客户端/页面数据请求和交互
+DOMAIN-SUFFIX,rm.api.weibo.com # 微博推荐/资源调度类 API 子域
+DOMAIN-SUFFIX,mediadata.api.weibo.com # 微博媒体数据 API 子域（视频/图片描述/列表等）
+DOMAIN-SUFFIX,brandvideo.biz.weibo.com # 企业视频/商业视频托管子域
+DOMAIN-SUFFIX,s.weibo.com # 微博轻应用/短链接入口域，用于内容跳转/搜索等
+DOMAIN-SUFFIX,bootpreload.uve.weibo.com # 微博启动预加载资源域（UI 资源/性能优化） 
+DOMAIN-SUFFIX,datacollection.uve.weibo.com # 用于 UI 组件数据收集与性能指标支持,用于加载可视化资源等
+DOMAIN-SUFFIX,tvax1.sinaimg.cn # 新浪微博/新浪图床图像 CDN 子域，用于微博/新浪托管的图片资源快速加载
+DOMAIN-SUFFIX,tvax2.sinaimg.cn # 新浪微博/新浪图床图像 CDN 子域，用于微博/新浪托管的图片资源快速加载
+DOMAIN-SUFFIX,tvax3.sinaimg.cn # 新浪微博/新浪图床图像 CDN 子域，用于微博/新浪托管的图片资源快速加载
+DOMAIN-SUFFIX,tvax4.sinaimg.cn # 新浪微博/新浪图床图像 CDN 子域，用于微博/新浪托管的图片资源快速加载
+DOMAIN-SUFFIX,tva1.sinaimg.cn # 新浪微博图像 CDN 子域，用于微博图片与静态媒体内容分发
+DOMAIN-SUFFIX,tva2.sinaimg.cn # 新浪微博图像 CDN 子域，用于微博动态图像与 UI 图片资源分发
+DOMAIN-SUFFIX,tva3.sinaimg.cn # 新浪微博图像 CDN 子域，用于微博图像资源加速与图片访问
+DOMAIN-SUFFIX,tva4.sinaimg.cn # 新浪微博图像 CDN 子域，用于微博内容的静态图像资源托管与加载
+DOMAIN-SUFFIX,g.us.sinaimg.cn # 新浪微博图像 CDN 子域，用于图片媒体内容分发与加载
+DOMAIN-SUFFIX,livephoto.us.sinaimg.cn # 新浪 img 静态图片托管 CDN 子域，用于新浪微博/相关服务的图片资源加载
+DOMAIN-SUFFIX,js.t.sinajs.cn # 新浪 sinajs.cn JavaScript 脚本资源子域，用于加载新浪微博/门户前端静态脚本资源
+DOMAIN-SUFFIX,passport.sinaimg.cn # 新浪图像静态资源 CDN 子域，用于微博/新浪体系内的图像加载与资源访问
+
+# > 喜马拉雅 (Ximalaya) 在线音频与播客平台
+
+DOMAIN-SUFFIX,ximalaya.com # 喜马拉雅主站域名，用于音频内容访问、在线播客、有声书与音频展示
+DOMAIN-SUFFIX,himalaya.com # 喜马拉雅国际版主站域名，用于全球音频与播客内容访问
+DOMAIN-SUFFIX,open.ximalaya.com # 喜马拉雅开放平台域名，用于开放接入 API 与服务调用（开放平台接口文档/接入支持） 
+DOMAIN-SUFFIX,api.ximalaya.com # 喜马拉雅 API 接口域名（常见于客户端与服务端通信请求）
+DOMAIN-SUFFIX,media.ximalaya.com # 喜马拉雅多媒体资源分发子域，用于音频/静态资源 CDN 加速
+DOMAIN-SUFFIX,cdn.ximalaya.com # 假定性 CDN 静态资源加速域名，用于音频内容包/图片元数据加载
+DOMAIN-SUFFIX,imagev2.xmcdn.com # 喜马拉雅音频平台静态图像 CDN 子域，用于封面、节目缩略图等图片资源分发
+DOMAIN-SUFFIX,xmcdn.com # 喜马拉雅媒体资源 CDN 主域，用于音频封面、图片、静态资源加载
+DOMAIN-SUFFIX,s1.xmcdn.com # 喜马拉雅音频平台静态媒体与资源分发子域，用于音频封面、图片、静态资源加载
+DOMAIN-SUFFIX,s2.xmcdn.com # 喜马拉雅音频平台静态媒体与资源分发子域，用于音频封面、图片、静态资源加载
+DOMAIN-SUFFIX,ws.xmcdn.com # 喜马拉雅音频平台静态媒体与资源分发子域，用于音频封面、图片、静态资源加载
+
+# > 快手（Kuaishou）短视频与直播平台
+
+DOMAIN-SUFFIX,kuaishou.com # 快手官方主域名，用于短视频浏览、直播内容访问与平台服务入口
+DOMAIN-SUFFIX,yximgs.com # 快手媒体与静态资源 CDN 主域，用于视频封面、图片与多媒体资源分发
+DOMAIN-SUFFIX,static.yximgs.com # 快手前端静态资源子域，用于页面脚本、样式与客户端资源加载
+DOMAIN-SUFFIX,ksyun.com # 金山云（Kingsoft Cloud）基础设施域名，快手核心云服务提供商之一，用于内容分发与云计算资源支撑
+DOMAIN-SUFFIX,ks-cdn.com # 金山云 CDN 服务域名，用于视频流、静态资源与多媒体内容加速分发
+DOMAIN-SUFFIX,ks-live.com # 金山云直播服务域名，用于实时流媒体推流与播放加速
+DOMAIN-SUFFIX,gifshow.com # 快手历史品牌与核心业务域名，部分客户端接口与服务仍依赖该域
+DOMAIN-SUFFIX,api.gifshow.com # 快手核心 API 接口域名，用于客户端通信、用户数据请求与业务功能调用
+DOMAIN-SUFFIX,live.kuaishou.com # 快手直播服务入口域名，用于直播间访问与互动功能支持
+DOMAIN-SUFFIX,p1.a.yximgs.com # 快手媒体资源 CDN 子域，用于图像、封面及页面多媒体资源加载
+DOMAIN-SUFFIX,pull.yximgs.com # 快手直播拉流服务主域，用于实时音视频流传输与播放调度
+DOMAIN-SUFFIX,ty-origin.pull.yximgs.com # 快手直播源站子域，用于直播源内容分发与边缘节点回源通信
+DOMAIN-SUFFIX,m.kuaishou.com # 快手移动端网页服务域名，用于移动访问与轻量化内容浏览
+DOMAIN-SUFFIX,ksapisrv.com # 快手核心业务 API 服务域名，用于内容、直播、电商等接口调用
+DOMAIN-SUFFIX,static.kuaishou.com # 快手平台静态资源服务域名，用于脚本、样式与前端组件加载
+DOMAIN-SUFFIX,e.kuaishou.com # 快手电商服务子域名，用于商家系统、订单与履约相关服务
+DOMAIN-SUFFIX,api.e.kuaishou.com # 快手电商业务 API 接口域名，用于订单与商品数据交互
+DOMAIN-SUFFIX,kuaishouzt.com # 快手专题页与推广活动相关域名，用于活动与内容跳转
+DOMAIN-SUFFIX,kwai.com # 快手海外品牌 Kwai 官方域名，用于国际版服务入口
+DOMAIN-SUFFIX,kwaicdn.com # 快手内容分发 CDN 域名，用于视频、图片与静态资源加载 
+DOMAIN-SUFFIX,zhaopin.kuaishou.cn # 快手官方招聘子域名，用于岗位发布、校园招聘、社会招聘信息展示及人才投递服务
+
+# > AcFun（A站） 视频平台与媒体资源服务
+
+DOMAIN-SUFFIX,aixifan.com # AcFun 官方主域名，用于视频平台访问、用户服务与社区内容
+DOMAIN-SUFFIX,cdnfile.aixifan.com # AcFun 媒体资源 CDN 子域，用于视频文件、封面图及前端静态资源分发
+DOMAIN-SUFFIX,acfun.cn # AcFun 官方主域名（国内站点），用于视频浏览、弹幕互动与社区内容访问
+DOMAIN-SUFFIX,cdn.aixifan.com # AcFun 媒体资源 CDN 域名，用于视频文件、封面图及前端静态资源分发与加速
+
+# > 华数 TV（Wasu）在线视频与数字电视服务平台
+
+DOMAIN-SUFFIX,wasu.cn # 华数数字电视与在线视频服务主域名，提供 IPTV、点播内容及相关媒体分发服务
+DOMAIN-SUFFIX,ups.5g.wasu.tv # 华数 TV 5G 专线加速子域，用于视频播放加速、流媒体分发与网络优化调度
+DOMAIN-SUFFIX,sp.5g.wasu.tv # 华数 TV 5G 视频播放与流媒体分发子域，用于内容拉流、视频播放与加速调度
+
+# > 电影网（1905.com）相关域名
+
+DOMAIN-SUFFIX,1905.com # 电影网官方主域名，用于电影资讯浏览、影片播放、节目内容访问与相关媒体服务
+DOMAIN-SUFFIX,m1905.cn # 1905 电影网移动端主域名，用于手机端页面访问与视频内容加载
+DOMAIN-SUFFIX,image13.m1905.cn # 1905 电影网图片 CDN 子域，用于封面图、剧照与页面素材分发
+DOMAIN-SUFFIX,image14.m1905.cn # 1905 电影网图片 CDN 子域，用于封面图、剧照与页面素材分发
+DOMAIN-SUFFIX,profile.m1905.com # 1905 电影网用户资料与账户中心接口域名，用于个人信息、账户设置与会员数据加载
+
+# > 风行网（Funshion）在线视频平台域名
+
+DOMAIN-SUFFIX,fun.tv # 风行网官方主域名，用于视频点播、影视内容浏览与在线播放服务
+DOMAIN-SUFFIX,pub.funshion.com # 风行网公共资源发布域名，用于页面脚本、配置文件与前端静态资源加载
+DOMAIN-SUFFIX,img.funshion.com # 风行网图片与媒体资源 CDN 域名，用于封面图、剧照与页面图像加载
+DOMAIN-SUFFIX,img1.funshion.com # 风行网图片 CDN 子域 1，用于图像资源分发与访问加速
+DOMAIN-SUFFIX,img2.funshion.com # 风行网图片 CDN 子域 2，用于图像资源分发与访问加速
+DOMAIN-SUFFIX,mgc.funshion.com # 风行网“橙星梦工厂”AI创作平台域名，用于承载AI图片、AI视频、AI小说等内容生成与互动功能服务
+DOMAIN-SUFFIX,jobproxy.funshion.com # 风行网业务代理与接口转发服务域名，用于客户端任务调度、接口请求代理与后台通信服务
+
+# > 虾米音乐（Xiami Music）已停服历史服务域名
+
+DOMAIN-SUFFIX,xiami.com # 虾米音乐官方主域名（已停服），曾用于在线音乐播放、歌单浏览、用户账户与社区内容访问
+
+# > 懒人听书（有声阅读与音频内容平台）
+
+DOMAIN-SUFFIX,lrts.me # 懒人听书官方主域名，用于提供有声小说、广播剧、电台节目与知识类音频内容播放及会员服务
+DOMAIN-SUFFIX,assets.lrts.me # 懒人听书静态资源与媒体文件分发子域，用于图片、音频封面与前端资源加载
+DOMAIN-SUFFIX,headpic.lrts.me # 懒人听书头像与图片资源子域，用于用户头像与封面图加载
+DOMAIN-SUFFIX,display.wting.info # 懒人听书内容推荐与页面展示域名，用于首页轮播图、专题推荐素材与活动内容加载
+
+# > 历史FM 播客音频平台
+
+DOMAIN-SUFFIX,lishi.fm # 历史FM 音频播客平台主域名，用于承载历史类节目播放、专辑订阅、内容分发与用户访问服务
+
+# > Mudu.TV（目睹直播）资源与通信域名
+
+DOMAIN-SUFFIX,msg-ws.mudu.tv # 目睹直播消息通信域名，用于直播间弹幕、评论与互动消息通信
+DOMAIN-SUFFIX,static.mudu.tv # 目睹直播静态资源域名，用于加载前端 JS/CSS 等页面内容
+
+# > 西瓜视频（字节跳动旗下视频平台）
+
+DOMAIN-SUFFIX,ixigua.com # 西瓜视频主站域名，用于承载短视频播放、内容分发、创作者平台与用户互动等核心服务
+
+# > 优酷视频内容分发服务
+
+DOMAIN-SUFFIX,youku.com # 优酷视频主站与内容分发域名，用于视频播放、静态资源加载与媒体内容调度
