@@ -3,7 +3,7 @@
 #!category=通用模块
 
 [URL Rewrite]
-^https?:\/\/raw\.githubusercontent\.com\/7-yearsold\/clash-rules\/(?:refs\/heads\/)?main\/github-private\.sgmodule https://github-private.com/install/7-yearsold/Surge/main/Sgmodule/github-private.sgmodule 302
+^https?:\/\/raw\.githubusercontent\.com\/7-yearsold\/clash-rules\/(?:refs\/heads\/)?main\/github-private\.sgmodule https://github-private.com/7-yearsold/Surge/main/Sgmodule/github-private.sgmodule 302
 
 [MITM]
 hostname = %APPEND% github-private.com:0
