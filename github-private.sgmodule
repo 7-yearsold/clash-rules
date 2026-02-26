@@ -9,4 +9,4 @@
 github= type=http-request,pattern=^https?:\/\/github-private\.com,script-path=https://raw.githubusercontent.com/7-yearsold/clash-rules/main/input.js,requires-body=0,script-update-interval=0
 
 [MITM]
-hostname = %APPEND% github-private.com:0
+hostname = %APPEND% github-private.com:0, a.egis:0
