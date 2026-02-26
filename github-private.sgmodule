@@ -1,0 +1,9 @@
+#!name=Github-Private
+#!desc=[2026/2/15] 仅保留搜索功能
+#!category=通用模块
+
+[Map Local]
+
+
+[MITM]
+hostname = %APPEND% github-private.com:0
