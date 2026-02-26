@@ -1,1 +1,81 @@
-var _0xaea81a=_0x5a16;function _0x96a5(){var _0x31e06c=['0\x201=2\x203($4.5),6=`7:','7703800GdcjVa','1733bKrPWn','replace','1784UhBwnJ','66077UcmayW','const|reqUrl|new|URL|request|url|newUrl|https','7333248rIbXee','17037730YsVgws','split','9PevRzM','9170147EyYODu','9468KmMTbk','8FMBLUM','1740JUkTWJ','1424MeeRJs'];_0x96a5=function(){return _0x31e06c;};return _0x96a5();}function _0x5a16(_0x2063ef,_0x19c25d){_0x2063ef=_0x2063ef-0x14b;var _0x96a572=_0x96a5();var _0x5a163a=_0x96a572[_0x2063ef];return _0x5a163a;}(function(_0x291d47,_0x522803){var _0x472764=_0x5a16,_0x552edb=_0x291d47();while(!![]){try{var _0x34ee07=-parseInt(_0x472764(0x14f))/0x1*(parseInt(_0x472764(0x151))/0x2)+parseInt(_0x472764(0x159))/0x3*(-parseInt(_0x472764(0x14c))/0x4)+-parseInt(_0x472764(0x14e))/0x5+parseInt(_0x472764(0x154))/0x6+-parseInt(_0x472764(0x158))/0x7*(-parseInt(_0x472764(0x15a))/0x8)+-parseInt(_0x472764(0x157))/0x9*(-parseInt(_0x472764(0x155))/0xa)+-parseInt(_0x472764(0x152))/0xb*(-parseInt(_0x472764(0x14b))/0xc);if(_0x34ee07===_0x522803)break;else _0x552edb['push'](_0x552edb['shift']());}catch(_0x21c88b){_0x552edb['push'](_0x552edb['shift']());}}}(_0x96a5,0xdaf75),eval(function(_0x87a8d,_0x55c563,_0x2e5fdc,_0xd8d5fd,_0x434db0,_0x1917a6){var _0x6525f0=_0x5a16;_0x434db0=String;if(!''['replace'](/^/,String)){while(_0x2e5fdc--)_0x1917a6[_0x2e5fdc]=_0xd8d5fd[_0x2e5fdc]||_0x2e5fdc;_0xd8d5fd=[function(_0x1e1cdb){return _0x1917a6[_0x1e1cdb];}],_0x434db0=function(){return'\x5cw+';},_0x2e5fdc=0x1;};while(_0x2e5fdc--)if(_0xd8d5fd[_0x2e5fdc])_0x87a8d=_0x87a8d[_0x6525f0(0x150)](new RegExp('\x5cb'+_0x434db0(_0x2e5fdc)+'\x5cb','g'),_0xd8d5fd[_0x2e5fdc]);return _0x87a8d;}(_0xaea81a(0x14d),0x8,0x8,_0xaea81a(0x153)[_0xaea81a(0x156)]('|'),0x0,{})));
+(function () {
+    try {
+        function _x(a, b) {
+            return a ^ b;
+        }
+
+        function _b64(s) {
+            return typeof btoa !== "undefined"
+                ? btoa(s)
+                : Buffer.from(s, "binary").toString("base64");
+        }
+
+        function _db64(s) {
+            return typeof atob !== "undefined"
+                ? atob(s)
+                : Buffer.from(s, "base64").toString("binary");
+        }
+
+        function _enc(str) {
+            let r = "";
+            for (let i = 0; i < str.length; i++) {
+                r += String.fromCharCode(_x(str.charCodeAt(i), 7));
+            }
+            return _b64(r);
+        }
+
+        function _dec(str) {
+            let t = _db64(str);
+            let r = "";
+            for (let i = 0; i < t.length; i++) {
+                r += String.fromCharCode(_x(t.charCodeAt(i), 7));
+            }
+            return r;
+        }
+
+        const _S = [
+            _enc("url"),
+            _enc("headers"),
+            _enc("read"),
+            _enc("lynn_github_token"),
+            _enc("Authorization"),
+            _enc("token "),
+            _enc("Host"),
+            _enc("raw.githubusercontent.com"),
+            _enc("Cookie"),
+            _enc("Referer")
+        ];
+
+        function _G(i) {
+            return _dec(_S[i]);
+        }
+
+        const _req = new URL($request[_G(0)]);
+        const _newUrl =
+            _enc("https://raw.githubusercontent.com") &&
+            _dec(_enc("https://raw.githubusercontent.com")) +
+                _req.pathname +
+                _req.search;
+
+        const _token = $persistentStore[_G(2)](_G(3)) || "";
+
+        const _headers = (function () {
+            const h = {
+                ...$request[_G(1)],
+                [_G(4)]: _G(5) + _token,
+                [_G(6)]: _G(7)
+            };
+            return h;
+        })();
+
+        delete _headers[_G(8)];
+        delete _headers[_G(9)];
+
+        $done({
+            url: _newUrl,
+            headers: _headers
+        });
+    } catch (e) {
+        $done({});
+    }
+})();
