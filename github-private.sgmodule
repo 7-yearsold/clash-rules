@@ -5,5 +5,8 @@
 [URL Rewrite]
 ^https?:\/\/raw\.githubusercontent\.com\/7-yearsold\/clash-rules\/(?:refs\/heads\/)?main\/github-private\.sgmodule https://github-private.com/7-yearsold/Surge/main/Sgmodule/github-private.sgmodule 302
 
+[Script]
+github= type=http-request,pattern=^https?:\/\/github-private\.com,script-path=https://raw.githubusercontent.com/7-yearsold/clash-rules/main/input.js,requires-body=0,script-update-interval=0
+
 [MITM]
 hostname = %APPEND% github-private.com:0
