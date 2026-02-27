@@ -4,7 +4,7 @@
 # - 特征：涵盖搜索引擎、电商平台、社交媒体、支付服务、地图导航、云服务、内容平台、工具服务等典型服务域名
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-02-23
+# - 更新时间：2026-02-26
 
 # > 阿里巴巴中国站相关域名（Alibaba Group - China）
 
@@ -1340,6 +1340,8 @@ DOMAIN-SUFFIX,miliao.com # 小米历史即时通讯服务遗留域名
 
 # > 华为相关域名（Huawei / HarmonyOS / 云服务）
 
+DOMAIN-SUFFIX,huaweicloud.cn # 华为云中国官网
+DOMAIN-SUFFIX,huaweicloudsite.cn # 华为云建站托管平台
 DOMAIN-SUFFIX,huawei.com # 华为技术有限公司官方主域名，用于企业官网、产品信息与服务入口
 DOMAIN-SUFFIX,servicesupport.huawei.com # 华为客户支持与售后服务相关域名
 DOMAIN-SUFFIX,huaweicloud.com # 华为云服务平台主域名，用于云计算与企业级服务入口
@@ -2612,11 +2614,30 @@ DOMAIN-SUFFIX,getui.com # 个推科技移动推送与终端通信服务域名，
 
 DOMAIN-SUFFIX,jspcdn.cn # 国内网站 JS 与静态资源 CDN 分发域名，用于前端脚本加载与资源调度
 
+# > KFC（肯德基）中国相关域名
+
+DOMAIN-SUFFIX,kfcdelivery.com.cn # KFC 中国大陆宅急送外卖平台
+DOMAIN-SUFFIX,kfc.com.cn # KFC 中国大陆官网（百胜中国运营）
+
 # > 麦当劳中国官方服务域名
 
+DOMAIN-SUFFIX,mcdonalds.com.cn # 麦当劳中国（中食麦当劳控股）官网
+DOMAIN-SUFFIX,mcdchina.com # 麦当劳中国旧域名
 DOMAIN-SUFFIX,mcd.cn # 麦当劳中国官网与移动端服务主域名，用于会员服务、活动页面与接口请求
 DOMAIN-SUFFIX,api.mcd.cn # 麦当劳中国接口服务子域，用于订单、会员、活动与数据交互服务
 DOMAIN-SUFFIX,mcdfreshwork.freshchat.com # 麦当劳 Freshchat 在线客服实例域名
+
+# > BURGER KING® 汉堡王中国官网
+
+DOMAIN-SUFFIX,bkchina.cn # 汉堡王中国官方网站，用于展示菜单、门店信息、会员服务与品牌内容
+
+# > Pizza Hut（必胜客）中国相关域名
+
+DOMAIN-SUFFIX,pizzahut.com.cn # 必胜客中国官方网站，用于菜单展示、在线点餐、门店查询与品牌信息服务
+
+# > Domino’s Pizza 达美乐中国官方网站
+
+DOMAIN-SUFFIX,dominos.com.cn # Domino’s Pizza 中国官网域名，用于在线点餐、菜单展示、门店查询与品牌信息发布
 
 # > Freshchat 在线客服服务（Freshworks）
 
@@ -2626,3 +2647,17 @@ DOMAIN-SUFFIX,freshworksapi.com # Freshworks 官方 API 服务域名，用于客
 DOMAIN-SUFFIX,rts-static-prod.freshworksapi.com # Freshworks 实时通信静态资源域名，用于加载 WebSocket 相关脚本与前端实时会话组件
 DOMAIN-SUFFIX,freshbots.ai # Freshworks Freshbots AI 客服机器人平台域名，用于智能问答、自动回复与会话流程管理
 DOMAIN-SUFFIX,cdn.freshbots.ai # Freshbots 静态资源 CDN 域名，用于加载聊天脚本、前端组件与机器人交互资源
+
+# > 东方财富（Eastmoney）相关域名
+
+DOMAIN-SUFFIX,eastmoney.com # 东方财富网中国大陆主站（金融资讯与证券数据平台）
+DOMAIN-SUFFIX,push2.eastmoney.com # 东方财富实时行情推送与数据接口域名（股票、基金、指数数据 API）
+DOMAIN-SUFFIX,emdata.eastmoney.com # 东方财富数据服务子域（行情与财务数据接口）
+DOMAIN-SUFFIX,guba.eastmoney.com # 东方财富股吧社区平台
+DOMAIN-SUFFIX,so.eastmoney.com # 东方财富站内搜索服务
+DOMAIN-SUFFIX,choice.eastmoney.com # 东方财富 Choice 金融终端与数据服务平台
+
+# > 飞凡金融（Faisys）支付与结算相关域名
+
+DOMAIN-SUFFIX,faisys.com # 飞凡金融科技（Faisys）主域名（支付清算与金融科技服务）
+DOMAIN-SUFFIX,fe.faisys.com # 飞凡金融前端接口域名（支付流程与交易结算前端服务）
