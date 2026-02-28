@@ -4,7 +4,47 @@
 # - 特征：涵盖 Steam、Epic、PlayStation、Nintendo 等主流游戏平台访问域名
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-02-19
+# - 更新时间：2026-02-27
+
+# > 王者荣耀 相关域名
+
+DOMAIN-SUFFIX,down-update.qq.com # 腾讯游戏官方资源更新主域（用于王者荣耀等游戏版本更新与补丁分发）
+DOMAIN-SUFFIX,downupdate.tyyy.tcdnos.com # 腾讯 CDN 边缘更新分发域名（王者荣耀资源热更新与补丁加速节点）
+DOMAIN-SUFFIX,down.tyyy.tcdnos.com # 腾讯 CDN 资源下载分发域名（王者荣耀纹理与资源加载分发节点）
+DOMAIN-SUFFIX,down.ajy.tcdnos.com # 腾讯 CDN 资源更新分发子域（用于腾讯游戏版本更新与补丁下载加速）
+DOMAIN-SUFFIX,anticheatexpert.com # 腾讯游戏反作弊与客户端安全校验服务主域（用于王者荣耀等游戏安全检测与环境校验）
+DOMAIN-SUFFIX,cschannel.anticheatexpert.com # 腾讯游戏反作弊通信子域（客户端与安全服务交互通道）
+DOMAIN-SUFFIX,nj.cschannel.anticheatexpert.com # 腾讯游戏反作弊南京节点（用于区域化安全检测与数据上报）
+DOMAIN-SUFFIX,apd-pcdnvodstat.teg.tencent-cloud.net # 腾讯云 PCDN VOD 统计上报节点（用于王者荣耀等游戏视频分发与播放数据统计）
+IP-CIDR,182.254.116.117/32 # 腾讯云游戏调度与下载分发节点
+
+# > 和平精英 相关域名
+
+DOMAIN-SUFFIX,ossweb-img.qq.com # 腾讯 OSS 静态资源 CDN 域名（用于 QQ 系列产品及游戏内图片/资源加载）
+DOMAIN-SUFFIX,jsonatm.broker.tplay.qq.com # 腾讯 QQ 游戏协议通信域名（TPlay 游戏生态 broker 通信服务）
+DOMAIN-SUFFIX,cjm.broker.tplay.qq.com # 腾讯 QQ TPlay 游戏通信子域（用于游戏会话与协议握手服务）
+DOMAIN-SUFFIX,rdt.tfogc.com # 腾讯游戏 RDT 实时数据传输主域（用于对战数据与会话通信）
+DOMAIN-SUFFIX,down.qq.com # 腾讯官方下载与资源分发主域（用于游戏安装包、纹理与补丁下载）
+DOMAIN-SUFFIX,apd-pcdnvodstat.teg.tencent-cloud.net # 腾讯云 PCDN VOD 统计上报主域（用于视频播放与分发统计）
+DOMAIN-SUFFIX,ios-v1.perfsight.qq.com # 腾讯 Perfsight 性能监测域名（iOS 客户端性能数据上报）
+DOMAIN-SUFFIX,gpcloud.tgpa.qq.com # 腾讯 TGPA 游戏加速与网络优化服务域名
+DOMAIN-SUFFIX,api.unipay.qq.com # 腾讯游戏支付接口域名（用于游戏内支付与订单验证）
+DOMAIN-SUFFIX,jsonatm.broker.tplay.qq.com # 腾讯 TPlay 游戏协议通信域名（用于客户端与服务器会话交互）
+DOMAIN-SUFFIX,cjm.broker.tplay.qq.com # 腾讯 TPlay 游戏协议通信子域（用于对战数据与会话通信）
+DOMAIN-SUFFIX,cgugccdn.pg.qq.com # 腾讯游戏 CDN 资源分发域名（和平精英资源下载与内容分发）
+DOMAIN-SUFFIX,receiver.tdm.qq.com # 腾讯游戏数据接收服务域名（客户端数据上报与日志回传）
+DOMAIN-SUFFIX,szmg.qq.com # 腾讯游戏业务域名（用于游戏服务接口通信）
+DOMAIN-SUFFIX,game.gtimg.cn # 腾讯游戏静态资源与内容分发主域（用于游戏素材、公告与资源加载）
+DOMAIN-SUFFIX,cdn.cn.gcloudcs.com # 腾讯 GCloud 游戏 CDN 分发域名（用于游戏数据与资源下发）
+DOMAIN-SUFFIX,cn.voice.gcloudcs.com # 腾讯 GCloud 语音通信域名（用于游戏内语音服务）
+DOMAIN-SUFFIX,qosidc.gcloudsdk.com # 腾讯 GCloud 网络质量与调度域名（用于游戏 QoS 与链路优化）
+IP-CIDR,175.6.84.70/32 # 和平精英 实时对战通信节点
+IP-CIDR,101.226.101.163/32 # 腾讯游戏服务接入节点
+IP-CIDR,27.155.112.58/32 # 和平精英 对战数据与会话通信节点
+IP-CIDR,112.54.207.10/32 # 和平精英 实时对战通信节点
+IP-CIDR,222.184.48.140/32 # 和平精英 实时对战通信节点
+IP-CIDR,112.13.114.142/32 # 和平精英 实时对战通信节点
+IP-CIDR,180.127.11.186/32 # 和平精英 实时对战通信节点
 
 # > Steam 平台（Valve 旗下）
 
