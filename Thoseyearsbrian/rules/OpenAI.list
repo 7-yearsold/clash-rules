@@ -1,10 +1,10 @@
-# > OpenAI.list（智能助理服务规则集）
-# - 分类：智能助理 / AI 服务平台 / 云端推理接口
-# - 来源：主流服务域名抓包 / 社区整理 / 手动校验
-# - 特征：涵盖 OpenAI、Claude、Gemini、Copilot、Perplexity、HuggingFace 等主流 AI 服务域名
+# > OpenAI.list（生成式人工智能平台规则集）
+# - 分类：生成式人工智能平台（涵盖大模型推理服务与云端 API 基础设施）
+# - 来源：本地流量行为分析 / 手动校验 / 持续自维护
+# - 特征：覆盖主流生成式人工智能平台与大模型服务域名，包括 OpenAI、Claude、Gemini、Copilot、Perplexity、HuggingFace 等生态体系
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-02-04
+# - 更新时间：2026-03-03
 
 # > OpenAI Chat 系列
 
@@ -21,7 +21,6 @@ DOMAIN-SUFFIX,ab.chatgpt.com # ChatGPT A/B 测试与实验性功能路由服务
 DOMAIN-SUFFIX,oaiusercontent.com # OpenAI 用户内容托管域名（图片、文件、生成结果等）
 DOMAIN-SUFFIX,oaistatic.com # OpenAI 官方静态资源域名（文档样式、脚本、字体）
 DOMAIN-SUFFIX,persistent.oaistatic.com # OpenAI 持久化静态资源服务
-DOMAIN-SUFFIX,openaiapi-site.azureedge.net # OpenAI API 使用的 Azure Edge CDN 分发节点
 DOMAIN-SUFFIX,openaiusercontent.com # OpenAI 用户内容与工具资源托管域名，用于技能配置、资源加载与附件分发
 DOMAIN-SUFFIX,docs.openai.com # OpenAI 官方开发者文档站点，用于 API 文档、模型说明与 SDK 指南
 IP-CIDR,59.188.250.54/32 # ChatGPT WebSocket 通信节点（Cloudflare 边缘）
@@ -517,3 +516,7 @@ DOMAIN-SUFFIX,opencode.ai # OpenCode AI 平台官网与服务入口，提供 AI 
 # > Dify AI 平台
 
 DOMAIN-SUFFIX,dify.ai # Dify 开源 LLM 应用开发平台官网，用于构建、部署与管理基于大模型的 AI 应用
+
+# > OpenClaw AI 官方网站与平台域名
+
+DOMAIN-SUFFIX,openclaw.ai # OpenClaw AI 官网与 AI 平台域名，用于访问产品介绍、AI 服务与平台界面
