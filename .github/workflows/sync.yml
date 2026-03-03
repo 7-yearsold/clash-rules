@@ -10,80 +10,27 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          ref: main
+      - uses: actions/checkout@v4
 
-      #######################################################################
-      # 1. 抓取 Aegis 仓库 rules 目录
-      #######################################################################
-      - name: Sync Aegis rules
+      - name: Sync and Fix Rules
         run: |
-          echo "=== Syncing Aegis rules ==="
-
-          repo_url="https://github.com/Thoseyearsbrian/Aegis"
-          branch="main"
-          subdir="rules"
-          target="Thoseyearsbrian/rules"
-
+          # 1. 增量克隆与同步 (不拉取删除)
+          git clone --depth=1 https://github.com/Thoseyearsbrian/Aegis tmp_repo
+          mkdir -p Thoseyearsbrian/rules
+          rsync -avu tmp_repo/rules/ Thoseyearsbrian/rules/
           rm -rf tmp_repo
-          git clone --depth=1 --branch "$branch" "$repo_url" tmp_repo
 
-          mkdir -p "$target"
-          cp -r tmp_repo/"$subdir"/* "$target"/
-
-          rm -rf tmp_repo
-          rm -rf "$target/.git" "$target/.github"
-
-      #######################################################################
-      # 2. 自动为没有掩码位的 IP-CIDR 添加 /32
-      #######################################################################
-      - name: Fix IP-CIDR missing mask
-        run: |
-          echo "=== Adding /32 mask to IP-CIDR entries without mask ==="
-
-          find Thoseyearsbrian/rules -type f `\( -name "*.list" -o -name "*.txt" \)` | while read file; do
-            sed -i -E 's/(IP-CIDR,[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+)([[:space:]]|$)/\1\/32\2/' "$file"
+          # 2. 自动补全 /32 掩码并去重
+          find Thoseyearsbrian/rules -type f \( -name "*.list" -o -name "*.txt" \) | while read -r file; do
+            sed -i -E 's/(IP-CIDR,[0-9]{1,3}(\.[0-9]{1,3}){3})([,[:space:]]|$)/\1\/32\3/g' "$file"
+            sed -i 's/\/32\/32/\/32/g' "$file"
           done
 
-      #######################################################################
-      # 3. 检查变更
-      #######################################################################
-      - name: Check for changes
-        id: changes
+      - name: Push Changes
         run: |
+          git config user.name "[bot]"
+          git config user.email "[bot]@users.noreply.github.com"
           git add .
-          if git diff --cached --quiet; then
-            echo "changed=false" >> $GITHUB_OUTPUT
-          else
-            echo "changed=true" >> $GITHUB_OUTPUT
-          fi
-
-      #######################################################################
-      # 4. 创建 PR
-      #######################################################################
-      - name: Create Pull Request
-        if: steps.changes.outputs.changed == 'true'
-        id: cpr
-        uses: peter-evans/create-pull-request@v5
-        with:
-          commit-message: "Sync Aegis rules + auto-fix IP-CIDR mask"
-          title: "Update Aegis rules"
-          body: "Synced from Aegis repository and auto-fixed IP-CIDR mask."
-          branch: sync-aegis-rules
-          delete-branch: true
-
-      #######################################################################
-      # 5. 自动合并
-      #######################################################################
-      - name: Auto-merge PR
-        if: steps.changes.outputs.changed == 'true'
-        uses: peter-evans/enable-pull-request-automerge@v3
-        with:
-          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
-          merge-method: squash
+          git diff --cached --quiet || (git commit -m "Auto-sync rules" && git push)
