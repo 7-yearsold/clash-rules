@@ -1,6 +1,5 @@
 payload:
   - "*.*.xboxlive.com"
-  - "+.126.net"
   - "+.3gppnetwork.org"
   - "+.battle.net"
   - "+.battlenet.com.cn"
@@ -28,7 +27,6 @@ payload:
   - "+.media.dssott.com"
   - "+.msftconnecttest.com"
   - "+.msftncsi.com"
-  - "+.music.163.com"
   - "+.music.migu.cn"
   - "+.n0808.com"
   - "+.ntp.org.cn"
@@ -46,7 +44,6 @@ payload:
   - "+.stun.*.*.*.*.*"
   - "+.test"
   - "+.time.edu.cn"
-  - "+.uu.163.com"
   - "+.wargaming.net"
   - "+.wggames.cn"
   - "+.wotgame.cn"
