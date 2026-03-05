@@ -2,7 +2,8 @@
 DOMAIN-SUFFIX,g102na.gsf.easebar.com
 DOMAIN-SUFFIX,gate-global.xyqh5.com
 DOMAIN-SUFFIX,xyqh5.com
-IP-CIDR,8.222.248.226/32
+#IP-CIDR,8.222.248.226/32
+AND,((PROCESS-PATH,com.netease.xyh5.na),(DST-PORT,8180))
 
 # notion
 DOMAIN-SUFFIX,notion-static.com

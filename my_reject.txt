@@ -4,3 +4,8 @@ DOMAIN-SUFFIX,update.pan.baidu.com
 DOMAIN-SUFFIX,app-measurement.com
 #IP-CIDR,154.89.148.122/32
 #DOMAIN-KEYWORD,154.89.148.122
+DOMAIN-SUFFIX,android.bugly.qq.com
+# xyqh5
+DOMAIN-SUFFIX,who.easebar.com
+DOMAIN-SUFFIX,who.nie.easebar.com
+DOMAIN-SUFFIX,whoami-ipv4.nie.easebar.com
