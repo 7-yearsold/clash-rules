@@ -5,7 +5,7 @@
 # - 说明：本规则集收录国际主流生成式 AI 平台相关域名；中国大陆 AI 服务域名统一归入 China 规则集维护
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-03-10
+# - 更新时间：2026-03-12
 
 # > OpenAI Platform Infrastructure（OpenAI 平台基础设施域名）
 # - 校对时间：2026-03-05
@@ -264,54 +264,47 @@ DOMAIN-SUFFIX,ai.googleblog.com # Google AI 官方技术博客
 DOMAIN-SUFFIX,deepmind.google # Google DeepMind 官方域名
 DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com # Google AI Studio / MakerSuite 后端服务接口（Gemini 开发环境通信节点）
 
-# > Copilot 系列（Microsoft）
+# > Microsoft Copilot Platform（Microsoft 生成式 AI / Copilot 平台相关域名）
+# - 校对时间：2026-03-11
 
-DOMAIN-SUFFIX,copilot.microsoft.com # Microsoft Copilot 主站入口（网页版 Copilot）
-DOMAIN-SUFFIX,copilot.azureedge.net # Copilot 静态资源 CDN（脚本、样式、模型相关资源加载）
-DOMAIN-SUFFIX,edge.microsoft.com # Edge Copilot 入口及功能资源加载
-DOMAIN-SUFFIX,bingcopilot.microsoft.com # Bing Copilot 托管域，用于搜索与问答整合
-DOMAIN-SUFFIX,bingapis.com # Bing / Copilot API 后端接口（LLM 查询、搜索与上下文请求）
-DOMAIN-SUFFIX,api.bing.microsoft.com # Bing AI / Copilot 新版统一 API 接口
-DOMAIN-SUFFIX,assets.msn.com # Copilot 卡片式结果、搜索增强、插件资源载入
-DOMAIN-SUFFIX,msftauth.net # Microsoft Authentication，用于 Copilot 登录与验证流程
-DOMAIN-SUFFIX,live.com # Microsoft Account 登录，用于 Copilot 身份验证
-DOMAIN-SUFFIX,graph.microsoft.com # Microsoft Graph API（M365 Copilot 读取上下文的重要接口）
-DOMAIN-SUFFIX,sharepoint.com # M365 Copilot 文档引用与内容检索
-DOMAIN-SUFFIX,onenote.com # Copilot 获取 OneNote 数据时的上下文载入
-DOMAIN-SUFFIX,onerev.microsoft.com # Microsoft OneRev 服务（新版 AI 关联后端）
-DOMAIN-SUFFIX,contoso.com # Microsoft Copilot 官方演示站使用的测试域（真实存在）
+DOMAIN-SUFFIX,copilot.microsoft.com # Microsoft Copilot Web 主入口
+DOMAIN-SUFFIX,copilot.microsoft # Microsoft Copilot 新统一品牌域名
+DOMAIN-SUFFIX,copilot.azureedge.net # Copilot 静态资源 CDN
+DOMAIN-SUFFIX,bingcopilot.microsoft.com # Bing Copilot Web 接入域
+DOMAIN-SUFFIX,api.bing.microsoft.com # Bing / Copilot API 接口
+DOMAIN-SUFFIX,bingapis.com # Bing AI 后端 API 域名
+DOMAIN-SUFFIX,sydney.bing.com # Bing AI / Copilot ChatHub 推理接口
+DOMAIN-SUFFIX,assets.msn.com # Copilot 搜索卡片 UI 资源加载
+DOMAIN-SUFFIX,msftauth.net # Microsoft 身份认证系统
 
-# > Perplexity AI
+# > Perplexity AI（AI 搜索与多模型问答平台）
+# - 校对时间：2026-03-11
 
-DOMAIN-SUFFIX,perplexity.ai # Perplexity AI 主站入口，用于搜索、对话与模型访问
-DOMAIN-SUFFIX,api.perplexity.ai # Perplexity API 后端接口，用于模型调用、推理与集成服务
-DOMAIN-SUFFIX,pplx.ai # Perplexity 官方短链与跳转域名（真实存在）
-DOMAIN-SUFFIX,perplexitylabs.ai # Perplexity Labs 研发相关域名，用于实验功能与技术页面
-DOMAIN-SUFFIX,perplexitychat.ai # Perplexity Chat 入口域名，用于对话体验（真实解析存在）
-DOMAIN-SUFFIX,pplx-res.cloudinary.com # Perplexity 静态资源托管（图像、模型截图等）
+DOMAIN-SUFFIX,perplexity.ai # Perplexity AI 官方主站，用于 AI 搜索、对话与模型访问
+DOMAIN-SUFFIX,api.perplexity.ai # Perplexity 官方 API 接口，用于模型调用、推理与开发者集成
+DOMAIN-SUFFIX,pplx.ai # Perplexity 官方短链与跳转域名，用于分享链接与内容重定向
 
-# > HuggingFace
+# > Hugging Face Platform Infrastructure（Hugging Face 平台基础设施域名）
+# - 校对时间：2026-03-11
 
-DOMAIN-SUFFIX,huggingface.co # Hugging Face 主站域名，用于模型托管、Spaces、Datasets、文档与账号管理
-DOMAIN-SUFFIX,inference-api.com # Hugging Face Inference API 域名，用于模型推理、实时推断与托管接口调用
-DOMAIN-SUFFIX,cdn-lfs.huggingface.co # Hugging Face 大文件分发域名（LFS），用于模型权重、数据集与关联资源的高速下载
-DOMAIN-SUFFIX,huggingfaceusercontent.com # Hugging Face 用户内容域名，用于托管Spaces、Demo资源、模型输出与用户上传内容
-DOMAIN-SUFFIX,huggingface.tech # Hugging Face 技术域/内部服务域，用于后台部署、云端组件与隐式服务接口
-DOMAIN-SUFFIX,hf.co # Hugging Face 官方短链域名，用于模型/Space 快速跳转
-DOMAIN-SUFFIX,api.endpoints.huggingface.cloud # Hugging Face Endpoints 托管推理 API（企业级模型部署接口）
-DOMAIN-SUFFIX,assets.huggingface.co # Hugging Face 静态资源域名（图标、脚本、前端资源加载）
-DOMAIN-SUFFIX,models.huggingface.co # 模型卡、README、元信息文档等内容托管节点
-DOMAIN-SUFFIX,datasets.huggingface.co # 数据集文档/预览服务域名
-DOMAIN-SUFFIX,spaces.huggingface.co # Spaces 应用运行、前端加载与 UI 组件域名
+DOMAIN-SUFFIX,huggingface.co # Hugging Face 官方主域名
+DOMAIN-SUFFIX,hf.co # Hugging Face 官方短链域名
+DOMAIN-SUFFIX,hf.space # Hugging Face Spaces 应用运行域名
+DOMAIN-SUFFIX,cdn-lfs.huggingface.co # Hugging Face LFS 文件分发服务
+DOMAIN-SUFFIX,assets.huggingface.co # Hugging Face 静态资源服务
+DOMAIN-SUFFIX,huggingfaceusercontent.com # Hugging Face 用户内容托管
+DOMAIN-SUFFIX,api-inference.huggingface.co # Hugging Face 推理 API 服务
+DOMAIN-SUFFIX,endpoints.huggingface.cloud # Hugging Face 托管推理服务
 
-# > Poe（Quora）
+# > Poe Platform（Quora AI 多模型对话平台）
 
-DOMAIN-SUFFIX,poe.com # Poe 主站，用于访问 AI 聊天、多模型切换、会话管理等核心功能
-DOMAIN-SUFFIX,api.poe.com # Poe API 后端接口，用于模型调用、消息推理与账号交互
-DOMAIN-SUFFIX,poecdn.net # Poe 静态资源 CDN，用于前端脚本、样式、模型相关素材加载
-DOMAIN-SUFFIX,poeusercontent.com # Poe 用户内容域名，用于缓存用户生成内容、图像、会话数据与资源文件
-DOMAIN-SUFFIX,quora.com # Quora 主站，Poe 登录、账号整合与 OAuth 认证依赖
-DOMAIN-SUFFIX,quoracdn.net # Quora 静态资源 CDN，用于账号系统、登录页面及通用脚本加载
+DOMAIN-SUFFIX,poe.com # Poe 官方主站
+DOMAIN-SUFFIX,api.poe.com # Poe API 服务接口
+DOMAIN-SUFFIX,ws.poe.com # Poe WebSocket 实时通信接口
+DOMAIN-SUFFIX,poecdn.net # Poe 静态资源 CDN
+DOMAIN-SUFFIX,poeusercontent.com # Poe 用户内容资源
+DOMAIN-SUFFIX,quora.com # Quora 账号系统与登录依赖
+DOMAIN-SUFFIX,quoracdn.net # Quora 静态资源 CDN
 
 # > Mistral AI
 
