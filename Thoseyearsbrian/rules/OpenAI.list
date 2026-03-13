@@ -5,7 +5,7 @@
 # - 说明：本规则集收录国际主流生成式 AI 平台相关域名；中国大陆 AI 服务域名统一归入 China 规则集维护
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-03-12
+# - 更新时间：2026-03-13
 
 # > OpenAI Platform Infrastructure（OpenAI 平台基础设施域名）
 # - 校对时间：2026-03-05
@@ -255,14 +255,14 @@ DOMAIN-SUFFIX,cdn.anthropic.com # Anthropic 内容分发网络
 # - 校对时间：2026-03-10
 
 DOMAIN-SUFFIX,gemini.google.com # Google Gemini Web 服务入口
-DOMAIN-SUFFIX,bard.google.com # Google Bard 历史入口域名（已并入 Gemini）
-DOMAIN-SUFFIX,aistudio.google.com # Google AI Studio（Gemini Playground 与 API Key 管理）
+DOMAIN-SUFFIX,bard.google.com # Google Bard 历史入口域名
+DOMAIN-SUFFIX,aistudio.google.com # Google AI Studio
 DOMAIN-SUFFIX,generativeai.google # Google Generative AI 官方站点
 DOMAIN-SUFFIX,ai.google.dev # Google AI 开发者平台与 Gemini API 文档
-DOMAIN-SUFFIX,makersuite.google.com # Google MakerSuite 开发工具（历史开发入口）
+DOMAIN-SUFFIX,makersuite.google.com # Google MakerSuite 开发工具
 DOMAIN-SUFFIX,ai.googleblog.com # Google AI 官方技术博客
 DOMAIN-SUFFIX,deepmind.google # Google DeepMind 官方域名
-DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com # Google AI Studio / MakerSuite 后端服务接口（Gemini 开发环境通信节点）
+DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com # Google AI Studio / MakerSuite 后端服务接口
 
 # > Microsoft Copilot Platform（Microsoft 生成式 AI / Copilot 平台相关域名）
 # - 校对时间：2026-03-11
@@ -280,9 +280,9 @@ DOMAIN-SUFFIX,msftauth.net # Microsoft 身份认证系统
 # > Perplexity AI（AI 搜索与多模型问答平台）
 # - 校对时间：2026-03-11
 
-DOMAIN-SUFFIX,perplexity.ai # Perplexity AI 官方主站，用于 AI 搜索、对话与模型访问
-DOMAIN-SUFFIX,api.perplexity.ai # Perplexity 官方 API 接口，用于模型调用、推理与开发者集成
-DOMAIN-SUFFIX,pplx.ai # Perplexity 官方短链与跳转域名，用于分享链接与内容重定向
+DOMAIN-SUFFIX,perplexity.ai # Perplexity AI 官方主站
+DOMAIN-SUFFIX,api.perplexity.ai # Perplexity 官方 API 接口
+DOMAIN-SUFFIX,pplx.ai # Perplexity 官方短链与跳转域名
 
 # > Hugging Face Platform Infrastructure（Hugging Face 平台基础设施域名）
 # - 校对时间：2026-03-11
@@ -297,6 +297,7 @@ DOMAIN-SUFFIX,api-inference.huggingface.co # Hugging Face 推理 API 服务
 DOMAIN-SUFFIX,endpoints.huggingface.cloud # Hugging Face 托管推理服务
 
 # > Poe Platform（Quora AI 多模型对话平台）
+# - 校对时间：2026-03-12
 
 DOMAIN-SUFFIX,poe.com # Poe 官方主站
 DOMAIN-SUFFIX,api.poe.com # Poe API 服务接口
@@ -306,57 +307,54 @@ DOMAIN-SUFFIX,poeusercontent.com # Poe 用户内容资源
 DOMAIN-SUFFIX,quora.com # Quora 账号系统与登录依赖
 DOMAIN-SUFFIX,quoracdn.net # Quora 静态资源 CDN
 
-# > Mistral AI
+# > Mistral AI Platform（Mistral 生成式 AI 模型与 API 平台）
+# - 校对时间：2026-03-12
 
-DOMAIN-SUFFIX,mistral.ai # Mistral AI 官方主站，用于产品介绍、模型发布与公司信息
-DOMAIN-SUFFIX,api.mistral.ai # Mistral 官方 API 接口，用于模型推理、嵌入、生成任务等调用
-DOMAIN-SUFFIX,console.mistral.ai # Mistral 控制台，用于管理 API Keys、账单与使用情况
-DOMAIN-SUFFIX,docs.mistral.ai # Mistral 开发者文档站点，用于 API 文档、SDK 指南与模型说明
-DOMAIN-SUFFIX,cdn.mistral.ai # Mistral 静态资源 CDN，用于加载前端资源与控制台静态内容
-DOMAIN-SUFFIX,mistral-embed.run # Mistral Embedding 推理端点，用于提供向量化推理服务
-DOMAIN-SUFFIX,mistral-medium.run # Mistral Medium 模型推理端点，用于特定模型托管与生产部署
+DOMAIN-SUFFIX,mistral.ai # Mistral AI 官方主站
+DOMAIN-SUFFIX,api.mistral.ai # Mistral 官方 API 服务
+DOMAIN-SUFFIX,console.mistral.ai # Mistral 控制台
+DOMAIN-SUFFIX,docs.mistral.ai # Mistral 开发者文档
+DOMAIN-SUFFIX,cdn.mistral.ai # Mistral 静态资源 CDN
+DOMAIN-SUFFIX,mistral-embed.run # Mistral Embedding API 推理服务
+DOMAIN-SUFFIX,mistral-medium.run # Mistral Medium 模型推理 API
 
-# > Haruka AI
+# > Haruka AI（生成式 AI 对话平台）
+# - 校对时间：2026-03-12
 
-DOMAIN-SUFFIX,haruka.ai # Haruka AI 主站域名，用于访问聊天界面、用户设置与模型服务
-DOMAIN-SUFFIX,ai.haruka.cloud # Haruka AI 主站域名，用于在线对话平台与 Web 端服务入口
-DOMAIN-SUFFIX,api.ai.haruka.cloud # Haruka AI 平台 API 接口域名，用于对话推理、消息处理与应用集成
-DOMAIN-SUFFIX,cdn.ai.haruka.cloud # Haruka AI 静态资源 CDN 域名，用于前端脚本、样式与界面组件加载
-DOMAIN-SUFFIX,assets.ai.haruka.cloud # Haruka AI 多媒体与附属资源域名，用于图像、音频与团队协作模块内容加载
-DOMAIN-SUFFIX,haruka.cloud # Haruka 平台基础域名，用于账户系统、认证跳转与服务路由
+DOMAIN-SUFFIX,haruka.ai # Haruka AI 官方域名
+DOMAIN-SUFFIX,haruka.cloud # Haruka AI 平台基础域名
 
-# > Cohere AI
+# > Cohere AI Platform（Cohere 生成式 AI 与模型 API 平台）
+# - 校对时间：2026-03-12
 
-DOMAIN-SUFFIX,cohere.ai # Cohere 主站域名，用于模型介绍、平台入口与产品信息
-DOMAIN-SUFFIX,api.cohere.ai # Cohere 官方 API 接口域名，用于文本生成、嵌入、分类等模型推理调用
-DOMAIN-SUFFIX,cohere.com # Cohere 商业站点与企业服务入口，用于账号管理与文档跳转
-DOMAIN-SUFFIX,os.cohere.ai # Cohere Command-R / Embed / Rerank 等模型资源与官方开源页面
-DOMAIN-SUFFIX,coral.cohere.com # Cohere Coral 平台相关域名，用于企业级 AI 管理、模型部署与协作功能
-DOMAIN-SUFFIX,studio.cohere.com # Cohere Studio 在线工作台，用于实验、Prompt 编辑与模型测试
-DOMAIN-SUFFIX,docs.cohere.com # Cohere 文档中心，用于 API 文档、模型说明与 SDK 示例
+DOMAIN-SUFFIX,cohere.ai # Cohere 官方平台域名
+DOMAIN-SUFFIX,api.cohere.ai # Cohere 官方 API 接口
+DOMAIN-SUFFIX,cohere.com # Cohere 企业官网
+DOMAIN-SUFFIX,dashboard.cohere.com # Cohere 控制台
+DOMAIN-SUFFIX,docs.cohere.com # Cohere 官方文档站点
 
-# > Voyage AI
+# > Voyage AI Platform（Voyage AI Embedding / Rerank 模型服务平台）
+# - 校对时间：2026-03-12
 
-DOMAIN-SUFFIX,voyageai.com # Voyage AI 主站域名，用于产品介绍、模型展示与文档入口
-DOMAIN-SUFFIX,api.voyageai.com # Voyage AI 官方 API 接口，用于嵌入向量、重排序（Rerank）等模型推理调用
-DOMAIN-SUFFIX,cdn.voyageai.com # Voyage AI 静态资源域名，用于前端脚本、样式与控制台相关资源加载
-DOMAIN-SUFFIX,docs.voyageai.com # Voyage AI 文档站点，用于 API 文档、模型能力说明、代码示例
-DOMAIN-SUFFIX,console.voyageai.com # Voyage AI 控制台，用于 API Key 管理、账单查看与使用统计
+DOMAIN-SUFFIX,voyageai.com # Voyage AI 官方主域名
+DOMAIN-SUFFIX,api.voyageai.com # Voyage AI 官方 API 接口
+DOMAIN-SUFFIX,docs.voyageai.com # Voyage AI 开发者文档站点
 
-# > AI21 Labs
+# > AI21 Labs Platform（AI21 Labs 生成式 AI 与语言模型平台）
+# - 校对时间：2026-03-13
 
-DOMAIN-SUFFIX,ai21.com # AI21 Labs 主站域名，用于模型介绍、平台信息与企业服务
-DOMAIN-SUFFIX,api.ai21.com # AI21 官方 API 接口域名，用于文本生成、摘要、改写等语言模型推理
-DOMAIN-SUFFIX,studio.ai21.com # AI21 Studio 在线工作台，用于模型测试、Prompt 调试与交互式开发
-DOMAIN-SUFFIX,docs.ai21.com # AI21 文档站点，用于 API 文档、模型说明与代码示例
-DOMAIN-SUFFIX,platform.ai21.com # AI21 开发者平台入口，用于管理 API Key、账单与使用情况
-DOMAIN-SUFFIX,cdn.ai21.com # AI21 静态资源 CDN，用于加载控制台与前端界面的脚本、样式与图标
+DOMAIN-SUFFIX,ai21.com # AI21 Labs 官方主站
+DOMAIN-SUFFIX,api.ai21.com # AI21 官方 API 接口
+DOMAIN-SUFFIX,studio.ai21.com # AI21 Studio 在线开发与测试环境
+DOMAIN-SUFFIX,docs.ai21.com # AI21 官方开发者文档
+DOMAIN-SUFFIX,platform.ai21.com # AI21 开发者平台控制台
+DOMAIN-SUFFIX,cdn.ai21.com # AI21 静态资源 CDN
 
-# > Midjourney（AI 图像生成）
+# > Midjourney（AI 图像生成平台）
 
-DOMAIN-SUFFIX,midjourney.com # Midjourney 主站域名，用于账号管理、作品展示、FAQ 与产品说明
-DOMAIN-SUFFIX,cdn.midjourney.com # Midjourney 静态资源 CDN，用于加载前端脚本、样式与图像处理界面
-DOMAIN-SUFFIX,midjourney.ghost.io # Midjourney 官方博客使用的 Ghost 托管域名，用于发布新闻、更新日志与开发者文章等
+DOMAIN-SUFFIX,midjourney.com # Midjourney 官方主站
+DOMAIN-SUFFIX,cdn.midjourney.com # Midjourney 静态资源 CDN
+DOMAIN-SUFFIX,midjourney.ghost.io # Midjourney 官方博客（Ghost 托管平台）
 
 # > Runway（Gen-2 / Gen-3 视频生成平台）
 
