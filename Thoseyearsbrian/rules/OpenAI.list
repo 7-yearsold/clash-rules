@@ -5,7 +5,7 @@
 # - 说明：本规则集收录国际主流生成式 AI 平台相关域名；中国大陆 AI 服务域名统一归入 China 规则集维护
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-03-14
+# - 更新时间：2026-03-15
 
 # > OpenAI Platform Infrastructure（OpenAI 平台基础设施域名）
 # - 校对时间：2026-03-05
@@ -591,65 +591,78 @@ DOMAIN-SUFFIX,opt-i18n.ciciai.com # Ciciai 国际化资源服务
 DOMAIN-SUFFIX,vmweb-sg.ciciai.com # Ciciai Web 服务节点（SG）
 DOMAIN-SUFFIX,mcs-sg.ciciai.com # Ciciai 后端服务节点（SG）
 
-# > aibusiness.com（AI Business — AI 行业新闻 / 报告 / 内容分发站点）
+# > AI Business（AI 行业资讯与研究媒体）
+# - 校对时间：2026-03-15
+DOMAIN-SUFFIX,aibusiness.com # AI Business 行业资讯媒体站点
 
-DOMAIN-SUFFIX,aibusiness.com # AI Business 主站域名，用于文章、报告、新闻与行业内容发布与访问
+# > Fireworks AI Platform（Fireworks 推理加速与模型托管平台）
+# - 校对时间：2026-03-15
 
-# > Fireworks AI（大模型推理加速 / LLM 托管平台）
+DOMAIN-SUFFIX,fireworks.ai # Fireworks AI 官方主站
+DOMAIN-SUFFIX,api.fireworks.ai # Fireworks API 服务接口
+DOMAIN-SUFFIX,app.fireworks.ai # Fireworks Web 控制台
+DOMAIN-SUFFIX,docs.fireworks.ai # Fireworks 官方文档站点
+DOMAIN-SUFFIX,cdn.fireworks.ai # Fireworks 静态资源 CDN
+DOMAIN-SUFFIX,assets.fireworks.ai # Fireworks 前端静态资源
+DOMAIN-SUFFIX,platform.fireworks.ai # Fireworks 平台服务入口
+DOMAIN-SUFFIX,studio.fireworks.ai # Fireworks Studio Web UI
+DOMAIN-SUFFIX,chat.fireworks.ai # Fireworks Chat 测试界面
+DOMAIN-SUFFIX,status.fireworks.ai # Fireworks 官方服务状态页面
 
-DOMAIN-SUFFIX,fireworks.ai # Fireworks AI 官方主站，用于产品介绍、模型体验、控制台入口
-DOMAIN-SUFFIX,api.fireworks.ai # Fireworks API 主端点，用于调用 LLM、Embedding、推理加速等模型服务
-DOMAIN-SUFFIX,app.fireworks.ai # Fireworks 控制台，用于 API Key 管理、账单、项目设置与模型部署管理
-DOMAIN-SUFFIX,docs.fireworks.ai # Fireworks 文档站点，提供 API 文档、示例代码与 SDK 指南
-DOMAIN-SUFFIX,cdn.fireworks.ai # Fireworks 静态资源 CDN，用于前端脚本、样式、界面资源加载
-DOMAIN-SUFFIX,assets.fireworks.ai # Fireworks 静态素材资源域名，用于加载图标、字体与 UI 内容
-DOMAIN-SUFFIX,platform.fireworks.ai # Fireworks 平台级服务入口，用于项目、模型与团队管理
-DOMAIN-SUFFIX,studio.fireworks.ai # Fireworks Studio Web UI，用于在线体验模型、调参与推理测试
-DOMAIN-SUFFIX,chat.fireworks.ai # Fireworks 原生 Chat 界面入口，用于测试 Fireworks 提供的 LLM 聊天服务
-DOMAIN-SUFFIX,status.fireworks.ai # Fireworks 服务状态监控域名，用于查看 API、控制台与推理系统运行情况
+# > Tia AI Platform（Tia 生成式 AI 服务平台）
+# - 校对时间：2026-03-15
 
-# > Tia AI 官方主站与服务域名
+DOMAIN-SUFFIX,tia-ai.com # Tia AI 官方平台域名
+DOMAIN-SUFFIX,fast.tia-ai.com # Tia AI 静态资源与前端加速节点
 
-DOMAIN-SUFFIX,tia-ai.com # Tia AI 官方主域名，用于访问平台主页、产品介绍、用户登录与相关功能页面
-DOMAIN-SUFFIX,fast.tia-ai.com # Tia AI 提供的静态资源加载域名，用于分发前端脚本、样式与组件资源，加快网页渲染性能
+# > OpenRouter Platform（多模型 API 聚合与路由服务）
+# - 校对时间：2026-03-15
 
-# > OpenRouter 大模型 API 聚合与路由服务平台
+DOMAIN-SUFFIX,openrouter.ai # OpenRouter 官方平台域名
 
-DOMAIN-SUFFIX,openrouter.ai # OpenRouter 提供多家大模型 API 的统一访问与路由服务
+# > Speechify Platform（AI 语音朗读与文本转语音服务）
+# - 校对时间：2026-03-15
 
-# > Speechify AI 语音朗读平台、Hydro Protocol 去中心化交易协议与 EXMO 加密货币交易所
+DOMAIN-SUFFIX,speechify.com # Speechify 官方平台域名
 
-DOMAIN-SUFFIX,speechify.com # Speechify 官方网站域名，用于 AI 文本转语音与语音朗读服务，提供无障碍阅读与内容语音化能力
+# > Palantir Platform（企业数据分析与 AIP 人工智能平台）
+# - 校对时间：2026-03-15
 
-# > Palantir 人工智能与数据分析平台（企业级数据整合与决策系统,被广泛应用于政府与大型机构的数据分析与决策场景）
+DOMAIN-SUFFIX,palantir.com # Palantir 官方平台与产品入口
+DOMAIN-SUFFIX,ai.palantir.com # Palantir AI / AIP 平台相关服务
 
-DOMAIN-SUFFIX,palantir.com # Palantir 官方网站与平台入口，用于企业级数据整合、分析、AI 决策系统与产品信息展示
-DOMAIN-SUFFIX,ai.palantir.com # Palantir AI 产品与能力展示子域，用于人工智能模型、AIP 平台与相关技术内容访问
+# > Nrich.ai Platform（AI 推荐与生成式服务平台）
+# - 校对时间：2026-03-15
 
-# > Nrich.ai 智能推荐 / AI 服务平台
+DOMAIN-SUFFIX,nrich.ai # Nrich.ai 官方平台主域名
+DOMAIN-SUFFIX,serve.nrich.ai # Nrich.ai 前端服务与 API 接入节点
 
-DOMAIN-SUFFIX,serve.nrich.ai # Nrich.ai 前端服务与 API 接入域名，用于智能推荐、AI 内容生成与业务请求处理
+# > OpenCode Platform（AI 编程与代码生成平台）
+# - 校对时间：2026-03-15
 
-# > OpenCode AI 平台
+DOMAIN-SUFFIX,opencode.ai # OpenCode 官方平台主域名
 
-DOMAIN-SUFFIX,opencode.ai # OpenCode AI 平台官网与服务入口，提供 AI 编程、代码生成与开发者工具相关服务
+# > Dify Platform（开源 LLM 应用开发与 AI Agent 编排平台）
+# - 校对时间：2026-03-15
 
-# > Dify AI 平台
+DOMAIN-SUFFIX,dify.ai # Dify 官方平台主域名
 
-DOMAIN-SUFFIX,dify.ai # Dify 开源 LLM 应用开发平台官网，用于构建、部署与管理基于大模型的 AI 应用
+# > OpenClaw Platform（AI Agent 与自动化平台）
+# - 校对时间：2026-03-15
 
-# > OpenClaw AI 官方网站与平台域名
+DOMAIN-SUFFIX,openclaw.ai # OpenClaw 官方平台主域名
 
-DOMAIN-SUFFIX,openclaw.ai # OpenClaw AI 官网与 AI 平台域名，用于访问产品介绍、AI 服务与平台界面
+# > Flowise Platform（AI Agent 与 LLM 工作流开发平台）
+# - 校对时间：2026-03-15
 
-# > Flowise AI 可视化 AI Agent 与 LLM 应用开发平台
+DOMAIN-SUFFIX,flowiseai.com # Flowise 官方平台主域名
 
-DOMAIN-SUFFIX,flowiseai.com # Flowise AI 开源生成式 AI 开发平台官网，用于构建 AI Agent、LLM 工作流与自动化智能应用
+# > Langflow Platform（AI Agent 与 LLM 工作流开发平台）
+# - 校对时间：2026-03-15
 
-# > Langflow AI Agent 与 LLM 工作流开发平台
+DOMAIN-SUFFIX,langflow.org # Langflow 官方平台主域名
 
-DOMAIN-SUFFIX,langflow.org # Langflow 开源低代码 AI 开发平台，用于构建 AI Agent、LLM 工作流与生成式 AI 应用
+# > Ollama Platform（本地大语言模型运行与推理平台）
+# - 校对时间：2026-03-15
 
-# > Ollama 本地大语言模型运行平台
-
-DOMAIN-SUFFIX,ollama.com # Ollama 官方网站，用于下载与管理本地运行的大语言模型（LLM）及 AI 推理环境
+DOMAIN-SUFFIX,ollama.com # Ollama 官方平台主域名
