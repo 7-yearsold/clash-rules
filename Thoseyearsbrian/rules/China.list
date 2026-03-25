@@ -77,14 +77,6 @@ IP-CIDR,221.231.92.20/32 # AliPay 数据网关边缘服务节点（datagw-edge.a
 IP-CIDR,221.231.92.59/32 # AliPay 数据网关边缘服务节点（datagw-edge.alipay.com）
 IP-CIDR,221.231.92.61/32 # Alipay 数据网关边缘服务节点（datagw-edge.alipay.com）
 
-# > AliDNS（阿里云公共 DNS）基础解析服务
-# - 校对时间：2026-03-23
-
-IP-CIDR,223.5.5.5/32 # 阿里云公共 DNS 解析节点
-IP-CIDR,223.6.6.6/32 # 阿里云公共 DNS 解析节点
-IP-CIDR6,2400:3200::1/128 # 阿里云公共 DNS IPv6 解析节点
-IP-CIDR6,2400:3200:baba::1/128 # 阿里云公共 DNS IPv6 解析节点
-
 # > Aliyun Drive（阿里云盘）相关域名
 # - 校对时间：2026-03-23
 
@@ -127,11 +119,19 @@ DOMAIN-SUFFIX,v.koubei.com # 口碑页面服务域名
 
 DOMAIN-SUFFIX,i.antfin.com # 蚂蚁集团基础服务域名
 
+# > AliDNS（阿里云公共 DNS）基础解析服务
+# - 校对时间：2026-03-23
+
+IP-CIDR,223.5.5.5/32 # 阿里云公共 DNS 解析节点
+IP-CIDR,223.6.6.6/32 # 阿里云公共 DNS 解析节点
+# IP-CIDR6,2400:3200::1/128 # 阿里云公共 DNS IPv6 解析节点
+# IP-CIDR6,2400:3200:baba::1/128 # 阿里云公共 DNS IPv6 解析节点
+
 # > Tencent DNSPod（DNS 解析与链路探测接口）
 # - 校对时间：2026-03-24
 
-IP-CIDR,119.29.29.90/32 # 腾讯 DNSPod 公共 DNS 解析节点
-IP-CIDR,119.29.29.98/32 # 腾讯 DNSPod 公共 DNS 解析节点
+# IP-CIDR,119.29.29.90/32 # 腾讯 DNSPod 公共 DNS 解析节点
+# IP-CIDR,119.29.29.98/32 # 腾讯 DNSPod 公共 DNS 解析节点
 
 # > Tencent Cloud（腾讯云）
 # - 校对时间：2026-03-24
@@ -569,225 +569,228 @@ DOMAIN-SUFFIX,lepaocdn.meituan.com # 美团乐跑内容分发域名
 DOMAIN-SUFFIX,lepaolog.meituan.com # 美团乐跑日志服务域名
 
 # > Ele.me Crowdsource Delivery（蜂鸟众包）相关域名
+# - 校对时间：2026-03-24
 
-DOMAIN-SUFFIX,fengniao.waimai.me # 蜂鸟众包核心服务域名，用于骑手端与平台相关服务访问
-DOMAIN-SUFFIX,fengniao.com # 蜂鸟配送平台主域名，用于配送系统与相关服务接口
-DOMAIN-SUFFIX,falconapi.fengniao.com # 蜂鸟配送平台相关服务接口域名
-DOMAIN-SUFFIX,tracking.fengniao.com # 蜂鸟配送相关服务接口域名
-DOMAIN-SUFFIX,resource.fengniao.com # 蜂鸟配送前端资源加载与内容分发服务域名
-DOMAIN-SUFFIX,rider.elenet.me # 饿了么骑手系统服务域名，用于骑手账户与服务访问
-DOMAIN-SUFFIX,cainiao.com # 菜鸟网络服务域名，用于物流与平台相关服务支持
+DOMAIN-SUFFIX,fengniao.waimai.me # 蜂鸟众包服务域名
+DOMAIN-SUFFIX,fengniao.com # 蜂鸟配送主域名
+DOMAIN-SUFFIX,falconapi.fengniao.com # 蜂鸟配送接口域名
+DOMAIN-SUFFIX,tracking.fengniao.com # 蜂鸟配送轨迹服务域名
+DOMAIN-SUFFIX,resource.fengniao.com # 蜂鸟配送资源服务域名
+DOMAIN-SUFFIX,rider.elenet.me # 饿了么骑手服务域名
 
 # > Ele.me（饿了么 / 含蜂鸟专送配送体系）相关域名
+# - 校对时间：2026-03-24
 
-DOMAIN-SUFFIX,ele.me # 饿了么主站域名，用于外卖与蜂鸟专送服务入口，承载下单、账户与基础业务页面
-DOMAIN-SUFFIX,h5.ele.me # 饿了么移动端主站域名，用于点餐、下单、优惠、账户等核心业务访问
-DOMAIN-SUFFIX,elemecdn.com # 饿了么（Ele.me）官方 CDN 主域名，承载前端静态资源与子域分发
-DOMAIN-SUFFIX,cube.elemecdn.com # 饿了么前端组件与业务模块资源 CDN，用于页面组件与功能模块加载
-DOMAIN-SUFFIX,assets.elemecdn.com # 饿了么（Ele.me）静态资源分发域名，用于图片、脚本、样式等前端资源加载
-DOMAIN-SUFFIX,waimai.taobao.com # 饿了么在淘宝体系内的历史入口与聚合跳转页面，用于订单引流与业务整合展示
-DOMAIN-SUFFIX,h5.ele.me # 饿了么 H5 移动端页面服务域名，用于轻量化下单、订单查询与活动页面访问
-DOMAIN-SUFFIX,restapi.ele.me # 饿了么核心后端 API 服务域名，处理订单创建、配送状态、用户与商户业务请求
-DOMAIN-SUFFIX,open-api.ele.me # 饿了么开放平台接口域名，供第三方商户、系统与配送平台进行业务对接
-DOMAIN-SUFFIX,api-rider.ele.me # 饿了么骑手端核心接口域名，用于任务分发、接单状态、轨迹与配送行为上报
-DOMAIN-SUFFIX,tracking.ele.me # 饿了么配送轨迹与定位服务域名，支持蜂鸟专送实时位置追踪与异常状态上报
-DOMAIN-SUFFIX,assets.ele.me # 饿了么前端静态资源域名，用于加载页面 UI、地图组件、脚本与样式资源
+DOMAIN-SUFFIX,ele.me # 饿了么主域名
+DOMAIN-SUFFIX,h5.ele.me # 饿了么移动服务域名
+DOMAIN-SUFFIX,elemecdn.com # 饿了么内容分发域名
+DOMAIN-SUFFIX,cube.elemecdn.com # 饿了么前端资源域名
+DOMAIN-SUFFIX,assets.elemecdn.com # 饿了么静态资源域名
+DOMAIN-SUFFIX,waimai.taobao.com # 饿了么历史入口域名
+DOMAIN-SUFFIX,restapi.ele.me # 饿了么接口域名
+DOMAIN-SUFFIX,open-api.ele.me # 饿了么开放平台域名
+DOMAIN-SUFFIX,api-rider.ele.me # 饿了么骑手接口域名
+DOMAIN-SUFFIX,tracking.ele.me # 饿了么轨迹服务域名
+DOMAIN-SUFFIX,assets.ele.me # 饿了么静态资源域名
 
 # > Ele.me Preferred Delivery（蜂鸟优选）相关域名
+# - 校对时间：2026-03-24
 
-DOMAIN-SUFFIX,home.ele.me # 蜂鸟优选业务主页入口，用于用户浏览精选商品、发起下单与配送服务
-DOMAIN-SUFFIX,choice.ele.me # 蜂鸟优选活动与推荐页面域名，用于商品推荐、促销活动与定向内容展示
-DOMAIN-SUFFIX,ele-static.ele.me # 蜂鸟优选前端静态资源域名，用于加载图片、脚本、样式等页面资源
-DOMAIN-SUFFIX,productapi.ele.me # 蜂鸟优选商品与库存 API 接口域名，用于商品信息、库存状态等数据请求
-DOMAIN-SUFFIX,shopping.ele.me # 蜂鸟优选购物流程服务接口，支持下单、支付、订单查询等核心交易流程
-DOMAIN-SUFFIX,logstore.ele.me # 蜂鸟优选用户行为与系统日志采集接口，用于行为分析、推荐优化与运行监控
-DOMAIN-SUFFIX,feedback.ele.me # 蜂鸟优选用户反馈与售后支持接口，用于评价提交、问题反馈与服务改进
+DOMAIN-SUFFIX,home.ele.me # 蜂鸟优选主页服务域名
+DOMAIN-SUFFIX,choice.ele.me # 蜂鸟优选业务服务域名
+DOMAIN-SUFFIX,ele-static.ele.me # 蜂鸟优选静态资源域名
+DOMAIN-SUFFIX,productapi.ele.me # 蜂鸟优选商品接口域名
+DOMAIN-SUFFIX,shopping.ele.me # 蜂鸟优选购物服务域名
+DOMAIN-SUFFIX,logstore.ele.me # 蜂鸟优选日志服务域名
+DOMAIN-SUFFIX,feedback.ele.me # 蜂鸟优选反馈服务域名
 
 # > MissFresh Grocery Delivery（每日优鲜）相关域名
+# - 校对时间：2026-03-24
 
-DOMAIN-SUFFIX,missfresh.cn # 每日优鲜生鲜电商平台主域名，用于官网访问与用户服务入口
-DOMAIN-SUFFIX,api.missfresh.cn # 每日优鲜核心服务 API 接口域名，用于商品信息、订单与业务请求处理
-DOMAIN-SUFFIX,img.missfresh.cn # 每日优鲜图像资源 CDN 域名，用于商品图片与多媒体内容加载
-DOMAIN-SUFFIX,static.missfresh.cn # 每日优鲜前端静态资源服务域名，用于页面组件与脚本资源分发
-DOMAIN-SUFFIX,track.missfresh.cn # 每日优鲜平台相关服务接口域名，用于业务运行与服务支持
-DOMAIN-SUFFIX,log.missfresh.cn # 每日优鲜系统日志与运行状态相关接口域名
-DOMAIN-SUFFIX,wx.missfresh.cn # 每日优鲜微信相关服务域名，用于小程序与微信登录接入
-DOMAIN-SUFFIX,passport.missfresh.cn # 每日优鲜账号注册、登录与身份认证服务域名
+DOMAIN-SUFFIX,missfresh.cn # 每日优鲜主域名
+DOMAIN-SUFFIX,api.missfresh.cn # 每日优鲜接口域名
+DOMAIN-SUFFIX,img.missfresh.cn # 每日优鲜图片资源域名
+DOMAIN-SUFFIX,static.missfresh.cn # 每日优鲜静态资源域名
+DOMAIN-SUFFIX,track.missfresh.cn # 每日优鲜轨迹服务域名
+DOMAIN-SUFFIX,log.missfresh.cn # 每日优鲜日志服务域名
+DOMAIN-SUFFIX,wx.missfresh.cn # 每日优鲜微信服务域名
+DOMAIN-SUFFIX,passport.missfresh.cn # 每日优鲜账号服务域名
 
 # > Hema Fresh by Alibaba（盒马鲜生）相关域名
+# - 校对时间：2026-03-24
 
-DOMAIN-SUFFIX,hemaos.com # 盒马鲜生生鲜零售平台主域名，用于商城访问、下单与相关服务入口
-DOMAIN-SUFFIX,hemaapp.com # 盒马鲜生客户端相关服务域名，用于应用运行与功能支持接口
-DOMAIN-SUFFIX,himalaya-h5.hemaos.com # 盒马鲜生 H5 页面与小程序相关服务域名
-DOMAIN-SUFFIX,api.hemaos.com # 盒马鲜生核心服务 API 接口域名，用于下单、支付与物流相关业务请求
-DOMAIN-SUFFIX,cdn.hemaos.com # 盒马鲜生静态资源与内容分发 CDN 域名
-DOMAIN-SUFFIX,passport.hemaos.com # 盒马鲜生用户注册、登录与身份认证服务域名
-DOMAIN-SUFFIX,log.hemaos.com # 盒马鲜生平台运行日志与服务状态相关接口域名
-DOMAIN-SUFFIX,track.hemaos.com # 盒马鲜生平台相关服务接口域名
-DOMAIN-SUFFIX,alilog.hemaos.com # 盒马鲜生日志采集与平台服务支持接口域名
-DOMAIN-SUFFIX,ucdl.hemamax.com # 盒马鲜生客户端下载与更新相关服务域名
+DOMAIN-SUFFIX,hemaos.com # 盒马鲜生主域名
+DOMAIN-SUFFIX,hemaapp.com # 盒马鲜生应用服务域名
+DOMAIN-SUFFIX,himalaya-h5.hemaos.com # 盒马鲜生 H5 服务域名
+DOMAIN-SUFFIX,api.hemaos.com # 盒马鲜生接口域名
+DOMAIN-SUFFIX,cdn.hemaos.com # 盒马鲜生内容分发域名
+DOMAIN-SUFFIX,passport.hemaos.com # 盒马鲜生账号服务域名
+DOMAIN-SUFFIX,log.hemaos.com # 盒马鲜生日志服务域名
+DOMAIN-SUFFIX,track.hemaos.com # 盒马鲜生轨迹服务域名
+DOMAIN-SUFFIX,alilog.hemaos.com # 盒马鲜生日志服务域名
+DOMAIN-SUFFIX,ucdl.hemamax.com # 盒马鲜生客户端下载服务域名
 
 # > Dingdong Maicai（叮咚买菜）相关域名
+# - 校对时间：2026-03-24
 
-DOMAIN-SUFFIX,ddxq.mobi # 叮咚买菜生鲜零售平台主域名，用于下单、支付与用户服务入口
-DOMAIN-SUFFIX,front.ddxq.mobi # 叮咚买菜前端页面服务域名，用于商品浏览与页面渲染
-DOMAIN-SUFFIX,static.ddxq.mobi # 叮咚买菜静态资源与内容分发 CDN 域名
-DOMAIN-SUFFIX,activity.ddxq.mobi # 叮咚买菜活动与内容展示相关服务域名
-DOMAIN-SUFFIX,api.ddxq.mobi # 叮咚买菜核心服务 API 接口域名，用于商品、订单与业务请求处理
-DOMAIN-SUFFIX,track.ddxq.mobi # 叮咚买菜平台相关服务接口域名
-DOMAIN-SUFFIX,log.ddxq.mobi # 叮咚买菜系统日志与运行状态相关接口域名
-DOMAIN-SUFFIX,img.ddxq.mobi # 叮咚买菜图像与媒体资源加载域名
-DOMAIN-SUFFIX,passport.ddxq.mobi # 叮咚买菜用户注册、登录与身份认证服务域名
-DOMAIN-SUFFIX,appdl.ddxq.mobi # 叮咚买菜客户端应用下载与更新服务域名
+DOMAIN-SUFFIX,ddxq.mobi # 叮咚买菜主域名
+DOMAIN-SUFFIX,front.ddxq.mobi # 叮咚买菜前端服务域名
+DOMAIN-SUFFIX,static.ddxq.mobi # 叮咚买菜静态资源域名
+DOMAIN-SUFFIX,activity.ddxq.mobi # 叮咚买菜活动服务域名
+DOMAIN-SUFFIX,api.ddxq.mobi # 叮咚买菜接口域名
+DOMAIN-SUFFIX,track.ddxq.mobi # 叮咚买菜轨迹服务域名
+DOMAIN-SUFFIX,log.ddxq.mobi # 叮咚买菜日志服务域名
+DOMAIN-SUFFIX,img.ddxq.mobi # 叮咚买菜图片资源域名
+DOMAIN-SUFFIX,passport.ddxq.mobi # 叮咚买菜账号服务域名
+DOMAIN-SUFFIX,appdl.ddxq.mobi # 叮咚买菜客户端下载服务域名
 
 # > Dada Delivery Rider（达达骑士）相关域名
+# - 校对时间：2026-03-24
 
-DOMAIN-SUFFIX,dada.cn # 达达即时配送平台主域名，用于骑手端与平台相关服务访问
-DOMAIN-SUFFIX,newretail.dada.cn # 达达新零售相关服务接口域名，用于订单与配送业务支持
-DOMAIN-SUFFIX,static.dada.cn # 达达前端静态资源服务域名，用于脚本、样式与图片资源加载
-DOMAIN-SUFFIX,track.dada.cn # 达达配送平台相关服务接口域名
-DOMAIN-SUFFIX,cdn.dada.cn # 达达内容分发与资源加速 CDN 服务域名
-DOMAIN-SUFFIX,passport.dada.cn # 达达用户注册、登录与身份认证服务域名
-DOMAIN-SUFFIX,report.dada.cn # 达达平台运行与业务状态相关服务接口域名
-DOMAIN-SUFFIX,appdl.dada.cn # 达达客户端应用下载与更新服务域名
+DOMAIN-SUFFIX,dada.cn # 达达主域名
+DOMAIN-SUFFIX,newretail.dada.cn # 达达新零售服务域名
+DOMAIN-SUFFIX,static.dada.cn # 达达静态资源域名
+DOMAIN-SUFFIX,track.dada.cn # 达达轨迹服务域名
+DOMAIN-SUFFIX,cdn.dada.cn # 达达内容分发域名
+DOMAIN-SUFFIX,passport.dada.cn # 达达账号服务域名
+DOMAIN-SUFFIX,report.dada.cn # 达达报表服务域名
+DOMAIN-SUFFIX,appdl.dada.cn # 达达客户端下载服务域名
 
 # > SF Express Rider（顺丰骑士）相关域名
+# - 校对时间：2026-03-24
 
-DOMAIN-SUFFIX,sfrexpress.com # 顺丰速运物流服务主域名，用于物流业务与平台服务访问
-DOMAIN-SUFFIX,sf-express.com # 顺丰速运相关服务域名，用于业务系统与服务接口访问
-DOMAIN-SUFFIX,ic-dev.sf-express.com # 顺丰骑士相关服务接口域名，用于客户端与平台功能支持
-DOMAIN-SUFFIX,courier.sf-express.com # 顺丰骑士平台相关服务接口域名
-DOMAIN-SUFFIX,courierapp.sf-express.com # 顺丰骑士客户端服务与应用支持接口域名
-DOMAIN-SUFFIX,dl-cdn.sf-express.com # 顺丰客户端资源分发与下载 CDN 服务域名
-DOMAIN-SUFFIX,app.sf-express.com # 顺丰客户端统一服务入口域名，用于用户端与骑士端服务访问
+DOMAIN-SUFFIX,sfrexpress.com # 顺丰速运主域名
+DOMAIN-SUFFIX,sf-express.com # 顺丰速运服务域名
+DOMAIN-SUFFIX,ic-dev.sf-express.com # 顺丰骑士接口域名
+DOMAIN-SUFFIX,courier.sf-express.com # 顺丰骑士服务域名
+DOMAIN-SUFFIX,courierapp.sf-express.com # 顺丰骑士应用服务域名
+DOMAIN-SUFFIX,dl-cdn.sf-express.com # 顺丰客户端下载服务域名
+DOMAIN-SUFFIX,app.sf-express.com # 顺丰客户端服务域名
 
 # > Shansong Express（闪送）相关域名
+# - 校对时间：2026-03-24
 
-DOMAIN-SUFFIX,shansong.cn # 闪送即时配送平台主域名，用于官网访问与用户、骑手相关服务入口
-DOMAIN-SUFFIX,api.shansong.cn # 闪送平台核心服务 API 接口域名，用于业务系统与功能调用支持
-DOMAIN-SUFFIX,oss.shansong.cn # 闪送平台文件与图像资源存储服务域名
-DOMAIN-SUFFIX,passport.shansong.cn # 闪送用户与骑手统一身份认证服务域名
-DOMAIN-SUFFIX,h5.shansong.cn # 闪送移动端 H5 页面服务域名，用于页面展示与轻量化访问
-DOMAIN-SUFFIX,cdn.shansong.cn # 闪送静态资源与内容分发 CDN 服务域名
-DOMAIN-SUFFIX,activity.shansong.cn # 闪送活动与内容展示相关服务域名
+DOMAIN-SUFFIX,shansong.cn # 闪送主域名
+DOMAIN-SUFFIX,api.shansong.cn # 闪送接口域名
+DOMAIN-SUFFIX,oss.shansong.cn # 闪送资源服务域名
+DOMAIN-SUFFIX,passport.shansong.cn # 闪送账号服务域名
+DOMAIN-SUFFIX,h5.shansong.cn # 闪送移动服务域名
+DOMAIN-SUFFIX,cdn.shansong.cn # 闪送内容分发域名
+DOMAIN-SUFFIX,activity.shansong.cn # 闪送活动服务域名
 
 # > Dianwoda Delivery（点我达）相关域名
+# - 校对时间：2026-03-24
 
-DOMAIN-SUFFIX,dianwoda.com # 点我达即时配送平台主域名，用于官网访问与用户、骑手相关服务入口
-DOMAIN-SUFFIX,api.dianwoda.com # 点我达平台核心服务 API 接口域名，用于业务系统与功能调用支持
-DOMAIN-SUFFIX,passport.dianwoda.com # 点我达用户与骑手统一身份认证服务域名
-DOMAIN-SUFFIX,cdn.dianwoda.com # 点我达静态资源与内容分发 CDN 服务域名
-DOMAIN-SUFFIX,activity.dianwoda.com # 点我达活动与内容展示相关服务域名
-DOMAIN-SUFFIX,oss.dianwoda.com # 点我达平台文件与图像资源存储服务域名
-DOMAIN-SUFFIX,h5.dianwoda.com # 点我达移动端 H5 页面服务域名，用于页面展示与轻量化访问
+DOMAIN-SUFFIX,dianwoda.com # 点我达主域名
+DOMAIN-SUFFIX,api.dianwoda.com # 点我达接口域名
+DOMAIN-SUFFIX,passport.dianwoda.com # 点我达账号服务域名
+DOMAIN-SUFFIX,cdn.dianwoda.com # 点我达内容分发域名
+DOMAIN-SUFFIX,activity.dianwoda.com # 点我达活动服务域名
+DOMAIN-SUFFIX,oss.dianwoda.com # 点我达资源服务域名
+DOMAIN-SUFFIX,h5.dianwoda.com # 点我达移动服务域名
 
 # > UU Runner（UU 跑腿）相关域名
+# - 校对时间：2026-03-24
 
-DOMAIN-SUFFIX,uupaotui.com # UU 跑腿同城即时配送平台主域名，用于官网访问与业务服务入口
-DOMAIN-SUFFIX,api.uupaotui.com # UU 跑腿平台核心服务 API 接口域名，用于系统功能与业务支持
-DOMAIN-SUFFIX,passport.uupaotui.com # UU 跑腿用户与骑手统一身份认证服务域名
-DOMAIN-SUFFIX,cdn.uupaotui.com # UU 跑腿静态资源与内容分发 CDN 服务域名
-DOMAIN-SUFFIX,h5.uupaotui.com # UU 跑腿移动端 H5 页面服务域名，用于页面展示与轻量化访问
-DOMAIN-SUFFIX,oss.uupaotui.com # UU 跑腿平台文件与图像资源存储服务域名
+DOMAIN-SUFFIX,uupaotui.com # UU 跑腿主域名
+DOMAIN-SUFFIX,api.uupaotui.com # UU 跑腿接口域名
+DOMAIN-SUFFIX,passport.uupaotui.com # UU 跑腿账号服务域名
+DOMAIN-SUFFIX,cdn.uupaotui.com # UU 跑腿内容分发域名
+DOMAIN-SUFFIX,h5.uupaotui.com # UU 跑腿移动服务域名
+DOMAIN-SUFFIX,oss.uupaotui.com # UU 跑腿资源服务域名
 
 # > SF City Delivery（顺丰同城骑士）相关域名
+# - 校对时间：2026-03-24
 
-DOMAIN-SUFFIX,sfccdn.com # 顺丰同城相关服务的内容分发与静态资源 CDN 域名
-DOMAIN-SUFFIX,sfcityrush.com # 顺丰同城骑士平台主域名，用于骑手端与平台相关服务访问
-DOMAIN-SUFFIX,api.sfcityrush.com # 顺丰同城骑士平台核心服务 API 接口域名
-DOMAIN-SUFFIX,h5.sfcityrush.com # 顺丰同城骑士移动端 H5 页面服务域名，用于页面展示与轻量化访问
-DOMAIN-SUFFIX,passport.sfcityrush.com # 顺丰同城骑士用户注册、登录与身份认证服务域名
-DOMAIN-SUFFIX,oss.sfcityrush.com # 顺丰同城骑士平台文件与图像资源存储服务域名
+DOMAIN-SUFFIX,sfccdn.com # 顺丰同城内容分发域名
+DOMAIN-SUFFIX,sfcityrush.com # 顺丰同城骑士主域名
+DOMAIN-SUFFIX,api.sfcityrush.com # 顺丰同城骑士接口域名
+DOMAIN-SUFFIX,h5.sfcityrush.com # 顺丰同城骑士移动服务域名
+DOMAIN-SUFFIX,passport.sfcityrush.com # 顺丰同城骑士账号服务域名
+DOMAIN-SUFFIX,oss.sfcityrush.com # 顺丰同城骑士资源服务域名
 
-# > Ele.me（本地生活服务）相关域名
+# > Bank of China（中国银行）相关域名
+# - 校对时间：2026-03-24
 
-DOMAIN-SUFFIX,ele.me # 饿了么主站域名，用于点餐与外卖服务入口 
-DOMAIN-SUFFIX,ele-inc.com # 饿了么企业级域名，涉及内网、管理与接口调用 
-DOMAIN-SUFFIX,eleme.cn # 饿了么历史域名或 CDN 服务节点，部分内容仍在使用 
-DOMAIN-SUFFIX,eleme.io # 饿了么前端项目使用的静态资源域名 
-DOMAIN-SUFFIX,eleme.net # 饿了么活动/营销用辅助域名 
-DOMAIN-SUFFIX,production.ele.me # 饿了么生产环境接口域名，用于订单、支付等请求 
-DOMAIN-SUFFIX,apollo.ele.me # 饿了么 A/B 测试与配置服务平台 
-DOMAIN-SUFFIX,logstore.ele.me # 饿了么日志收集与埋点行为记录服务 
+DOMAIN-SUFFIX,boc.cn # 中国银行主域名
+DOMAIN-SUFFIX,ebsnew.boc.cn # 中国银行企业网银服务域名
+DOMAIN-SUFFIX,bocmac.com # 中国银行移动服务域名
+DOMAIN-SUFFIX,bocfullertonbank.com # 中银富登服务域名
+DOMAIN-SUFFIX,bocapps.com # 中国银行应用服务域名
+DOMAIN-SUFFIX,bocichina.com # 中银保险服务域名
+DOMAIN-SUFFIX,bocim.com # 中银投资管理服务域名
+DOMAIN-SUFFIX,bocpay.com.hk # 中银香港支付服务域名
+DOMAIN-SUFFIX,bocnet.com.cn # 中国银行网银服务域名
+DOMAIN-SUFFIX,boccc.cc # 中国银行信用卡服务域名
+DOMAIN-SUFFIX,bank-of-china.com # 中国银行国际服务域名
 
-# > 中国银行相关域名（Bank of China）
+# > Industrial and Commercial Bank of China（工商银行）相关域名
+# - 校对时间：2026-03-24
 
-DOMAIN-SUFFIX,boc.cn # 中国银行主域名，提供官网访问、账户服务与网上银行入口 
-DOMAIN-SUFFIX,ebsnew.boc.cn # 中国银行企业网银与账户服务平台入口 
-DOMAIN-SUFFIX,ibsbjstar.ccb.com.cn # 中行联通跨行网银服务节点，部分接口委托建行处理 
-DOMAIN-SUFFIX,bocmac.com # 中国银行移动支付组件与短信接口服务域名 
-DOMAIN-SUFFIX,bocfullertonbank.com # 中银富登村镇银行官方域名，提供本地金融服务 
-DOMAIN-SUFFIX,bocapps.com # 中国银行移动端 App 接口服务域名，涉及登录与交易 
-DOMAIN-SUFFIX,bocichina.com # 中银保险服务平台，提供保险产品与投保接口 
-DOMAIN-SUFFIX,bocim.com # 中国银行投资管理服务平台，涵盖基金、理财等业务 
-DOMAIN-SUFFIX,bocpay.com.hk # 中银香港 BOCPay 支付平台，用于本地扫码支付与交易 
-DOMAIN-SUFFIX,bocnet.com.cn # 中国银行备用旧版服务域名，部分旧系统仍在使用 
-DOMAIN-SUFFIX,boccc.cc # 中国银行信用卡服务域名，提供账单、积分与还款服务 
-DOMAIN-SUFFIX,bank-of-china.com # 中国银行国际版官网域名，用于境外服务与外币交易 
+DOMAIN-SUFFIX,icbc.com.cn # 工商银行主域名
+DOMAIN-SUFFIX,icbc-ltd.com # 工商银行国际服务域名
+DOMAIN-SUFFIX,icbccs.com.cn # 工银瑞信服务域名
+DOMAIN-SUFFIX,icbc-axa.com # 工银安盛服务域名
+DOMAIN-SUFFIX,icbc.com # 工商银行国际服务域名
+DOMAIN-SUFFIX,e.icbc.com.cn # 工商银行电子银行服务域名
+DOMAIN-SUFFIX,mybank.icbc.com.cn # 工商银行个人网银服务域名
+DOMAIN-SUFFIX,corporbank.icbc.com.cn # 工商银行企业网银服务域名
+DOMAIN-SUFFIX,mail.icbc.com.cn # 工商银行邮件服务域名
+DOMAIN-SUFFIX,bill.icbc.com.cn # 工商银行票据服务域名
+DOMAIN-SUFFIX,mywap2.icbc.com.cn # 工商银行移动服务域名
+DOMAIN-SUFFIX,image.mybank.icbc.com.cn # 工商银行图片资源域名
 
-# > 工商银行相关域名（Industrial and Commercial Bank of China）
+# > China Construction Bank（建设银行）相关域名
+# - 校对时间：2026-03-24
 
-DOMAIN-SUFFIX,icbc.com.cn # 工行主站域名，用于官网、个人/企业网银等服务入口 
-DOMAIN-SUFFIX,icbc-ltd.com # 工商银行股份有限公司国际业务站点与公告服务 
-DOMAIN-SUFFIX,icbccs.com.cn # 工银瑞信基金管理公司官网，提供基金产品与交易服务 
-DOMAIN-SUFFIX,icbc-axa.com # 工银安盛人寿保险公司官网，涉及保险业务与客户服务 
-DOMAIN-SUFFIX,icbc.com # 工行国际站旧版域名，部分系统仍用于外币与境外业务 
-DOMAIN-SUFFIX,e.icbc.com.cn # 工行电子银行服务子域，用于手机银行等接口请求 
-DOMAIN-SUFFIX,mybank.icbc.com.cn # 工行个人网银服务平台，提供账户管理与支付服务 
-DOMAIN-SUFFIX,corporbank.icbc.com.cn # 工行企业网银服务平台，涉及转账、报销等接口 
-DOMAIN-SUFFIX,mail.icbc.com.cn # 工行企业邮箱服务域名，用于内部通信与通知发送 
-DOMAIN-SUFFIX,bill.icbc.com.cn # 工行票据业务接口，服务于电子票据与报表查询 
-DOMAIN-SUFFIX,mywap2.icbc.com.cn # 工商银行移动端主页面接口，支持账户信息展示与功能导航 
-DOMAIN-SUFFIX,image.mybank.icbc.com.cn # 工行图像加载接口，提供登录验证码与图片资源 
+DOMAIN-SUFFIX,ccb.com # 建设银行主域名
+DOMAIN-SUFFIX,ccb.com.cn # 建设银行中国区服务域名
+DOMAIN-SUFFIX,ccbintl.com # 建设银行国际服务域名
+DOMAIN-SUFFIX,ccb-life.com.cn # 建信人寿服务域名
+DOMAIN-SUFFIX,ccb-ft.com # 建信基金服务域名
+DOMAIN-SUFFIX,ccbfa.com # 建行金融科技服务域名
+DOMAIN-SUFFIX,ccbhome.cn # 建行住房金融服务域名
+DOMAIN-SUFFIX,netbank.ccb.com # 建设银行个人网银服务域名
+DOMAIN-SUFFIX,ebank.ccb.com # 建设银行企业网银服务域名
+DOMAIN-SUFFIX,mail.ccb.com # 建设银行邮件服务域名
 
-# > 建设银行相关域名（China Construction Bank）
+# > Agricultural Bank of China（农业银行）相关域名
+# - 校对时间：2026-03-24
 
-DOMAIN-SUFFIX,ccb.com # 建设银行主站域名，用于官网与国际版服务入口 
-DOMAIN-SUFFIX,ccb.com.cn # 建行中国大陆主域名，用于账户管理、网银与手机银行 
-DOMAIN-SUFFIX,ccbintl.com # 建行国际金融服务域名，覆盖海外地区银行业务 
-DOMAIN-SUFFIX,ccb-life.com.cn # 建信人寿保险官网，用于保险产品与客户服务 
-DOMAIN-SUFFIX,ccb-ft.com # 建信基金管理公司主域名，提供基金投资与理财服务 
-DOMAIN-SUFFIX,ccbfa.com # 建行金融科技子公司域名，涉及创新服务平台 
-DOMAIN-SUFFIX,ccbhome.cn # 建行住房金融服务平台，涵盖按揭、公积金等相关业务 
-DOMAIN-SUFFIX,netbank.ccb.com # 建行个人网银平台接口域名，涉及交易与身份验证 
-DOMAIN-SUFFIX,ebank.ccb.com # 建行企业网银与在线支付接口入口 
-DOMAIN-SUFFIX,mail.ccb.com # 建行内部与客户邮件通信服务域名 
+DOMAIN-SUFFIX,abchina.com # 农业银行主域名
+DOMAIN-SUFFIX,abchina.com.cn # 农业银行中国区服务域名
+DOMAIN-SUFFIX,abchina.net # 农业银行国际服务域名
+DOMAIN-SUFFIX,95599.cn # 农业银行客户服务域名
+DOMAIN-SUFFIX,mail.abchina.com # 农业银行邮件服务域名
+DOMAIN-SUFFIX,abc-fund.com # 农银汇理服务域名
+DOMAIN-SUFFIX,abcinsurance.com.cn # 农银人寿服务域名
+DOMAIN-SUFFIX,abc-ca.com.cn # 农业银行 CA 服务域名
+DOMAIN-SUFFIX,netpay.abchina.com # 农业银行支付服务域名
+DOMAIN-SUFFIX,ebank.abchina.com # 农业银行电子银行服务域名
 
-# > 农业银行相关域名（Agricultural Bank of China）
+# > China Merchants Bank（招商银行）相关域名
+# - 校对时间：2026-03-24
 
-DOMAIN-SUFFIX,abchina.com # 农业银行主站域名，用于官网、账户服务与产品展示 
-DOMAIN-SUFFIX,abchina.com.cn # 农行中国大陆业务域名，涵盖企业/个人网银与移动银行 
-DOMAIN-SUFFIX,abchina.net # 农行海外与国际业务接口域名 
-DOMAIN-SUFFIX,95599.cn # 农业银行客服电话入口与营销活动服务域名 
-DOMAIN-SUFFIX,mail.abchina.com # 农行内部及外部邮件服务域名 
-DOMAIN-SUFFIX,abc-fund.com # 农银汇理基金管理有限公司官网，提供理财与基金服务 
-DOMAIN-SUFFIX,abcinsurance.com.cn # 农银人寿保险平台，用于投保、保单查询等业务 
-DOMAIN-SUFFIX,abc-ca.com.cn # 农行 CA 认证中心域名，用于安全认证与证书服务 
-DOMAIN-SUFFIX,netpay.abchina.com # 农行网银在线支付与交易接口域名 
-DOMAIN-SUFFIX,ebank.abchina.com # 农行电子银行平台接口，含登录验证与转账服务 
+DOMAIN-SUFFIX,cmbchina.com # 招商银行主域名
+DOMAIN-SUFFIX,cmbimg.com # 招商银行静态资源域名
+DOMAIN-SUFFIX,cmbt.cn # 招商银行短链服务域名
+DOMAIN-SUFFIX,cmbcreditcard.com # 招商银行信用卡服务域名
+DOMAIN-SUFFIX,cmbchina.com.cn # 招商银行中国区服务域名
+DOMAIN-SUFFIX,cmbank.cn # 招商银行服务域名
+DOMAIN-SUFFIX,appplay.cmbchina.com # 招商银行应用服务域名
+DOMAIN-SUFFIX,netbank.cmbchina.com # 招商银行网银服务域名
+DOMAIN-SUFFIX,mobsec.cmbchina.com # 招商银行移动安全服务域名
+DOMAIN-SUFFIX,cmbapi.com # 招商银行 API 服务域名
 
-# > 招商银行相关域名（China Merchants Bank）
+# > China CITIC Bank（中信银行）相关域名
+# - 校对时间：2026-03-24
 
-DOMAIN-SUFFIX,cmbchina.com # 招商银行主站域名，用于账户服务、业务查询与客户登录 
-DOMAIN-SUFFIX,cmbimg.com # 招行静态资源 CDN，用于图标、脚本与前端组件加载 
-DOMAIN-SUFFIX,cmbt.cn # 招行营销活动与链接跳转使用的短链域名 
-DOMAIN-SUFFIX,cmbcreditcard.com # 招商银行信用卡中心网站，提供办卡、积分、还款等服务 
-DOMAIN-SUFFIX,cmbchina.com.cn # 招行中国区业务相关子域名，用于安全认证或定向接口 
-DOMAIN-SUFFIX,cmbank.cn # 招行早期或内部服务域名，现用于部分后台接口 
-DOMAIN-SUFFIX,appplay.cmbchina.com # 招行 App 专属接口，涉及登录验证、首页推荐等 
-DOMAIN-SUFFIX,netbank.cmbchina.com # 招行网银登录与交易服务接口 
-DOMAIN-SUFFIX,mobsec.cmbchina.com # 招行移动安全服务接口，用于设备识别与风控行为 
-DOMAIN-SUFFIX,cmbapi.com # 招商银行 API 平台域名，供第三方或开放接口接入 
-
-# > 中信银行相关域名（China CITIC Bank）
-
-DOMAIN-SUFFIX,citicbank.com # 中信银行主站域名，提供网银登录、账户管理与业务介绍 
-DOMAIN-SUFFIX,ecitic.com # 中信电子银行服务平台，用于企业金融、投资与外汇业务 
-DOMAIN-SUFFIX,citicgroup.com.cn # 中信集团公司官网，涉及集团金融服务入口与信息展示 
-DOMAIN-SUFFIX,app.citicbank.com # 中信银行手机银行 App 接口服务域名 
-DOMAIN-SUFFIX,creditcard.ecitic.com # 中信银行信用卡中心服务域名，含申请、积分、账单等功能 
-DOMAIN-SUFFIX,citic-cloud.com # 中信银行云服务平台域名，用于 API 接入与后台服务连接 
-DOMAIN-SUFFIX,e.cmbchina.cn # 中信银行电子渠道服务接口，支持交易与身份验证 
+DOMAIN-SUFFIX,citicbank.com # 中信银行主域名
+DOMAIN-SUFFIX,ecitic.com # 中信银行电子银行服务域名
+DOMAIN-SUFFIX,citicgroup.com.cn # 中信集团服务域名
+DOMAIN-SUFFIX,app.citicbank.com # 中信银行应用服务域名
+DOMAIN-SUFFIX,creditcard.ecitic.com # 中信银行信用卡服务域名
+DOMAIN-SUFFIX,citic-cloud.com # 中信银行云服务域名
 
 # > 交通银行相关域名（Bank of Communications）
 
