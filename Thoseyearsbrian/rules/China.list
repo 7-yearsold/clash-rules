@@ -4,7 +4,7 @@
 # - 特征：涵盖搜索引擎、电商平台、社交媒体、支付服务、地图导航、云服务、内容平台、工具服务等典型服务域名
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-03-24
+# - 更新时间：2026-03-25
 
 # > Alibaba Group - China（阿里巴巴中国站）相关域名
 # - 校对时间：2026-03-23
@@ -91,9 +91,6 @@ DOMAIN-SUFFIX,aliyundrive.cloud # 阿里云盘下载服务域名
 # > Taobao / Alibaba Group（淘宝 / 阿里巴巴集团）相关域名
 # - 校对时间：2026-03-23
 
-DOMAIN-SUFFIX,taobao.com # 淘宝主域名
-DOMAIN-SUFFIX,tmall.com # 天猫主域名
-DOMAIN-SUFFIX,tmall.hk # 天猫国际服务域名
 DOMAIN-SUFFIX,taobaocdn.com # 淘宝内容分发域名
 DOMAIN-SUFFIX,mmstat.com # 阿里电商统计服务域名
 
@@ -124,14 +121,14 @@ DOMAIN-SUFFIX,i.antfin.com # 蚂蚁集团基础服务域名
 
 IP-CIDR,223.5.5.5/32 # 阿里云公共 DNS 解析节点
 IP-CIDR,223.6.6.6/32 # 阿里云公共 DNS 解析节点
-# IP-CIDR6,2400:3200::1/128 # 阿里云公共 DNS IPv6 解析节点
-# IP-CIDR6,2400:3200:baba::1/128 # 阿里云公共 DNS IPv6 解析节点
+IP-CIDR6,2400:3200::1/128 # 阿里云公共 DNS IPv6 解析节点
+IP-CIDR6,2400:3200:baba::1/128 # 阿里云公共 DNS IPv6 解析节点
 
 # > Tencent DNSPod（DNS 解析与链路探测接口）
 # - 校对时间：2026-03-24
 
-# IP-CIDR,119.29.29.90/32 # 腾讯 DNSPod 公共 DNS 解析节点
-# IP-CIDR,119.29.29.98/32 # 腾讯 DNSPod 公共 DNS 解析节点
+IP-CIDR,119.29.29.90/32 # 腾讯 DNSPod 公共 DNS 解析节点
+IP-CIDR,119.29.29.98/32 # 腾讯 DNSPod 公共 DNS 解析节点
 
 # > Tencent Cloud（腾讯云）
 # - 校对时间：2026-03-24
@@ -552,11 +549,8 @@ DOMAIN-SUFFIX,dreport.meituan.net # 美团报表服务域名
 
 DOMAIN-SUFFIX,cainiao.meituan.com # 美团专送服务域名
 DOMAIN-SUFFIX,dispatch.meituan.com # 美团调度服务域名
-DOMAIN-SUFFIX,logistics.meituan.com # 美团物流服务域名
 DOMAIN-SUFFIX,locate.meituan.com # 美团定位服务域名
 DOMAIN-SUFFIX,dm.meituan.com # 美团专送平台服务域名
-DOMAIN-SUFFIX,mdn.meituan.com # 美团内容分发域名
-DOMAIN-SUFFIX,peisong.meituan.com # 美团配送服务域名
 DOMAIN-SUFFIX,star.meituan.com # 美团平台服务域名
 
 # > Meituan LePao Delivery（美团乐跑）相关域名
@@ -792,1886 +786,1579 @@ DOMAIN-SUFFIX,app.citicbank.com # 中信银行应用服务域名
 DOMAIN-SUFFIX,creditcard.ecitic.com # 中信银行信用卡服务域名
 DOMAIN-SUFFIX,citic-cloud.com # 中信银行云服务域名
 
-# > 交通银行相关域名（Bank of Communications）
+# > Bank of Communications（交通银行）相关域名
+# - 校对时间：2026-03-25
 
-DOMAIN-SUFFIX,bocom.cn # 交通银行主站域名，提供个人/企业银行服务入口与账户管理 
-DOMAIN-SUFFIX,bankcomm.com # 交通银行国际业务与资讯展示域名 
-DOMAIN-SUFFIX,95559.com # 交行信用卡与手机银行服务入口域名，用于登录、账单、积分等 
-DOMAIN-SUFFIX,e-bankcomm.com # 交通银行电子银行服务域名，涉及支付、转账与身份验证 
-DOMAIN-SUFFIX,bocomfinance.com # 交行金融市场平台，用于理财、基金、债券等服务 
-DOMAIN-SUFFIX,bocomgroup.com # 交通银行集团信息门户，涉及集团业务与公告展示 
+DOMAIN-SUFFIX,bocom.cn # 交通银行主域名
+DOMAIN-SUFFIX,bankcomm.com # 交通银行国际服务域名
+DOMAIN-SUFFIX,95559.com # 交通银行信用卡与手机银行服务域名
+DOMAIN-SUFFIX,e-bankcomm.com # 交通银行电子银行服务域名
+DOMAIN-SUFFIX,bocomfinance.com # 交通银行金融服务域名
+DOMAIN-SUFFIX,bocomgroup.com # 交通银行集团服务域名
 
-# > 邮政储蓄银行相关域名（Postal Savings Bank of China）
+# > Postal Savings Bank of China（邮政储蓄银行）相关域名
+# - 校对时间：2026-03-25
 
-DOMAIN-SUFFIX,psbc.com # 邮政储蓄银行主站域名，提供个人与企业银行服务 
-DOMAIN-SUFFIX,psbcoa.com # 邮储银行账户与身份验证接口服务域名 
-DOMAIN-SUFFIX,psbcinternetbank.com # 邮储银行网上银行平台，用于转账、查询等服务 
-DOMAIN-SUFFIX,psbcpay.com # 邮储银行支付平台域名，服务于收银台与交易接口 
-DOMAIN-SUFFIX,psbcapp.com # 邮储银行 App 接口与推广服务域名 
+DOMAIN-SUFFIX,psbc.com # 邮政储蓄银行主域名
+DOMAIN-SUFFIX,psbcoa.com # 邮政储蓄银行账号服务域名
+DOMAIN-SUFFIX,psbcinternetbank.com # 邮政储蓄银行网银服务域名
+DOMAIN-SUFFIX,psbcpay.com # 邮政储蓄银行支付服务域名
+DOMAIN-SUFFIX,psbcapp.com # 邮政储蓄银行应用服务域名
 
-# > 民生银行相关域名（China Minsheng Bank）
+# > China Minsheng Bank（民生银行）相关域名
+# - 校对时间：2026-03-25
 
-DOMAIN-SUFFIX,cmbc.com.cn # 民生银行主站域名，用于账户服务与产品介绍 
-DOMAIN-SUFFIX,cmbc.com # 民生银行国际或跳转域名，用于业务入口与活动 
-DOMAIN-SUFFIX,netbank.cmbc.com.cn # 民生银行网上银行登录与交易接口 
-DOMAIN-SUFFIX,cmbcjr.cn # 民生银行金融科技服务平台域名 
-DOMAIN-SUFFIX,cmbccloud.cn # 民生银行云服务平台域名，用于系统接入与设备通信 
-DOMAIN-SUFFIX,cmbcebank.cn # 民生电子银行服务域名，含 App 与企业接口 
+DOMAIN-SUFFIX,cmbc.com.cn # 民生银行主域名
+DOMAIN-SUFFIX,cmbc.com # 民生银行服务域名
+DOMAIN-SUFFIX,netbank.cmbc.com.cn # 民生银行网银服务域名
+DOMAIN-SUFFIX,cmbcjr.cn # 民生银行金融科技服务域名
+DOMAIN-SUFFIX,cmbccloud.cn # 民生银行云服务域名
+DOMAIN-SUFFIX,cmbcebank.cn # 民生银行电子银行服务域名
 
-# > 平安银行相关域名（Ping An Bank）
+# > Ping An Bank（平安银行）相关域名
+# - 校对时间：2026-03-25
 
-DOMAIN-SUFFIX,pingan.com # 中国平安集团主域名，涵盖银行、保险等服务 
-DOMAIN-SUFFIX,pingan.com.cn # 平安银行及集团服务在大陆的主要接口域名 
-DOMAIN-SUFFIX,pingan.cn # 平安集团短链域名，用于活动跳转与接口 
-DOMAIN-SUFFIX,pinganbank.com # 平安银行主站域名，展示业务与账户服务 
-DOMAIN-SUFFIX,pinganbank.com.cn # 平安银行接口域名，用于登录、交易等核心服务 
-DOMAIN-SUFFIX,pingansec.com.cn # 平安证券接口域名，部分场景由银行调用 
-DOMAIN-SUFFIX,pinganfintech.com # 平安金融科技平台域名，用于后台服务与身份验证 
+DOMAIN-SUFFIX,pingan.com # 平安集团主域名
+DOMAIN-SUFFIX,pingan.com.cn # 平安集团中国区服务域名
+DOMAIN-SUFFIX,pingan.cn # 平安集团短链服务域名
+DOMAIN-SUFFIX,pinganbank.com # 平安银行主域名
+DOMAIN-SUFFIX,pinganbank.com.cn # 平安银行服务域名
+DOMAIN-SUFFIX,pingansec.com.cn # 平安证券服务域名
+DOMAIN-SUFFIX,pinganfintech.com # 平安金融科技服务域名
 
-# > 兴业银行相关域名（Industrial Bank）
+# > Industrial Bank（兴业银行）相关域名
+# - 校对时间：2026-03-25
 
-DOMAIN-SUFFIX,cib.com.cn # 兴业银行主站域名，用于账户服务、业务展示与用户登录 
-DOMAIN-SUFFIX,cibfintech.com.cn # 兴业数字科技平台域名，支持云服务与身份验证 
-DOMAIN-SUFFIX,cibmall.net # 兴业银行商城平台域名，用于积分兑换与商品浏览 
-DOMAIN-SUFFIX,cibwealth.com.cn # 兴业银行财富管理子平台域名，提供投资理财服务 
-DOMAIN-SUFFIX,cibcreditcard.com # 兴业银行信用卡服务域名，用于账单查询与交易记录 
-DOMAIN-SUFFIX,cibepay.com # 兴业银行电子支付平台域名，涉及快捷支付与收银服务 
+DOMAIN-SUFFIX,cib.com.cn # 兴业银行主域名
+DOMAIN-SUFFIX,cibfintech.com.cn # 兴业数字科技服务域名
+DOMAIN-SUFFIX,cibmall.net # 兴业银行商城服务域名
+DOMAIN-SUFFIX,cibwealth.com.cn # 兴业银行财富管理服务域名
+DOMAIN-SUFFIX,cibcreditcard.com # 兴业银行信用卡服务域名
+DOMAIN-SUFFIX,cibepay.com # 兴业银行电子支付服务域名
 
-# > 光大银行相关域名（China Everbright Bank）
+# > China Everbright Bank（光大银行）相关域名
+# - 校对时间：2026-03-25
 
-DOMAIN-SUFFIX,cebbank.com # 光大银行主站域名，用于账户管理、在线银行服务等 
-DOMAIN-SUFFIX,cebbank.net # 光大银行附属服务域名，部分用于子系统与业务入口 
-DOMAIN-SUFFIX,cebpersonbank.com # 光大个人网银平台域名，提供账户操作与交易服务 
-DOMAIN-SUFFIX,ebank.cebbank.com # 光大网上银行子域，登录、转账等核心业务接口 
-DOMAIN-SUFFIX,open.cebbank.com # 光大开放平台接口域名，供第三方接入与开发使用 
-DOMAIN-SUFFIX,cebnetbank.com # 光大银行网络服务入口，部分用于身份验证与安全服务 
+DOMAIN-SUFFIX,cebbank.com # 光大银行主域名
+DOMAIN-SUFFIX,cebbank.net # 光大银行服务域名
+DOMAIN-SUFFIX,cebpersonbank.com # 光大银行个人网银服务域名
+DOMAIN-SUFFIX,ebank.cebbank.com # 光大银行网银服务域名
+DOMAIN-SUFFIX,open.cebbank.com # 光大银行开放平台域名
+DOMAIN-SUFFIX,cebnetbank.com # 光大银行网络服务域名
 
-# > 广发银行相关域名（China Guangfa Bank / CGB）
+# > China Guangfa Bank / CGB（广发银行）相关域名
+# - 校对时间：2026-03-25
 
-DOMAIN-SUFFIX,cgbchina.com.cn # 广发银行主站域名，用于账户管理、网银服务与信息展示 
-DOMAIN-SUFFIX,cgbchina.com # 广发银行备用主域名，部分服务兼容访问 
-DOMAIN-SUFFIX,cgbchina.net # 广发银行子系统及业务接口域名 
-DOMAIN-SUFFIX,ebank.cgbchina.com.cn # 广发网上银行入口，支持账户登录、转账、缴费等功能 
-DOMAIN-SUFFIX,open.cgbchina.com.cn # 广发开放平台接口域名，供第三方接入服务 
-DOMAIN-SUFFIX,cgbcreditcard.com # 广发信用卡中心官网，提供卡片申请、账单查询等服务 
+DOMAIN-SUFFIX,cgbchina.com.cn # 广发银行主域名
+DOMAIN-SUFFIX,cgbchina.com # 广发银行服务域名
+DOMAIN-SUFFIX,cgbchina.net # 广发银行业务服务域名
+DOMAIN-SUFFIX,ebank.cgbchina.com.cn # 广发银行网银服务域名
+DOMAIN-SUFFIX,open.cgbchina.com.cn # 广发银行开放平台域名
+DOMAIN-SUFFIX,cgbcreditcard.com # 广发银行信用卡服务域名
 
-# > 华夏银行相关域名（Huaxia Bank）
+# > Huaxia Bank（华夏银行）相关域名
+# - 校对时间：2026-03-25
 
-DOMAIN-SUFFIX,hxb.com.cn # 华夏银行主站域名，用于账户服务、信息展示与业务系统入口 
-DOMAIN-SUFFIX,ebank.hxb.com.cn # 华夏网上银行服务入口，支持转账、查询、缴费等功能 
-DOMAIN-SUFFIX,cashier.hxb.com.cn # 华夏支付收银台域名，用于交易验证与支付接口调用 
-DOMAIN-SUFFIX,creditcard.hxb.com.cn # 华夏信用卡中心服务域名，用于办卡、积分查询等服务 
-DOMAIN-SUFFIX,open.hxb.com.cn # 华夏开放平台域名，支持第三方系统接入调用 
-DOMAIN-SUFFIX,hxbank.com.cn # 华夏银行备用域名，部分历史业务系统仍在使用 
+DOMAIN-SUFFIX,hxb.com.cn # 华夏银行主域名
+DOMAIN-SUFFIX,ebank.hxb.com.cn # 华夏银行网银服务域名
+DOMAIN-SUFFIX,cashier.hxb.com.cn # 华夏银行支付服务域名
+DOMAIN-SUFFIX,creditcard.hxb.com.cn # 华夏银行信用卡服务域名
+DOMAIN-SUFFIX,open.hxb.com.cn # 华夏银行开放平台域名
+DOMAIN-SUFFIX,hxbank.com.cn # 华夏银行服务域名
 
-# > 浦发银行相关域名（SPDB）
+# > SPD Bank（浦发银行）相关域名
+# - 校对时间：2026-03-25
 
-DOMAIN-SUFFIX,spdb.com.cn # 浦发网上银行服务入口，支持账户管理与交易操作 
-DOMAIN-SUFFIX,m.spdb.com.cn # 浦发手机银行服务域名，供移动端 App 调用 
-DOMAIN-SUFFIX,open.spdb.com.cn # 浦发开放平台域名，第三方系统接入入口 
-DOMAIN-SUFFIX,pafibank.com # 浦发旗下平安付金融服务域名，用于支付与接口服务 
-DOMAIN-SUFFIX,spdbccc.com.cn # 浦发信用卡中心主域名，支持办卡、账单查询等 
-DOMAIN-SUFFIX,cc.spdb.com.cn # 信用卡子系统域名，部分接口服务调用依赖 
-DOMAIN-SUFFIX,ebanking.spdb.com.cn # 电子银行综合服务接口，支持交易与身份验证 
+DOMAIN-SUFFIX,spdb.com.cn # 浦发银行主域名
+DOMAIN-SUFFIX,m.spdb.com.cn # 浦发银行移动服务域名
+DOMAIN-SUFFIX,open.spdb.com.cn # 浦发银行开放平台域名
+DOMAIN-SUFFIX,pafibank.com # 浦发银行金融服务域名
+DOMAIN-SUFFIX,spdbccc.com.cn # 浦发银行信用卡服务域名
+DOMAIN-SUFFIX,cc.spdb.com.cn # 浦发银行信用卡服务域名
+DOMAIN-SUFFIX,ebanking.spdb.com.cn # 浦发银行电子银行服务域名
 
-# > 恒丰银行相关域名（Hengfeng Bank）
+# > Hengfeng Bank（恒丰银行）相关域名
+# - 校对时间：2026-03-25
 
-DOMAIN-SUFFIX,hfbank.com.cn # 恒丰银行主站域名，用于官网访问、产品介绍与公告展示 
-DOMAIN-SUFFIX,ebank.hfbank.com.cn # 恒丰网上银行服务域名，供个人与企业账户登录与操作 
-DOMAIN-SUFFIX,m.hfbank.com.cn # 恒丰银行手机端网站及部分移动服务入口 
-DOMAIN-SUFFIX,wap.hfbank.com.cn # 恒丰银行早期移动服务域名，兼容旧版客户端调用 
-DOMAIN-SUFFIX,online.hfbank.com.cn # 恒丰电子银行接口域名，支持交易、转账等服务 
+DOMAIN-SUFFIX,hfbank.com.cn # 恒丰银行主域名
+DOMAIN-SUFFIX,ebank.hfbank.com.cn # 恒丰银行网银服务域名
+DOMAIN-SUFFIX,m.hfbank.com.cn # 恒丰银行移动服务域名
+DOMAIN-SUFFIX,wap.hfbank.com.cn # 恒丰银行移动服务域名
+DOMAIN-SUFFIX,online.hfbank.com.cn # 恒丰银行电子银行服务域名
 
-# > 渤海银行相关域名（Bohai Bank）
+# > Bohai Bank（渤海银行）相关域名
+# - 校对时间：2026-03-25
 
-DOMAIN-SUFFIX,cbhb.com.cn # 渤海银行主站域名，用于官网浏览、产品与服务信息展示 
-DOMAIN-SUFFIX,ebank.cbhb.com.cn # 渤海银行网上银行服务入口，提供账户登录、转账支付等功能 
-DOMAIN-SUFFIX,m.cbhb.com.cn # 渤海银行移动端官网域名，供手机浏览器访问 
-DOMAIN-SUFFIX,wap.cbhb.com.cn # 渤海银行移动门户旧版入口，部分系统兼容使用 
-DOMAIN-SUFFIX,online.cbhb.com.cn # 渤海银行在线服务接口，处理交易验证与业务请求 
+DOMAIN-SUFFIX,cbhb.com.cn # 渤海银行主域名
+DOMAIN-SUFFIX,ebank.cbhb.com.cn # 渤海银行网银服务域名
+DOMAIN-SUFFIX,m.cbhb.com.cn # 渤海银行移动服务域名
+DOMAIN-SUFFIX,wap.cbhb.com.cn # 渤海银行移动服务域名
+DOMAIN-SUFFIX,online.cbhb.com.cn # 渤海银行在线服务域名
 
-# > 浙商银行相关域名（CZBank）
+# > CZBank（浙商银行）相关域名
+# - 校对时间：2026-03-25
 
-DOMAIN-SUFFIX,czbank.com # 浙商银行主站域名，用于官网访问、新闻与业务介绍 
-DOMAIN-SUFFIX,czbank.com.cn # 浙商银行官方主域名，用于网上银行与业务系统接入 
-DOMAIN-SUFFIX,ebank.czbank.com.cn # 浙商银行网上银行系统，提供登录、转账、账户查询等功能 
-DOMAIN-SUFFIX,wap.czbank.com.cn # 浙商银行移动门户旧版入口，适配老设备访问 
-DOMAIN-SUFFIX,m.czbank.com.cn # 浙商银行移动端官网页面，用于营销活动与服务指引 
+DOMAIN-SUFFIX,czbank.com # 浙商银行主域名
+DOMAIN-SUFFIX,czbank.com.cn # 浙商银行服务域名
+DOMAIN-SUFFIX,ebank.czbank.com.cn # 浙商银行网银服务域名
+DOMAIN-SUFFIX,wap.czbank.com.cn # 浙商银行移动服务域名
+DOMAIN-SUFFIX,m.czbank.com.cn # 浙商银行移动服务域名
 
-# > 北京银行相关域名（Bank of Beijing）
+# > Bank of Beijing（北京银行）相关域名
+# - 校对时间：2026-03-25
 
-DOMAIN-SUFFIX,bankofbeijing.com.cn # 北京银行主站域名，用于官网展示与业务介绍 
-DOMAIN-SUFFIX,ebank.bankofbeijing.com.cn # 网上银行系统，提供账户查询与转账服务 
-DOMAIN-SUFFIX,m.bankofbeijing.com.cn # 移动门户域名，适配手机访问 
-DOMAIN-SUFFIX,wap.bankofbeijing.com.cn # 旧版移动门户，部分老版本应用调用 
-DOMAIN-SUFFIX,bo-b.cn # 营销短链服务域名，用于活动跳转与短信链接 
+DOMAIN-SUFFIX,bankofbeijing.com.cn # 北京银行主域名
+DOMAIN-SUFFIX,ebank.bankofbeijing.com.cn # 北京银行网银服务域名
+DOMAIN-SUFFIX,m.bankofbeijing.com.cn # 北京银行移动服务域名
+DOMAIN-SUFFIX,wap.bankofbeijing.com.cn # 北京银行移动服务域名
+DOMAIN-SUFFIX,bo-b.cn # 北京银行短链服务域名
 
-# > 南京银行相关域名（Bank of Nanjing）
+# > Bank of Nanjing（南京银行）相关域名
+# - 校对时间：2026-03-25
 
-DOMAIN-SUFFIX,bankofnanjing.com.cn # 南京银行主站域名，用于官网展示与业务介绍 
-DOMAIN-SUFFIX,ebank.bankofnanjing.com.cn # 网上银行服务入口，提供账户查询与转账服务 
-DOMAIN-SUFFIX,m.bankofnanjing.com.cn # 移动门户域名，适配手机浏览器访问 
-DOMAIN-SUFFIX,wap.bankofnanjing.com.cn # 老版移动网站接口，部分旧系统仍调用 
-DOMAIN-SUFFIX,bnj.com.cn # 南京银行活动跳转
+DOMAIN-SUFFIX,bankofnanjing.com.cn # 南京银行主域名
+DOMAIN-SUFFIX,ebank.bankofnanjing.com.cn # 南京银行网银服务域名
+DOMAIN-SUFFIX,m.bankofnanjing.com.cn # 南京银行移动服务域名
+DOMAIN-SUFFIX,wap.bankofnanjing.com.cn # 南京银行移动服务域名
+DOMAIN-SUFFIX,bnj.com.cn # 南京银行短链服务域名
 
-# > 徽商银行相关域名（Huishang Bank）
+# > Huishang Bank（徽商银行）相关域名
+# - 校对时间：2026-03-25
 
-DOMAIN-SUFFIX,hsbank.com.cn # 徽商银行主站域名，用于官网信息展示与服务入口 
-DOMAIN-SUFFIX,ebank.hsbank.com.cn # 网上银行服务域名，提供账户管理与交易服务 
-DOMAIN-SUFFIX,m.hsbank.com.cn # 移动端门户域名，适配手机浏览器访问 
-DOMAIN-SUFFIX,wap.hsbank.com.cn # 旧版手机网站服务入口，部分系统仍使用 
+DOMAIN-SUFFIX,hsbank.com.cn # 徽商银行主域名
+DOMAIN-SUFFIX,ebank.hsbank.com.cn # 徽商银行网银服务域名
+DOMAIN-SUFFIX,m.hsbank.com.cn # 徽商银行移动服务域名
+DOMAIN-SUFFIX,wap.hsbank.com.cn # 徽商银行移动服务域名
 
-# > 江苏省农村商业银行电子银行与金融服务平台
+# > Jiangsu Rural Commercial Bank E-Banking Platform（江苏省农村商业银行电子银行与金融服务平台）
+# - 校对时间：2026-03-25
 
-DOMAIN-SUFFIX,js96008.com # 江苏省农村商业银行电子银行官方域名，用于网上银行、账户服务与金融业务访问
+DOMAIN-SUFFIX,js96008.com # 江苏省农村商业银行电子银行服务域名
 
-# > 国家政务服务平台相关域名（国务院 / 各级政务服务统一入口）
+# > National Government Service Platform（国家政务服务平台）相关域名
+# - 校对时间：2026-03-25
 
-DOMAIN-SUFFIX,gov.cn # 中国政府主域名，用于各类政务服务与信息发布 
-DOMAIN-SUFFIX,12371.cn # 中共中央组织部“共产党员网”，提供党建与党务信息 
-DOMAIN-SUFFIX,12306.gov.cn # 12306 政务备案域名，铁路客户服务政务入口 
-DOMAIN-SUFFIX,guojianchina.com # 国家政务服务平台相关解析与跳转服务 
-DOMAIN-SUFFIX,gjzwfw.gov.cn # 国家政务服务平台主域名（国务院主导） 
-DOMAIN-SUFFIX,api.gjzwfw.gov.cn # 国家政务服务接口域名，涉及统一身份认证与办事接口 
-DOMAIN-SUFFIX,sso.gjzwfw.gov.cn # 国家政务平台统一身份登录系统接口 
-DOMAIN-SUFFIX,static.gjzwfw.gov.cn # 国家政务平台静态资源加载域名 
-DOMAIN-SUFFIX,peopleapp.com # 人民日报旗下平台，支持政务移动端接入 
-DOMAIN-SUFFIX,people.cn # 人民日报官网，政务类信息发布源站之一 
+DOMAIN-SUFFIX,gjzwfw.gov.cn # 国家政务服务平台主域名
+DOMAIN-SUFFIX,api.gjzwfw.gov.cn # 国家政务服务接口域名
+DOMAIN-SUFFIX,sso.gjzwfw.gov.cn # 国家政务服务统一身份认证域名
+DOMAIN-SUFFIX,static.gjzwfw.gov.cn # 国家政务服务静态资源域名
 
-# > 国家税务总局相关域名（全国税务系统服务平台）
+# > State Taxation Administration（国家税务总局）相关域名
+# - 校对时间：2026-03-25
 
-DOMAIN-SUFFIX,ch税.gov.cn # 国家税务总局主域名，税收信息与业务办理入口 
-DOMAIN-SUFFIX,chinatax.gov.cn # 国家税务总局官方网站，含办税指南与政策公告 
-DOMAIN-SUFFIX,etax.chinatax.gov.cn # 电子税务局总入口，提供全国统一网上报税服务 
-DOMAIN-SUFFIX,etax.jiangsu.chinatax.gov.cn # 江苏省电子税务局子站，省级业务入口 
-DOMAIN-SUFFIX,etax.shandong.chinatax.gov.cn # 山东省电子税务局子站，办理本地税务服务 
-DOMAIN-SUFFIX,etax.beijing.chinatax.gov.cn # 北京市电子税务局，税控开票与企业申报服务 
-DOMAIN-SUFFIX,sso.chinatax.gov.cn # 税务统一身份认证系统，接入国家平台 
-DOMAIN-SUFFIX,bx.chinatax.gov.cn # 国家税务总局发票查验与报销系统 
-DOMAIN-SUFFIX,yhs.chinatax.gov.cn # 增值税专用发票核验平台 
-DOMAIN-SUFFIX,fpdk.chinatax.gov.cn # 发票代开服务接口域名 
-DOMAIN-SUFFIX,nm.chinatax.gov.cn # 内蒙古税务局分站入口 
+DOMAIN-SUFFIX,chinatax.gov.cn # 国家税务总局主域名
+DOMAIN-SUFFIX,etax.chinatax.gov.cn # 电子税务局服务域名
+DOMAIN-SUFFIX,sso.chinatax.gov.cn # 国家税务统一身份认证域名
+DOMAIN-SUFFIX,bx.chinatax.gov.cn # 国家税务发票服务域名
+DOMAIN-SUFFIX,yhs.chinatax.gov.cn # 国家税务发票核验服务域名
+DOMAIN-SUFFIX,fpdk.chinatax.gov.cn # 国家税务发票代开服务域名
 
-# > 公安交通管理相关域名（交管12123 / 交通违法 / 驾驶证信息）
+# > Traffic Management Services（公安交通管理服务）相关域名
+# - 校对时间：2026-03-25
 
-DOMAIN-SUFFIX,122.gov.cn # 全国交通安全综合服务平台主域名，用于事故处理、违法查询与业务办理 
-DOMAIN-SUFFIX,traffic12123.com # 交管12123 官网域名，提供下载与用户服务信息 
-DOMAIN-SUFFIX,jtgk.net # 交通管理科技网，提供交管系统内部接口服务 
-DOMAIN-SUFFIX,jiashizheng12123.com # 驾驶证业务专用服务域名，涉及查分与年审提醒 
-DOMAIN-SUFFIX,veh12123.com # 机动车业务服务平台，提供车辆年检、违章缴费等功能 
-DOMAIN-SUFFIX,jdcjsrpt.com # 驾驶人报告接口平台域名，服务于交通违法分析系统 
-DOMAIN-SUFFIX,vehplate.com # 车牌信息与登记系统相关接口域名 
+DOMAIN-SUFFIX,122.gov.cn # 交通安全综合服务平台主域名
+DOMAIN-SUFFIX,traffic12123.com # 交管12123 服务域名
+DOMAIN-SUFFIX,jtgk.net # 交通管理科技服务域名
 
-# > 司法公开相关域名（裁判文书 / 执行信息 / 司法案例）
+# > Judicial Public Services（司法公开）相关域名
+# - 校对时间：2026-03-25
 
-DOMAIN-SUFFIX,court.gov.cn # 中国法院网主域名，涵盖法院动态、司法公开、执行公示等服务 
-DOMAIN-SUFFIX,tingshen.court.gov.cn # 中国庭审公开网，用于庭审直播与案件审理公开 
-DOMAIN-SUFFIX,wenshu.court.gov.cn # 裁判文书网，提供公开判决书、裁定书等司法文书查询 
-DOMAIN-SUFFIX,shixin.court.gov.cn # 失信被执行人信息公开网，俗称“老赖”名单查询平台 
-DOMAIN-SUFFIX,zhixing.court.gov.cn # 中国执行信息公开网，提供全国法院被执行人信息 
-DOMAIN-SUFFIX,rmfysszc.gov.cn # 人民法院诉讼资产网，用于司法拍卖、资产转让信息公开 
-DOMAIN-SUFFIX,zgyjsfpt.com # 中国阳光司法平台，聚合司法公开案例与数据接口 
+DOMAIN-SUFFIX,court.gov.cn # 中国法院网主域名
+DOMAIN-SUFFIX,tingshen.court.gov.cn # 中国庭审公开网域名
+DOMAIN-SUFFIX,wenshu.court.gov.cn # 中国裁判文书网域名
+DOMAIN-SUFFIX,shixin.court.gov.cn # 失信被执行人信息公开域名
+DOMAIN-SUFFIX,zhixing.court.gov.cn # 中国执行信息公开网域名
+DOMAIN-SUFFIX,rmfysszc.gov.cn # 人民法院诉讼资产网域名
 
-# > 法律与知识产权相关资讯域名
+# > Ministry of Education / CHSI（教育部 / 学信网）相关域名
+# - 校对时间：2026-03-25
 
-DOMAIN-SUFFIX,ciplawyer.cn # 中国知识产权法律资讯网站，用于查询商标、专利与相关法律内容
+DOMAIN-SUFFIX,moe.gov.cn # 教育部主域名
+DOMAIN-SUFFIX,chsi.com.cn # 学信网主域名
+DOMAIN-SUFFIX,account.chsi.com.cn # 学信网账号服务域名
+DOMAIN-SUFFIX,archive.chsi.com.cn # 学信网档案服务域名
+DOMAIN-SUFFIX,pub.chsi.com.cn # 学信网公共资源域名
+DOMAIN-SUFFIX,gaokao.chsi.com.cn # 学信网高考服务域名
+DOMAIN-SUFFIX,login.chsi.com.cn # 学信网登录服务域名
+DOMAIN-SUFFIX,pubedu.chsi.com.cn # 学信网教育服务域名
+DOMAIN-SUFFIX,kaoyan.chsi.com.cn # 学信网考研服务域名
+DOMAIN-SUFFIX,xueli.chsi.com.cn # 学信网学历服务域名
+DOMAIN-SUFFIX,yjsy.chsi.com.cn # 学信网研究生教育服务域名
 
-# > 国家医保局相关域名（医疗保障服务 / 参保信息 / 政策发布）
+# > National Health Services（国家卫生健康服务）相关域名
+# - 校对时间：2026-03-25
 
-DOMAIN-SUFFIX,nhsa.gov.cn # 国家医疗保障局官网，提供医保政策、公告与信息查询 
-DOMAIN-SUFFIX,si-mas.nhsa.gov.cn # 医保电子凭证服务接口，用于身份认证与在线医保服务 
-DOMAIN-SUFFIX,ylbz.gov.cn # 国家医保局子域名重定向入口，指向政务服务子系统 
-DOMAIN-SUFFIX,gov-mas.nhsa.gov.cn # 医保数据交换与消息通知接口服务 
-DOMAIN-SUFFIX,ylbznx.cn # 医疗保障能力建设平台，涉及医保系统互联互通能力评估 
+DOMAIN-SUFFIX,12320.cn # 国家卫生健康服务域名
+DOMAIN-SUFFIX,jiankang.12320.cn # 国家健康服务域名
 
-# > 教育部 / 学信网相关域名（学历认证 / 学籍服务 / 教育政务）
+# > E-Social Security Card（电子社保卡）相关域名
+# - 校对时间：2026-03-25
 
-DOMAIN-SUFFIX,moe.gov.cn # 中华人民共和国教育部官网，教育政策与政务服务发布 
-DOMAIN-SUFFIX,gov.cn # 教育部所属二级域名使用 gov.cn 顶级域，包含子平台 
-DOMAIN-SUFFIX,chsi.com.cn # 学信网主站，用于学籍学历查询、学籍注册与学信档案服务 
-DOMAIN-SUFFIX,account.chsi.com.cn # 学信网用户登录与身份认证接口 
-DOMAIN-SUFFIX,archive.chsi.com.cn # 学历档案下载与验证服务接口 
-DOMAIN-SUFFIX,pub.chsi.com.cn # 学信网公共资源与静态内容加载接口 
-DOMAIN-SUFFIX,gaokao.chsi.com.cn # 高考志愿填报与录取结果查询服务 
-DOMAIN-SUFFIX,login.chsi.com.cn # 学信网 OAuth 登录入口 
-DOMAIN-SUFFIX,pubedu.chsi.com.cn # 教育部合作平台与联合办学信息查询入口 
-DOMAIN-SUFFIX,kaoyan.chsi.com.cn # 研究生考试报名系统，含推免信息与报考服务 
-DOMAIN-SUFFIX,xueli.chsi.com.cn # 学历信息专属查询与在线验证平台 
-DOMAIN-SUFFIX,yjsy.chsi.com.cn # 研究生教育与导师信息平台 
-DOMAIN-SUFFIX,portal101.cn # 教育平台登录鉴权域名（fp-it-acc 为账号认证子服务）
+DOMAIN-SUFFIX,e-sscard.com # 电子社保卡主域名
+DOMAIN-SUFFIX,cdn.e-sscard.com # 电子社保卡静态资源域名
+DOMAIN-SUFFIX,logcollect.e-sscard.com # 电子社保卡日志采集域名
 
-# > 健康码 / 国家健康平台相关域名（疫情防控 / 健康上报）
+# > Haodf Online（好大夫在线）相关域名
+# - 校对时间：2026-03-25
 
-DOMAIN-SUFFIX,jiankang.12320.cn # 国家卫生健康委官方平台，健康码信息入口 
-DOMAIN-SUFFIX,healthreport.zj.gov.cn # 浙江健康码数据平台，国家健康码源头之一 
-DOMAIN-SUFFIX,h5.health.zj.gov.cn # 健康码 H5 页面加载入口 
-DOMAIN-SUFFIX,interface.meituan.com # 健康码扫码对接接口（美团平台健康服务集成） 
-DOMAIN-SUFFIX,c-ncap.org.cn # 中国健康码体系安全与接入验证域名 
-DOMAIN-SUFFIX,epidemic.zjzwfw.gov.cn # 国家政务服务网疫情防控接口（核酸/疫苗/健康码联动） 
-DOMAIN-SUFFIX,ehallapp.com # 智慧校园健康打卡系统，用于部分省市健康申报 
-DOMAIN-SUFFIX,yqtb.gz.gov.cn # 广州健康申报平台，疫情填报系统 
-DOMAIN-SUFFIX,yqtb.sh.gov.cn # 上海健康申报平台，疫情时期健康码与通行证数据平台 
-DOMAIN-SUFFIX,yimiao.sctcm.edu.cn # 疫苗接种信息登记与数据上报系统（四川地区） 
+DOMAIN-SUFFIX,haodf.com # 好大夫在线主域名
+DOMAIN-SUFFIX,haodf.net # 好大夫在线服务域名
+DOMAIN-SUFFIX,cdn-haodf.cn # 好大夫在线内容分发域名
+DOMAIN-SUFFIX,api.haodf.com # 好大夫在线接口域名
+DOMAIN-SUFFIX,passport.haodf.com # 好大夫在线账号服务域名
+DOMAIN-SUFFIX,webimg.haodf.com # 好大夫在线图片资源域名
+DOMAIN-SUFFIX,health.haodf.com # 好大夫在线健康服务域名
 
-# > 国家医保平台相关域名（医保账户 / 电子凭证 / 报销结算）
+# > WeDoctor（微医）相关域名
+# - 校对时间：2026-03-25
 
-DOMAIN-SUFFIX,nhsa.gov.cn # 国家医保局官网，医保政策与服务入口 
-DOMAIN-SUFFIX,si.12333.gov.cn # 社保统一服务平台，医保账户在线查询与参保记录 
-DOMAIN-SUFFIX,ybj.chsi.com.cn # 全国医保信息平台，医保参保状态与缴费记录查询接口 
-DOMAIN-SUFFIX,wx.nhsa.gov.cn # 国家医保局微信小程序接口，用于医保电子凭证申领与验证 
-DOMAIN-SUFFIX,api.nhsa.gov.cn # 国家医保服务平台 API 接口，医保结算/报销/凭证接口服务 
-DOMAIN-SUFFIX,ns.nhsa.gov.cn # 国家医保系统通知服务域名，用于状态变更与数据回执 
-DOMAIN-SUFFIX,esb.nhsa.gov.cn # 国家医保服务总线接口，服务各省数据对接平台 
-DOMAIN-SUFFIX,ps.nhsa.gov.cn # 医保公共服务平台，用户授权与实名认证接口 
-DOMAIN-SUFFIX,hsa.gov.cn # 国家医保服务平台简称域名（部分地区入口使用） 
-DOMAIN-SUFFIX,ggfw.nhsa.gov.cn # 国家医保便民服务平台，提供医保目录、药品清单等信息 
+DOMAIN-SUFFIX,guahao.com # 微医主域名
+DOMAIN-SUFFIX,weiyi.com # 微医服务域名
+DOMAIN-SUFFIX,img.guahao.cn # 微医图片资源域名
+DOMAIN-SUFFIX,res.guahao.cn # 微医静态资源域名
+DOMAIN-SUFFIX,api.guahao.cn # 微医接口域名
+DOMAIN-SUFFIX,static.guahao.cn # 微医静态资源域名
+DOMAIN-SUFFIX,gw-p-guahao-web.guahao.cn # 微医前端网关域名
 
-# > 电子社保卡（e-sscard）相关域名
+# > DXY / DXY Doctor（丁香园 / 丁香医生）相关域名
+# - 校对时间：2026-03-25
 
-DOMAIN-SUFFIX,e-sscard.com # 电子社保卡服务平台主域名
-DOMAIN-SUFFIX,cdn.e-sscard.com # 电子社保卡静态资源服务域名
-DOMAIN-SUFFIX,logcollect.e-sscard.com # 电子社保卡日志采集服务域名
-
-# > 好大夫在线相关域名（医疗问诊 / 医院挂号 / 电子处方）
-
-DOMAIN-SUFFIX,haodf.com # 好大夫在线主域名，提供医生咨询与线上问诊服务 
-DOMAIN-SUFFIX,haodf.net # 好大夫在线备用域名，早期使用或静态资源托管 
-DOMAIN-SUFFIX,cdn-haodf.cn # 好大夫在线内容分发域名，用于图片与视频加载 
-DOMAIN-SUFFIX,api.haodf.com # 好大夫 API 接口服务，支持预约、挂号、聊天等功能 
-DOMAIN-SUFFIX,passport.haodf.com # 用户登录与身份认证接口 
-DOMAIN-SUFFIX,webimg.haodf.com # 好大夫图片资源域名，医生主页/病例资料图片加载 
-DOMAIN-SUFFIX,health.haodf.com # 好大夫健康科普服务子域名 
-
-# > 微医相关域名（在线医疗 / 预约挂号 / 健康商城）
-
-DOMAIN-SUFFIX,guahao.com # 微医主域名，提供预约挂号、在线问诊、医生咨询等服务 
-DOMAIN-SUFFIX,weiyi.com # 微医集团官方域名，用于企业与品牌展示 
-DOMAIN-SUFFIX,img.guahao.cn # 微医图片资源域名，用于医生信息与科室展示图像加载 
-DOMAIN-SUFFIX,res.guahao.cn # 微医静态资源域名（JS/CSS/字体等） 
-DOMAIN-SUFFIX,api.guahao.cn # 微医 API 接口服务，涵盖预约、挂号、问诊流程 
-DOMAIN-SUFFIX,static.guahao.cn # 微医静态页面资源域名 
-DOMAIN-SUFFIX,gw-p-guahao-web.guahao.cn # 微医前端服务网关域名，接入服务调度接口 
-
-# > 丁香园 / 丁香医生相关域名（医学科普 / 医生问诊 / 健康商城）
-
-DOMAIN-SUFFIX,dxy.cn # 丁香园主域名，涵盖医学社区、丁香医生、丁香通等服务 
-DOMAIN-SUFFIX,dxy.com # 丁香园主域名，旧版与海外通道使用场景 
-DOMAIN-SUFFIX,dxycdn.com # 丁香园内容分发 CDN，用于图文视频资源加载 
-DOMAIN-SUFFIX,img.dxycdn.com # 丁香园图像资源节点，含问诊界面、科普文章等图像 
-DOMAIN-SUFFIX,dr.dxy.cn # 丁香医生问诊平台子域名，支持图文/电话问诊服务 
-DOMAIN-SUFFIX,pro.dxy.cn # 丁香医生专业服务入口，医生专属后台与服务管理 
-DOMAIN-SUFFIX,drugs.dxy.cn # 丁香园药品信息数据库查询接口 
-DOMAIN-SUFFIX,mall.dxy.cn # 丁香医生健康商城，销售健康商品与药品 
-DOMAIN-SUFFIX,api.dxy.cn # 丁香园统一 API 接口服务，支持登录、数据同步等功能 
-DOMAIN-SUFFIX,passport.dxy.cn # 丁香园统一认证中心，登录身份验证服务 
+DOMAIN-SUFFIX,dxy.cn # 丁香园主域名
+DOMAIN-SUFFIX,dxy.com # 丁香园服务域名
+DOMAIN-SUFFIX,dxycdn.com # 丁香园内容分发域名
+DOMAIN-SUFFIX,img.dxycdn.com # 丁香园图片资源域名
+DOMAIN-SUFFIX,dr.dxy.cn # 丁香医生问诊服务域名
+DOMAIN-SUFFIX,pro.dxy.cn # 丁香医生专业服务域名
+DOMAIN-SUFFIX,drugs.dxy.cn # 丁香园药品服务域名
+DOMAIN-SUFFIX,mall.dxy.cn # 丁香医生商城服务域名
+DOMAIN-SUFFIX,api.dxy.cn # 丁香园接口域名
+DOMAIN-SUFFIX,passport.dxy.cn # 丁香园账号服务域名
 DOMAIN-SUFFIX,health.dxy.cn # 丁香医生健康科普内容平台 
 
-# > 中国大学MOOC（爱课程平台）
-
-DOMAIN-SUFFIX,icourse163.org # 中国大学MOOC 主站域名，含课程访问与视频学习 
-DOMAIN-SUFFIX,mooc.163.com # 网易MOOC平台早期入口，现用于部分课程跳转 
-DOMAIN-SUFFIX,open.163.com # 网易公开课服务，部分老课程视频托管 
-DOMAIN-SUFFIX,videotts.icourse163.org # 中国大学MOOC 视频资源 CDN 
-DOMAIN-SUFFIX,edu-ssl.126.net # MOOC 视频资源与文档加载服务域名 
-DOMAIN-SUFFIX,hz.netease.com # 网易后台服务域名，含认证与日志接口 
-
-# > 超星学习通（Chaoxing）
-
-DOMAIN-SUFFIX,chaoxing.com # 超星主站域名，覆盖学习通、图书馆服务等系统 
-DOMAIN-SUFFIX,chaoxing.cn # 超星主站中国镜像域名 
-DOMAIN-SUFFIX,mooc1.chaoxing.com # 超星慕课系统入口，课程学习与视频服务 
-DOMAIN-SUFFIX,fanya.chaoxing.com # 超星泛雅平台域名，提供考试与测验功能 
-DOMAIN-SUFFIX,cl2.chaoxing.com # 学习通资源下载与内容分发服务 
-DOMAIN-SUFFIX,noteyd.chaoxing.com # 学习笔记同步服务接口 
-DOMAIN-SUFFIX,passport2.chaoxing.com # 超星登录与认证中心域名 
-DOMAIN-SUFFIX,homework.chaoxing.com # 作业提交与批改系统入口 
-
-# > 智慧树网（智慧树在线 / 慕课平台）
-
-DOMAIN-SUFFIX,zhihuishu.com # 智慧树主站域名，包含课程、作业、考试等入口 
-DOMAIN-SUFFIX,passport.zhihuishu.com # 智慧树统一身份认证服务 
-DOMAIN-SUFFIX,study.zhihuishu.com # 智慧树学习平台主入口域名 
-DOMAIN-SUFFIX,video.zhihuishu.com # 智慧树视频播放与点播服务接口 
-DOMAIN-SUFFIX,resource.zhihuishu.com # 智慧树课程资源文件加载域名 
-DOMAIN-SUFFIX,online.zhihuishu.com # 智慧树直播授课平台入口 
-DOMAIN-SUFFIX,homework.zhihuishu.com # 智慧树作业系统与考试服务 
-DOMAIN-SUFFIX,live.zhihuishu.com # 智慧树在线课堂直播服务域名 
-
-# > 雨课堂（智慧教学平台）
-
-DOMAIN-SUFFIX,yuketang.cn # 雨课堂主站域名，用于教学内容分发与平台访问 
-DOMAIN-SUFFIX,ykt.io # 雨课堂短链接与资源跳转域名 
-DOMAIN-SUFFIX,class.yuketang.cn # 雨课堂课程平台入口，含教学直播与互动功能 
-DOMAIN-SUFFIX,video.yuketang.cn # 雨课堂视频点播与直播服务接口 
-DOMAIN-SUFFIX,live.yuketang.cn # 雨课堂在线直播平台域名 
-DOMAIN-SUFFIX,edu.yuketang.cn # 雨课堂教育认证与组织管理子域名 
-DOMAIN-SUFFIX,sso.yuketang.cn # 雨课堂统一身份认证系统 
-DOMAIN-SUFFIX,resource.yuketang.cn # 雨课堂教学资源（课件、文档）加载域名 
-
-# > 高校教务系统（通用入口）
-
-DOMAIN-SUFFIX,jwglxt.com # 教务管理系统常用域名（正方 / 超星等厂商） 
-DOMAIN-SUFFIX,zhjw.cn # 多所高校教务系统使用的公共域名服务 
-DOMAIN-SUFFIX,jw.ustc.edu.cn # 中国科学技术大学教务系统 
-DOMAIN-SUFFIX,jwgl.buaa.edu.cn # 北京航空航天大学教务管理系统 
-DOMAIN-SUFFIX,jwxt.ynu.edu.cn # 云南大学教务系统入口 
-DOMAIN-SUFFIX,jwxt.fudan.edu.cn # 复旦大学教务系统 
-DOMAIN-SUFFIX,jwxt.pku.edu.cn # 北京大学教务系统 
-DOMAIN-SUFFIX,jwxt.tsinghua.edu.cn # 清华大学教务系统 
-DOMAIN-SUFFIX,jwxt.nju.edu.cn # 南京大学教务系统 
-DOMAIN-SUFFIX,jwxt.sysu.edu.cn # 中山大学教务系统 
-DOMAIN-SUFFIX,jwxt.zju.edu.cn # 浙江大学教务系统 
-DOMAIN-SUFFIX,jwxt.hust.edu.cn # 华中科技大学教务系统 
-DOMAIN-SUFFIX,jwxt.sjtu.edu.cn # 上海交通大学教务系统 
-
-# > 社保查询平台（全国与地方）
-
-DOMAIN-SUFFIX,si.12333.gov.cn # 全国社会保险公共服务平台，提供社保缴费、明细查询等 
-DOMAIN-SUFFIX,12333.gov.cn # 人力资源和社会保障部官方域名，用于统一服务入口 
-DOMAIN-SUFFIX,hrss.gov.cn # 各地人社局子域名使用，主站为人力资源与社会保障部 
-DOMAIN-SUFFIX,sh12333.cn # 上海市人力资源与社会保障局服务网 
-DOMAIN-SUFFIX,bjrbj.gov.cn # 北京市人力资源和社会保障局 
-DOMAIN-SUFFIX,gdhrss.gov.cn # 广东省人力资源和社会保障厅 
-DOMAIN-SUFFIX,zjhrss.gov.cn # 浙江省人力资源和社会保障厅 
-
-# > 公积金平台（住房公积金查询）
-
-DOMAIN-SUFFIX,gjj.cn # 全国公积金服务平台统一登录域名（部分地区使用） 
-DOMAIN-SUFFIX,zfgjj.cn # 地方公积金系统常用域名（如北京、广州） 
-DOMAIN-SUFFIX,bjgjj.gov.cn # 北京住房公积金管理中心官网 
-DOMAIN-SUFFIX,shgjj.com # 上海市住房公积金网站 
-DOMAIN-SUFFIX,cdgjj.cn # 成都市住房公积金中心 
-DOMAIN-SUFFIX,szgjj.com # 深圳市住房公积金管理中心 
-DOMAIN-SUFFIX,whgjj.com.cn # 武汉住房公积金管理中心 
-DOMAIN-SUFFIX,zjgjj.gov.cn # 浙江省统一公积金管理平台 
-DOMAIN-SUFFIX,gdgjj.gov.cn # 广东省住房公积金平台 
-
-# > 南京市政务服务平台（我的南京 / 南京政务云）
-
-DOMAIN-SUFFIX,nanjing.gov.cn # 南京市人民政府门户网站主域名 
-DOMAIN-SUFFIX,njzwfw.gov.cn # 南京市政务服务平台主域名，用于“我的南京”等服务 
-DOMAIN-SUFFIX,mynj.cn # “我的南京”App 使用域名，提供政务服务、医保、公积金等 
-DOMAIN-SUFFIX,njzwfw.com # 南京政务云技术支撑与服务平台域名 
-
-# > 各地政务云平台（政务服务总入口）
-
-DOMAIN-SUFFIX,gov.cn # 中华人民共和国政府各部门与省市单位主域名（总入口） 
-DOMAIN-SUFFIX,zwfw.gov.cn # 全国政务服务平台主域名 
-DOMAIN-SUFFIX,govtop.com # 政务服务外包技术支持平台（如国家政务服务网） 
-DOMAIN-SUFFIX,guangdong.gov.cn # 广东政务服务网 
-DOMAIN-SUFFIX,zhejiang.gov.cn # 浙江政务服务网，包含“浙里办”App 
-DOMAIN-SUFFIX,sh.gov.cn # 上海市政府门户及政务平台 
-DOMAIN-SUFFIX,beijing.gov.cn # 北京市人民政府政务门户 
-DOMAIN-SUFFIX,hunan.gov.cn # 湖南政务服务平台 
-DOMAIN-SUFFIX,hubei.gov.cn # 湖北政务网 
-DOMAIN-SUFFIX,sichuan.gov.cn # 四川政务云服务网站 
-DOMAIN-SUFFIX,jiangsu.gov.cn # 江苏政务服务网 
-DOMAIN-SUFFIX,tjzwfw.gov.cn # 天津市政务服务网 
-DOMAIN-SUFFIX,hljzwfw.gov.cn # 黑龙江省政务服务平台 
-DOMAIN-SUFFIX,xzzwfw.gov.cn # 西藏自治区政务服务网 
-
-# > 美团 / 大众点评相关域名（Meituan / Dianping）
-
-DOMAIN-SUFFIX,meituan.com # 美团本地生活服务平台主域名，用于外卖、到店、酒旅、出行等核心业务
-DOMAIN-SUFFIX,m.meituan.com # 美团移动端网页服务域名，用于移动访问与轻量化操作
-DOMAIN-SUFFIX,meituan.net # 美团技术与内部服务域名，用于系统调度、SDK 与数据平台相关服务
-DOMAIN-SUFFIX,api.meituan.com # 美团平台业务 API 接口域名，用于订单、商户与用户数据交互
-DOMAIN-SUFFIX,static.meituan.com # 美团平台静态资源服务域名，用于前端脚本与页面组件加载
-DOMAIN-SUFFIX,dianping.com # 大众点评本地生活内容与评价平台主域名
-DOMAIN-SUFFIX,dianping.com # 大众点评官方网站子域名
-DOMAIN-SUFFIX,m.dianping.com # 大众点评移动端网页服务域名
-DOMAIN-SUFFIX,sankuai.com # 美团集团基础设施与内部平台域名，用于调度、日志与系统支撑
-DOMAIN-SUFFIX,mepcloud.com # 美团集团内部云与技术支撑平台域名，用于业务系统与资源支持
-DOMAIN-SUFFIX,mobike.com # 美团旗下摩拜单车服务域名，用于共享单车与出行业务
-DOMAIN-SUFFIX,mobike.com # 摩拜单车官方网站子域名 
-
-# > 饿了么相关域名（Ele.me）
-
-DOMAIN-SUFFIX,ele.me # 饿了么外卖与本地生活服务平台主域名，用于下单、订单与用户服务入口
-DOMAIN-SUFFIX,h5.ele.me # 饿了么移动端 H5 服务域名，用于轻量化下单与活动页面访问
-DOMAIN-SUFFIX,ele-net.com # 饿了么网络基础设施与服务部署相关域名，用于调度与系统支撑
-DOMAIN-SUFFIX,api.ele.me # 饿了么平台业务 API 接口域名，用于订单、商户与配送数据交互
-DOMAIN-SUFFIX,static.ele.me # 饿了么静态资源服务域名，用于页面脚本、样式与前端资源加载
-DOMAIN-SUFFIX,alimebot.cn # 阿里系智能客服与 AI 机器人服务域名，用于饿了么客服与自动化交互
-DOMAIN-SUFFIX,log.waimai.meituan.com # 饿了么早期历史遗留日志接口域名，可能用于兼容旧版 SDK 或历史链路 
-
-# > 京东相关域名（JD.com）
-
-DOMAIN-SUFFIX,jd.com # 京东电商平台核心主域名，用于商品浏览、下单交易与用户服务入口
-DOMAIN-SUFFIX,m.jd.com # 京东移动端网页服务域名，用于移动端访问与轻量化购物操作
-DOMAIN-SUFFIX,360buy.com # 京东历史品牌域名，部分跳转、兼容接口与旧服务仍在使用
-DOMAIN-SUFFIX,jd.hk # 京东香港站域名，用于国际用户与跨境电商服务
-DOMAIN-SUFFIX,joybuy.com # 京东国际英文站域名，用于海外电商平台服务
-DOMAIN-SUFFIX,jingxi.com # 京东旗下京喜社交电商平台域名，用于下沉市场与拼购业务
-DOMAIN-SUFFIX,jdl.cn # 京东物流服务域名，用于仓储、配送与履约相关服务
-DOMAIN-SUFFIX,logistics.jd.com # 京东物流相关服务子域名，用于物流信息与系统接口
-DOMAIN-SUFFIX,jdpay.com # 京东支付平台域名，用于支付、清结算与金融服务入口
-DOMAIN-SUFFIX,api.jdpay.com # 京东支付业务 API 接口域名
-DOMAIN-SUFFIX,jdcloud.com # 京东云服务平台域名，用于云计算、存储与 CDN 服务
-DOMAIN-SUFFIX,api.jdcloud.com # 京东云业务 API 接口域名
-DOMAIN-SUFFIX,static.jdcloud.com # 京东云静态资源与控制台前端资源加载域名
-DOMAIN-SUFFIX,jdcloudedge.com # JD Cloud Edge 边缘网络域名，用于京东云（JD Cloud）边缘节点与 CDN 加速服务
-
-# > 天猫（Tmall）
-
-DOMAIN-SUFFIX,tmall.com # 天猫电商平台主域名，用于商品浏览、下单交易与用户服务入口
-DOMAIN-SUFFIX,m.tmall.com # 天猫移动端网页服务域名，用于移动端访问与轻量化购物操作
-DOMAIN-SUFFIX,tmall.hk # 天猫国际站域名，用于跨境电商与海外购物服务
-DOMAIN-SUFFIX,intl.taobao.com # 天猫国际相关跳转与中转域名，用于跨境业务兼容处理
-DOMAIN-SUFFIX,tae.aliyun.com # 天猫交易引擎与认证服务接口域名，用于订单、支付与鉴权相关链路
-DOMAIN-SUFFIX,api.tmall.com # 天猫平台业务 API 接口域名，用于商品、订单与用户数据交互
-DOMAIN-SUFFIX,tmall.alicdn.com # 天猫静态资源 CDN 域名，用于页面脚本、样式与资源加载 
-
-# > 苏宁易购（Suning）
-
-DOMAIN-SUFFIX,suning.com # 苏宁易购电商平台主域名，用于商品浏览、下单与用户服务入口
-DOMAIN-SUFFIX,m.suning.com # 苏宁易购移动端网页服务域名，用于移动端访问与轻量化购物操作
-DOMAIN-SUFFIX,suning.cn # 苏宁国内服务与子站系统域名，用于业务分流与本地化服务
-DOMAIN-SUFFIX,api.suning.com # 苏宁易购业务 API 接口域名，用于订单、商品与用户数据交互
-DOMAIN-SUFFIX,static.suning.com # 苏宁易购静态资源服务域名，用于页面脚本与组件加载
-DOMAIN-SUFFIX,snsuning.com # 苏宁统一账号与认证系统域名，用于登录、SSO 与用户身份管理
-DOMAIN-SUFFIX,suningappliance.com # 苏宁电器垂直业务官网域名，用于电器类产品与服务展示
-
-# > 拼多多相关域名（Pinduoduo）
-
-DOMAIN-SUFFIX,yangkeduo.com # 拼多多电商平台核心主域名，用于商品浏览、拼团交易与用户服务入口
-DOMAIN-SUFFIX,m.yangkeduo.com # 拼多多移动端网页服务域名，用于移动端访问与轻量化购物操作
-DOMAIN-SUFFIX,pinduoduo.com # 拼多多英文品牌域名，用于品牌展示与部分业务模块
-DOMAIN-SUFFIX,pdd.net # 拼多多技术平台与基础服务域名，用于接口调度与底层服务支持
-DOMAIN-SUFFIX,api.pdd.net # 拼多多平台业务 API 接口域名，用于系统与服务调用
-DOMAIN-SUFFIX,pddpic.com # 拼多多图像与媒体资源 CDN 域名，用于商品图片与营销素材分发
-
-# > 唯品会相关域名（VIP.com）
-
-DOMAIN-SUFFIX,vip.com # 唯品会电商平台主域名，用于商品浏览、下单、促销与用户服务入口
-DOMAIN-SUFFIX,m.vip.com # 唯品会移动端网页服务域名，用于移动端访问与轻量化购物操作
-DOMAIN-SUFFIX,vipstatic.com # 唯品会静态资源服务域名，用于页面脚本、样式与组件加载
-DOMAIN-SUFFIX,vipimg.com # 唯品会图片资源 CDN 域名，用于商品图片与营销素材分发
-DOMAIN-SUFFIX,vipp.com # 唯品会短链与活动跳转域名，用于促销活动与链接分发
-DOMAIN-SUFFIX,vipshop.com # 唯品会旧版品牌域名，部分历史接口与跳转仍在使用
-
-# > 得物相关域名（Dewu / 毒 App）
-
-DOMAIN-SUFFIX,dewu.com # 得物潮流电商与社区平台主域名，用于商品交易、内容浏览与用户服务入口
-DOMAIN-SUFFIX,m.dewu.com # 得物移动端网页服务域名，用于移动端访问与轻量化浏览
-DOMAIN-SUFFIX,poizon.com # 得物国际化品牌域名，用于海外业务与品牌展示入口
-DOMAIN-SUFFIX,duapp.com # 得物 App 相关服务域名，用于客户端接口、配置与资源加载
-DOMAIN-SUFFIX,api.duapp.com # 得物 App 业务 API 接口域名，用于商品、订单与用户数据交互
-DOMAIN-SUFFIX,static.duapp.com # 得物 App 静态资源与前端组件加载域名
-DOMAIN-SUFFIX,shihuo.cn # 得物前身识货网域名，部分历史服务与跳转仍在使用
-
-# > 转转平台相关域名（Zhuanzhuan）
-
-DOMAIN-SUFFIX,zhuanzhuan.com # 转转二手交易平台主域名，用于商品浏览、交易与平台服务入口
-DOMAIN-SUFFIX,m.zhuanzhuan.com # 转转移动端网页服务域名，用于移动端访问与轻量化交易操作
-DOMAIN-SUFFIX,zhuanzhuan.cn # 转转中国区辅助域名，用于活动页面、接口分流与本地化服务
-DOMAIN-SUFFIX,api.zhuanzhuan.com # 转转平台业务 API 服务域名，用于商品、订单、用户等数据接口调用
-DOMAIN-SUFFIX,static.zhuanzhuan.com # 转转平台静态资源服务域名，用于前端脚本、样式与组件加载
-DOMAIN-SUFFIX,zhuanzhuan.wacdn.com # 转转内容加速 CDN 域名，用于图片与静态资源加载
-
-# > 河马生鲜相关域名（Hema / Freshippo）
-
-DOMAIN-SUFFIX,freshhema.com # 河马生鲜品牌与业务主站域名，用于生鲜电商平台访问与信息展示
-DOMAIN-SUFFIX,hemaos.com # 河马生鲜核心运营系统域名，用于订单、门店、履约与物流调度
-DOMAIN-SUFFIX,api.hemaos.com # 河马生鲜运营系统业务接口域名，用于内部与客户端服务对接
-DOMAIN-SUFFIX,static.hemaos.com # 河马生鲜运营系统静态资源与前端组件加载域名
-DOMAIN-SUFFIX,hemaapp.com # 河马生鲜移动端 App 相关服务域名，用于客户端接口与配置服务
-DOMAIN-SUFFIX,hemaapi.com # 河马生鲜业务 API 服务域名，用于商品、用户、订单等数据交互接口
-DOMAIN-SUFFIX,hema.imtt.qq.com # 河马生鲜 App 下载与分发 CDN 域名，依赖腾讯应用宝（imtt）分发体系 
-
-# > 小米公司相关域名（Xiaomi / Mi / Mijia）
-
-DOMAIN-SUFFIX,mi.com # 小米集团核心服务域名，用于商城、账户与用户服务入口
-DOMAIN-SUFFIX,account.mi.com # 小米账户与统一认证服务域名
-DOMAIN-SUFFIX,api.mi.com # 小米平台业务接口服务域名，用于系统与服务调用
-DOMAIN-SUFFIX,static.mi.com # 小米平台静态资源与前端组件加载域名
-DOMAIN-SUFFIX,xiaomi.com # 小米公司官方域名，用于企业官网与集团级业务入口
-DOMAIN-SUFFIX,mi-img.com # 小米图像与媒体资源 CDN 域名，用于商品与设备资源加载
-DOMAIN-SUFFIX,mi-static.com # 小米静态资源分发域名，用于网页与客户端资源加载
-DOMAIN-SUFFIX,miui.com # 小米操作系统相关服务域名（MIUI / HyperOS）
-DOMAIN-SUFFIX,update.miui.com # 小米系统更新相关服务域名
-DOMAIN-SUFFIX,miwifi.com # 小米路由器与网络设备管理相关服务域名
-DOMAIN-SUFFIX,api.miwifi.com # 小米网络设备相关服务接口域名
-DOMAIN-SUFFIX,mijia.com # 米家智能家居平台服务域名，用于设备生态与服务入口
-DOMAIN-SUFFIX,api.mijia.com # 米家设备与平台相关服务接口域名
-DOMAIN-SUFFIX,milink.cn # 小米设备互联与通信相关服务域名
-DOMAIN-SUFFIX,mifile.cn # 小米云存储与文件服务相关域名
-DOMAIN-SUFFIX,micloud.xiaomi.net # 小米云平台相关服务域名，用于账号与设备云服务支持
-DOMAIN-SUFFIX,miliao.com # 小米历史即时通讯服务遗留域名
-
-# > 华为相关域名（Huawei / HarmonyOS / 云服务）
-
-DOMAIN-SUFFIX,huaweicloud.cn # 华为云中国官网
-DOMAIN-SUFFIX,huaweicloudsite.cn # 华为云建站托管平台
-DOMAIN-SUFFIX,huawei.com # 华为技术有限公司官方主域名，用于企业官网、产品信息与服务入口
-DOMAIN-SUFFIX,servicesupport.huawei.com # 华为客户支持与售后服务相关域名
-DOMAIN-SUFFIX,huaweicloud.com # 华为云服务平台主域名，用于云计算与企业级服务入口
-DOMAIN-SUFFIX,cloud.huawei.com # 华为云网页端服务入口域名，用于云资源管理与控制台访问
-DOMAIN-SUFFIX,myhuaweicloud.com # 华为云账户、认证与控制台相关服务域名
-DOMAIN-SUFFIX,api.huaweicloud.com # 华为云业务接口服务域名，用于系统与服务对接
-DOMAIN-SUFFIX,static.huaweicloud.com # 华为云静态资源与内容分发相关域名
-DOMAIN-SUFFIX,vmall.com # 华为官方商城服务域名，用于产品销售与订单相关服务
-DOMAIN-SUFFIX,hicloud.com # 华为终端云服务平台域名，用于设备与账号相关服务
-DOMAIN-SUFFIX,hispace.hicloud.com # 华为终端生态相关服务域名
-DOMAIN-SUFFIX,appgallery.hicloud.com # 华为应用市场服务接口域名，用于应用分发与更新
-DOMAIN-SUFFIX,connectivity.hicloud.com # 华为设备互联与生态相关服务接口域名
-DOMAIN-SUFFIX,harmonyos.com # 鸿蒙操作系统官方域名，用于系统与生态信息展示
-DOMAIN-SUFFIX,hihonor.com # 荣耀品牌相关服务域名（原华为子品牌）
-DOMAIN-SUFFIX,dbankcloud.cn # 华为云内容分发与资源加载相关服务域名
-DOMAIN-SUFFIX,update.dbankcdn.com # 华为终端系统与应用更新内容分发 CDN 域名
-DOMAIN-SUFFIX,download.dbankcdn.com # 华为资源下载与内容分发 CDN 服务域名
-
-# > 顺丰速运（SF Express）
-
-DOMAIN-SUFFIX,sf-express.com # 顺丰速运官方物流服务平台主域名，用于快递业务与用户服务入口
-DOMAIN-SUFFIX,m.sf-express.com # 顺丰速运移动端服务域名，用于移动网页访问与业务操作
-DOMAIN-SUFFIX,api.sf-express.com # 顺丰速运业务接口服务域名，用于系统对接与物流服务调用
-DOMAIN-SUFFIX,static.sf-express.com # 顺丰速运静态资源服务域名，用于页面脚本与资源加载
-DOMAIN-SUFFIX,sf-express.cn # 顺丰速运国内服务与辅助接口域名，用于本地化业务支持
-DOMAIN-SUFFIX,m.sf-express.cn # 顺丰速运国内移动端相关服务域名
-DOMAIN-SUFFIX,api.sf-express.cn # 顺丰速运国内业务系统接口域名
-DOMAIN-SUFFIX,sf-airlines.com # 顺丰航空物流服务平台域名，用于航空货运与运输体系支持
-DOMAIN-SUFFIX,sfbest.com # 顺丰优选相关服务域名，用于电商与零售业务支持
-
-# > 中通快递（ZTO Express）
-
-DOMAIN-SUFFIX,zto.com # 中通快递主站域名，用于运单查询与服务入口 
-DOMAIN-SUFFIX,zto56.com # 中通物流集团域名，覆盖业务系统与接口服务 
-DOMAIN-SUFFIX,zto.com # 中通快递官方物流服务平台主域名，用于快递业务与用户服务入口
-DOMAIN-SUFFIX,m.zto.com # 中通快递移动端服务域名，用于移动网页访问与业务操作
-DOMAIN-SUFFIX,api.zto.com # 中通快递业务接口服务域名，用于系统对接与服务调用
-DOMAIN-SUFFIX,static.zto.com # 中通快递静态资源服务域名，用于页面脚本与资源加载
-DOMAIN-SUFFIX,zto56.com # 中通物流集团核心业务域名，覆盖物流系统与平台服务
-DOMAIN-SUFFIX,api.zto56.com # 中通物流系统接口服务域名，用于内部与合作系统对接
-DOMAIN-SUFFIX,m.zto56.com # 中通物流移动端相关服务域名
-DOMAIN-SUFFIX,static.zto56.com # 中通物流静态资源与内容分发服务域名
-DOMAIN-SUFFIX,track.zto56.com # 中通快递物流状态与运单信息相关服务接口域名
-
-# > 韵达快递（Yunda Express）
-
-DOMAIN-SUFFIX,yundaex.com # 韵达快递物流服务平台主域名，用于快递业务与用户服务入口
-DOMAIN-SUFFIX,m.yundaex.com # 韵达快递移动端网页服务域名，用于移动端运单查询与业务操作
-DOMAIN-SUFFIX,api.yundaex.com # 韵达快递业务 API 接口域名，用于运单、订单与物流数据交互
-DOMAIN-SUFFIX,static.yundaex.com # 韵达快递静态资源服务域名，用于页面脚本与前端资源加载
-DOMAIN-SUFFIX,track.yundaex.com # 韵达快递物流追踪服务域名，用于运单状态与配送信息查询
-DOMAIN-SUFFIX,yundasys.com # 韵达快递系统平台域名，用于内部业务系统与客户接口服务 
-
-# > 圆通速递（YTO Express）
-
-DOMAIN-SUFFIX,yto.net.cn # 圆通速递官方物流服务平台主域名，用于快递业务与相关服务入口
-DOMAIN-SUFFIX,api.yto.net.cn # 圆通速递业务接口服务域名，用于系统对接与快递服务调用
-DOMAIN-SUFFIX,m.yto.net.cn # 圆通速递移动端服务域名，用于移动网页访问与业务操作
-DOMAIN-SUFFIX,static.yto.net.cn # 圆通速递静态资源服务域名，用于页面资源与脚本加载
-DOMAIN-SUFFIX,track.yto.net.cn # 圆通速递快件状态与物流信息相关服务接口域名
-
-# > 申通快递（STO Express）
-
-DOMAIN-SUFFIX,sto.cn # 申通快递物流服务平台主域名，用于快递业务与用户服务入口
-DOMAIN-SUFFIX,m.sto.cn # 申通快递移动端网页服务域名，用于移动端运单查询与业务操作
-DOMAIN-SUFFIX,api.sto.cn # 申通快递业务 API 接口域名，用于运单、订单与物流数据交互
-DOMAIN-SUFFIX,static.sto.cn # 申通快递静态资源服务域名，用于页面脚本与前端资源加载
-DOMAIN-SUFFIX,track.sto.cn # 申通快递物流追踪服务域名，用于运单状态与配送信息查询
-
-# > 百世快递（Best Express）
-
-DOMAIN-SUFFIX,800best.com # 百世快递主域名，提供快递与仓储服务接口 
-DOMAIN-SUFFIX,m.800best.com # 百世快递移动端网页服务域名，用于移动端运单查询与业务操作
-DOMAIN-SUFFIX,api.800best.com # 百世快递业务 API 接口域名，用于运单、订单与物流数据交互
-DOMAIN-SUFFIX,static.800best.com # 百世快递静态资源服务域名，用于页面脚本与前端资源加载
-DOMAIN-SUFFIX,track.800best.com # 百世快递物流追踪服务域名，用于运单状态与配送信息查询
-
-# > 德邦快递（Deppon Express）
-
-DOMAIN-SUFFIX,deppon.com # 德邦快递与物流服务平台主域名，用于大件运输、快递服务与用户入口
-DOMAIN-SUFFIX,m.deppon.com # 德邦快递移动端网页服务域名，用于移动端查询与下单操作
-DOMAIN-SUFFIX,api.deppon.com # 德邦快递业务 API 接口域名，用于运单、订单与物流数据交互
-DOMAIN-SUFFIX,static.deppon.com # 德邦快递静态资源服务域名，用于页面脚本与前端资源加载
-DOMAIN-SUFFIX,track.deppon.com # 德邦快递物流追踪服务域名，用于运单状态与配送信息查询 
-
-# > 京东物流（JD Logistics）
-
-DOMAIN-SUFFIX,jdl.cn # 京东物流服务域名，涵盖运力、查询与配送服务 
-DOMAIN-SUFFIX,jdl.com # 京东物流国际/企业服务域名 
-
-# > Cainiao 菜鸟网络物流平台相关域名
-
-DOMAIN-SUFFIX,cainiao.com # 菜鸟网络主站域名（含物流服务入口与介绍页面）
-DOMAIN-SUFFIX,global.cainiao.com # 菜鸟国际物流子域（全球包裹追踪服务）
-DOMAIN-SUFFIX,track.cainiao.com # 菜鸟物流追踪服务（物流单号解析与节点状态查询）
-DOMAIN-SUFFIX,logistics.cainiao.com # 菜鸟商家物流服务管理后台
-DOMAIN-SUFFIX,gw.cainiao.com # 菜鸟开放平台 API 网关（商家/开发者接口调用）
-DOMAIN-SUFFIX,img.cainiao.com # 菜鸟图片资源加载域（图标、商品图等）
-DOMAIN-SUFFIX,cnalbs.com # Cainiao 全局 CDN 内容加速域（JS、CSS、图片等静态资源）
-DOMAIN-SUFFIX,alilogistics.com # 阿里物流关联平台域名 
-
-# > 中国邮政速递（EMS）
-
-DOMAIN-SUFFIX,ems.com.cn # EMS 官方主域名，用于邮政快递追踪与服务入口 
-
-# > 极兔速递（J&T Express）
-
-DOMAIN-SUFFIX,jtexpress.com # 极兔速递全球主品牌域名，用于国际业务、品牌展示与服务入口
-DOMAIN-SUFFIX,jtexpress.com.cn # 极兔速递中国大陆服务站域名，用于国内快递业务与运单查询
-DOMAIN-SUFFIX,jtexpress.my # 极兔速递马来西亚及部分国际业务站点域名
-
-# > 知乎 相关域名
-
-DOMAIN-SUFFIX,zhihu.com # 知乎主站域名，涵盖内容浏览、提问、回答等服务 
-DOMAIN-SUFFIX,zhimg.com # 知乎图片与静态资源 CDN 域名 
-DOMAIN-SUFFIX,zhihuishu.com # 知乎旗下在线教育平台（知乎书店 / 课程） 
-DOMAIN-SUFFIX,api.zhihu.com # 知乎 App 与 Web API 接口域名 
-DOMAIN-SUFFIX,appcloud.zhihu.com # 知乎 App 云服务与用户行为记录接口 
-DOMAIN-SUFFIX,adx.zhihu.com # 知乎广告投放与个性化推荐服务接口 
-DOMAIN-SUFFIX,link.zhihu.com # 知乎短链与外部跳转中转域名 
-DOMAIN-SUFFIX,sugar.zhihu.com # 知乎数据分析与广告组件加载接口 
-DOMAIN-SUFFIX,static.zhihu.com # 知乎静态资源域名，用于 JS/CSS 加载等 
-DOMAIN-SUFFIX,captcha.zhihu.com # 知乎安全验证与图形验证码服务接口 
-
-# > 百度搜索主服务
-
-DOMAIN-SUFFIX,baidu.com # 百度主域名，搜索引擎与门户服务入口 
-DOMAIN-SUFFIX,s1.baidu.com # 百度静态资源加载域名 
-DOMAIN-SUFFIX,s2.baidu.com # 百度搜索图片等模块资源接口 
-DOMAIN-SUFFIX,s3.baidu.com # 百度云端内容与脚本服务 
-DOMAIN-SUFFIX,s5.baidu.com # 百度搜索结果推荐内容接口 
-DOMAIN-SUFFIX,s6.baidu.com # 百度搜索广告与推广接口服务 
-DOMAIN-SUFFIX,zhanzhang.baidu.com # 百度站长平台，提供站点收录与分析服务 
-DOMAIN-SUFFIX,wap.baidu.com # 百度移动端搜索与服务入口 
-DOMAIN-SUFFIX,m.baidu.com # 百度移动搜索主入口 
-DOMAIN-SUFFIX,imgsrc.baidu.com # 搜索结果中图片内容加载接口 
-DOMAIN-SUFFIX,sp0.baidu.com # 百度内容分发与智能推送节点 
-DOMAIN-SUFFIX,sp1.baidu.com # 百度内容推荐接口，用于搜索结果相关内容加载 
-DOMAIN-SUFFIX,sp2.baidu.com # 百度搜索内容聚合与云服务接口 
-DOMAIN-SUFFIX,baidu.com # 百度主域名，统一登录与内容跳转平台 
-DOMAIN-SUFFIX,baiduboxapp.com # 百度 App 专属域名，用于内容分发与功能接口 
-DOMAIN-SUFFIX,mbd.baidu.com # 百度移动内容平台，承载百家号与资讯内容分发 
-DOMAIN-SUFFIX,yunjiasu-cdn.cn # 百度加速 CDN 节点，用于内容缓存与推送 
-DOMAIN-SUFFIX,nimgshare.baidu.com # 百度 App 内容图片加载接口 
-DOMAIN-SUFFIX,content.baidu.com # 百度内容平台接口域名（百家号/资讯） 
-DOMAIN-SUFFIX,voice.baidu.com # 百度语音内容服务，用于语音搜索与音频资讯 
-DOMAIN-SUFFIX,newclient.baidu.com # 百度 App 客户端更新与内容调用服务 
-DOMAIN-SUFFIX,news.baidu.com # 百度新闻频道，内容聚合服务页面入口 
-DOMAIN-SUFFIX,searchbox.baidu.com # 百度 App 内部搜索框模块接口 
-DOMAIN-SUFFIX,ic.snssdk.com # 字节跳动内容服务 SDK，被百度部分内容页嵌入调用 
-DOMAIN-SUFFIX,tcbox.baidu.com # 百度内容推送接口，涉及 App 内新闻/视频等模块加载 
-DOMAIN-SUFFIX,baidubce.com # 百度智能云 API 与服务接口主域名 
-DOMAIN-SUFFIX,bdstatic.com # 百度云静态资源域名（含 AI/图像识别等模块） 
-DOMAIN-SUFFIX,cloud.baidu.com # 百度智能云官网与控制台访问入口 
-DOMAIN-SUFFIX,sp0.baidu.com # 百度搜索内容分发与资源加载域名 
-DOMAIN-SUFFIX,mbd.baidu.com # 百度行为组件与内容分发策略接口
-
-# > 搜狗搜索主服务域名
-
-DOMAIN-SUFFIX,sogou.com # 搜狗主域名，涵盖搜索门户、导航入口等 
-DOMAIN-SUFFIX,so.com # 原360搜索域名，部分与搜狗联合展示内容 
-DOMAIN-SUFFIX,v.sogou.com # 搜狗视频搜索服务域名 
-DOMAIN-SUFFIX,wap.sogou.com # 移动端搜狗搜索入口 
-DOMAIN-SUFFIX,search.sogou.com # 搜狗通用搜索接口域名 
-DOMAIN-SUFFIX,query.sogou.com # 搜狗关键词请求与联想输入建议接口 
-DOMAIN-SUFFIX,pv.sogou.com # 搜狗页面访问记录上报接口 
-DOMAIN-SUFFIX,adx.sogou.com # 搜狗广告展示平台接口，用于投放与追踪 
-DOMAIN-SUFFIX,ie.sogou.com # 搜狗搜索推广相关落地页接口 
-DOMAIN-SUFFIX,sogoucdn.com # 搜狗内容与静态资源分发 CDN 主域，用于图片、下载资源与 Web 静态内容加载
-DOMAIN-SUFFIX,img03.sogoucdn.com # 搜狗图片与静态资源 CDN 节点，用于搜索结果与内容页图片加载
-DOMAIN-SUFFIX,dlweb.sogoucdn.com # 搜狗 Web 端下载与静态资源分发 CDN，用于客户端与页面相关资源获取
-
-# > 360 搜索引擎相关域名规则集（360 Search）
-
-DOMAIN-SUFFIX,so.com # 360 搜索主域名，用于搜索门户与结果展示 
-DOMAIN-SUFFIX,s.360.cn # 360 搜索相关接口域名，用于请求转发与行为采集 
-DOMAIN-SUFFIX,wzj.so.com # 360 搜索网页结果展示接口 
-DOMAIN-SUFFIX,news.so.com # 360 新闻搜索入口 
-DOMAIN-SUFFIX,image.so.com # 360 图片搜索服务 
-DOMAIN-SUFFIX,video.so.com # 360 视频搜索接口 
-DOMAIN-SUFFIX,dict.so.360.cn # 360 词典搜索服务 
-DOMAIN-SUFFIX,sug.so.360.cn # 360 搜索联想与关键词建议接口 
-DOMAIN-SUFFIX,api.so.360.cn # 360 搜索相关API调用接口 
-DOMAIN-SUFFIX,p4papi.so.360.cn # 360 搜索商业广告投放平台接口 
-DOMAIN-SUFFIX,srpapi.so.com # 360 搜索结果页面请求接口 
-DOMAIN-SUFFIX,click.so.360.cn # 360 搜索广告点击统计与追踪接口 
-
-# > 神马搜索引擎相关域名规则集（Shenma Search）
-
-DOMAIN-SUFFIX,sm.cn # 神马搜索主站域名，由阿里与UC联合推出 
-DOMAIN-SUFFIX,m.sm.cn # 神马搜索移动端主域名 
-DOMAIN-SUFFIX,sugs.m.sm.cn # 神马搜索联想词与自动补全接口 
-DOMAIN-SUFFIX,p4p.m.sm.cn # 神马搜索广告投放平台接口 
-DOMAIN-SUFFIX,cpro.m.sm.cn # 神马搜索商业广告投放组件 
-DOMAIN-SUFFIX,api.m.sm.cn # 神马搜索相关 API 接口调用 
-DOMAIN-SUFFIX,s0.sm.cn # 神马搜索结果资源加载域名 
-DOMAIN-SUFFIX,wap.sm.cn # 神马搜索移动 WAP 页面入口 
-DOMAIN-SUFFIX,push.sm.cn # 神马搜索推送服务接口 
-
-# > UC 浏览器相关域名规则集（UC Browser / 阿里移动服务）
-
-DOMAIN-SUFFIX,uc.cn # UC 浏览器主域名，访问主页与资讯入口 
-DOMAIN-SUFFIX,ucweb.com # UC 国际站主域名，用于全球版浏览器服务 
-DOMAIN-SUFFIX,9apps.com # UC 下载平台，用于 APK 和资源分发 
-DOMAIN-SUFFIX,9appsinstall.com # UC 下载工具辅助域名 
-DOMAIN-SUFFIX,applovin.ucweb.com # UC 广告相关接口，用于 AppLovin 投放 
-DOMAIN-SUFFIX,wx.gtimg.cn.ucweb.com # UC 浏览器微信内容适配接口 
-DOMAIN-SUFFIX,push.ucweb.com # UC 推送服务接口，涉及通知与消息推送 
-DOMAIN-SUFFIX,sdkpush.ucweb.com # UC SDK 推送接口，嵌入第三方应用中 
-DOMAIN-SUFFIX,server.m.uc.ucweb.com # UC 浏览器主服务接口，包含配置与更新 
-DOMAIN-SUFFIX,nav.cn.miaozhen.com # UC 浏览器导航行为追踪接口（与秒针合作） 
-DOMAIN-SUFFIX,adtrack.ucweb.com # UC 广告行为上报接口 
-DOMAIN-SUFFIX,adashx4serv.uc.cn # UC SDK 广告行为分析与回传 
-DOMAIN-SUFFIX,adx.uc.cn # UC 广告投放平台接口，负责商业广告内容加载 
-DOMAIN-SUFFIX,track.uc.cn # UC 用户行为数据追踪与归集接口 
-DOMAIN-SUFFIX,uc.ucweb.com # UC 浏览器初始化与配置服务接口 
-
-# > 网易邮箱（NetEase Mail）
-
-DOMAIN-SUFFIX,mail.163.com # 网易 163 邮箱 Web 主入口，用于网页端收发邮件与账户管理
-DOMAIN-SUFFIX,mail.126.com # 网易 126 邮箱 Web 主入口，用于网页端邮箱服务
-DOMAIN-SUFFIX,yeah.net # 网易旗下 yeah.net 邮箱服务域名，提供独立邮箱体系
-DOMAIN-SUFFIX,email.163.com # 网易企业邮箱服务域名，用于企业账户与邮件接口
-DOMAIN-SUFFIX,imap.163.com # 网易邮箱 IMAP 服务域名，用于邮件客户端收取邮件
-DOMAIN-SUFFIX,smtp.163.com # 网易邮箱 SMTP 服务域名，用于邮件客户端发送邮件
-
-# > 网易体育（NetEase Sports）
-
-DOMAIN-SUFFIX,sports.163.com # 网易体育频道域名，用于体育新闻、赛事报道与相关内容展示
-
-# > 网易考拉海购（Kaola）
-
-DOMAIN-SUFFIX,kaola.com # 网易考拉跨境电商平台主域名，用于商品浏览、下单与用户服务入口
-DOMAIN-SUFFIX,m.kaola.com # 网易考拉移动端网页服务域名，用于移动端访问与轻量化购物操作
-DOMAIN-SUFFIX,kaolaapi.com # 网易考拉业务 API 服务域名，用于移动端与交易相关接口调用
-DOMAIN-SUFFIX,static.kaola.com # 网易考拉平台静态资源服务域名，用于前端脚本与页面组件加载
-DOMAIN-SUFFIX,kaolacdn.com # 网易考拉静态资源与内容分发 CDN 域名 
-
-# > 网易静态资源与风控服务（Static Assets / Risk Control）
-
-DOMAIN-SUFFIX,126.net # 网易静态资源域，用于加载通用前端内容、字体与图像
-DOMAIN-SUFFIX,cstaticdun-v6.126.net # 网易易盾风控/验证码服务节点，用于表单提交、人机验证与登录安全校验
-DOMAIN-SUFFIX,ir-sdk.dun.163.com # 网易易盾 SDK 上报接口，用于设备指纹、行为识别与风控建模
-DOMAIN-SUFFIX,c.dun.163.com # 网易易盾客户端配置与策略下发接口，用于风控参数更新与策略同步
-DOMAIN-SUFFIX,dun.163.com # 网易易盾安全服务主域，用于安全防护、验证码/滑块验证等
-DOMAIN-SUFFIX,dun.163yun.com # 网易易盾安全服务主域，用于验证码、人机校验、反作弊与风险控制能力
-DOMAIN-SUFFIX,ac.dun.163yun.com # 网易易盾行为分析与访问控制接口，用于设备指纹识别、风险判定与安全策略执行
-
-# > 网易 来去看看 相关域名
-
-DOMAIN-SUFFIX,laiqukankan.com # 网易 来去看看 平台主域名（归属于广州网易计算机系统有限公司，用于网络测试与平台服务）
-DOMAIN-SUFFIX,nstool.laiqukankan.com # 来去看看 网络工具子域，用于客户端网络检测、连接测试与运行时服务支持
-
-# > 网易质云（YunxinFW）网络支撑服务
-
-DOMAIN-SUFFIX,yunxinfw.com # 网易质云科技主域名，用于网络调度、访问支撑与服务调用
-DOMAIN-SUFFIX,chatwl01-bgp.yunxinfw.com # 云信服务链路节点，用于客户端通信与网络调度
-DOMAIN-SUFFIX,chatwl02.yunxinfw.com # 云信服务链路备用节点
-DOMAIN-SUFFIX,link04-bgp.yunxinfw.com # 云信网络传输与链路优化节点（加速与调度）
-DOMAIN-SUFFIX,quiclink-cn.yunxinfw.com # 云信 QUIC 加速链路节点
-DOMAIN-SUFFIX,httpdns.yunxinfw.com # 云信 HTTPDNS 加速服务域名
-DOMAIN-SUFFIX,lbs-sg.yunxinfw.com # 云信地理 / 负载加权服务节点
-
-# > 网易游戏服务与组件 相关域名
-
-DOMAIN-SUFFIX,game.163.com # 网易游戏平台通用域名，用于游戏官方网站、活动页与组件加载
-DOMAIN-SUFFIX,timejs.game.163.com # 网易游戏计时/脚本服务域名，用于游戏页面倒计时、动态组件等交互逻辑
-
-# > WisdomIR 投资者关系在线服务
-
-DOMAIN-SUFFIX,wisdomir.com # WisdomIR 投资者关系服务主域，用于企业公告、业绩披露与信息管理平台访问
-DOMAIN-SUFFIX,website.wisdomir.com # WisdomIR 企业网站支撑域，用于内容展示与交互页面资源
-DOMAIN-SUFFIX,stockticker.website.wisdomir.com # WisdomIR 股票行情图表服务域名，用于投资者关系页面中股票走势展示与图形组件
-DOMAIN-SUFFIX,analytics2.website.wisdomir.com # WisdomIR 页面统计与分析支持域名，用于投资者关系网站访问指标采集与展示
-
-# > 新浪邮箱（Sina Mail）
-
-DOMAIN-SUFFIX,mail.sina.com.cn # 新浪邮箱 Web 主入口，用于网页端收发邮件与账户管理
-DOMAIN-SUFFIX,sinaemail.cn # 新浪邮箱辅助服务域名，用于邮箱系统支撑与服务跳转
-DOMAIN-SUFFIX,sinamail.sina.com.cn # 新浪邮箱核心邮件接口域名，用于收发与配置相关服务
-DOMAIN-SUFFIX,imap.sina.com # 新浪邮箱 IMAP 服务域名，用于邮件客户端接收邮件
-DOMAIN-SUFFIX,smtp.sina.com # 新浪邮箱 SMTP 服务域名，用于邮件客户端发送邮件
-
-# > 新浪（Sina）统一身份认证与单点登录服务
-
-DOMAIN-SUFFIX,sina.com.cn # 新浪门户与官方基础域名（账号体系 / 登录 / 服务入口）
-DOMAIN-SUFFIX,i.sso.sina.com.cn # Sina SSO 单点登录域名，用于跨域认证与统一登录流程
-DOMAIN-SUFFIX,login.sina.com.cn # Sina 登录认证中心域名，用于账号验证与统一登录流程请求
-DOMAIN-SUFFIX,passport.weibo.com # 微博登录与认证会话中转域名，用于微博等产品单点登录处理
-DOMAIN-SUFFIX,sso.sina.com.cn # Sina SSO 通用单点登录处理主域，用于实现统一登录机制
-
-# > 工具/其他服务（Tools / Misc）
-
-DOMAIN-SUFFIX,csdn.net # CSDN 技术社区
-DOMAIN-SUFFIX,ps.gaoding.com # 稿定设计平台图片处理与资源加载接口，部分网页编辑与预览功能依赖
-DOMAIN-SUFFIX,19ego.cn # 19EGO 营销与活动平台主域名，常用于抽奖、促销活动页面与互动营销服务
-
-# > 游戏服务（Gaming Services）
-
-DOMAIN-SUFFIX,play.dl.360.cn # 360游戏平台
-DOMAIN-SUFFIX,uplaypc-s-ubisoft.cdn.ubionline.com # 育碧中国区 CDN
-DOMAIN-SUFFIX,xboxlive.cn # Xbox 中国
-DOMAIN-SUFFIX,steampowered.cn # Steam 中国站
-DOMAIN-SUFFIX,steamchina.com # Steam 中国站备用域名
-DOMAIN-SUFFIX,wg.163.com # 网易游戏
-DOMAIN-SUFFIX,4399.com # 4399小游戏平台
-DOMAIN-SUFFIX,7k7k.com # 7k7k小游戏平台
-
-# > 企业服务 / 办公平台（Enterprise / Productivity）
-
-DOMAIN-SUFFIX,huaweicloud.com # 华为云
-DOMAIN-SUFFIX,dingtalk.com # 钉钉
-DOMAIN-SUFFIX,work.weixin.qq.com # 企业微信
-DOMAIN-SUFFIX,mi.com # 小米企业站
-DOMAIN-SUFFIX,xiaomi.net # 小米企业服务
-DOMAIN-SUFFIX,hikvision.com # 海康威视（政企市场）
-
-# > 政府 / 教育 / 公共机构域名（Gov / Edu / Public Service）
-
-DOMAIN-SUFFIX,gov.cn # 中国政府网站总入口
-DOMAIN-SUFFIX,edu.cn # 教育部 / 高校
-DOMAIN-SUFFIX,moe.gov.cn # 教育部官网
-DOMAIN-SUFFIX,customs.gov.cn # 中国海关
-DOMAIN-SUFFIX,mps.gov.cn # 公安部
-DOMAIN-SUFFIX,chinatax.gov.cn # 国家税务总局
-DOMAIN-SUFFIX,stats.gov.cn # 国家统计局
-DOMAIN-SUFFIX,sasac.gov.cn # 国务院国资委
-DOMAIN-SUFFIX,court.gov.cn # 中国法院网
-DOMAIN-SUFFIX,people.com.cn # 人民网（党媒）
-DOMAIN-SUFFIX,xinhuanet.com # 新华网（党媒）
-
-# > 证书验证 / 吊销检查类域名（CA / OCSP / CRL）
-
-DOMAIN-SUFFIX,cacerts.digicert.cn # DigiCert 中国区证书分发域名
-DOMAIN-SUFFIX,ocsp.digicert.com # DigiCert 证书吊销状态查询（OCSP）
-DOMAIN-SUFFIX,ocsp.digicert.cn # DigiCert 中国区证书吊销检查服务（OCSP，用于验证证书有效性）
-DOMAIN-SUFFIX,ocsp.comodoca.com # Comodo 证书吊销状态查询服务（OCSP，用于验证证书有效性）
-DOMAIN-SUFFIX,ocsp.comodoca.com # Sectigo OCSP 证书吊销状态查询服务（用于验证证书有效性）
-DOMAIN-SUFFIX,crt.comodoca.com # Sectigo 根证书与中间证书分发平台（包含 .crt 下载）
-DOMAIN-SUFFIX,crl.comodoca.com # Sectigo CRL 吊销列表服务（提供证书撤销状态下载）
-
-# > Dianxiaomi（店小秘）相关服务域名
-
-DOMAIN-SUFFIX,dianxiaomi.com # 店小秘主站域名，涵盖跨境电商服务与平台功能接口 
-DOMAIN-SUFFIX,b.cdnst.net # Dianxiaomi 使用的第三方 CDN 域名，用于加载后台静态资源与图标文件 
-DOMAIN-SUFFIX,login.dianxiaomi.com # 登录认证入口，用于用户身份验证与后台访问控制 
-DOMAIN-SUFFIX,erp.dianxiaomi.com # ERP 模块子域，承载订单、物流、发货、库存等业务操作 
-DOMAIN-SUFFIX,static.dianxiaomi.com # 前端静态资源域名，用于加载 JS、CSS、图像等内容 
-DOMAIN-SUFFIX,img.dianxiaomi.com # 图像资源 CDN，主要用于平台上传图片、物流标签预览等 
-
-# > YunExpress（云途物流）服务域名
-
-DOMAIN-SUFFIX,passport.yunexpress.cn # YunExpress 登录认证接口，用于用户身份验证与平台权限访问 
-DOMAIN-SUFFIX,openapi.yunexpress.com # YunExpress 开放 API 接口，用于物流数据查询与服务对接 
-DOMAIN-SUFFIX,track.yunexpress.com # YunExpress 物流轨迹追踪服务，用于查询包裹状态与派送进度 
-DOMAIN-SUFFIX,yunexpress.com # YunExpress 官方网站主站，用于平台展示与入口跳转 
-
-# > 菜鸟教程平台域名（Runoob.com）
-
-DOMAIN-SUFFIX,runoob.com # 菜鸟教程主域名，用于提供编程语言、前端后端开发、数据库等在线技术教程与实例演示 
-
-# > Iconfont 图标字体服务平台域名（iconfont.cn）
-
-DOMAIN-SUFFIX,iconfont.cn # 阿里巴巴 Iconfont 图标字体平台域名，用于网页图标托管、字体资源加载与设计师图标分发服务
-
-# > 爱知网盘资源搜索引擎域名（iizhi.cn）
-
-DOMAIN-SUFFIX,iizhi.cn # 爱知网盘搜索引擎主域名，用于聚合百度网盘与阿里云盘等公开资源链接
-
-# > RevenueCat 移动应用内订阅管理服务域名
-
-DOMAIN,api.revenuecat.com:443 # RevenueCat API 接口域名，用于管理订阅、校验交易与用户状态同步 
-
-# > Moka（Mokahr 招聘管理系统）
-
-DOMAIN-SUFFIX,mokahr.com # Moka 招聘管理系统主域名，用于账号模块、后台管理与企业招聘流程
-DOMAIN-SUFFIX,app.mokahr.com # Moka Web 应用端，用于职位投递、招聘流程管理与企业端操作界面
-DOMAIN-SUFFIX,public-cdn.mokahr.com # Moka 静态资源 CDN，用于加载前端脚本、样式、组件与页面素材
-DOMAIN-SUFFIX,sentry-fe.mokahr.com # Moka 前端错误监控与性能日志上报节点，用于追踪前端异常与稳定性数据
-
-# > 轻雀文档（Qingque Docs / SaaS 文档平台）
-
-DOMAIN-SUFFIX,docs.qingque.cn # 轻雀文档主站域名，用于文档查看、内容渲染与在线协作编辑
-DOMAIN-SUFFIX,passport.qingque.cn # 轻雀文档账号认证中心，用于用户登录、身份鉴权与安全会话管理
-DOMAIN-SUFFIX,docs-fe.qingque.cn # 轻雀文档前端页面加载域名，用于文档渲染、脚本/样式加载与界面展示
-
-# > 语雀文档（Yuque / 阿里文档协作平台）
-
-DOMAIN-SUFFIX,yuque.com # 语雀在线文档与知识库平台域名，提供团队协作与内容管理服务
-DOMAIN-SUFFIX,yuque.com # 语雀主站域名，用于文档协作、知识库管理与团队空间访问
-DOMAIN-SUFFIX,cdn.yuque.com # 语雀静态资源 CDN，用于图片、脚本、样式与文档渲染资源加载
-DOMAIN-SUFFIX,api.yuque.com # 语雀 API 接口，用于文档读取、编辑、搜索与第三方集成
-DOMAIN-SUFFIX,assets.yuque.com # 语雀静态素材资源，用于图标、附件、富文本内容等资源加载
-DOMAIN-SUFFIX,public.yuque.com # 语雀公共内容访问域名，用于公开文档、知识库展示
-DOMAIN-SUFFIX,office.yuque.com # 语雀在线办公相关接口，用于文档协作与附件在线预览
-DOMAIN-SUFFIX,yuque.antfin.com # 语雀文档服务域名，用于企业与团队文档协作、知识库访问
-
-# > 飞书文档（Feishu Docs / Lark Suite 文档协作平台）
-
-DOMAIN-SUFFIX,feishu.cn # 飞书中国区主站域名，用于账号登录、文档入口与协作空间访问
-DOMAIN-SUFFIX,feishuapp.cn # 飞书应用服务域名，用于文档协作、消息同步与多端通信
-DOMAIN-SUFFIX,larkoffice.com # 飞书国际版文档服务域名，用于文档协作、权限校验与内容加载
-DOMAIN-SUFFIX,feishucdn.com # 飞书静态资源 CDN，用于前端脚本、样式、字体与界面组件加载
-DOMAIN-SUFFIX,feishustatic.com # 飞书静态资源域，用于图片、图标与文档渲染相关资源
-DOMAIN-SUFFIX,feishucontent.com # 飞书内容存储域，用于文档附件、图片、富文本与团队素材访问
-DOMAIN-SUFFIX,open.feishu.cn # 飞书开放平台 API，用于文档权限、搜索、机器人与第三方集成
-DOMAIN-SUFFIX,api.feishu.cn # 飞书 API 接口，用于文档读取、编辑、上传与协作管理
-IP-CIDR,180.101.218.46/24 # 飞书设备管理与终端识别服务节点（device-bd.feishu.cn），用于设备绑定、登录安全校验与终端状态识别
-IP-CIDR,117.85.70.229/24 # 飞书账号与身份认证服务节点（accounts.feishu.cn），用于用户登录、权限校验与账号安全管理
-
-# > NLark / 飞书文档静态资源服务
-
-DOMAIN-SUFFIX,cdn.nlark.com # 飞书（Lark）/ NLark 文档与协作平台静态资源 CDN，用于文档渲染、图片、脚本与样式资源加载
-
-# > 腾讯文档（Tencent Docs / 在线协作文档平台）
-
-DOMAIN-SUFFIX,docs.qq.com # 腾讯文档主站域名，用于文档创建、编辑、协作与团队空间管理
-DOMAIN-SUFFIX,doc.weixin.qq.com # 微信文档入口，用于在微信环境中打开与编辑腾讯文档
-DOMAIN-SUFFIX,tdoc.qq.com # 腾讯文档核心服务域名，用于文档实时协作、同步与版本管理
-DOMAIN-SUFFIX,wpscdnqq.com # 腾讯文档静态资源 CDN，用于前端脚本、CSS、字体与文档渲染资源加载
-DOMAIN-SUFFIX,docsfile.qq.com # 文档附件上传/下载域名，用于多媒体、图片、文件内容托管
-DOMAIN-SUFFIX,cdn-docs.qq.com # 腾讯文档页面所依赖的前端资源 CDN，用于脚本与公共组件加速
-
-# > WPS 云文档（WPS Docs / 金山办公）
-
-DOMAIN-SUFFIX,wps.cn # WPS 中国区主站，用于产品入口与账户体系
-DOMAIN-SUFFIX,wps.com # WPS 国际站域名，用于文档、表格、演示等在线应用
-DOMAIN-SUFFIX,kdocs.cn # WPS 云文档主域名，用于在线文档编辑、协作与分享
-DOMAIN-SUFFIX,kdocs.com # WPS 云文档国际版域名，用于跨区文档协作
-DOMAIN-SUFFIX,ksosoft.com # 金山办公服务域，用于登录、同步、云端资源管理
-DOMAIN-SUFFIX,cloud.wps.cn # WPS 云文件服务端点，用于文档存储、同步与备份
-DOMAIN-SUFFIX,drive.wps.cn # WPS 云盘服务，用于文件上传、备份与多设备同步
-DOMAIN-SUFFIX,account.wps.cn # WPS 账号中心，用于认证、授权与登录管理
-DOMAIN-SUFFIX,docer.wps.cn # 稻壳（Docer）模板库，用于调用办公模板、素材资源
-DOMAIN-SUFFIX,codesync.wps.cn # 文档同步服务，用于实时协作与编辑历史
-DOMAIN-SUFFIX,static.wpscdn.cn # WPS 静态资源 CDN，用于脚本、样式、字体等加载
-DOMAIN-SUFFIX,wpscdn.cn # WPS CDN 加速节点，用于静态资源与文档资源分发
-
-# > 石墨文档（Shimo Docs / 在线协作办公平台）
-
-DOMAIN-SUFFIX,shimo.im # 石墨文档主域名，用于文档编辑、表格、PPT、团队协作与云端存储
-DOMAIN-SUFFIX,shimostatic.com # 石墨文档静态资源 CDN，用于脚本、样式、字体与编辑器前端组件加载
-DOMAIN-SUFFIX,shimoapi.com # 石墨文档 API 服务域名，用于文档权限、版本控制、上传/下载与协作管理
-DOMAIN-SUFFIX,shimousercontent.com # 石墨文档用户内容存储域，用于附件、图片、文档快照与预览资源
-DOMAIN-SUFFIX,shimoapps.com # 石墨关联服务域名，用于小程序、移动端资源与内部工具加载
-DOMAIN-SUFFIX,shimo.io # 石墨文档品牌保护与备用访问域，用于跳转与辅助服务
-
-# > Teambition 文档（阿里巴巴协作平台 / 项目管理与在线文档）
-
-DOMAIN-SUFFIX,teambition.com # Teambition 主站域名，用于项目管理、任务协作、团队空间与文档入口
-DOMAIN-SUFFIX,aliwork.com # 阿里协作域名，用于企业登录、会话验证与组织架构管理
-DOMAIN-SUFFIX,feidai.com # Teambition 文档与素材服务域，用于文件上传、附件预览与存储加速
-DOMAIN-SUFFIX,teambitionstatic.com # Teambition 静态资源 CDN，用于前端脚本、样式、字体与组件加载
-DOMAIN-SUFFIX,tbfile.oss-cn-hangzhou.aliyuncs.com # Teambition 文档文件托管（阿里云 OSS），用于存储文档附件与预览资源
-DOMAIN-SUFFIX,aliyuncs.com # 阿里云基础资源域，用于存储、加速与鉴权服务（Teambition 文件依赖）
-
-# > 蓝湖（Lanhu / 产品设计协作平台）
-
-DOMAIN-SUFFIX,lanhuapp.com # 蓝湖主站域名，用于设计稿协作、原型查看、团队空间与项目管理
-DOMAIN-SUFFIX,lanhuapp.cn # 蓝湖中国区服务域名，用于登录、项目访问、团队协作等核心功能
-DOMAIN-SUFFIX,lanhu-cdn.com # 蓝湖静态资源 CDN，用于前端脚本、样式、字体与界面组件加载
-DOMAIN-SUFFIX,lanhuoss.com # 蓝湖文件存储服务，用于上传/预览设计稿、图片、切图与附件
-DOMAIN-SUFFIX,lanhuimg.com # 蓝湖图片资源域名，用于设计稿截图、缩略图与渲染显示
-DOMAIN-SUFFIX,bluelake.cn # 蓝湖关联品牌域名，用于业务跳转、项目入口与账号体系
-
-# > 墨刀（MockingBot / 原型设计与团队协作平台）
-
-DOMAIN-SUFFIX,mockingbot.com # 墨刀主站域名，用于原型设计、项目协作、团队空间与在线预览
-DOMAIN-SUFFIX,mockplus.cn # 墨刀/Mockplus 中国区服务域，用于账号登录、项目管理与文档协作
-DOMAIN-SUFFIX,mockplus.com # Mockplus 国际版域名，用于原型设计与协作方案
-DOMAIN-SUFFIX,static.mockingbot.com # 墨刀静态资源域名，用于脚本、样式、字体与前端组件加载
-DOMAIN-SUFFIX,assets.mockingbot.com # 墨刀资源存储，用于图标、图片素材、组件库与项目资源
-DOMAIN-SUFFIX,api.mockingbot.com # 墨刀 API 接口域名，用于项目数据、权限验证、设计稿上传与协作管理
-DOMAIN-SUFFIX,mockingbot-cdn.com # 墨刀前端资源 CDN，用于加速 UI 渲染、设计稿加载与图像服务
-DOMAIN-SUFFIX,mbusercontent.com # 墨刀用户内容存储域，用于图片、文件、设计稿与附件托管
-
-# > CODING（腾讯云 DevOps / 代码托管与项目协作平台）
-
-DOMAIN-SUFFIX,coding.net # CODING 主站域名，用于代码托管、CI/CD、项目管理与团队协作
-DOMAIN-SUFFIX,coding.me # CODING 用户主页与团队空间展示域名，用于个人/企业项目展示
-DOMAIN-SUFFIX,api.coding.net # CODING API 接口域名，用于项目管理、流水线调用、仓库管理与自动化操作
-DOMAIN-SUFFIX,static.coding.net # CODING 静态资源 CDN，用于加载脚本、样式、字体与前端组件
-DOMAIN-SUFFIX,coding-page.com # CODING Pages 静态网站托管服务域名，用于构建与部署团队/个人站点
-DOMAIN-SUFFIX,tencentcs.com # CODING/TencentCloud 依赖的云原生对象存储域名（文件、构建产物、制品库）
-DOMAIN-SUFFIX,codimg.cn # CODING 图片资源加速域名，用于头像、截图、项目展示图加载
-DOMAIN-SUFFIX,codetencent.com # CODING 关联服务域名，用于登录体系、资源分发与服务跳转
-DOMAIN-SUFFIX,cloudcache.tencentcs.com # 腾讯云静态资源 CDN / 缓存加速域名，用于加载 JS/CSS/图片等公共资源或静态文件 
-DOMAIN-SUFFIX,cloudcache.intl.tencent-cloud.com # 腾讯云 Intl 全球 CDN / 静态资源加速域名，用于静态文件、图片、脚本等内容分发与全球加速 
-DOMAIN-SUFFIX,tencentcloud.com # 腾讯云官网主域名，用于控制台访问、服务介绍、文档浏览等
-DOMAIN-SUFFIX,cloudcache.tencent-cloud.com # 腾讯云静态资源 CDN 域名，用于图像、脚本、样式表等前端资源的分发和缓存
-DOMAIN-SUFFIX,static.cloudcachetci.com # 腾讯云云缓存加速 CDN 域名，用于海外静态资源加载，如 JS/CSS/图像等
-DOMAIN-SUFFIX,cloudcache.tencentcs.com # 腾讯云 CDN 节点资源域名，用于分发公共静态文件如 JS、CSS、图像资源等
-DOMAIN-SUFFIX,playvideo.qcloud.com # 腾讯云视频点播（VOD）域名，用于视频播放、转码 CDN 加速与播放资源调度
-DOMAIN-SUFFIX,datacenter.live.qcloud.com # 腾讯云直播平台节点域名，用于直播流推送、拉流与播放控制链路
-DOMAIN-SUFFIX,cloudcache.tencentcs.cn # 腾讯云 CloudCache 国内节点，用于前端静态资源的缓存与快速访问 
-DOMAIN-SUFFIX,test-staticintl.cloudcachetci.com # 腾讯云静态资源测试域名，常用于测试环境中的 JS/CSS 资源加载与 CDN 加速验证
-DOMAIN-SUFFIX,main.qcloudimg.com # 腾讯云图像 CDN 主域名，用于加载头像、图标、截图等静态图片资源，常用于微信公众平台、腾讯云控制台等服务
-
-# > PingCode（研发项目管理 / DevOps 协作平台）
-
-DOMAIN-SUFFIX,pingcode.com # PingCode 主站域名，用于项目管理、需求规划、测试管理与 DevOps 协作
-DOMAIN-SUFFIX,pingcode.cn # PingCode 中国区服务域名，用于账号体系、工作项管理与企业协作
-DOMAIN-SUFFIX,api.pingcode.com # PingCode API 接口域名，用于需求、缺陷、任务、自动化与项目数据操作
-DOMAIN-SUFFIX,static.pingcode.com # PingCode 静态资源 CDN，用于脚本、样式、前端组件与工作台 UI 加载
-DOMAIN-SUFFIX,pcusercontent.com # PingCode 用户内容存储域，用于附件、测试截图、文档与项目资源托管
-DOMAIN-SUFFIX,pc-cdn.com # PingCode 静态加速 CDN，用于前端资源、头像、图标与界面素材加载
-DOMAIN-SUFFIX,pingcodeimg.com # PingCode 图片资源域名，用于工作项截图、文件预览与知识库展示
-
-# > TAPD（腾讯敏捷研发协作 / 项目管理平台）
-
-DOMAIN-SUFFIX,tapd.cn # TAPD 主站域名，用于敏捷项目管理、迭代规划、需求与缺陷跟踪
-DOMAIN-SUFFIX,api.tapd.cn # TAPD API 接口域名，用于项目数据、需求/缺陷同步、自动化与第三方集成
-DOMAIN-SUFFIX,static.tapd.cn # TAPD 静态资源 CDN，用于前端脚本、样式、字体与界面组件加载
-DOMAIN-SUFFIX,tapdfile.cn # TAPD 文件资源与附件存储，用于上传截图、文档、设计稿与项目相关文件
-DOMAIN-SUFFIX,tapdcustom.com # TAPD 自定义域名服务，用于企业定制化工作区、登录跳转与专属子域
-DOMAIN-SUFFIX,tencent.com # 腾讯通用服务域名，用于 TAPD 登录体系、权限验证与统一账户认证
-DOMAIN-SUFFIX,qq.com # QQ 登录体系依赖域，用于 TAPD 账号登录、权限校验与单点登录
-
-# > 有道云笔记（Youdao Note / 网易有道在线笔记与知识管理平台）
-
-DOMAIN-SUFFIX,ydnote.com # 有道云笔记主域名，用于笔记查看、编辑、同步与团队协作
-DOMAIN-SUFFIX,note.youdao.com # 有道云笔记网页版入口，用于文档管理、内容呈现与账号业务
-DOMAIN-SUFFIX,ynote.com # 有道云笔记旧版域名，用于兼容早期客户端与历史服务
-DOMAIN-SUFFIX,ydstatic.com # 有道系静态资源 CDN，用于前端脚本、样式、字体与公共组件加载
-DOMAIN-SUFFIX,ydschool.com # 有道教育关联域，用于部分资源托管与静态内容引用
-DOMAIN-SUFFIX,ydimg.com # 有道图片资源域名，用于笔记图片、截图、插图与富文本内容存储
-DOMAIN-SUFFIX,youdao.com # 网易有道基础服务域名，用于统一登录、账户管理与云端服务关联
-DOMAIN-SUFFIX,api.youdao.com # 有道 API 服务端，用于文档同步、OCR、翻译等功能的接口调用
-
-# > 印象笔记（Yinxiang Biji / Evernote China 在线笔记与知识管理平台）
-
-DOMAIN-SUFFIX,yinxiang.com # 印象笔记中国区主域名，用于笔记编辑、笔记本管理与云端同步
-DOMAIN-SUFFIX,app.yinxiang.com # 印象笔记 Web 应用，用于在线编辑、团队协作与内容管理
-DOMAIN-SUFFIX,yinxiangbbs.com # 印象笔记社区与反馈平台，用于用户交流与问题讨论
-DOMAIN-SUFFIX,static.yinxiang.com # 印象笔记静态资源 CDN，用于脚本、样式、字体与前端组件加载
-DOMAIN-SUFFIX,ydstatic.com # 印象笔记依赖的网易静态资源域，用于部分公共脚本与资源加载
-DOMAIN-SUFFIX,evernote.com # Evernote 国际版核心域名，用于同步兼容、历史资源引用与跨区域跳转
-DOMAIN-SUFFIX,evernoteusercontent.com # Evernote 内容存储域，用于附件、图片、录音与富文本内容加载
-DOMAIN-SUFFIX,evernote.com.cn # Evernote 中国区历史域名，用于账号体系与部分旧版客户端兼容
-
-# > 钉钉文档（DingTalk Docs / 阿里巴巴数字办公套件）
-
-DOMAIN-SUFFIX,dingtalk.com # 钉钉主站域名，用于组织协作、文档入口与统一身份体系
-DOMAIN-SUFFIX,alidocs.com # 钉钉文档主域名，用于在线文档、表格、脑图与团队协作
-DOMAIN-SUFFIX,docs.aliyun.com # 阿里云文档服务，用于部分文档渲染、预览与内容承载
-DOMAIN-SUFFIX,dtstatic.com # 钉钉静态资源 CDN，用于脚本、样式、字体与组件加载
-DOMAIN-SUFFIX,alicdn.com # 阿里公共 CDN 域名，用于钉钉文档资源加载与页面依赖
-DOMAIN-SUFFIX,aliwork.com # 阿里协作与组织域，用于身份验证、权限体系与组织管理
-DOMAIN-SUFFIX,aliyuncs.com # 阿里云资源服务，用于钉钉文档附件存储、文件预览与对象资源下载
-DOMAIN-SUFFIX,alipan.com # 阿里云盘文档/附件关联服务，用于部分资源预览与文件托管
-DOMAIN-SUFFIX,oss-cn-hangzhou.aliyuncs.com # 钉钉文档 OSS 存储节点，用于图片、附件、预览文件加载
-
-# > FlowUs（流沙笔记 / FlowUs 在线知识库与协作平台）
-
-DOMAIN-SUFFIX,flowus.cn # FlowUs 主站域名，用于笔记编辑、知识库管理、任务协作与团队空间
-DOMAIN-SUFFIX,flowus.io # FlowUs 国际版/备用访问域，用于跨区域访问与部分资源加载
-DOMAIN-SUFFIX,static.flowus.cn # FlowUs 静态资源 CDN，用于脚本、样式、字体与编辑器组件加载
-DOMAIN-SUFFIX,static.flowusfile.com # FlowUs 文件资源静态域，用于附件、图片、视频与文档预览内容托管
-DOMAIN-SUFFIX,flowusfile.com # FlowUs 文件上传与下载主域名，用于处理笔记附件、图像与资源文件
-DOMAIN-SUFFIX,flowususercontent.com # FlowUs 用户内容存储域，用于用户生成内容、媒体资源与富文本素材
-DOMAIN-SUFFIX,api.flowus.cn # FlowUs API 接口，用于笔记同步、权限校验、团队协作与数据访问
-DOMAIN-SUFFIX,cdnflowus.com # FlowUs CDN 加速域名，用于页面性能优化与前端资源分发
-
-# > 坚果云（Nutstore / 文件同步·云存储·团队协作）
-
-DOMAIN-SUFFIX,nutstore.cn # 坚果云主站域名，用于文件同步、云存储、团队协作与账号管理
-DOMAIN-SUFFIX,jiyun.feiniu.com # 坚果云文件加速与对象存储服务，用于大文件上传/下载与预览处理
-DOMAIN-SUFFIX,static.nutstore.cn # 坚果云静态资源 CDN，用于脚本、样式、图片与界面组件加载
-DOMAIN-SUFFIX,webdav.nutstore.cn # WebDAV 服务端点，用于跨设备文件同步、挂载与第三方客户端访问
-DOMAIN-SUFFIX,app.nutstore.cn # 坚果云 Web 应用前端，用于在线管理文件、共享链接与团队空间
-DOMAIN-SUFFIX,api.nutstore.cn # 坚果云 API 接口，用于文件查询、传输、权限管理与团队协作
-DOMAIN-SUFFIX,nutstoreusercontent.com # 坚果云用户内容存储域，用于文件下载链接、共享文件及临时资源托管
-
-# > Wolai（我来笔记 / 在线知识库与协作平台）
-
-DOMAIN-SUFFIX,wolai.com # Wolai 主站域名，用于笔记编辑、数据库管理、知识库协作与团队空间
-DOMAIN-SUFFIX,wolai.cn # Wolai 中国区服务域名，用于账号登录、团队协作与内容管理
-DOMAIN-SUFFIX,static.wolai.com # Wolai 静态资源 CDN，用于脚本、样式、字体与前端组件加载
-DOMAIN-SUFFIX,wolaipublic.com # Wolai 公共资源域，用于模板库、图标、封面等公共素材加载
-DOMAIN-SUFFIX,wolaiusercontent.com # Wolai 用户内容存储域，用于附件、图片、视频、文件与富文本内容托管
-DOMAIN-SUFFIX,api.wolai.com # Wolai API 接口，用于笔记同步、权限校验、团队协作操作与数据交互
-DOMAIN-SUFFIX,wolaiimg.com # Wolai 图像资源域，用于渲染封面、截图、图标与富媒体内容
-
-# > 腾讯微云（Weiyun / 云存储·文件备份·在线预览）
-
-DOMAIN-SUFFIX,weiyun.com # 微云主站域名，用于文件上传、下载、共享、备份与在线预览功能
-DOMAIN-SUFFIX,share.weiyun.com # 微云文件分享与外链访问域名，用于公开链接与页面展示
-DOMAIN-SUFFIX,api.weiyun.com # 微云 API 接口域名，用于文件管理、同步、权限处理与客户端通信
-DOMAIN-SUFFIX,static.weiyun.com # 微云静态资源 CDN，用于脚本、字体、图片、样式与前端 UI 渲染
-DOMAIN-SUFFIX,pc.weiyun.com # 微云网页版入口，用于 Web 文件管理、传输、协作与目录操作
-DOMAIN-SUFFIX,cdnweiyun.com # 微云内容加速 CDN，用于附件下载、在线播放与文件预览
-DOMAIN-SUFFIX,qq.com # 腾讯统一账号体系，用于微云登录、鉴权与 SSO（单点登录）
-DOMAIN-SUFFIX,tencent.com # 腾讯通用服务域名，用于微云关联接口、身份系统与内部服务路由
-
-# > MasterGo（在线设计协作平台 / UI 原型设计）
-
-DOMAIN-SUFFIX,mastergo.com # MasterGo 主站域名，用于产品访问、项目管理与登录入口
-DOMAIN-SUFFIX,design.mastergo.com # MasterGo 在线设计编辑器，用于实时协作、画布渲染与组件编辑
-DOMAIN-SUFFIX,api.mastergo.com # MasterGo API 服务端口，用于项目数据同步、团队协作与账户信息处理
-DOMAIN-SUFFIX,cdn.mastergo.com # MasterGo 静态资源 CDN，用于字体库、图标、JS 脚本、样式与组件加载
-DOMAIN-SUFFIX,assets.mastergo.com # MasterGo 静态素材资源，用于图片、模板、预设素材与组件资源分发
-DOMAIN-SUFFIX,push.mastergo.com # MasterGo 推送服务域名，用于协作通知、邀请提醒与编辑事件推送
-DOMAIN-SUFFIX,im.mastergo.com # MasterGo 内置即时通信服务，用于多人协同评论与编辑沟通
-
-# > 即时设计（JSDesign 在线设计协作平台）
-
-DOMAIN-SUFFIX,js.design # 即时设计主站域名，用于产品访问、账户体系与入口跳转
-DOMAIN-SUFFIX,jsdesign.com # 即时设计国际化域名，用于产品介绍、登录与网页访问
-DOMAIN-SUFFIX,design.js.design # 即时设计在线编辑器，用于实时协作、画布渲染与组件编辑
-DOMAIN-SUFFIX,api.js.design # 即时设计 API 服务，用于项目数据交互、团队协作与资源管理
-DOMAIN-SUFFIX,cdn.js.design # 即时设计静态资源 CDN，用于图标库、字体、脚本与 UI 组件加载
-DOMAIN-SUFFIX,assets.js.design # 即时设计静态素材域名，用于图片、模板、组件素材与资源文件分发
-DOMAIN-SUFFIX,im.js.design # 即时设计内置 IM 服务，用于评论、协作沟通与编辑通知
-DOMAIN-SUFFIX,push.js.design # 即时设计推送/通知域名，用于消息提醒、邀请与协作事件推送
-
-# > 摹客（MockingBot 在线原型设计与协作平台）
-
-DOMAIN-SUFFIX,mockingbot.com # 摹客主站域名，用于产品访问、账户体系与功能入口
-DOMAIN-SUFFIX,app.mockingbot.com # 摹客 Web 应用端，用于原型设计、组件编辑、项目协作
-DOMAIN-SUFFIX,api.mockingbot.com # 摹客 API 接口，用于项目数据交互、版本管理与协作同步
-DOMAIN-SUFFIX,cdn.mockingbot.com # 摹客静态资源 CDN，用于前端脚本、样式、素材库与渲染资源加载
-DOMAIN-SUFFIX,assets.mockingbot.com # 摹客 UI 组件、图片、模板与设计资源素材域名
-DOMAIN-SUFFIX,im.mockingbot.com # 摹客协作通信服务，用于团队评论、通知与协作事件推送
-DOMAIN-SUFFIX,push.mockingbot.com # 摹客推送服务，用于账号提醒、项目变更与邀请通知
-
-# > 即时工具（JsTool / 即时设计旗下在线工具平台）
-
-DOMAIN-SUFFIX,jiji.tools # 即时工具主站域名，用于访问各种在线工具（PDF、图片处理、格式转换等）
-DOMAIN-SUFFIX,api.jiji.tools # 即时工具 API 接口，用于文件处理、任务队列与云端转换操作
-DOMAIN-SUFFIX,cdn.jiji.tools # 即时工具静态资源 CDN，用于前端脚本、样式、图标与工具界面加载
-DOMAIN-SUFFIX,assets.jiji.tools # 即时工具资源域名，用于素材文件、字体、模板与工具组件资源加载
-DOMAIN-SUFFIX,task.jiji.tools # 即时工具任务服务，用于文件转换、异步处理与状态查询
-
-# > 即时素材库（JsAssets / 即时设计素材资源平台）
-
-DOMAIN-SUFFIX,jsassets.com # 即时素材库主站域名，用于访问图标、插画、组件、模板等设计资源
-DOMAIN-SUFFIX,cdn.jsassets.com # 素材库静态资源 CDN，用于图标、矢量文件、3D 素材、预览图等资源加载
-DOMAIN-SUFFIX,api.jsassets.com # 素材库 API 接口，用于素材检索、授权验证与资源调用
-DOMAIN-SUFFIX,assets.jsassets.com # 素材文件资源节点，用于矢量文件、PNG/SVG、组件包等素材分发
-DOMAIN-SUFFIX,res.jsassets.com # 即时素材内容资源域名，用于展示文件、缩略图与素材预览
-
-# > 盛数科技（Shengshu Technology）官网服务
-
-DOMAIN-SUFFIX,shengshu.com # 盛数科技主站域名，用于产品介绍、企业官网与业务入口
-
-# > YHGFB Static（国内通用静态资源 CDN）
-
-DOMAIN-SUFFIX,yhgfb-static.com # 国内通用静态资源 CDN，用于加载图片、脚本、样式与页面前端资源
-DOMAIN-SUFFIX,yhgfb-cn-static.com # 国内通用静态资源 CDN，用于图片、脚本、字体与前端资源加速加载
-DOMAIN-SUFFIX,lf-headquarters-speed.yhgfb-cn-static.com # yhgfb-cn-static 高速分发节点，用于前端页面资源与 UI 内容快速加载
-DOMAIN-SUFFIX,lf-rc1.yhgfb-cn-static.com # yhgfb-cn-static 区域分发节点，用于静态内容缓存、页面渲染资源加载
-
-# > DeepSeek
-
-DOMAIN-SUFFIX,Zpseek.com # DeepSeek 主站与产品介绍
-DOMAIN-SUFFIX,api.deepseek.com # DeepSeek 官方 API 推理接口
-DOMAIN-SUFFIX,deepseek.ai # DeepSeek 品牌与模型展示域名
-DOMAIN-SUFFIX,deepseek.org # DeepSeek 相关跳转与说明页面
-
-# > Kling（快手 AI 视频生成平台）
-
-DOMAIN-SUFFIX,klingai.com # Kling 官方主域名，用于产品介绍、示例展示与平台主入口
-DOMAIN-SUFFIX,app.klingai.com # Kling Web 应用，用于视频生成、素材编辑、项目管理与任务操作
-DOMAIN-SUFFIX,api.klingai.com # Kling API 接口，用于视频生成请求、模型推理调用与渲染任务处理
-DOMAIN-SUFFIX,cdn.klingai.com # Kling 静态资源 CDN，用于脚本、样式、字体等前端界面资源加载
-DOMAIN-SUFFIX,assets.klingai.com # Kling 静态素材资源域名，用于图标、UI组件、模板与页面资源加载
-DOMAIN-SUFFIX,media.klingai.com # Kling 媒体资源域名，用于生成视频、图像文件存储与用户上传内容
-DOMAIN-SUFFIX,files.klingai.com # Kling 文件服务端点，用于上传素材、下载生成视频与项目文件管理
-DOMAIN-SUFFIX,render.klingai.com # Kling 渲染服务域名，用于视频渲染队列处理与后台生成任务执行
-DOMAIN-SUFFIX,v4-kling.kechuangai.com # Kling（科创 AI）视频生成服务端点，用于 V4 版本模型的推理请求、视频生成与任务处理
-
-# > Vidu（AI 视频生成 / 多模态场景生成平台）
-
-DOMAIN-SUFFIX,vidu.zone # Vidu 多媒体主域名，用于模型生成内容与资源分发
-DOMAIN-SUFFIX,vidu.com # Vidu 官方主站，用于产品介绍、示例展示、登录与控制台入口
-DOMAIN-SUFFIX,app.vidu.com # Vidu Web Studio，用于视频生成、场景编辑、素材管理与项目操作
-DOMAIN-SUFFIX,api.vidu.com # Vidu API 接口，用于视频生成请求、模型推理、任务调度与后台处理
-DOMAIN-SUFFIX,cdn.vidu.com # Vidu 静态资源 CDN，用于加载前端脚本、样式、字体与界面组件
-DOMAIN-SUFFIX,assets.vidu.com # Vidu 静态素材资源域名，用于 UI 图标、模板、前端素材文件加载
-DOMAIN-SUFFIX,media.vidu.com # Vidu 媒体存储域名，用于生成视频、图像、音频文件与用户上传内容
-DOMAIN-SUFFIX,files.vidu.com # Vidu 文件上传/下载域名，用于素材上传、视频导出与项目文件管理
-DOMAIN-SUFFIX,render.vidu.com # Vidu 渲染服务域名，用于视频渲染任务、模型执行与后台生成管线
-DOMAIN-SUFFIX,cf.vidu.studio # Vidu 静态资源 CDN 域名，用于模型推理生成的图片、视频等内容的多媒体分发
-DOMAIN-SUFFIX,image01.cf.vidu.studio # Vidu 多媒体子域名，用于 AI 生成内容的图片资源加载与分发
-DOMAIN-SUFFIX,image01.vidu.zone # Vidu 媒体资源子域名，用于图像与模型生成内容的静态资源加载
-DOMAIN-SUFFIX,vidu.cn # 即构科技 Vidu 主站域名，用于官网访问、服务介绍与产品文档浏览
-DOMAIN-SUFFIX,static.vidu.cn # 即构科技静态资源域名，用于加载 JS/CSS/图标等前端页面资源
-DOMAIN-SUFFIX,service.vidu.cn # 即构科技服务接口域名，用于视频服务相关的 API 调用与资源请求
-DOMAIN-SUFFIX,files.vidu.cn # 即构科技文件服务域名，用于下载 SDK、文档资源与媒体文件等内容
-
-# > ERNIE Bot（文心一言 / Baidu AI 服务）
-
-DOMAIN-SUFFIX,yiyan.baidu.com # 文心一言 Web 主站，用于在线聊天与模型体验
-DOMAIN-SUFFIX,app.yiyan.baidu.com # 文心一言 Web App，对话前端与用户交互界面
-DOMAIN-SUFFIX,api.yiyan.baidu.com # 文心一言 API 接口，用于文本生成、推理与对话服务
-DOMAIN-SUFFIX,cdn.yiyan.baidu.com # 文心一言静态资源 CDN，提供前端脚本与界面资源加载
-
-# > Baidu Qianfan（千帆大模型平台）
-
-DOMAIN-SUFFIX,ai.baidu.com # 百度 AI 平台主入口，包括文心大模型文档与能力介绍
-DOMAIN-SUFFIX,cloud.baidu.com # 百度智能云主域，用于账号、控制台与 API 调用管理
-DOMAIN-SUFFIX,api.baidubce.com # 百度云 Bce（Baidu Cloud Engine）AI API 主域，文心一言调用链依赖
-DOMAIN-SUFFIX,qianfan.run # 千帆推理平台入口域，用于模型托管与推理任务
-DOMAIN-SUFFIX,qianfan.cloud # 千帆平台业务域名，用于模型配置、实验与在线推理管理
-DOMAIN-SUFFIX,qianfanapi.com # 千帆 API 侧域，用于模型推理、调度与开发者访问
-
-# > Baidu AI Infrastructure（文心一言底层依赖）
-
-DOMAIN-SUFFIX,dueros.baidu.com # 百度 DuerOS 语音 AI 平台（部分模型服务共用推理基础设施）
-DOMAIN-SUFFIX,aip.baidubce.com # 百度 AI 开放平台 API，部分旧接口仍走此域名
-DOMAIN-SUFFIX,baidubce.com # 百度云 API 体系根域名，用于权限校验、推理与任务调度
-DOMAIN-SUFFIX,bcebos.com # 百度对象存储 BOS，用于用户上传文件与模型输入输出数据
-DOMAIN-SUFFIX,bdstatic.com # 百度静态资源 CDN，用于前端脚本与模型演示页面资源加载
-
-# > Qwen（通义千问 / Alibaba AI）
-
-DOMAIN-SUFFIX,qwen.ai # 通义千问官方网站，用于模型介绍、产品体验与文档访问
-DOMAIN-SUFFIX,api.qwen.ai # 通义千问 API 主接口，用于推理请求、对话生成与模型调用
-DOMAIN-SUFFIX,console.qwen.ai # 通义千问控制台入口，用于 API Key 管理、账单与模型配置
-DOMAIN-SUFFIX,cdn.qwen.ai # 通义千问静态资源 CDN，用于前端脚本、样式与页面加载
-DOMAIN-SUFFIX,docs.qwenlm.ai # Qwen 官方文档域名，用于提供 Qwen LLM 的使用说明、接口文档与模型资料
-
-# > Alibaba Cloud DashScope（灵积 / 通义大模型 API 服务）
-
-DOMAIN-SUFFIX,dashscope.aliyuncs.com # DashScope 大模型推理 API 主域名，通义千问底层 API 依赖
-DOMAIN-SUFFIX,modelscope.cn # ModelScope 模型社区，用于模型托管、文档与资源下载（通义官方合作平台）
-DOMAIN-SUFFIX,api.alicloudapi.com # 阿里云统一 API 网关，部分旧版通义 API 走此接口
-DOMAIN-SUFFIX,aliyuncs.com # 阿里云主域名，用于存储、权限校验、API 通道等底层服务
-DOMAIN-SUFFIX,oss-cn-*.aliyuncs.com # 阿里云 OSS 存储，用于上传文件、图片与推理输入输出
-
-# > Tencent Hunyuan（腾讯混元大模型）
-
-DOMAIN-SUFFIX,hunyuan.tencent.com # 腾讯混元大模型官方网站，用于模型介绍、应用示例与产品说明
-DOMAIN-SUFFIX,api.hunyuan.tencent.com # 混元大模型 API 主接口，用于推理、对话生成、图像生成等调用
-DOMAIN-SUFFIX,console.hunyuan.tencent.com # 混元大模型控制台，用于 API Key、调用量与计费管理
-DOMAIN-SUFFIX,cdn.hunyuan.tencent.com # 混元前端静态资源 CDN，用于控制台脚本与样式加载
-
-# > Tencent Cloud AI / OpenAPI
-
-DOMAIN-SUFFIX,tencentcloudapi.com # 腾讯云统一 API 网关，混元底层推理接口依赖此通用 API 入口
-DOMAIN-SUFFIX,tencentcloud.com # 腾讯云主域名，用于账户、鉴权与云服务资源访问
-DOMAIN-SUFFIX,cloud.tencent.com # 腾讯云开发者平台（文档、SDK、示例等）
-DOMAIN-SUFFIX,myqcloud.com # 腾讯云对象存储 COS 域，用于文件上传与模型相关资源加载
-DOMAIN-SUFFIX,tcb-api.tencentcloudapi.com # 腾讯云 TCB（云开发）接口，用于混元插件与交互式应用调用
-DOMAIN-SUFFIX,staticintl.cloudcachetci.com # 腾讯云国际 CDN 静态资源域名，用于加载 JS/CSS 等内容资源，服务于微信/腾讯会议等产品
-
-# > SparkDesk（讯飞星火 / iFlytek 大模型）
-
-DOMAIN-SUFFIX,xunfei.cn # 科大讯飞主域名，用于模型产品入口与企业服务承载
-DOMAIN-SUFFIX,xfyun.cn # 讯飞开放平台主域，用于星火 API、控制台与账户体系
-DOMAIN-SUFFIX,sparkdesk.cn # 讯飞星火官方域名，用于产品介绍、模型体验与控制台访问
-DOMAIN-SUFFIX,spark-api.cn # 星火 API 推理入口，用于大模型调用、对话生成与企业集成服务
-DOMAIN-SUFFIX,api.xfyun.cn # 讯飞开放平台 API 主域名，部分星火接口依托该域提供服务
-DOMAIN-SUFFIX,passport.xfyun.cn # 星火账号体系登录入口，用于控制台与 API 授权验证
-DOMAIN-SUFFIX,console.xfyun.cn # 星火控制台，用于 API Key、账单与模型配置管理
-DOMAIN-SUFFIX,download.xfyun.cn # 讯飞资源下载域，用于 SDK、模型配置及相关文件获取
-DOMAIN-SUFFIX,static.xfyun.cn # 星火前端静态资源 CDN，用于控制台脚本、样式与页面加载
-
-# > MiniMax（海螺 / abab 大模型）
-
-DOMAIN-SUFFIX,minimax.io # MiniMax 国际站主域名，用于大模型产品展示、文档、控制台与商业接入入口
-DOMAIN-SUFFIX,minimax.ai # MiniMax 官方主站，用于模型产品介绍、体验入口与文档访问
-DOMAIN-SUFFIX,minimaxi.com # MiniMax 旗下商业域名，用于产品展示、账号体系、商业化入口及模型体验跳转
-DOMAIN-SUFFIX,minimax.chat # MiniMax 海螺 Chat 主域名，用于 Web 对话与应用入口
-DOMAIN-SUFFIX,api.minimax.chat # MiniMax API 主接口，用于模型推理、对话、语音与多模态调用
-DOMAIN-SUFFIX,api.minimax.ai # MiniMax 企业级 API 接口，用于 Key 管理、计费与模型调用（部分产品使用）
-DOMAIN-SUFFIX,console.minimax.ai # 控制台入口，用于 API Key、账单、使用量监控等
-DOMAIN-SUFFIX,developer.minimax.ai # MiniMax 开发者门户，提供 API 文档与示例代码
-DOMAIN-SUFFIX,static.minimax.chat # MiniMax Web 前端静态资源，用于脚本与界面加载
-DOMAIN-SUFFIX,cdn.minimax.ai # MiniMax 静态资源 CDN，用于控制台、文档与前端组件加载
-DOMAIN-SUFFIX,assets.minimax.ai # 资源托管域，用于图片、模型示例、对话数据等内容加载
-DOMAIN-SUFFIX,passport.minimax.ai # MiniMax 账户系统，用于登录验证与授权流程
-DOMAIN-SUFFIX,auth.minimax.ai # 身份认证服务入口，用于控制台与 API 权限校验
-
-# > Zhipu AI（智谱 AI / ChatGLM）
-
-DOMAIN-SUFFIX,chat.z.ai # 智谱 AI Chat 对话服务域名，用于 Web 端模型交互与会话处理
-DOMAIN-SUFFIX,models.aminer.cn # AMiner 模型服务节点，用于模型权重加载、推理资源访问与数据同步
-DOMAIN-SUFFIX,zhipuaiadmin.aminer.cn # 智谱 AI 管理后台域名，用于平台配置、账号管理与运营控制
-DOMAIN-SUFFIX,zhipuai.cn # 智谱 AI 主站域名，用于模型介绍、产品概览与企业服务
-DOMAIN-SUFFIX,zhipuai.com # 智谱 AI 国际化域名，用于在线体验与模型产品访问
-DOMAIN-SUFFIX,zhipuai.cn # 主站子域，用于模型信息、活动与演示入口
-DOMAIN-SUFFIX,zhipuai.com # 产品体验与国际站内容入口
-DOMAIN-SUFFIX,chatglm.cn # ChatGLM 在线对话入口，用于模型交互体验
-DOMAIN-SUFFIX,chatglm.com # ChatGLM 国际站入口，用于体验 GLM 系列模型
-DOMAIN-SUFFIX,glm.cn # GLM 系列品牌域名，用于模型介绍与产品跳转
-DOMAIN-SUFFIX,glm.ai # GLM 大模型相关域名，用于开发者相关内容与介绍
-DOMAIN-SUFFIX,api.zhipuai.cn # 智谱 AI API 主接口，用于模型推理、对话、向量化与多模态调用
-DOMAIN-SUFFIX,api.zhipuai.com # 国际化 API 接口，用于企业与海外访问
-DOMAIN-SUFFIX,open.bigmodel.cn # 大模型开放平台控制台，用于 Key 管理、账单与配额
-DOMAIN-SUFFIX,bigmodel.cn # 大模型平台域名，用于文档、开发者资源与产品概览
-DOMAIN-SUFFIX,bigmodel.cn # 通用入口，用于登陆跳转与 API 管理
-DOMAIN-SUFFIX,static.bigmodel.cn # 大模型平台静态资源域，用于脚本、样式、模型示例加载
-DOMAIN-SUFFIX,docs.bigmodel.cn # 文档站点，用于 API 文档、SDK 示例与模型说明
-DOMAIN-SUFFIX,passport.zhipuai.cn # 智谱 AI 登录中心，用于控制台与 API 授权
-DOMAIN-SUFFIX,login.zhipuai.cn # 登录入口，用于账号验证与授权流程
-DOMAIN-SUFFIX,open.bigmodel.ai # 智谱 AI BigModel 开放平台 API 主域名，用于 GLM 系列模型调用、应用集成与推理服务
-
-# > Yi-Large / 01.AI（零一万物）
-
-DOMAIN-SUFFIX,lingyiwanwu.com # 灵犀万物官网主域名，用于官网访问、产品介绍与文档加载
-DOMAIN-SUFFIX,01.ai # 零一万物官方网站，用于产品介绍、模型展示与公司信息
-DOMAIN-SUFFIX,yi.ai # Yi 系列大模型品牌域名，用于模型体验入口与示例访问
-DOMAIN-SUFFIX,api.01.ai # Yi-Large API 主接口，用于推理、向量化、对话与多模态调用
-DOMAIN-SUFFIX,console.01.ai # 控制台入口，用于 API Key、账单与调用统计管理
-DOMAIN-SUFFIX,platform.01.ai # 开发者平台入口，用于模型配置、使用量查看与资源管理
-DOMAIN-SUFFIX,docs.01.ai # 文档站点，用于 API 文档、SDK 示例与模型说明
-DOMAIN-SUFFIX,cdn.01.ai # 前端静态资源 CDN，用于脚本、样式与模型示例加载
-DOMAIN-SUFFIX,passport.01.ai # 零一万物账号体系登录入口，用于控制台与 API 权限验证
-DOMAIN-SUFFIX,auth.01.ai # 身份认证服务，用于登录过程与授权流程
-
-# > Baichuan（百川智能）
-
-DOMAIN-SUFFIX,baichuan-ai.com # 百川智能官方网站，用于模型介绍、产品概览与技术展示
-DOMAIN-SUFFIX,api.baichuan-ai.com # 百川大模型 API 主接口，用于对话、生成、向量化与多模态推理
-DOMAIN-SUFFIX,chat.baichuan-ai.com # 在线 Chat 页面入口，用于体验 Baichuan 模型
-DOMAIN-SUFFIX,platform.baichuan-ai.com # 百川开发者平台，用于 API Key、账单与模型管理
-DOMAIN-SUFFIX,console.baichuan-ai.com # 控制台入口，用于调用量、计费与权限管理
-DOMAIN-SUFFIX,docs.baichuan-ai.com # 百川大模型文档站点，用于 API 文档、SDK 示例与模型能力说明
-DOMAIN-SUFFIX,cdn.baichuan-ai.com # 静态资源 CDN，用于前端脚本、样式与页面内容加载
-DOMAIN-SUFFIX,passport.baichuan-ai.com # 百川账号体系登录入口，用于控制台和 API 授权
-DOMAIN-SUFFIX,auth.baichuan-ai.com # 身份认证与授权服务端点，用于登录流程和权限校验
-
-# > Moonshot AI / Kimi Chat（月之暗面）
-
-DOMAIN-SUFFIX,kimi.com # Kimi 官网主域名，用于模型介绍、注册登录与 Web 页面访问
-DOMAIN-SUFFIX,moonshot.cn # 月之暗面官网主域名，用于模型介绍、产品发布与企业服务信息
-DOMAIN-SUFFIX,moonshot.ai # Moonshot 国际化品牌域名，用于模型展示与产品介绍
-DOMAIN-SUFFIX,kimi.moonshot.cn # Kimi Chat 在线对话入口，用于长文本处理与 AI 交互体验
-DOMAIN-SUFFIX,kimi.moonshot.ai # Kimi Chat 海外访问入口，用于模型体验与产品内容访问
-DOMAIN-SUFFIX,api.moonshot.cn # Moonshot API 主接口，用于模型推理、长文本处理与对话生成
-DOMAIN-SUFFIX,api.moonshot.ai # 海外向 API 接口，用于企业与跨境模型调用
-DOMAIN-SUFFIX,console.moonshot.cn # 控制台入口，用于 API Key、调用量、模型配置与账单管理
-DOMAIN-SUFFIX,console.moonshot.ai # 国际化控制台入口，用于企业客户与跨境访问
-DOMAIN-SUFFIX,docs.moonshot.cn # 文档站点，用于 API 文档、SDK 示例与模型能力说明
-DOMAIN-SUFFIX,cdn.moonshot.cn # 前端静态资源 CDN，用于控制台与 Web 端脚本、样式加载
-DOMAIN-SUFFIX,passport.moonshot.cn # Moonshot 账号登录中心，用于控制台与 API 权限验证
-DOMAIN-SUFFIX,auth.moonshot.cn # 统一身份认证服务，用于用户登录与授权流程
-
-# > 智齿客服（Sobot）在线服务域名
-
-DOMAIN-SUFFIX,sobot.com # 智齿客服主站域名，用于客服系统页面加载与控制台访问
-DOMAIN-SUFFIX,chat.sobot.com # 智齿客服系统通信域名，用于网页端客服聊天、消息推送与用户会话维持
-DOMAIN-SUFFIX,api-c.sobot.com # 智齿客服 API 接口域名，用于网页聊天窗口与用户信息拉取交互
-DOMAIN-SUFFIX,imws.sobot.com # 智齿客服 WebSocket 域名，用于消息实时推送与会话维持
-DOMAIN-SUFFIX,crumb.sobot.com # 智齿客服身份校验与会话凭证服务域名，用于用户状态验证
-DOMAIN-SUFFIX,errorlog.sobot.com # 智齿客服错误日志上报接口域名，用于收集前端异常与诊断数据
-
-# > Koala（GetKoala 前端组件 / 营销工具平台）
-
-DOMAIN-SUFFIX,getkoala.com # Koala（GetKoala）服务主域名，用于营销组件、弹窗系统与站点互动工具入口
-DOMAIN-SUFFIX,cdn.getkoala.com # Koala 静态资源 CDN，用于加载前端脚本、样式、弹窗组件与站点互动控件
-DOMAIN-SUFFIX,api.getkoala.com # Koala API 后端，用于弹窗逻辑、A/B 测试、用户交互配置与组件行为返回
-DOMAIN-SUFFIX,assets.getkoala.com # Koala 静态素材资源域，用于图片、图标、营销组件素材加载
-DOMAIN-SUFFIX,app.getkoala.com # Koala 后台管理控制台，用于站点配置、营销自动化、弹窗编辑与行为数据查看
-
-# > 神策可视化平台相关静态资源 CDN 域名
-
-DOMAIN-SUFFIX,static-fonts.i.sxl.cn # 神策字体资源 CDN，用于加载 Web 字体与界面字体文件
-DOMAIN-SUFFIX,static-assets.sxlcdn.com # 神策可视化平台静态资源域名，用于加载图标、JS、CSS 等前端资源
-DOMAIN-SUFFIX,ajax.sxlcdn.com # 神策数据前端请求接口，用于页面数据请求与交互操作
-DOMAIN-SUFFIX,user-assets.sxlcdn.com # 神策平台用户资源存储域名，用于用户自定义上传的图像、配置等静态文件
-DOMAIN-SUFFIX,static-fonts-css.sxlcdn.com # 神策平台字体样式表资源域名，用于 CSS 样式与字体引用分发
-
-# > hCaptcha 人机验证服务域名（中国节点）
-
-DOMAIN-SUFFIX,cn1.hcaptcha.com # hCaptcha 在中国大陆部署的验证服务节点，用于加载验证组件、挑战任务与安全校验逻辑
-
-# > Adobe 中国服务域名
-
-DOMAIN-SUFFIX,adobe.cn # Adobe 中国主站域名，用于服务介绍、软件下载与本地化运营页面加载
-DOMAIN-SUFFIX,adobelogin.cn # Adobe 中国登录域名，用于账户验证与登录流程
-DOMAIN-SUFFIX,adobecc.cn # Adobe Creative Cloud 中国区服务域名，用于订阅管理、应用分发与云服务接入
-
-# > ItDog 网络监测服务相关域名
-
-DOMAIN-SUFFIX,itdog.cn # ItDog 主站域名，用于访问官网与服务入口 
-DOMAIN-SUFFIX,monitor.itdog.cn # ItDog 网络监测平台子域，用于用户站点的在线监测与报告查看 
-DOMAIN-SUFFIX,api.itdog.cn # ItDog API 接口域名，用于数据查询、监控任务创建与结果推送等 
-DOMAIN-SUFFIX,cdn.itdog.cn # ItDog 静态资源 CDN 域名，用于前端页面静态资源加载，如 JS、CSS 等
-
-# > Nicolas Hoffmann 可访问性资源域名（用于 Web 可访问性组件加载）
-
-DOMAIN-SUFFIX,a11y.nicolas-hoffmann.net # Web A11y 可访问性组件资源加载域名，用于获取 UI 辅助功能支持文件
-
-# > Framer 用户内容分发域名（用户托管页面与资源加载）
-
-DOMAIN-SUFFIX,framerusercontent.com # Framer 平台托管的用户项目与静态资源域名，用于加载网页、图像与 JS 等前端内容，常见于站点预览与个人页面
-
-# > 中彩网
-
-DOMAIN-SUFFIX,zhcw.com # 中彩网网站域名，用于彩票开奖信息发布、政策公告与公益资讯展示
-
-# > 中国福利彩票
-
-DOMAIN-SUFFIX,cwlgovcn.com # 中国福利彩票官方域名，用于彩票开奖信息发布、政策公告与公益资讯展示
-
-# > 中体彩网
-
-DOMAIN-SUFFIX,lottery.gov.cn # 中国体彩网官方网站域名，用于发布彩票监管政策、公告信息与权威资讯
-DOMAIN-SUFFIX,static.sporttery.cn # 体育彩票官网静态资源 CDN 域名，用于加载页面脚本、样式、图片等前端资源
-DOMAIN-SUFFIX,apkdata.sporttery.cn # 体育彩票官方 App 数据与安装包信息服务域名，用于客户端版本检测与资源获取
-DOMAIN-SUFFIX,receive.sporttery.cn # 体育彩票业务数据接收接口域名，用于投注结果、状态回传等后台通信
-DOMAIN-SUFFIX,webinfo.sporttery.cn # 体育彩票官网信息服务接口域名，用于公告、开奖信息与页面数据加载
-DOMAIN-SUFFIX,webapi.sporttery.cn # 体育彩票官网核心 Web API 接口域名，用于业务查询与前端数据交互
-
-# > 全国组织机构统一社会信用代码系统（CONAC）
-
-DOMAIN-SUFFIX,dcs.conac.cn # 全国组织机构统一社会信用代码公示系统接口域名，用于机构身份标识校验与权威信息查询服务
-
-# > Marmot Cloud 第三方 CDN 与云服务相关域名
-
-DOMAIN-SUFFIX,cdn.marmot-cloud.com # Marmot Cloud CDN 静态资源分发域名，用于内容与资源加速加载
-
-# > html2canvas 前端截图与 Canvas 渲染库服务
-
-DOMAIN-SUFFIX,html2canvas.hertzen.com # html2canvas 官方资源域名，用于前端页面截图与 Canvas 渲染库相关资源加载
-
-# > Boss 直聘 相关域名
-
-DOMAIN-SUFFIX,zhipin.com # Boss 直聘主站与核心业务域名，用于招聘信息展示、职位搜索、账户登录与企业服务
-DOMAIN-SUFFIX,bosszhipin.com # Boss 直聘主站与核心业务域名，用于招聘信息展示、职位搜索、账户登录与企业服务
-DOMAIN-SUFFIX,api-ios.zhipin.com # Boss 直聘 iOS 客户端核心业务 API，用于职位、消息、投递与账户等基础功能请求
-DOMAIN-SUFFIX,img.bosszhipin.com # Boss 直聘前端图片与静态资源域名，用于职位展示、公司标识与页面 UI 加载
-DOMAIN-SUFFIX,img2.bosszhipin.com # Boss 直聘前端图片与静态资源 CDN 域名，用于职位图片、公司展示与页面 UI 加载
-
-# > EuroLand 投资者关系与金融数据嵌入服务
-
-DOMAIN-SUFFIX,tools.euroland.com # 第三方投资者关系（IR）与金融数据展示服务域名，用于上市公司财报、股价与投资信息组件加载
-
-# > 国内 CDN 与内容加速基础设施（China CDN / Content Delivery）
-
-DOMAIN-SUFFIX,cdn-go.cn # 国内内容分发网络（CDN）域名，用于静态资源与业务内容加速分发
-
-# > 国内内容与信息服务平台通信节点
-
-IP-CIDR,61.170.81.214/24 # 百科类内容平台移动端访问节点点
-IP-CIDR,58.215.50.243/24 # 百科类内容查询与页面访问服务节点
-IP-CIDR,122.228.195.19/24 # 百科类内容查询与页面访问服务节点
-IP-CIDR,114.80.179.165/24 # 百科类内容查询与页面访问服务节点
-IP-CIDR,180.97.232.65/24 # 百科类内容查询与页面访问服务节点
-
-# > Paddle SaaS 支付与订阅平台静态资源分发服务
-
-DOMAIN-SUFFIX,cdn.paddle.com # Paddle 官方静态资源与前端组件 CDN
-
-# > Tencent Turing 人机验证（CAPTCHA）服务
-
-DOMAIN-SUFFIX,turing.captcha.gtimg.com # 腾讯 Turing 人机验证服务，用于登录、注册与关键操作的滑块/验证码校验
-
-# > 站酷（ZCOOL）设计社区与内容资源分发服务
-
-DOMAIN-SUFFIX,dancf.com # 站酷（ZCOOL）设计社区主域名，用于作品展示、创意内容浏览与社区访问
-DOMAIN-SUFFIX,cdn.dancf.com # 站酷（ZCOOL）前端静态资源与媒体内容 CDN，用于图片、脚本与样式等资源分发
-
-# > 稿定设计（Gaoding）在线设计与素材服务平台
-
-DOMAIN-SUFFIX,gaoding.com # 稿定设计官方主域名，提供在线平面设计、视频编辑、模板与素材服务，属国内设计工具平台
-DOMAIN-SUFFIX,gaoding.net # 稿定设计相关服务域名，用于静态资源、接口或业务扩展访问
-DOMAIN-SUFFIX,gdstatic.com # 稿定设计静态资源与素材 CDN 域名，用于图片、模板与前端资源加载
-DOMAIN-SUFFIX,fingerprint.gaoding.com # 稿定设计风控与设备指纹识别接口，用于账号安全与反刷校验
-
-# > Wind 金融终端数据服务节点（万得信息）
-
-DOMAIN-SUFFIX,wind.hlgdata.com # Wind 金融终端行情与数据分发节点，用于金融市场数据推送与查询服务
-DOMAIN-SUFFIX,hlgdata.com # Wind 相关数据服务基础域名，承载金融行情、指标与数据接口通信
-
-# > 花瓣网（Huaban）图片与设计素材 CDN 资源分发服务
-
-DOMAIN-SUFFIX,huaban.com # 花瓣网主站与设计内容社区服务
-DOMAIN-SUFFIX,grocery-cdn.huaban.com # 花瓣网静态资源与图片素材 CDN 分发节点
-
-# > 虎课网（Huke88）设计学习与在线教育平台
-
-DOMAIN-SUFFIX,huke88.com # 虎课网主站，用于设计、摄影、剪辑等在线课程与教学内容访问
-
-# > Char123 中文内容与静态资源服务
-
-DOMAIN-SUFFIX,static.char123.com # Char123（查字典/中文内容平台）静态资源域名，用于页面样式、脚本与图片等前端资源加载
-
-# > JSInfo 网络测速与诊断服务
-
-DOMAIN-SUFFIX,speedtest4.jsinfo.net # JSInfo 网络测速与链路诊断服务节点，用于带宽测试、延迟检测与网络质量评估
-DOMAIN-SUFFIX,speedauto.jsinfo.net # JSInfo 网络测速与诊断日志服务域名，用于测速结果记录、链路分析与网络质量评估
-IP-CIDR,61.160.167.78/24 # JSInfo 网络测速与诊断服务后端节点，用于测速结果回传与网络质量分析
-IP-CIDR,58.222.181.206/24 # JSInfo 网络测速与诊断服务后端节点，用于跨域测速数据回传与诊断请求
-
-# > jsDelivr 第三方国内镜像节点（kai233）
-
-DOMAIN-SUFFIX,jsd.kai233.top # jsDelivr 第三方国内镜像域名，用于前端脚本与静态资源加速加载
-
-# > 第三方静态资源与图片托管服务
-
-DOMAIN-SUFFIX,img.kai233.top # 第三方图片静态资源托管域名，用于博客或个人站点的图片加载与前端资源引用
-DOMAIN-SUFFIX,img.lehinet.com # 第三方图片静态资源托管域名，用于博客、内容站点或页面素材加载
-
-# > 工商网监电子标识（EBS）官方校验服务
-
-DOMAIN-SUFFIX,szcert.ebs.org.cn # 工商网监电子标识（EBS）官方校验与认证服务域名，用于网站主体资质核验与监管合规验证
-
-# > 91手机助手（91 Assistant）应用商店与服务平台
-
-DOMAIN-SUFFIX,91.com # 91域名主站，用于多项91系列产品与服务入口
-DOMAIN-SUFFIX,zs.91.com # 91手机助手主域名（安卓/苹果应用市场与软件管理）
-DOMAIN-SUFFIX,apk.91.com # 91应用市场 APK 下载与静态资源服务
-DOMAIN-SUFFIX,down.91.com # 91助手下载安装与软件中心资源下载
-DOMAIN-SUFFIX,static.91img.com # 91助手静态资源 CDN，用于界面脚本/样式等资源分发
-
-# > 豌豆荚（Wandoujia）第三方应用市场
-
-DOMAIN-SUFFIX,wandoujia.com # 豌豆荚官方入口域名，用于应用市场访问与信息展示
-DOMAIN-SUFFIX,download.wandoujia.com # 豌豆荚应用下载与安装包分发
-DOMAIN-SUFFIX,static.wandoujia.com # 豌豆荚静态资源 CDN，用于前端界面组件与脚本/样式加载
-DOMAIN-SUFFIX,api.wandoujia.com # 豌豆荚 API 接口域名，用于搜索、更新、应用信息查询等业务逻辑
-
-# > Microsoft Azure Blob Storage（中国）对象存储服务
-
-DOMAIN-SUFFIX,blob.core.chinacloudapi.cn # Azure Blob Storage 对象存储公共终端域，用于访问托管的 blob 对象与静态资源
-DOMAIN-SUFFIX,web.core.chinacloudapi.cn # Azure Blob Storage 静态网站/资源访问终端（支持 Web 访问模式）
-DOMAIN-SUFFIX,core.chinacloudapi.cn # Azure 中国云通用 API 域名后缀
-
-# > 北森 Beisen 企业级服务域名
-
-DOMAIN-SUFFIX,stcms.beisen.com # 北森 Beisen 企业级人才管理/CRM 平台业务子域，用于 SaaS 平台组件与业务交互服务
-
-# > 快手游戏（Kuaishou Game）Web 游戏与业务入口
-
-DOMAIN-SUFFIX,kgw.com # 快手游戏业务主域名，用于 Web 游戏入口、游戏页面访问及相关服务请求
-DOMAIN-SUFFIX,var.kgw.com # 快手游戏 Web 端参数/资源域名，用于游戏页面配置加载、业务脚本与资源访问
-DOMAIN-SUFFIX,ks-game-web.kgw.com # 快手游戏 Web 平台组件子域，用于游戏入口页面与前端资源请求
-
-# > 科创爱（kechuangai.com）企业服务与业务接口域名
-
-DOMAIN-SUFFIX,kechuangai.com # 科创爱主域名，用于企业/服务展示、业务访问页面与数据交互接口
-DOMAIN-SUFFIX,v1-kling.kechuangai.com # 科创爱业务接口子域，用于版本 v1 业务服务访问及组件交互
-
-# > 哈啰出行（HelloBike）业务与平台服务
-
-DOMAIN-SUFFIX,hellobike.com # 哈啰出行平台主域，用于共享单车、助力车、顺风车等出行业务访问及账号体系
-DOMAIN-SUFFIX,abapi.hellobike.com # 哈啰出行业务 API 域名，用于订单处理、设备通信与业务数据交互
-DOMAIN-SUFFIX,apmgw.hellobike.com # 哈啰出行应用性能监控与网关服务域名，用于服务调度、运行状态监测与链路治理
-DOMAIN-SUFFIX,static.hellobike.com # 哈啰出行静态资源域名，用于前端脚本、样式与页面资源加载
-DOMAIN-SUFFIX,img.hellobike.com # 哈啰出行图像资源域名，用于车辆图片、界面素材与运营内容展示
-DOMAIN-SUFFIX,cdn.hellobike.com # 哈啰出行内容分发网络域名，用于静态资源与媒体内容加速分发
-DOMAIN-SUFFIX,passport.hellobike.com # 哈啰出行账号认证域名，用于用户登录、身份验证与会话管理
-DOMAIN-SUFFIX,open.hellobike.com # 哈啰出行开放平台域名，用于合作接入、API 调用与业务集成
-
-# > 神州租车（CAR Inc.）汽车租赁与出行服务平台
-
-DOMAIN-SUFFIX,zuche.com # 神州租车官方主域名，用于车辆预订、订单管理、账号体系与出行服务访问
-DOMAIN-SUFFIX,carinc.com # 神州租车企业与品牌服务域名，用于公司信息、业务支持与平台相关服务
-DOMAIN-SUFFIX,zuchecdn.com # 神州租车静态资源与内容分发域名，用于页面资源与多媒体内容加载
-DOMAIN-SUFFIX,api.zuche.com # 神州租车业务 API 域名，用于订单、车辆调度与业务数据通信
-
-# > 一嗨租车（eHi Car Services）出行与车辆租赁平台
-
-DOMAIN-SUFFIX,1hai.cn # 一嗨租车官方主域名，用于车辆租赁服务访问、订单管理与用户账号体系
-DOMAIN-SUFFIX,ehicar.com # 一嗨租车国际与业务主域名，用于平台服务访问、业务接口与客户端通信
-DOMAIN-SUFFIX,static.1hai.cn # 一嗨租车静态资源域名，用于页面脚本、样式与前端组件加载
-DOMAIN-SUFFIX,api.1hai.cn # 一嗨租车业务 API 域名，用于订单、车辆与账户数据通信
-DOMAIN-SUFFIX,m.1hai.cn # 一嗨租车移动端站点域名，用于手机浏览器访问与业务交互
-IP-CIDR,180.153.202.0/24 # 一嗨租车 App 服务节点，用于移动端业务接口与数据通信
-
-# > 首汽租车（Shouqi Car Rental）出行与车辆租赁平台
-
-DOMAIN-SUFFIX,shouqizuche.com # 首汽租车官方主域名，用于车辆租赁服务访问、订单管理与账号体系
-DOMAIN-SUFFIX,izuche.com # 首汽租车业务相关域名，用于平台服务访问与客户端通信
-DOMAIN-SUFFIX,static-shouqi.com # 首汽租车静态资源域名，用于前端脚本、样式与页面资源加载
-DOMAIN-SUFFIX,api.shouqizuche.com # 首汽租车业务 API 域名，用于订单、车辆与用户数据通信
-DOMAIN-SUFFIX,m.shouqizuche.com # 首汽租车移动端站点域名，用于手机访问与业务交互
-
-# > GoFun 出行（GoFun Mobility）共享汽车与出行服务平台
-
-DOMAIN-SUFFIX,gofun.com # GoFun 出行官方主域名，用于共享汽车服务访问、账号体系与业务入口
-DOMAIN-SUFFIX,gofun.cn # GoFun 出行国内业务主域名，用于车辆租赁、订单管理与客户端访问
-DOMAIN-SUFFIX,api.gofun.com # GoFun 出行业务 API 域名，用于订单、车辆状态与用户数据通信
-DOMAIN-SUFFIX,m.gofun.com # GoFun 出行移动端站点域名，用于手机访问与业务交互
-DOMAIN-SUFFIX,static.gofun.com # GoFun 出行静态资源域名，用于前端脚本、样式与页面资源加载
-
-# > 滴滴租车（DiDi Car Rental）出行与车辆租赁服务平台
-
-DOMAIN-SUFFIX,didi.cn # 滴滴官方主域名，用于出行服务访问、账号体系与业务入口
-DOMAIN-SUFFIX,didiglobal.com # 滴滴国际业务主域名，用于海外出行与平台服务访问
-DOMAIN-SUFFIX,xiaojukeji.com # 滴滴主体公司小桔科技域名，用于平台服务与业务支持
-DOMAIN-SUFFIX,api.xiaojukeji.com # 滴滴核心业务 API 域名，用于订单、车辆与用户数据通信
-DOMAIN-SUFFIX,static.xiaojukeji.com # 滴滴前端静态资源域名，用于页面脚本、样式与基础资源加载
-DOMAIN-SUFFIX,img.xiaojukeji.com # 滴滴图像与媒体资源域名，用于图片与界面素材分发
-
-# > 凹凸租车（ATzuche）共享租车与车辆托管平台
-
-DOMAIN-SUFFIX,atzuche.com # 凹凸租车官方主域名，用于车辆租赁服务访问、订单管理与用户账号体系
-DOMAIN-SUFFIX,api.atzuche.com # 凹凸租车业务 API 域名，用于订单处理、车辆数据与平台通信
-DOMAIN-SUFFIX,static.atzuche.com # 凹凸租车前端静态资源域名，用于页面脚本、样式与基础资源加载
-DOMAIN-SUFFIX,img.atzuche.com # 凹凸租车图像与媒体资源域名，用于车辆图片与展示素材分发
-
-# > 瑞卡租车（Reocar）车辆租赁与出行服务平台
-
-DOMAIN-SUFFIX,reocar.com # 瑞卡租车官方主域名，用于车辆租赁服务访问、订单管理与用户账号体系
-DOMAIN-SUFFIX,api.reocar.com # 瑞卡租车业务 API 域名，用于订单处理、车辆数据与平台通信
-DOMAIN-SUFFIX,static.reocar.com # 瑞卡租车前端静态资源域名，用于页面脚本、样式与基础资源加载
-DOMAIN-SUFFIX,img.reocar.com # 瑞卡租车图像与媒体资源域名，用于车辆图片与展示素材分发
-
-# > 车享家（CARPLUS）租车与出行服务
-
-DOMAIN-SUFFIX,carplus.cn # 车享家租车与出行服务主域名，用于车辆租赁、订单管理、账号体系与业务访问
-DOMAIN-SUFFIX,api.carplus.cn # 车享家业务 API 域名，用于订单、车辆数据与客户端交互
-DOMAIN-SUFFIX,static.carplus.cn # 静态资源域名，用于页面脚本、样式与静态组件资源加载
-DOMAIN-SUFFIX,img.carplus.cn # 图像资源域名，用于车辆图片、页面视觉素材分发
-DOMAIN-SUFFIX,m.carplus.cn # 移动端站点域名，用于移动网站访问与业务交互
-DOMAIN-SUFFIX,open.carplus.cn # 开放平台/合作接入域名，用于第三方 API 接入与服务扩展
-DOMAIN-SUFFIX,cdn.carplus.cn # 车享家 CDN 静态资源分发子域
-
-# > 东风出行 / TOGO 共享汽车服务平台
-
-DOMAIN-SUFFIX,dongfeng-ev.com # 东风出行官方业务域名，用于共享汽车、车辆租赁、账号体系与订单服务访问
-DOMAIN-SUFFIX,togo.com.cn # TOGO 共享汽车服务域名，用于车辆预约、订单通信与客户端业务请求
-DOMAIN-SUFFIX,api.dongfeng-ev.com # 东风出行业务 API 域名，用于订单、车辆状态与用户数据通信
-DOMAIN-SUFFIX,app.dongfeng-ev.com # 东风出行应用服务域名，用于客户端业务请求
-DOMAIN-SUFFIX,static.dongfeng-ev.com # 页面静态资源与组件加载
-DOMAIN-SUFFIX,img.dongfeng-ev.com # 车辆图片与视觉资源分发
-DOMAIN-SUFFIX,m.dongfeng-ev.com # 移动端站点访问域名
-
-# > 小猪短租（Xiaozhu）住宿与短租平台服务
-
-DOMAIN-SUFFIX,xiaozhu.com # 小猪短租官方主域名，用于民宿预订、房源浏览与用户服务访问
-DOMAIN-SUFFIX,xiaozhuimg.com # 小猪短租图像与媒体资源 CDN 域名，用于房源图片与展示资源加载
-DOMAIN-SUFFIX,api.xiaozhu.com # 小猪短租业务 API 域名，用于订单、房源与用户数据通信
-
-# > 曹操出行（Caocao Mobility）智慧出行与网约车平台服务
-
-DOMAIN-SUFFIX,caocaokeji.cn # 曹操出行官方主域名，用于平台访问、账号体系与业务服务
-DOMAIN-SUFFIX,caocao.com # 曹操出行品牌与业务主域，用于出行服务入口与客户端通信
-DOMAIN-SUFFIX,caocao.cn # 曹操出行国内业务域名，用于服务访问与业务调度
-DOMAIN-SUFFIX,caocaokeji.com # 曹操科技企业与平台服务域名，用于产品与业务支持
-
-# > 首汽分享共享出行服务相关域名
-
-DOMAIN-SUFFIX,shouqishare.com # 首汽分享官网访问入口，用于 PC/Web 页面访问与服务入口加载
-DOMAIN-SUFFIX,api.shouqishare.com # 首汽分享业务 API 域名，用于订单、车辆状态与用户数据通信
-DOMAIN-SUFFIX,m.shouqishare.com # 移动端访问域名，用于移动站点与业务交互
-DOMAIN-SUFFIX,static.shouqishare.com # 静态资源域名，用于前端脚本、样式与页面组件资源加载
-DOMAIN-SUFFIX,img.shouqishare.com # 图像与媒体资源域名，用于车辆照片、界面素材去加载
-DOMAIN-SUFFIX,open.shouqishare.com # 开放平台/合作 API 域名，用于第三方接入与服务集成
-
-# > 人人车（Renrenche）二手车交易与车辆服务平台
-
-DOMAIN-SUFFIX,renrenche.com # 人人车官方平台域名，用于二手车交易、车辆信息展示与用户服务访问
-DOMAIN-SUFFIX,m.renrenche.com # 人人车移动端站点，用于移动设备访问与交易操作
-DOMAIN-SUFFIX,static.renrenche.com # 人人车静态资源域名，用于页面组件与前端资源加载
-DOMAIN-SUFFIX,img.renrenche.com # 人人车图像服务域名，用于车辆图片展示与媒体资源分发
-DOMAIN-SUFFIX,api.renrenche.com # 人人车业务 API 域名，用于交易数据、订单流程与平台通信
-
-# > 瓜子二手车（Guazi）车辆交易与汽车服务平台
-
-DOMAIN-SUFFIX,guazi.com # 瓜子二手车官方主域名，用于车辆交易、价格评估与平台服务访问
-DOMAIN-SUFFIX,m.guazi.com # 瓜子移动端站点，用于移动设备访问与交易操作
-DOMAIN-SUFFIX,static.guazi.com # 瓜子静态资源域名，用于前端组件与页面资源加载
-DOMAIN-SUFFIX,img.guazi.com # 瓜子车辆图片与媒体资源域名，用于车辆展示与内容分发
-DOMAIN-SUFFIX,api.guazi.com # 瓜子业务 API 域名，用于交易数据、订单流程与平台通信
-DOMAIN-SUFFIX,finance.guazi.com # 瓜子汽车金融服务域名，用于分期购车与金融方案访问
-
-# > 天涯社区 相关域名
-
-DOMAIN-SUFFIX,tianya.cn # 天涯社区主域名，中国历史悠久的综合性网络论坛与社区服务平台
-DOMAIN-SUFFIX,bbs.tianya.cn # 天涯论坛子域名，用于论坛版块访问与帖子浏览
-DOMAIN-SUFFIX,tianyaclub.com # 天涯社区品牌历史访问域名
-DOMAIN-SUFFIX,tianya.net # 天涯国际/重启访问入口（根据官方业务计划启用）
-
-# > JsDelivr Mirror / 前端公共资源镜像 CDN
-
-DOMAIN-SUFFIX,jsdmirror.com # JsDelivr 第三方镜像加速域名，用于提供 npm / GitHub 等前端公共库的加速访问，常见于国内网络环境下的资源加载优化
-
-# > 山湖科技（ShanhuTech）静态资源分发网络
-
-DOMAIN-SUFFIX,shanhutech.cn # 山湖科技静态资源服务主域，用于前端文件、组件与网站资源分发
-DOMAIN-SUFFIX,cdn-hw-static2.shanhutech.cn # 山湖科技静态资源 CDN 子域，用于网页脚本、样式与媒体资源加载
-
-# > Snrat CDN 前端公共库加速服务
-
-DOMAIN-SUFFIX,snrat.com # Snrat CDN 服务主域，用于提供前端公共库与静态资源加速访问
-DOMAIN-SUFFIX,cdnjs.snrat.com # Snrat CDN 子域，用于加载 JavaScript/CSS 等前端依赖资源
-
-# > Akass 平台前端资源与脚本分发服务
-
-DOMAIN-SUFFIX,sf.akass.cn # Akass 平台前端静态资源与脚本分发域名，用于页面功能组件与资源加载
-DOMAIN-SUFFIX,npm.akass.cn # Akass 提供的 NPM 包镜像服务域名，用于前端依赖包下载与版本分发
-DOMAIN-SUFFIX,jsd.akass.cn # Akass 提供的 JsDelivr 镜像加速域名，用于前端公共库与静态资源加载
-
-# > Maozi Io 平台动态子域解析入口
-
-DOMAIN-SUFFIX,maozi.io # Maozi Io 平台动态服务域名，用于物联网/设备/动态实例访问与路由解析
-
-# > WidgetStore 静态资源与组件分发服务
-
-DOMAIN-SUFFIX,cn.widgetstore.net # WidgetStore 国内镜像/静态资源域名，用于页面组件、脚本与样式资源加载
-
-# > Microsoft 中国区云租户基础命名空间（Azure / Microsoft 365）
-
-DOMAIN-SUFFIX,onmicrosoft.cn # Microsoft 在中国区提供的云租户基础域名，用于 Azure、Microsoft 365 等企业云服务的租户命名空间与身份体系
-
-# > Tencent CloudBase / 第三方组件与前端资源分发服务
-
-DOMAIN-SUFFIX,tcloudbase.com # 腾讯云 CloudBase（云开发）托管平台域名，用于 Serverless 应用托管、静态资源分发与动态服务访问
-DOMAIN-SUFFIX,widgetstore-2get4jkof622d914-1304418908.ap-shanghai.app.tcloudbase.com # CloudBase 应用实例子域，用于托管 Web 组件、页面资源或应用后端服务
-
-# > ggff.net 网络资源与内容分发服务
-
-DOMAIN-SUFFIX,ggff.net # ggff.net 网络资源服务域名，用于提供 Web 内容访问与资源分发能力
-DOMAIN-SUFFIX,pl.zeroo.ggff.net # ggff.net 子域，用于页面资源加载或平台功能请求
-
-# > 茉灵导航（个人工具与资源聚合平台）
-
-DOMAIN-SUFFIX,home.nuaa.tech # 茉灵导航主站域名，个人开发者工具与资源聚合导航页面
-DOMAIN-SUFFIX,blog.nuaa.tech # 茉灵导航博客子域，用于发布技术文章与个人内容
-DOMAIN-SUFFIX,animaltest.nuaa.tech # 茉灵导航测试或实验性功能子域，用于开发调试或实验项目展示
-DOMAIN-SUFFIX,ap.nuaa.tech # 茉灵导航功能子域，具体用途未公开，属个人站点功能扩展域名
-DOMAIN-SUFFIX,pro.nuaa.tech # 茉灵导航扩展子域，可能用于进阶功能或展示型页面
-
-# > 互联网沟通指北 · 技术社区沟通礼仪整理站点
-
-DOMAIN-SUFFIX,0x0.cat # 收录互联网时代沟通礼仪、提问规范与常见认知定律
-
-# > Yes No Tarot 在线塔罗占卜站点
-
-DOMAIN-SUFFIX,yesnotarot.org # 在线 Yes/No 塔罗牌占卜工具站点，提供问答式塔罗牌解读与灵性指引内容
-
-# > 七麦数据（Qimai）移动应用市场分析平台
-
-DOMAIN-SUFFIX,qmai.cn # 七麦数据官方域名，用于应用市场数据分析、ASO 优化与行业情报服务
-DOMAIN-SUFFIX,webapi.qmai.cn # 七麦数据 Web API 域名，用于平台数据查询与业务接口通信
-
-# > 天机阁 · AI 紫微斗数命理推演系统
-
-DOMAIN-SUFFIX,tjg.aifeisheng.com # 在线 AI 紫微斗数命理推演与八字命盘分析服务，结合传统易经与 AI 技术提供个性化运势解读
-
-# > Dream Whisper AI 智能创作服务
-
-DOMAIN-SUFFIX,dreamwhisperai.com # AI 语音/文本智能交互与创作服务站点，用于生成梦境叙述、情感对话等内容
-
-# > MyCompiler 在线 IDE 与代码编辑环境
-
-DOMAIN-SUFFIX,mycompiler.io # 在线编译器/IDE 平台域名，用于提供代码编辑、编译与运行服务
-
-# > Hotjob 招聘系统（前程无忧旗下企业招聘服务）
-
-DOMAIN-SUFFIX,wecruit.hotjob.cn # 企业招聘子域，用于校招/社招在线报名与人力资源管理系统访问
-DOMAIN-SUFFIX,xcmg.hotjob.cn # 企业招聘子域，用于企业岗位发布、简历投递与招聘系统访问服务
-
-# > 万达影城移动端接口与用户服务域名
-
-DOMAIN-SUFFIX,wandawic.com # 万达影城移动端服务主域名
-DOMAIN-SUFFIX,wdmp-maup.wandawic.com # 万达影城移动端数据上报与用户服务接口
-DOMAIN-SUFFIX,wdmp-api.wandawic.com # 万达影城移动端 API 接口域名
-
-# > 风控云业务安全与风险控制服务
-
-DOMAIN-SUFFIX,fengkongcloud.com # 风控云风险控制与业务安全校验服务域名，用于登录验证、反作弊检测与交易安全防护
-
-# > 爱优惠活动与资源分发服务
-
-DOMAIN-SUFFIX,iyoudui.com # 爱优惠 (iyoudui) 平台域名，用于优惠活动页面、资源访问与活动落地服务
-DOMAIN-SUFFIX,spm.iyoudui.com # 爱优惠推广统计与资源分发子域，用于活动页面访问支持与请求分发
-DOMAIN-SUFFIX,ctopmweb-cdn.iyoudui.com # 爱优惠 CDN 子域，用于活动页面静态资源、脚本与样式资源加速加载
-
-# > 个推科技移动消息推送服务
-
-DOMAIN-SUFFIX,getui.com # 个推科技移动推送与终端通信服务域名，用于应用消息下发、设备注册与推送通道维护
-
-# > 国内 JSP CDN 静态资源分发服务
-
-DOMAIN-SUFFIX,jspcdn.cn # 国内网站 JS 与静态资源 CDN 分发域名，用于前端脚本加载与资源调度
-
-# > KFC（肯德基）中国相关域名
-
-DOMAIN-SUFFIX,kfcdelivery.com.cn # KFC 中国大陆宅急送外卖平台
-DOMAIN-SUFFIX,kfc.com.cn # KFC 中国大陆官网（百胜中国运营）
-
-# > Yum China（百胜中国）官方网站相关域名
-
-DOMAIN-SUFFIX,yumchina.com # 百胜中国官方网站（肯德基、必胜客、塔可钟中国母公司）
-DOMAIN-SUFFIX,abplatform.yumchina.com # 百胜中国 A/B 测试与业务平台域名（用于线上业务实验与功能灰度发布）
-DOMAIN-SUFFIX,bs2.yumchina.com # 百胜中国内部业务系统与服务接口域名（用于门店与线上系统交互）
-DOMAIN-SUFFIX,hwwt8.com # 百胜中国（Yum China）内部技术服务主域，包含资源分发、后台系统与业务支持子域
-DOMAIN-SUFFIX,pcp-pic.hwwt8.com # 百胜中国图片资源分发子域（业务图片加载、静态资源分发）
-DOMAIN-SUFFIX,fp.hwwt8.com # 百胜中国设备指纹/风控辅助子域（用于安全校验或用户环境识别）
-
-# > 麦当劳中国官方服务域名
-
-DOMAIN-SUFFIX,mcdonalds.com.cn # 麦当劳中国（中食麦当劳控股）官网
-DOMAIN-SUFFIX,mcdchina.com # 麦当劳中国旧域名
-DOMAIN-SUFFIX,mcd.cn # 麦当劳中国官网与移动端服务主域名，用于会员服务、活动页面与接口请求
-DOMAIN-SUFFIX,api.mcd.cn # 麦当劳中国接口服务子域，用于订单、会员、活动与数据交互服务
-DOMAIN-SUFFIX,mcdfreshwork.freshchat.com # 麦当劳 Freshchat 在线客服实例域名
-
-# > BURGER KING® 汉堡王中国官网
-
-DOMAIN-SUFFIX,bkchina.cn # 汉堡王中国官方网站，用于展示菜单、门店信息、会员服务与品牌内容
-
-# > 华莱士（Wallace）中国官方网站域名
-
-DOMAIN-SUFFIX,cnhls.com # 华莱士（Wallace）中国快餐连锁品牌官方网站，用于菜单展示、品牌信息、门店查询与在线服务
-DOMAIN-SUFFIX,ai.cnhls.com # 华莱士官方 AI 客服/智能服务子域名（用于在线问答与用户交互界面）
-
-# > 上海智龙（Wiselong）餐饮业务平台相关域名
-
-DOMAIN-SUFFIX,llm.wiselong.com # 上海智龙企业业务平台子域名，用于餐饮服务平台访问与系统接口
-
-# > 塔斯汀（TASITING）中国汉堡快餐连锁官方网站
-
-DOMAIN-SUFFIX,tasiting.com # 塔斯汀中国汉堡品牌官网域名，用于品牌信息、门店查询与加盟服务
-DOMAIN-SUFFIX,hsab-snssdk.tastien-external.com # Tasiting 相关托管子域
-DOMAIN-SUFFIX,sss-web.tastientech.com # Tasiting 技术服务或 Web 平台子域
-DOMAIN-SUFFIX,pictures.tastientech.com # Tasiting 平台图片资源分发子域
-
-# > 牛约堡（New YoBo）中国汉堡连锁品牌官方网站
-
-DOMAIN-SUFFIX,newyobo.com # 牛约堡品牌官网域名，用于手作牛肉汉堡品牌信息、产品展示与加盟服务
-DOMAIN-SUFFIX,m.newyobo.com # 牛约堡移动端官网域名，用于移动设备访问品牌信息与加盟咨询
-
-# > Pizza Hut（必胜客）中国相关域名
-
-DOMAIN-SUFFIX,pizzahut.com.cn # 必胜客中国官方网站，用于菜单展示、在线点餐、门店查询与品牌信息服务
-
-# > Domino’s Pizza 达美乐中国官方网站
-
-DOMAIN-SUFFIX,dominos.com.cn # Domino’s Pizza 中国官网域名，用于在线点餐、菜单展示、门店查询与品牌信息发布
-
-# > Freshchat 在线客服服务（Freshworks）
-
-DOMAIN-SUFFIX,freshchat.com # Freshworks 在线客服平台域名，用于网站与 App 内嵌客服会话服务
-DOMAIN-SUFFIX,assetscdn-wchat.freshchat.com # Freshchat WebChat 静态资源 CDN 域名，用于加载聊天脚本、样式与前端交互资源
-DOMAIN-SUFFIX,freshworksapi.com # Freshworks 官方 API 服务域名，用于客服系统接口调用与数据交互
-DOMAIN-SUFFIX,rts-static-prod.freshworksapi.com # Freshworks 实时通信静态资源域名，用于加载 WebSocket 相关脚本与前端实时会话组件
-DOMAIN-SUFFIX,freshbots.ai # Freshworks Freshbots AI 客服机器人平台域名，用于智能问答、自动回复与会话流程管理
-DOMAIN-SUFFIX,cdn.freshbots.ai # Freshbots 静态资源 CDN 域名，用于加载聊天脚本、前端组件与机器人交互资源
-
-# > 东方财富（Eastmoney）相关域名
-
-DOMAIN-SUFFIX,eastmoney.com # 东方财富网中国大陆主站（金融资讯与证券数据平台）
-DOMAIN-SUFFIX,push2.eastmoney.com # 东方财富实时行情推送与数据接口域名（股票、基金、指数数据 API）
-DOMAIN-SUFFIX,emdata.eastmoney.com # 东方财富数据服务子域（行情与财务数据接口）
-DOMAIN-SUFFIX,guba.eastmoney.com # 东方财富股吧社区平台
-DOMAIN-SUFFIX,so.eastmoney.com # 东方财富站内搜索服务
-DOMAIN-SUFFIX,choice.eastmoney.com # 东方财富 Choice 金融终端与数据服务平台
-
-# > 飞凡金融（Faisys）支付与结算相关域名
-
-DOMAIN-SUFFIX,faisys.com # 飞凡金融科技（Faisys）主域名（支付清算与金融科技服务）
-DOMAIN-SUFFIX,fe.faisys.com # 飞凡金融前端接口域名（支付流程与交易结算前端服务）
-
-# > Godot Hub 游戏引擎社区和资源平台
-
-DOMAIN-SUFFIX,godothub.com # Godot Hub 网站，提供 Godot 游戏引擎社区交流、教程及资源下载镜像，用于游戏开发者学习与分享
-DOMAIN-SUFFIX,godothub.atomgit.net # Godot Hub 镜像域名，用于提供 Godot 引擎社区交流与资源同步访
-
-# > Linux.cn 开源技术社区与资讯平台 (2026.02.01停止运营)
-
-DOMAIN-SUFFIX,linux.cn # Linux.cn 官方网站，提供 Linux 及开源技术资讯、教程与社区交流内容（当前已停止更新）
-
-# > openKylin 开放麒麟开源社区与操作系统官网
-
-DOMAIN-SUFFIX,openkylin.top # openKylin 社区官网，开放原子开源基金会孵化运营的开源桌面操作系统与社区平台，提供系统资讯、下载和技术交流
-
-# > 微信 12321 网络不良与垃圾信息举报受理中心
-
-DOMAIN-SUFFIX,wechat12321.cn # 微信平台配合12321网络不良与垃圾信息举报受理中心的官方通道，用于诈骗、骚扰及违法信息举报
-
-# > 财联社（CLS）财经资讯平台
-
-DOMAIN-SUFFIX,cls.cn # 财联社财经新闻与金融信息服务平台主域名，提供资本市场资讯、A股电报、宏观经济新闻与金融数据服务
-DOMAIN-SUFFIX,cailianpress.com # 财联社财经新闻与金融资讯平台
-DOMAIN-SUFFIX,image.cailianpress.com # 财联社图片资源服务
+# > Chinese University MOOC / iCourse（中国大学 MOOC / 爱课程）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,icourse163.org # 中国大学 MOOC 主域名
+DOMAIN-SUFFIX,mooc.163.com # 网易 MOOC 服务域名
+DOMAIN-SUFFIX,open.163.com # 网易公开课服务域名
+DOMAIN-SUFFIX,videotts.icourse163.org # 中国大学 MOOC 视频资源域名
+DOMAIN-SUFFIX,edu-ssl.126.net # 中国大学 MOOC 资源服务域名
+DOMAIN-SUFFIX,hz.netease.com # 网易教育服务域名
+
+# > Chaoxing（超星学习通）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,chaoxing.com # 超星主域名
+DOMAIN-SUFFIX,chaoxing.cn # 超星中国区服务域名
+DOMAIN-SUFFIX,mooc1.chaoxing.com # 超星慕课服务域名
+DOMAIN-SUFFIX,fanya.chaoxing.com # 超星泛雅服务域名
+DOMAIN-SUFFIX,cl2.chaoxing.com # 超星内容分发域名
+DOMAIN-SUFFIX,noteyd.chaoxing.com # 超星笔记服务域名
+DOMAIN-SUFFIX,passport2.chaoxing.com # 超星账号服务域名
+DOMAIN-SUFFIX,homework.chaoxing.com # 超星作业服务域名
+
+# > Zhihuishu（智慧树）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,zhihuishu.com # 智慧树主域名
+DOMAIN-SUFFIX,passport.zhihuishu.com # 智慧树账号服务域名
+DOMAIN-SUFFIX,study.zhihuishu.com # 智慧树学习服务域名
+DOMAIN-SUFFIX,video.zhihuishu.com # 智慧树视频服务域名
+DOMAIN-SUFFIX,resource.zhihuishu.com # 智慧树资源服务域名
+DOMAIN-SUFFIX,online.zhihuishu.com # 智慧树在线课堂服务域名
+DOMAIN-SUFFIX,homework.zhihuishu.com # 智慧树作业服务域名
+DOMAIN-SUFFIX,live.zhihuishu.com # 智慧树直播服务域名
+
+# > Yuketang（雨课堂）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,yuketang.cn # 雨课堂主域名
+DOMAIN-SUFFIX,ykt.io # 雨课堂短链服务域名
+DOMAIN-SUFFIX,class.yuketang.cn # 雨课堂课程服务域名
+DOMAIN-SUFFIX,video.yuketang.cn # 雨课堂视频服务域名
+DOMAIN-SUFFIX,live.yuketang.cn # 雨课堂直播服务域名
+DOMAIN-SUFFIX,edu.yuketang.cn # 雨课堂教育服务域名
+DOMAIN-SUFFIX,sso.yuketang.cn # 雨课堂统一身份认证域名
+DOMAIN-SUFFIX,resource.yuketang.cn # 雨课堂资源服务域名
+
+# > Academic Affairs Systems（高校教务系统）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,jwglxt.com # 教务管理系统服务域名
+DOMAIN-SUFFIX,zhjw.cn # 高校教务公共服务域名
+
+# > Social Security Service Platforms（社保服务平台）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,12333.gov.cn # 人力资源和社会保障公共服务域名
+DOMAIN-SUFFIX,si.12333.gov.cn # 社保统一服务平台域名
+
+# > Local HRSS Platforms（地方人社服务平台）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,hrss.gov.cn # 人社系统服务域名
+DOMAIN-SUFFIX,sh12333.cn # 上海人社服务域名
+DOMAIN-SUFFIX,bjrbj.gov.cn # 北京人社服务域名
+DOMAIN-SUFFIX,gdhrss.gov.cn # 广东人社服务域名
+DOMAIN-SUFFIX,zjhrss.gov.cn # 浙江人社服务域名
+
+# > Housing Provident Fund Platforms（住房公积金平台）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,gjj.cn # 公积金服务域名
+DOMAIN-SUFFIX,zfgjj.cn # 住房公积金服务域名
+
+# > Local Housing Provident Fund Platforms（地方住房公积金平台）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,bjgjj.gov.cn # 北京住房公积金服务域名
+DOMAIN-SUFFIX,shgjj.com # 上海住房公积金服务域名
+DOMAIN-SUFFIX,cdgjj.cn # 成都住房公积金服务域名
+DOMAIN-SUFFIX,szgjj.com # 深圳住房公积金服务域名
+DOMAIN-SUFFIX,whgjj.com.cn # 武汉住房公积金服务域名
+DOMAIN-SUFFIX,zjgjj.gov.cn # 浙江住房公积金服务域名
+DOMAIN-SUFFIX,gdgjj.gov.cn # 广东住房公积金服务域名
+
+# > Nanjing Government Service Platform（南京市政务服务平台）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,nanjing.gov.cn # 南京市政府服务域名
+DOMAIN-SUFFIX,njzwfw.gov.cn # 南京市政务服务平台域名
+DOMAIN-SUFFIX,mynj.cn # 我的南京服务域名
+DOMAIN-SUFFIX,njzwfw.com # 南京政务服务支撑域名
+
+# > Provincial Government Service Platforms（省级政务服务平台）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,zwfw.gov.cn # 政务服务平台域名
+DOMAIN-SUFFIX,guangdong.gov.cn # 广东政务服务域名
+DOMAIN-SUFFIX,zhejiang.gov.cn # 浙江政务服务域名
+DOMAIN-SUFFIX,sh.gov.cn # 上海政务服务域名
+DOMAIN-SUFFIX,beijing.gov.cn # 北京政务服务域名
+DOMAIN-SUFFIX,hunan.gov.cn # 湖南政务服务域名
+DOMAIN-SUFFIX,hubei.gov.cn # 湖北政务服务域名
+DOMAIN-SUFFIX,sichuan.gov.cn # 四川政务服务域名
+DOMAIN-SUFFIX,jiangsu.gov.cn # 江苏政务服务域名
+DOMAIN-SUFFIX,tjzwfw.gov.cn # 天津政务服务域名
+DOMAIN-SUFFIX,hljzwfw.gov.cn # 黑龙江政务服务域名
+DOMAIN-SUFFIX,xzzwfw.gov.cn # 西藏政务服务域名
+
+# > JD.com（京东）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,jd.com # 京东主域名
+DOMAIN-SUFFIX,360buy.com # 京东服务域名
+DOMAIN-SUFFIX,jd.hk # 京东香港服务域名
+DOMAIN-SUFFIX,joybuy.com # 京东国际服务域名
+DOMAIN-SUFFIX,jingxi.com # 京喜服务域名
+DOMAIN-SUFFIX,jdpay.com # 京东支付服务域名
+DOMAIN-SUFFIX,api.jdpay.com # 京东支付接口域名
+DOMAIN-SUFFIX,jdcloud.com # 京东云服务域名
+DOMAIN-SUFFIX,api.jdcloud.com # 京东云 API 域名
+DOMAIN-SUFFIX,static.jdcloud.com # 京东云静态资源域名
+DOMAIN-SUFFIX,jdcloudedge.com # 京东云边缘服务域名
+
+# > Tmall（天猫）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,tmall.com # 天猫主域名
+DOMAIN-SUFFIX,m.tmall.com # 天猫移动服务域名
+DOMAIN-SUFFIX,tmall.hk # 天猫国际服务域名
+DOMAIN-SUFFIX,intl.taobao.com # 天猫国际跳转服务域名
+DOMAIN-SUFFIX,tae.aliyun.com # 天猫交易服务域名
+DOMAIN-SUFFIX,api.tmall.com # 天猫接口域名
+DOMAIN-SUFFIX,tmall.alicdn.com # 天猫静态资源域名
+
+# > Suning（苏宁易购）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,suning.com # 苏宁易购主域名
+DOMAIN-SUFFIX,suning.cn # 苏宁易购服务域名
+DOMAIN-SUFFIX,api.suning.com # 苏宁易购接口域名
+DOMAIN-SUFFIX,static.suning.com # 苏宁易购静态资源域名
+DOMAIN-SUFFIX,snsuning.com # 苏宁易购账号服务域名
+DOMAIN-SUFFIX,suningappliance.com # 苏宁电器服务域名
+
+# > Pinduoduo（拼多多）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,yangkeduo.com # 拼多多主域名
+DOMAIN-SUFFIX,pinduoduo.com # 拼多多品牌域名
+DOMAIN-SUFFIX,pdd.net # 拼多多服务域名
+DOMAIN-SUFFIX,api.pdd.net # 拼多多接口域名
+DOMAIN-SUFFIX,pddpic.com # 拼多多图片资源域名
+
+# > VIP.com（唯品会）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,vip.com # 唯品会主域名
+DOMAIN-SUFFIX,vipstatic.com # 唯品会静态资源域名
+DOMAIN-SUFFIX,vipimg.com # 唯品会图片资源域名
+DOMAIN-SUFFIX,vipp.com # 唯品会短链服务域名
+DOMAIN-SUFFIX,vipshop.com # 唯品会服务域名
+
+# > Dewu（得物）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,dewu.com # 得物主域名
+DOMAIN-SUFFIX,poizon.com # 得物国际服务域名
+DOMAIN-SUFFIX,duapp.com # 得物应用服务域名
+DOMAIN-SUFFIX,api.duapp.com # 得物接口域名
+DOMAIN-SUFFIX,static.duapp.com # 得物静态资源域名
+DOMAIN-SUFFIX,shihuo.cn # 识货服务域名
+
+# > Zhuanzhuan（转转）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,zhuanzhuan.com # 转转主域名
+DOMAIN-SUFFIX,zhuanzhuan.cn # 转转服务域名
+DOMAIN-SUFFIX,api.zhuanzhuan.com # 转转接口域名
+DOMAIN-SUFFIX,static.zhuanzhuan.com # 转转静态资源域名
+DOMAIN-SUFFIX,zhuanzhuan.wacdn.com # 转转内容分发域名
+
+# > Xiaomi / Mi / Mijia（小米 / 米家）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,mi.com # 小米主域名
+DOMAIN-SUFFIX,account.mi.com # 小米账号服务域名
+DOMAIN-SUFFIX,api.mi.com # 小米接口域名
+DOMAIN-SUFFIX,static.mi.com # 小米静态资源域名
+DOMAIN-SUFFIX,xiaomi.com # 小米集团服务域名
+DOMAIN-SUFFIX,mi-img.com # 小米图片资源域名
+DOMAIN-SUFFIX,mi-static.com # 小米静态资源域名
+DOMAIN-SUFFIX,miui.com # 小米系统服务域名
+DOMAIN-SUFFIX,update.miui.com # 小米系统更新服务域名
+DOMAIN-SUFFIX,miwifi.com # 小米路由服务域名
+DOMAIN-SUFFIX,api.miwifi.com # 小米路由接口域名
+DOMAIN-SUFFIX,mijia.com # 米家主域名
+DOMAIN-SUFFIX,api.mijia.com # 米家接口域名
+DOMAIN-SUFFIX,milink.cn # 小米设备互联服务域名
+DOMAIN-SUFFIX,mifile.cn # 小米文件服务域名
+DOMAIN-SUFFIX,micloud.xiaomi.net # 小米云服务域名
+DOMAIN-SUFFIX,miliao.com # 小米历史通信服务域名
+
+# > Huawei / HarmonyOS / Huawei Cloud（华为 / 鸿蒙 / 华为云）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,huawei.com # 华为主域名
+DOMAIN-SUFFIX,servicesupport.huawei.com # 华为客户支持服务域名
+DOMAIN-SUFFIX,huaweicloud.com # 华为云主域名
+DOMAIN-SUFFIX,huaweicloud.cn # 华为云中国区服务域名
+DOMAIN-SUFFIX,huaweicloudsite.cn # 华为云建站服务域名
+DOMAIN-SUFFIX,cloud.huawei.com # 华为云服务域名
+DOMAIN-SUFFIX,myhuaweicloud.com # 华为云账号服务域名
+DOMAIN-SUFFIX,api.huaweicloud.com # 华为云 API 域名
+DOMAIN-SUFFIX,static.huaweicloud.com # 华为云静态资源域名
+DOMAIN-SUFFIX,vmall.com # 华为商城服务域名
+DOMAIN-SUFFIX,hicloud.com # 华为终端云服务域名
+DOMAIN-SUFFIX,hispace.hicloud.com # 华为终端生态服务域名
+DOMAIN-SUFFIX,appgallery.hicloud.com # 华为应用市场服务域名
+DOMAIN-SUFFIX,connectivity.hicloud.com # 华为设备互联服务域名
+DOMAIN-SUFFIX,harmonyos.com # 鸿蒙系统服务域名
+DOMAIN-SUFFIX,dbankcloud.cn # 华为云资源服务域名
+DOMAIN-SUFFIX,update.dbankcdn.com # 华为更新服务域名
+DOMAIN-SUFFIX,download.dbankcdn.com # 华为下载服务域名
+
+# > SF Express（顺丰速运）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,sf-express.com # 顺丰速运主域名
+DOMAIN-SUFFIX,sf-express.cn # 顺丰速运服务域名
+DOMAIN-SUFFIX,api.sf-express.com # 顺丰速运接口域名
+DOMAIN-SUFFIX,api.sf-express.cn # 顺丰速运接口域名
+DOMAIN-SUFFIX,sf-airlines.com # 顺丰航空服务域名
+DOMAIN-SUFFIX,sfbest.com # 顺丰优选服务域名
+
+# > ZTO Express（中通快递）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,zto.com # 中通快递主域名
+DOMAIN-SUFFIX,zto56.com # 中通快递服务域名
+DOMAIN-SUFFIX,api.zto.com # 中通快递接口域名
+DOMAIN-SUFFIX,api.zto56.com # 中通快递接口域名
+DOMAIN-SUFFIX,static.zto56.com # 中通快递静态资源域名
+DOMAIN-SUFFIX,track.zto56.com # 中通快递轨迹服务域名
+
+# > Yunda Express（韵达快递）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,yundaex.com # 韵达快递主域名
+DOMAIN-SUFFIX,api.yundaex.com # 韵达快递接口域名
+DOMAIN-SUFFIX,static.yundaex.com # 韵达快递静态资源域名
+DOMAIN-SUFFIX,track.yundaex.com # 韵达快递轨迹服务域名
+DOMAIN-SUFFIX,yundasys.com # 韵达快递系统服务域名
+
+# > YTO Express（圆通速递）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,yto.net.cn # 圆通速递主域名
+DOMAIN-SUFFIX,api.yto.net.cn # 圆通速递接口域名
+DOMAIN-SUFFIX,static.yto.net.cn # 圆通速递静态资源域名
+DOMAIN-SUFFIX,track.yto.net.cn # 圆通速递轨迹服务域名
+
+# > STO Express（申通快递）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,sto.cn # 申通快递主域名
+DOMAIN-SUFFIX,api.sto.cn # 申通快递接口域名
+DOMAIN-SUFFIX,static.sto.cn # 申通快递静态资源域名
+DOMAIN-SUFFIX,track.sto.cn # 申通快递轨迹服务域名
+
+# > Best Express（百世快递）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,800best.com # 百世快递主域名
+DOMAIN-SUFFIX,api.800best.com # 百世快递接口域名
+DOMAIN-SUFFIX,static.800best.com # 百世快递静态资源域名
+DOMAIN-SUFFIX,track.800best.com # 百世快递轨迹服务域名
+
+# > Deppon Express（德邦快递）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,deppon.com # 德邦快递主域名
+DOMAIN-SUFFIX,api.deppon.com # 德邦快递接口域名
+DOMAIN-SUFFIX,static.deppon.com # 德邦快递静态资源域名
+DOMAIN-SUFFIX,track.deppon.com # 德邦快递轨迹服务域名
+
+# > JD Logistics（京东物流）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,jdl.cn # 京东物流服务域名
+DOMAIN-SUFFIX,jdl.com # 京东物流国际服务域名
+DOMAIN-SUFFIX,logistics.jd.com # 京东物流接口域名
+
+# > Cainiao（菜鸟网络）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,cainiao.com # 菜鸟网络主域名
+DOMAIN-SUFFIX,global.cainiao.com # 菜鸟国际服务域名
+DOMAIN-SUFFIX,track.cainiao.com # 菜鸟轨迹服务域名
+DOMAIN-SUFFIX,logistics.cainiao.com # 菜鸟物流服务域名
+DOMAIN-SUFFIX,gw.cainiao.com # 菜鸟接口网关域名
+DOMAIN-SUFFIX,img.cainiao.com # 菜鸟图片资源域名
+DOMAIN-SUFFIX,cnalbs.com # 菜鸟内容分发域名
+DOMAIN-SUFFIX,alilogistics.com # 阿里物流服务域名
+
+# > EMS（中国邮政速递）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,ems.com.cn # 中国邮政速递主域名
+
+# > J&T Express（极兔速递）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,jtexpress.com # 极兔速递主域名
+DOMAIN-SUFFIX,jtexpress.com.cn # 极兔速递中国区服务域名
+DOMAIN-SUFFIX,jtexpress.my # 极兔速递国际服务域名
+
+# > Zhihu（知乎）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,zhihu.com # 知乎主域名
+DOMAIN-SUFFIX,zhimg.com # 知乎图片资源域名
+DOMAIN-SUFFIX,api.zhihu.com # 知乎接口域名
+DOMAIN-SUFFIX,appcloud.zhihu.com # 知乎云服务域名
+DOMAIN-SUFFIX,adx.zhihu.com # 知乎广告服务域名
+DOMAIN-SUFFIX,link.zhihu.com # 知乎跳转服务域名
+DOMAIN-SUFFIX,sugar.zhihu.com # 知乎数据服务域名
+DOMAIN-SUFFIX,static.zhihu.com # 知乎静态资源域名
+DOMAIN-SUFFIX,captcha.zhihu.com # 知乎验证服务域名
+
+# > Sogou Search（搜狗搜索）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,sogou.com # 搜狗主域名
+DOMAIN-SUFFIX,v.sogou.com # 搜狗视频服务域名
+DOMAIN-SUFFIX,wap.sogou.com # 搜狗移动服务域名
+DOMAIN-SUFFIX,search.sogou.com # 搜狗搜索服务域名
+DOMAIN-SUFFIX,query.sogou.com # 搜狗查询服务域名
+DOMAIN-SUFFIX,pv.sogou.com # 搜狗统计服务域名
+DOMAIN-SUFFIX,adx.sogou.com # 搜狗广告服务域名
+DOMAIN-SUFFIX,ie.sogou.com # 搜狗推广服务域名
+DOMAIN-SUFFIX,sogoucdn.com # 搜狗内容分发域名
+
+# > 360 Search（360 搜索）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,so.com # 360 搜索主域名
+DOMAIN-SUFFIX,s.360.cn # 360 搜索服务域名
+DOMAIN-SUFFIX,wzj.so.com # 360 搜索网页服务域名
+DOMAIN-SUFFIX,news.so.com # 360 新闻搜索域名
+DOMAIN-SUFFIX,image.so.com # 360 图片搜索域名
+DOMAIN-SUFFIX,video.so.com # 360 视频搜索域名
+DOMAIN-SUFFIX,dict.so.360.cn # 360 词典服务域名
+DOMAIN-SUFFIX,sug.so.360.cn # 360 联想服务域名
+DOMAIN-SUFFIX,api.so.360.cn # 360 搜索接口域名
+DOMAIN-SUFFIX,p4papi.so.360.cn # 360 搜索广告服务域名
+DOMAIN-SUFFIX,srpapi.so.com # 360 搜索结果接口域名
+DOMAIN-SUFFIX,click.so.360.cn # 360 搜索点击统计域名
+
+# > Shenma Search（神马搜索）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,sm.cn # 神马搜索主域名
+DOMAIN-SUFFIX,m.sm.cn # 神马搜索移动服务域名
+DOMAIN-SUFFIX,sugs.m.sm.cn # 神马搜索联想服务域名
+DOMAIN-SUFFIX,p4p.m.sm.cn # 神马搜索广告服务域名
+DOMAIN-SUFFIX,cpro.m.sm.cn # 神马搜索广告组件域名
+DOMAIN-SUFFIX,api.m.sm.cn # 神马搜索接口域名
+DOMAIN-SUFFIX,s0.sm.cn # 神马搜索资源服务域名
+DOMAIN-SUFFIX,wap.sm.cn # 神马搜索 WAP 服务域名
+DOMAIN-SUFFIX,push.sm.cn # 神马搜索推送服务域名
+
+# > UC Browser（UC 浏览器）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,uc.cn # UC 浏览器主域名
+DOMAIN-SUFFIX,ucweb.com # UC 浏览器服务域名
+DOMAIN-SUFFIX,9apps.com # UC 下载平台域名
+DOMAIN-SUFFIX,9appsinstall.com # UC 下载服务域名
+DOMAIN-SUFFIX,push.ucweb.com # UC 推送服务域名
+DOMAIN-SUFFIX,sdkpush.ucweb.com # UC SDK 推送域名
+DOMAIN-SUFFIX,server.m.uc.ucweb.com # UC 浏览器服务域名
+DOMAIN-SUFFIX,adtrack.ucweb.com # UC 广告服务域名
+DOMAIN-SUFFIX,adashx4serv.uc.cn # UC 广告分析域名
+DOMAIN-SUFFIX,adx.uc.cn # UC 广告投放域名
+DOMAIN-SUFFIX,track.uc.cn # UC 数据追踪域名
+DOMAIN-SUFFIX,uc.ucweb.com # UC 配置服务域名
+
+# > NetEase Mail（网易邮箱）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,mail.163.com # 网易 163 邮箱服务域名
+DOMAIN-SUFFIX,mail.126.com # 网易 126 邮箱服务域名
+DOMAIN-SUFFIX,yeah.net # 网易 yeah.net 邮箱服务域名
+DOMAIN-SUFFIX,email.163.com # 网易企业邮箱服务域名
+DOMAIN-SUFFIX,imap.163.com # 网易邮箱 IMAP 服务域名
+DOMAIN-SUFFIX,smtp.163.com # 网易邮箱 SMTP 服务域名
+
+# > NetEase Sports（网易体育）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,sports.163.com # 网易体育服务域名
+
+# > Kaola（网易考拉）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,kaola.com # 网易考拉主域名
+DOMAIN-SUFFIX,kaolaapi.com # 网易考拉接口域名
+DOMAIN-SUFFIX,static.kaola.com # 网易考拉静态资源域名
+DOMAIN-SUFFIX,kaolacdn.com # 网易考拉内容分发域名
+
+# > NetEase Static Assets & Risk Control（网易静态资源与风控服务）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,126.net # 网易静态资源域名
+DOMAIN-SUFFIX,cstaticdun-v6.126.net # 网易易盾验证服务域名
+DOMAIN-SUFFIX,ir-sdk.dun.163.com # 网易易盾 SDK 服务域名
+DOMAIN-SUFFIX,c.dun.163.com # 网易易盾配置服务域名
+DOMAIN-SUFFIX,dun.163.com # 网易易盾服务域名
+DOMAIN-SUFFIX,dun.163yun.com # 网易易盾服务域名
+DOMAIN-SUFFIX,ac.dun.163yun.com # 网易易盾访问控制域名
+
+# > Laiqukankan（来去看看）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,laiqukankan.com # 来去看看主域名
+DOMAIN-SUFFIX,nstool.laiqukankan.com # 来去看看网络工具域名
+
+# > YunxinFW（网易质云）网络支撑服务
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,yunxinfw.com # 网易质云主域名
+DOMAIN-SUFFIX,httpdns.yunxinfw.com # 网易质云 HTTPDNS 服务域名
+
+# > NetEase Games（网易游戏）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,game.163.com # 网易游戏服务域名
+DOMAIN-SUFFIX,timejs.game.163.com # 网易游戏脚本服务域名
+
+# > WisdomIR（投资者关系在线服务）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,wisdomir.com # WisdomIR 主域名
+DOMAIN-SUFFIX,website.wisdomir.com # WisdomIR 网站服务域名
+DOMAIN-SUFFIX,stockticker.website.wisdomir.com # WisdomIR 行情服务域名
+DOMAIN-SUFFIX,analytics2.website.wisdomir.com # WisdomIR 统计服务域名
+
+# > Sina Mail（新浪邮箱）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,mail.sina.com.cn # 新浪邮箱服务域名
+DOMAIN-SUFFIX,sinaemail.cn # 新浪邮箱服务域名
+DOMAIN-SUFFIX,sinamail.sina.com.cn # 新浪邮箱接口域名
+DOMAIN-SUFFIX,imap.sina.com # 新浪邮箱 IMAP 服务域名
+DOMAIN-SUFFIX,smtp.sina.com # 新浪邮箱 SMTP 服务域名
+
+# > Sina SSO（新浪统一身份认证）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,sina.com.cn # 新浪服务域名
+DOMAIN-SUFFIX,i.sso.sina.com.cn # 新浪单点登录服务域名
+DOMAIN-SUFFIX,login.sina.com.cn # 新浪登录服务域名
+DOMAIN-SUFFIX,passport.weibo.com # 微博登录服务域名
+DOMAIN-SUFFIX,sso.sina.com.cn # 新浪单点登录服务域名
+
+# > Tools & Misc Services（工具与其他服务）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,csdn.net # CSDN 技术社区域名
+DOMAIN-SUFFIX,ps.gaoding.com # 稿定设计图片处理服务域名
+DOMAIN-SUFFIX,19ego.cn # 19EGO 营销服务域名
+
+# > Gaming Services（游戏服务）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,play.dl.360.cn # 360 游戏服务域名
+DOMAIN-SUFFIX,xboxlive.cn # Xbox 中国服务域名
+DOMAIN-SUFFIX,steampowered.cn # Steam 中国服务域名
+DOMAIN-SUFFIX,steamchina.com # Steam 中国服务域名
+DOMAIN-SUFFIX,wg.163.com # 网易游戏服务域名
+DOMAIN-SUFFIX,4399.com # 4399 游戏平台域名
+DOMAIN-SUFFIX,7k7k.com # 7k7k 游戏平台域名
+
+# > Certificate Validation Services（证书验证服务）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,cacerts.digicert.cn # DigiCert 证书分发域名
+DOMAIN-SUFFIX,ocsp.digicert.com # DigiCert OCSP 服务域名
+DOMAIN-SUFFIX,ocsp.digicert.cn # DigiCert 中国区 OCSP 服务域名
+DOMAIN-SUFFIX,ocsp.comodoca.com # Sectigo OCSP 服务域名
+DOMAIN-SUFFIX,crt.comodoca.com # Sectigo 证书分发域名
+DOMAIN-SUFFIX,crl.comodoca.com # Sectigo CRL 服务域名
+
+# > Dianxiaomi（店小秘）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,dianxiaomi.com # 店小秘主域名
+DOMAIN-SUFFIX,login.dianxiaomi.com # 店小秘登录服务域名
+DOMAIN-SUFFIX,erp.dianxiaomi.com # 店小秘 ERP 服务域名
+DOMAIN-SUFFIX,static.dianxiaomi.com # 店小秘静态资源域名
+DOMAIN-SUFFIX,img.dianxiaomi.com # 店小秘图片资源域名
+
+# > YunExpress（云途物流）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,yunexpress.com # 云途物流主域名
+DOMAIN-SUFFIX,passport.yunexpress.cn # 云途物流登录服务域名
+DOMAIN-SUFFIX,openapi.yunexpress.com # 云途物流开放接口域名
+DOMAIN-SUFFIX,track.yunexpress.com # 云途物流轨迹服务域名
+
+# > Runoob（菜鸟教程）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,runoob.com # 菜鸟教程主域名
+
+# > Iconfont（阿里巴巴图标字体平台）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,iconfont.cn # Iconfont 主域名
+
+# > Moka / Mokahr（招聘管理系统）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,mokahr.com # Moka 主域名
+DOMAIN-SUFFIX,app.mokahr.com # Moka 应用服务域名
+DOMAIN-SUFFIX,public-cdn.mokahr.com # Moka 静态资源域名
+
+# > Qingque Docs（轻雀文档）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,docs.qingque.cn # 轻雀文档主域名
+DOMAIN-SUFFIX,passport.qingque.cn # 轻雀文档账号服务域名
+DOMAIN-SUFFIX,docs-fe.qingque.cn # 轻雀文档前端服务域名
+
+# > Yuque（语雀）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,yuque.com # 语雀主域名
+DOMAIN-SUFFIX,cdn.yuque.com # 语雀静态资源域名
+DOMAIN-SUFFIX,api.yuque.com # 语雀接口域名
+DOMAIN-SUFFIX,assets.yuque.com # 语雀静态资源域名
+DOMAIN-SUFFIX,public.yuque.com # 语雀公共内容域名
+DOMAIN-SUFFIX,office.yuque.com # 语雀在线办公服务域名
+
+# > Feishu Docs / Lark（飞书文档）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,feishu.cn # 飞书中国区主域名
+DOMAIN-SUFFIX,feishuapp.cn # 飞书应用服务域名
+DOMAIN-SUFFIX,larkoffice.com # 飞书国际服务域名
+DOMAIN-SUFFIX,feishucdn.com # 飞书静态资源域名
+DOMAIN-SUFFIX,feishustatic.com # 飞书静态资源域名
+DOMAIN-SUFFIX,feishucontent.com # 飞书内容存储域名
+DOMAIN-SUFFIX,open.feishu.cn # 飞书开放平台域名
+DOMAIN-SUFFIX,api.feishu.cn # 飞书接口域名
+DOMAIN-SUFFIX,cdn.nlark.com # 飞书文档静态资源域名
+
+# > Tencent Docs（腾讯文档）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,docs.qq.com # 腾讯文档主域名
+DOMAIN-SUFFIX,doc.weixin.qq.com # 微信文档服务域名
+DOMAIN-SUFFIX,tdoc.qq.com # 腾讯文档服务域名
+DOMAIN-SUFFIX,wpscdnqq.com # 腾讯文档静态资源域名
+DOMAIN-SUFFIX,docsfile.qq.com # 腾讯文档附件服务域名
+DOMAIN-SUFFIX,cdn-docs.qq.com # 腾讯文档内容分发域名
+
+# > WPS Docs（WPS 云文档）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,wps.cn # WPS 中国区主域名
+DOMAIN-SUFFIX,wps.com # WPS 国际服务域名
+DOMAIN-SUFFIX,kdocs.cn # WPS 云文档主域名
+DOMAIN-SUFFIX,kdocs.com # WPS 云文档国际服务域名
+DOMAIN-SUFFIX,ksosoft.com # 金山办公服务域名
+DOMAIN-SUFFIX,cloud.wps.cn # WPS 云文件服务域名
+DOMAIN-SUFFIX,drive.wps.cn # WPS 云盘服务域名
+DOMAIN-SUFFIX,account.wps.cn # WPS 账号服务域名
+DOMAIN-SUFFIX,docer.wps.cn # WPS 模板服务域名
+DOMAIN-SUFFIX,codesync.wps.cn # WPS 文档同步服务域名
+DOMAIN-SUFFIX,static.wpscdn.cn # WPS 静态资源域名
+DOMAIN-SUFFIX,wpscdn.cn # WPS 内容分发域名
+
+# > Shimo Docs（石墨文档）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,shimo.im # 石墨文档主域名
+DOMAIN-SUFFIX,shimostatic.com # 石墨文档静态资源域名
+DOMAIN-SUFFIX,shimoapi.com # 石墨文档接口域名
+DOMAIN-SUFFIX,shimousercontent.com # 石墨文档用户内容域名
+DOMAIN-SUFFIX,shimoapps.com # 石墨文档应用服务域名
+DOMAIN-SUFFIX,shimo.io # 石墨文档服务域名
+
+# > Teambition（团队协作平台）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,teambition.com # Teambition 主域名
+DOMAIN-SUFFIX,feidai.com # Teambition 文件服务域名
+DOMAIN-SUFFIX,teambitionstatic.com # Teambition 静态资源域名
+
+# > Lanhu（蓝湖）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,lanhuapp.com # 蓝湖主域名
+DOMAIN-SUFFIX,lanhuapp.cn # 蓝湖中国区服务域名
+DOMAIN-SUFFIX,lanhu-cdn.com # 蓝湖静态资源域名
+DOMAIN-SUFFIX,lanhuoss.com # 蓝湖文件服务域名
+DOMAIN-SUFFIX,lanhuimg.com # 蓝湖图片资源域名
+DOMAIN-SUFFIX,bluelake.cn # 蓝湖品牌服务域名
+
+# > Mockplus（摹客）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,mockplus.cn # 摹客中国区服务域名
+DOMAIN-SUFFIX,mockplus.com # 摹客国际服务域名
+
+# > MockingBot（墨刀）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,mockingbot.com # 墨刀主域名
+DOMAIN-SUFFIX,app.mockingbot.com # 墨刀应用服务域名
+DOMAIN-SUFFIX,api.mockingbot.com # 墨刀接口域名
+DOMAIN-SUFFIX,cdn.mockingbot.com # 墨刀静态资源域名
+DOMAIN-SUFFIX,assets.mockingbot.com # 墨刀资源域名
+DOMAIN-SUFFIX,im.mockingbot.com # 墨刀协作通信域名
+DOMAIN-SUFFIX,push.mockingbot.com # 墨刀推送服务域名
+DOMAIN-SUFFIX,mockingbot-cdn.com # 墨刀内容分发域名
+DOMAIN-SUFFIX,mbusercontent.com # 墨刀用户内容域名
+
+# > CODING（腾讯云 DevOps）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,coding.net # CODING 主域名
+DOMAIN-SUFFIX,coding.me # CODING 展示服务域名
+DOMAIN-SUFFIX,api.coding.net # CODING 接口域名
+DOMAIN-SUFFIX,static.coding.net # CODING 静态资源域名
+DOMAIN-SUFFIX,coding-page.com # CODING Pages 服务域名
+DOMAIN-SUFFIX,codimg.cn # CODING 图片资源域名
+DOMAIN-SUFFIX,codetencent.com # CODING 关联服务域名
+
+# > PingCode（研发协作平台）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,pingcode.com # PingCode 主域名
+DOMAIN-SUFFIX,pingcode.cn # PingCode 中国区服务域名
+DOMAIN-SUFFIX,api.pingcode.com # PingCode 接口域名
+DOMAIN-SUFFIX,static.pingcode.com # PingCode 静态资源域名
+DOMAIN-SUFFIX,pcusercontent.com # PingCode 用户内容域名
+DOMAIN-SUFFIX,pc-cdn.com # PingCode 内容分发域名
+DOMAIN-SUFFIX,pingcodeimg.com # PingCode 图片资源域名
+
+# > TAPD（腾讯敏捷研发协作平台）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,tapd.cn # TAPD 主域名
+DOMAIN-SUFFIX,api.tapd.cn # TAPD 接口域名
+DOMAIN-SUFFIX,static.tapd.cn # TAPD 静态资源域名
+DOMAIN-SUFFIX,tapdfile.cn # TAPD 文件服务域名
+DOMAIN-SUFFIX,tapdcustom.com # TAPD 自定义域名服务
+
+# > Youdao Note（有道云笔记）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,ydnote.com # 有道云笔记主域名
+DOMAIN-SUFFIX,note.youdao.com # 有道云笔记服务域名
+DOMAIN-SUFFIX,ynote.com # 有道云笔记历史服务域名
+DOMAIN-SUFFIX,ydstatic.com # 有道静态资源域名
+DOMAIN-SUFFIX,ydschool.com # 有道教育服务域名
+DOMAIN-SUFFIX,ydimg.com # 有道图片资源域名
+DOMAIN-SUFFIX,youdao.com # 有道服务域名
+DOMAIN-SUFFIX,api.youdao.com # 有道接口域名
+
+# > Yinxiang Biji / Evernote China（印象笔记）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,yinxiang.com # 印象笔记主域名
+DOMAIN-SUFFIX,app.yinxiang.com # 印象笔记应用服务域名
+DOMAIN-SUFFIX,yinxiangbbs.com # 印象笔记社区域名
+DOMAIN-SUFFIX,static.yinxiang.com # 印象笔记静态资源域名
+DOMAIN-SUFFIX,evernote.com # Evernote 服务域名
+DOMAIN-SUFFIX,evernoteusercontent.com # Evernote 用户内容域名
+DOMAIN-SUFFIX,evernote.com.cn # Evernote 中国区历史域名
+
+# > DingTalk Docs（钉钉文档）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,dingtalk.com # 钉钉主域名
+DOMAIN-SUFFIX,alidocs.com # 钉钉文档主域名
+DOMAIN-SUFFIX,dtstatic.com # 钉钉静态资源域名
+DOMAIN-SUFFIX,aliwork.com # 阿里协作服务域名
+
+# > FlowUs（知识库协作平台）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,flowus.cn # FlowUs 主域名
+DOMAIN-SUFFIX,flowus.io # FlowUs 国际服务域名
+DOMAIN-SUFFIX,static.flowus.cn # FlowUs 静态资源域名
+DOMAIN-SUFFIX,static.flowusfile.com # FlowUs 文件静态域名
+DOMAIN-SUFFIX,flowusfile.com # FlowUs 文件服务域名
+DOMAIN-SUFFIX,flowususercontent.com # FlowUs 用户内容域名
+DOMAIN-SUFFIX,api.flowus.cn # FlowUs 接口域名
+DOMAIN-SUFFIX,cdnflowus.com # FlowUs 内容分发域名
+
+# > Nutstore（坚果云）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,nutstore.cn # 坚果云主域名
+DOMAIN-SUFFIX,jiyun.feiniu.com # 坚果云文件服务域名
+DOMAIN-SUFFIX,static.nutstore.cn # 坚果云静态资源域名
+DOMAIN-SUFFIX,webdav.nutstore.cn # 坚果云 WebDAV 服务域名
+DOMAIN-SUFFIX,app.nutstore.cn # 坚果云应用服务域名
+DOMAIN-SUFFIX,api.nutstore.cn # 坚果云接口域名
+DOMAIN-SUFFIX,nutstoreusercontent.com # 坚果云用户内容域名
+
+# > Wolai（我来笔记）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,wolai.com # Wolai 主域名
+DOMAIN-SUFFIX,wolai.cn # Wolai 中国区服务域名
+DOMAIN-SUFFIX,static.wolai.com # Wolai 静态资源域名
+DOMAIN-SUFFIX,wolaipublic.com # Wolai 公共资源域名
+DOMAIN-SUFFIX,wolaiusercontent.com # Wolai 用户内容域名
+DOMAIN-SUFFIX,api.wolai.com # Wolai 接口域名
+DOMAIN-SUFFIX,wolaiimg.com # Wolai 图片资源域名
+
+# > Weiyun（腾讯微云）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,weiyun.com # 微云主域名
+DOMAIN-SUFFIX,share.weiyun.com # 微云分享服务域名
+DOMAIN-SUFFIX,api.weiyun.com # 微云接口域名
+DOMAIN-SUFFIX,static.weiyun.com # 微云静态资源域名
+DOMAIN-SUFFIX,pc.weiyun.com # 微云应用服务域名
+DOMAIN-SUFFIX,cdnweiyun.com # 微云内容分发域名
+
+# > MasterGo（在线设计协作平台）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,mastergo.com # MasterGo 主域名
+DOMAIN-SUFFIX,design.mastergo.com # MasterGo 设计服务域名
+DOMAIN-SUFFIX,api.mastergo.com # MasterGo 接口域名
+DOMAIN-SUFFIX,cdn.mastergo.com # MasterGo 静态资源域名
+DOMAIN-SUFFIX,assets.mastergo.com # MasterGo 资源域名
+DOMAIN-SUFFIX,push.mastergo.com # MasterGo 推送服务域名
+DOMAIN-SUFFIX,im.mastergo.com # MasterGo 协作通信域名
+
+# > JSDesign（即时设计）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,js.design # 即时设计主域名
+DOMAIN-SUFFIX,jsdesign.com # 即时设计国际服务域名
+DOMAIN-SUFFIX,design.js.design # 即时设计设计服务域名
+DOMAIN-SUFFIX,api.js.design # 即时设计接口域名
+DOMAIN-SUFFIX,cdn.js.design # 即时设计静态资源域名
+DOMAIN-SUFFIX,assets.js.design # 即时设计资源域名
+DOMAIN-SUFFIX,im.js.design # 即时设计协作通信域名
+DOMAIN-SUFFIX,push.js.design # 即时设计推送服务域名
+
+# > JsTool（即时工具）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,jiji.tools # 即时工具主域名
+DOMAIN-SUFFIX,api.jiji.tools # 即时工具接口域名
+DOMAIN-SUFFIX,cdn.jiji.tools # 即时工具静态资源域名
+DOMAIN-SUFFIX,assets.jiji.tools # 即时工具资源域名
+DOMAIN-SUFFIX,task.jiji.tools # 即时工具任务服务域名
+
+# > JsAssets（即时素材库）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,jsassets.com # 即时素材库主域名
+DOMAIN-SUFFIX,cdn.jsassets.com # 即时素材库静态资源域名
+DOMAIN-SUFFIX,api.jsassets.com # 即时素材库接口域名
+DOMAIN-SUFFIX,assets.jsassets.com # 即时素材库资源域名
+DOMAIN-SUFFIX,res.jsassets.com # 即时素材库内容资源域名
+
+# > Shengshu Technology / Vidu（生数科技 / Vidu）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,shengshu.com # 生数科技主域名
+DOMAIN-SUFFIX,vidu.com # Vidu 主域名
+DOMAIN-SUFFIX,app.vidu.com # Vidu 应用服务域名
+DOMAIN-SUFFIX,api.vidu.com # Vidu 接口域名
+DOMAIN-SUFFIX,vidu.cn # Vidu 中国区服务域名
+DOMAIN-SUFFIX,static.vidu.cn # Vidu 中国区静态资源域名
+DOMAIN-SUFFIX,service.vidu.cn # Vidu 中国区服务域名
+DOMAIN-SUFFIX,files.vidu.cn # Vidu 中国区文件服务域名
+
+# > DeepSeek（深度求索）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,deepseek.com # DeepSeek 主域名
+DOMAIN-SUFFIX,api.deepseek.com # DeepSeek API 域名
+DOMAIN-SUFFIX,deepseek.ai # DeepSeek 品牌服务域名
+
+# > Kling（可灵 AI）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,klingai.com # Kling 主域名
+DOMAIN-SUFFIX,app.klingai.com # Kling 应用服务域名
+DOMAIN-SUFFIX,api.klingai.com # Kling 接口域名
+DOMAIN-SUFFIX,cdn.klingai.com # Kling 静态资源域名
+DOMAIN-SUFFIX,assets.klingai.com # Kling 资源域名
+DOMAIN-SUFFIX,media.klingai.com # Kling 媒体资源域名
+DOMAIN-SUFFIX,files.klingai.com # Kling 文件服务域名
+DOMAIN-SUFFIX,render.klingai.com # Kling 渲染服务域名
+
+# > ERNIE Bot / Baidu Qianfan（文心一言 / 百度千帆）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,yiyan.baidu.com # 文心一言服务域名
+DOMAIN-SUFFIX,app.yiyan.baidu.com # 文心一言应用服务域名
+DOMAIN-SUFFIX,api.yiyan.baidu.com # 文心一言接口域名
+DOMAIN-SUFFIX,cdn.yiyan.baidu.com # 文心一言静态资源域名
+DOMAIN-SUFFIX,ai.baidu.com # 百度 AI 平台域名
+DOMAIN-SUFFIX,api.baidubce.com # 百度云 API 域名
+DOMAIN-SUFFIX,qianfan.run # 千帆推理服务域名
+DOMAIN-SUFFIX,qianfan.cloud # 千帆平台服务域名
+DOMAIN-SUFFIX,qianfanapi.com # 千帆接口域名
+DOMAIN-SUFFIX,aip.baidubce.com # 百度 AI 开放平台接口域名
+DOMAIN-SUFFIX,bcebos.com # 百度对象存储服务域名
+
+# > Qwen / DashScope（通义千问 / 灵积）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,qwen.ai # 通义千问主域名
+DOMAIN-SUFFIX,chat.qwen.ai # 通义千问对话服务域名
+DOMAIN-SUFFIX,api.qwen.ai # 通义千问接口域名
+DOMAIN-SUFFIX,console.qwen.ai # 通义千问控制台域名
+DOMAIN-SUFFIX,docs.qwenlm.ai # 通义千问文档域名
+DOMAIN-SUFFIX,dashscope.aliyuncs.com # 灵积接口域名
+DOMAIN-SUFFIX,modelscope.cn # ModelScope 服务域名
+DOMAIN-SUFFIX,api.alicloudapi.com # 阿里云统一 API 域名
+
+# > Tencent Hunyuan（腾讯混元）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,hunyuan.tencent.com # 腾讯混元主域名
+DOMAIN-SUFFIX,api.hunyuan.tencent.com # 腾讯混元接口域名
+DOMAIN-SUFFIX,console.hunyuan.tencent.com # 腾讯混元控制台域名
+DOMAIN-SUFFIX,cdn.hunyuan.tencent.com # 腾讯混元静态资源域名
+DOMAIN-SUFFIX,tcb-api.tencentcloudapi.com # 腾讯云开发接口域名
+
+# > SparkDesk / iFlytek（讯飞星火 / 科大讯飞）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,xunfei.cn # 科大讯飞主域名
+DOMAIN-SUFFIX,xfyun.cn # 讯飞开放平台域名
+DOMAIN-SUFFIX,sparkdesk.cn # 讯飞星火主域名
+DOMAIN-SUFFIX,spark-api.cn # 讯飞星火接口域名
+DOMAIN-SUFFIX,api.xfyun.cn # 讯飞开放平台接口域名
+DOMAIN-SUFFIX,passport.xfyun.cn # 讯飞账号服务域名
+DOMAIN-SUFFIX,console.xfyun.cn # 讯飞控制台域名
+DOMAIN-SUFFIX,download.xfyun.cn # 讯飞下载服务域名
+DOMAIN-SUFFIX,static.xfyun.cn # 讯飞静态资源域名
+
+# > MiniMax（MiniMax / 海螺）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,minimax.io # MiniMax 国际服务域名
+DOMAIN-SUFFIX,minimax.ai # MiniMax 主域名
+DOMAIN-SUFFIX,minimax.chat # MiniMax 对话服务域名
+DOMAIN-SUFFIX,api.minimax.chat # MiniMax 接口域名
+DOMAIN-SUFFIX,api.minimax.ai # MiniMax 企业接口域名
+DOMAIN-SUFFIX,console.minimax.ai # MiniMax 控制台域名
+DOMAIN-SUFFIX,developer.minimax.ai # MiniMax 开发者服务域名
+DOMAIN-SUFFIX,static.minimax.chat # MiniMax 静态资源域名
+DOMAIN-SUFFIX,cdn.minimax.ai # MiniMax 静态资源域名
+DOMAIN-SUFFIX,assets.minimax.ai # MiniMax 资源域名
+DOMAIN-SUFFIX,passport.minimax.ai # MiniMax 账号服务域名
+DOMAIN-SUFFIX,auth.minimax.ai # MiniMax 认证服务域名
+
+# > Zhipu AI / BigModel（智谱 AI / BigModel）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,zhipuai.cn # 智谱 AI 主域名
+DOMAIN-SUFFIX,zhipuai.com # 智谱 AI 国际服务域名
+DOMAIN-SUFFIX,chatglm.cn # ChatGLM 服务域名
+DOMAIN-SUFFIX,chatglm.com # ChatGLM 国际服务域名
+DOMAIN-SUFFIX,glm.cn # GLM 品牌服务域名
+DOMAIN-SUFFIX,glm.ai # GLM 品牌服务域名
+DOMAIN-SUFFIX,api.zhipuai.cn # 智谱 AI 接口域名
+DOMAIN-SUFFIX,api.zhipuai.com # 智谱 AI 国际接口域名
+DOMAIN-SUFFIX,open.bigmodel.cn # BigModel 开放平台域名
+DOMAIN-SUFFIX,bigmodel.cn # BigModel 主域名
+DOMAIN-SUFFIX,static.bigmodel.cn # BigModel 静态资源域名
+DOMAIN-SUFFIX,docs.bigmodel.cn # BigModel 文档域名
+DOMAIN-SUFFIX,passport.zhipuai.cn # 智谱 AI 账号服务域名
+DOMAIN-SUFFIX,login.zhipuai.cn # 智谱 AI 登录服务域名
+
+# > 01.AI / Yi（零一万物 / Yi）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,01.ai # 零一万物主域名
+DOMAIN-SUFFIX,yi.ai # Yi 品牌服务域名
+DOMAIN-SUFFIX,api.01.ai # 零一万物接口域名
+DOMAIN-SUFFIX,console.01.ai # 零一万物控制台域名
+DOMAIN-SUFFIX,platform.01.ai # 零一万物平台服务域名
+DOMAIN-SUFFIX,docs.01.ai # 零一万物文档域名
+DOMAIN-SUFFIX,cdn.01.ai # 零一万物静态资源域名
+DOMAIN-SUFFIX,passport.01.ai # 零一万物账号服务域名
+DOMAIN-SUFFIX,auth.01.ai # 零一万物认证服务域名
+
+# > Baichuan（百川智能）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,baichuan-ai.com # 百川智能主域名
+DOMAIN-SUFFIX,api.baichuan-ai.com # 百川智能接口域名
+DOMAIN-SUFFIX,chat.baichuan-ai.com # 百川智能对话服务域名
+DOMAIN-SUFFIX,platform.baichuan-ai.com # 百川智能平台服务域名
+DOMAIN-SUFFIX,console.baichuan-ai.com # 百川智能控制台域名
+DOMAIN-SUFFIX,docs.baichuan-ai.com # 百川智能文档域名
+DOMAIN-SUFFIX,cdn.baichuan-ai.com # 百川智能静态资源域名
+DOMAIN-SUFFIX,passport.baichuan-ai.com # 百川智能账号服务域名
+DOMAIN-SUFFIX,auth.baichuan-ai.com # 百川智能认证服务域名
+
+# > Moonshot AI / Kimi（月之暗面 / Kimi）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,kimi.com # Kimi 主域名
+DOMAIN-SUFFIX,moonshot.cn # 月之暗面主域名
+DOMAIN-SUFFIX,moonshot.ai # 月之暗面国际服务域名
+DOMAIN-SUFFIX,kimi.moonshot.cn # Kimi 对话服务域名
+DOMAIN-SUFFIX,kimi.moonshot.ai # Kimi 国际对话服务域名
+DOMAIN-SUFFIX,api.moonshot.cn # 月之暗面接口域名
+DOMAIN-SUFFIX,api.moonshot.ai # 月之暗面国际接口域名
+DOMAIN-SUFFIX,console.moonshot.cn # 月之暗面控制台域名
+DOMAIN-SUFFIX,console.moonshot.ai # 月之暗面国际控制台域名
+DOMAIN-SUFFIX,docs.moonshot.cn # 月之暗面文档域名
+DOMAIN-SUFFIX,cdn.moonshot.cn # 月之暗面静态资源域名
+DOMAIN-SUFFIX,passport.moonshot.cn # 月之暗面账号服务域名
+DOMAIN-SUFFIX,auth.moonshot.cn # 月之暗面认证服务域名
+
+# > Sobot（智齿客服）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,sobot.com # 智齿客服主域名
+DOMAIN-SUFFIX,chat.sobot.com # 智齿客服会话服务域名
+DOMAIN-SUFFIX,api-c.sobot.com # 智齿客服接口域名
+DOMAIN-SUFFIX,imws.sobot.com # 智齿客服通信服务域名
+
+# > Adobe China（Adobe 中国）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,adobe.cn # Adobe 中国主域名
+DOMAIN-SUFFIX,adobelogin.cn # Adobe 中国登录服务域名
+DOMAIN-SUFFIX,adobecc.cn # Adobe Creative Cloud 中国区服务域名
+
+# > ItDog（网络监测服务）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,itdog.cn # ItDog 主域名
+DOMAIN-SUFFIX,monitor.itdog.cn # ItDog 监测服务域名
+DOMAIN-SUFFIX,api.itdog.cn # ItDog 接口域名
+DOMAIN-SUFFIX,cdn.itdog.cn # ItDog 静态资源域名
+
+# > China Welfare Lottery（中国福利彩票）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,cwlgovcn.com # 中国福利彩票服务域名
+
+# > China Sports Lottery（中国体育彩票）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,lottery.gov.cn # 中国体育彩票服务域名
+DOMAIN-SUFFIX,static.sporttery.cn # 体育彩票静态资源域名
+DOMAIN-SUFFIX,apkdata.sporttery.cn # 体育彩票客户端下载服务域名
+DOMAIN-SUFFIX,receive.sporttery.cn # 体育彩票业务接口域名
+DOMAIN-SUFFIX,webinfo.sporttery.cn # 体育彩票信息服务域名
+DOMAIN-SUFFIX,webapi.sporttery.cn # 体育彩票接口域名
+
+# > CONAC（统一社会信用代码公示）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,dcs.conac.cn # 统一社会信用代码公示接口域名
+
+# > Boss Zhipin（BOSS 直聘）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,zhipin.com # BOSS 直聘主域名
+DOMAIN-SUFFIX,bosszhipin.com # BOSS 直聘服务域名
+DOMAIN-SUFFIX,api-ios.zhipin.com # BOSS 直聘接口域名
+DOMAIN-SUFFIX,img.bosszhipin.com # BOSS 直聘图片资源域名
+DOMAIN-SUFFIX,img2.bosszhipin.com # BOSS 直聘图片资源域名
+
+# > Tencent Turing CAPTCHA（腾讯验证码）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,turing.captcha.gtimg.com # 腾讯验证码服务域名
+
+# > ZCOOL（站酷）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,dancf.com # 站酷主域名
+DOMAIN-SUFFIX,cdn.dancf.com # 站酷内容分发域名
+
+# > Gaoding（稿定设计）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,gaoding.com # 稿定设计主域名
+DOMAIN-SUFFIX,gaoding.net # 稿定设计服务域名
+DOMAIN-SUFFIX,gdstatic.com # 稿定设计静态资源域名
+DOMAIN-SUFFIX,fingerprint.gaoding.com # 稿定设计风控服务域名
+
+# > Wind（万得信息）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,hlgdata.com # 万得信息数据服务域名
+DOMAIN-SUFFIX,wind.hlgdata.com # 万得信息行情服务域名
+
+# > Huaban（花瓣网）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,huaban.com # 花瓣网主域名
+DOMAIN-SUFFIX,grocery-cdn.huaban.com # 花瓣网内容分发域名
+
+# > Huke88（虎课网）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,huke88.com # 虎课网主域名
+
+# > 91 Assistant（91 手机助手）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,91.com # 91 服务域名
+DOMAIN-SUFFIX,zs.91.com # 91 手机助手主域名
+DOMAIN-SUFFIX,apk.91.com # 91 手机助手下载服务域名
+DOMAIN-SUFFIX,down.91.com # 91 手机助手下载服务域名
+DOMAIN-SUFFIX,static.91img.com # 91 手机助手静态资源域名
+
+# > Wandoujia（豌豆荚）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,wandoujia.com # 豌豆荚主域名
+DOMAIN-SUFFIX,download.wandoujia.com # 豌豆荚下载服务域名
+DOMAIN-SUFFIX,static.wandoujia.com # 豌豆荚静态资源域名
+DOMAIN-SUFFIX,api.wandoujia.com # 豌豆荚接口域名
+
+# > Azure China Storage（Azure 中国存储服务）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,blob.core.chinacloudapi.cn # Azure 中国对象存储域名
+DOMAIN-SUFFIX,web.core.chinacloudapi.cn # Azure 中国静态网站域名
+DOMAIN-SUFFIX,core.chinacloudapi.cn # Azure 中国云服务域名
+
+# > Beisen（北森）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,stcms.beisen.com # 北森服务域名
+
+# > Kuaishou Game（快手游戏）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,kgw.com # 快手游戏主域名
+DOMAIN-SUFFIX,var.kgw.com # 快手游戏资源域名
+DOMAIN-SUFFIX,ks-game-web.kgw.com # 快手游戏 Web 服务域名
+
+# > HelloBike（哈啰出行）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,hellobike.com # 哈啰出行主域名
+DOMAIN-SUFFIX,abapi.hellobike.com # 哈啰出行接口域名
+DOMAIN-SUFFIX,apmgw.hellobike.com # 哈啰出行网关服务域名
+DOMAIN-SUFFIX,static.hellobike.com # 哈啰出行静态资源域名
+DOMAIN-SUFFIX,img.hellobike.com # 哈啰出行图片资源域名
+DOMAIN-SUFFIX,cdn.hellobike.com # 哈啰出行内容分发域名
+DOMAIN-SUFFIX,passport.hellobike.com # 哈啰出行账号服务域名
+DOMAIN-SUFFIX,open.hellobike.com # 哈啰出行开放平台域名
+
+# > CAR Inc. / Zuche（神州租车）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,zuche.com # 神州租车主域名
+DOMAIN-SUFFIX,carinc.com # 神州租车服务域名
+DOMAIN-SUFFIX,zuchecdn.com # 神州租车内容分发域名
+DOMAIN-SUFFIX,api.zuche.com # 神州租车接口域名
+
+# > eHi Car Services（一嗨租车）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,1hai.cn # 一嗨租车主域名
+DOMAIN-SUFFIX,ehicar.com # 一嗨租车服务域名
+DOMAIN-SUFFIX,static.1hai.cn # 一嗨租车静态资源域名
+DOMAIN-SUFFIX,api.1hai.cn # 一嗨租车接口域名
+
+# > Shouqi Car Rental（首汽租车）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,shouqizuche.com # 首汽租车主域名
+DOMAIN-SUFFIX,izuche.com # 首汽租车服务域名
+DOMAIN-SUFFIX,static-shouqi.com # 首汽租车静态资源域名
+DOMAIN-SUFFIX,api.shouqizuche.com # 首汽租车接口域名
+
+# > GoFun Mobility（GoFun 出行）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,gofun.com # GoFun 出行主域名
+DOMAIN-SUFFIX,gofun.cn # GoFun 出行中国区服务域名
+DOMAIN-SUFFIX,api.gofun.com # GoFun 出行接口域名
+DOMAIN-SUFFIX,static.gofun.com # GoFun 出行静态资源域名
+
+# > DiDi Car Rental（滴滴租车）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,didi.cn # 滴滴出行主域名
+DOMAIN-SUFFIX,api.xiaojukeji.com # 滴滴接口域名
+DOMAIN-SUFFIX,static.xiaojukeji.com # 滴滴静态资源域名
+DOMAIN-SUFFIX,img.xiaojukeji.com # 滴滴图片资源域名
+
+# > ATzuche（凹凸租车）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,atzuche.com # 凹凸租车主域名
+DOMAIN-SUFFIX,api.atzuche.com # 凹凸租车接口域名
+DOMAIN-SUFFIX,static.atzuche.com # 凹凸租车静态资源域名
+DOMAIN-SUFFIX,img.atzuche.com # 凹凸租车图片资源域名
+
+# > Reocar（瑞卡租车）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,reocar.com # 瑞卡租车主域名
+DOMAIN-SUFFIX,api.reocar.com # 瑞卡租车接口域名
+DOMAIN-SUFFIX,static.reocar.com # 瑞卡租车静态资源域名
+DOMAIN-SUFFIX,img.reocar.com # 瑞卡租车图片资源域名
+
+# > CARPLUS（车享家）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,carplus.cn # 车享家主域名
+DOMAIN-SUFFIX,api.carplus.cn # 车享家接口域名
+DOMAIN-SUFFIX,static.carplus.cn # 车享家静态资源域名
+DOMAIN-SUFFIX,img.carplus.cn # 车享家图片资源域名
+DOMAIN-SUFFIX,open.carplus.cn # 车享家开放平台域名
+DOMAIN-SUFFIX,cdn.carplus.cn # 车享家内容分发域名
+
+# > Dongfeng Mobility / TOGO（东风出行 / TOGO）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,dongfeng-ev.com # 东风出行主域名
+DOMAIN-SUFFIX,togo.com.cn # TOGO 服务域名
+DOMAIN-SUFFIX,api.dongfeng-ev.com # 东风出行接口域名
+DOMAIN-SUFFIX,app.dongfeng-ev.com # 东风出行应用服务域名
+DOMAIN-SUFFIX,static.dongfeng-ev.com # 东风出行静态资源域名
+DOMAIN-SUFFIX,img.dongfeng-ev.com # 东风出行图片资源域名
+
+# > Xiaozhu（小猪短租）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,xiaozhu.com # 小猪短租主域名
+DOMAIN-SUFFIX,xiaozhuimg.com # 小猪短租图片资源域名
+DOMAIN-SUFFIX,api.xiaozhu.com # 小猪短租接口域名
+
+# > Caocao Mobility（曹操出行）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,caocaokeji.cn # 曹操出行主域名
+DOMAIN-SUFFIX,caocao.com # 曹操出行服务域名
+DOMAIN-SUFFIX,caocao.cn # 曹操出行中国区服务域名
+DOMAIN-SUFFIX,caocaokeji.com # 曹操出行企业服务域名
+
+# > Shouqi Share（首汽分享）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,shouqishare.com # 首汽分享主域名
+DOMAIN-SUFFIX,api.shouqishare.com # 首汽分享接口域名
+DOMAIN-SUFFIX,static.shouqishare.com # 首汽分享静态资源域名
+DOMAIN-SUFFIX,img.shouqishare.com # 首汽分享图片资源域名
+DOMAIN-SUFFIX,open.shouqishare.com # 首汽分享开放平台域名
+
+# > Renrenche（人人车）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,renrenche.com # 人人车主域名
+DOMAIN-SUFFIX,static.renrenche.com # 人人车静态资源域名
+DOMAIN-SUFFIX,img.renrenche.com # 人人车图片资源域名
+DOMAIN-SUFFIX,api.renrenche.com # 人人车接口域名
+
+# > Guazi（二手车）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,guazi.com # 瓜子主域名
+DOMAIN-SUFFIX,static.guazi.com # 瓜子静态资源域名
+DOMAIN-SUFFIX,img.guazi.com # 瓜子图片资源域名
+DOMAIN-SUFFIX,api.guazi.com # 瓜子接口域名
+DOMAIN-SUFFIX,finance.guazi.com # 瓜子金融服务域名
+
+# > Tianya（天涯社区）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,tianya.cn # 天涯社区主域名
+DOMAIN-SUFFIX,bbs.tianya.cn # 天涯论坛服务域名
+DOMAIN-SUFFIX,tianyaclub.com # 天涯社区历史服务域名
+DOMAIN-SUFFIX,tianya.net # 天涯社区历史服务域名
+
+# > Microsoft China Tenant Namespace（Microsoft 中国区云租户命名空间）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,onmicrosoft.cn # Microsoft 中国区租户命名空间域名
+
+# > Qimai（七麦数据）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,qimai.cn # 七麦数据主域名
+DOMAIN-SUFFIX,webapi.qimai.cn # 七麦数据接口域名
+
+# > Hotjob（企业招聘系统）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,hotjob.cn # Hotjob 主域名
+DOMAIN-SUFFIX,wecruit.hotjob.cn # Hotjob 招聘服务域名
+DOMAIN-SUFFIX,xcmg.hotjob.cn # Hotjob 招聘服务域名
+
+# > Wanda Cinemas（万达影城）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,wandawic.com # 万达影城主域名
+DOMAIN-SUFFIX,wdmp-maup.wandawic.com # 万达影城用户服务域名
+DOMAIN-SUFFIX,wdmp-api.wandawic.com # 万达影城接口域名
+
+# > Fengkong Cloud（风控云）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,fengkongcloud.com # 风控云主域名
+
+# > Getui（个推科技）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,getui.com # 个推科技主域名
+
+# > KFC China（肯德基中国）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,kfc.com.cn # 肯德基中国主域名
+DOMAIN-SUFFIX,kfcdelivery.com.cn # 肯德基宅急送服务域名
+
+# > Yum China（百胜中国）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,yumchina.com # 百胜中国主域名
+DOMAIN-SUFFIX,abplatform.yumchina.com # 百胜中国业务平台域名
+DOMAIN-SUFFIX,bs2.yumchina.com # 百胜中国业务服务域名
+DOMAIN-SUFFIX,hwwt8.com # 百胜中国技术服务域名
+DOMAIN-SUFFIX,pcp-pic.hwwt8.com # 百胜中国图片资源域名
+DOMAIN-SUFFIX,fp.hwwt8.com # 百胜中国风控服务域名
+
+# > McDonald’s China（麦当劳中国）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,mcdonalds.com.cn # 麦当劳中国主域名
+DOMAIN-SUFFIX,mcdchina.com # 麦当劳中国历史服务域名
+DOMAIN-SUFFIX,mcd.cn # 麦当劳中国服务域名
+DOMAIN-SUFFIX,api.mcd.cn # 麦当劳中国接口域名
+
+# > Burger King China（汉堡王中国）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,bkchina.cn # 汉堡王中国主域名
+
+# > Wallace（华莱士）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,cnhls.com # 华莱士主域名
+DOMAIN-SUFFIX,ai.cnhls.com # 华莱士智能服务域名
+
+# > Wiselong（上海智龙）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,wiselong.com # 上海智龙主域名
+DOMAIN-SUFFIX,llm.wiselong.com # 上海智龙服务域名
+
+# > TASITING（塔斯汀）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,tasiting.com # 塔斯汀主域名
+DOMAIN-SUFFIX,tastien-external.com # 塔斯汀外部服务域名
+DOMAIN-SUFFIX,tastientech.com # 塔斯汀技术服务域名
+DOMAIN-SUFFIX,hsab-snssdk.tastien-external.com # 塔斯汀外部服务域名
+DOMAIN-SUFFIX,sss-web.tastientech.com # 塔斯汀 Web 服务域名
+DOMAIN-SUFFIX,pictures.tastientech.com # 塔斯汀图片资源域名
+
+# > New YoBo（牛约堡）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,newyobo.com # 牛约堡主域名
+
+# > Pizza Hut China（必胜客中国）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,pizzahut.com.cn # 必胜客中国主域名
+
+# > Domino’s Pizza China（达美乐中国）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,dominos.com.cn # 达美乐中国主域名
+
+# > Eastmoney（东方财富）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,eastmoney.com # 东方财富主域名
+DOMAIN-SUFFIX,push2.eastmoney.com # 东方财富行情服务域名
+DOMAIN-SUFFIX,emdata.eastmoney.com # 东方财富数据服务域名
+DOMAIN-SUFFIX,guba.eastmoney.com # 东方财富股吧服务域名
+DOMAIN-SUFFIX,so.eastmoney.com # 东方财富搜索服务域名
+DOMAIN-SUFFIX,choice.eastmoney.com # 东方财富 Choice 服务域名
+
+# > Faisys（飞凡金融）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,faisys.com # 飞凡金融主域名
+DOMAIN-SUFFIX,fe.faisys.com # 飞凡金融前端服务域名
+
+# > OpenKylin（开放麒麟）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,openkylin.top # 开放麒麟主域名
+
+# > WeChat 12321 Reporting（微信 12321 举报）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,wechat12321.cn # 微信 12321 举报服务域名
+
+# > CLS / Cailian Press（财联社）相关域名
+# - 校对时间：2026-03-25
+
+DOMAIN-SUFFIX,cls.cn # 财联社主域名
+DOMAIN-SUFFIX,cailianpress.com # 财联社服务域名
+DOMAIN-SUFFIX,image.cailianpress.com # 财联社图片资源域名
