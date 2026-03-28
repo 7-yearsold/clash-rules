@@ -4,7 +4,7 @@
 # - 特征：覆盖需依赖代理访问的高频主流服务域名
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-03-26
+# - 更新时间：2026-03-27
 
 # > Cloudflare Platform Infrastructure（Cloudflare 平台基础设施域名）
 # - 校对时间：2026-03-05
@@ -70,7 +70,7 @@ IP-CIDR6,2405:8100::/32 # Cloudflare IPv6 边缘网络
 IP-CIDR6,2a06:98c0::/29 # Cloudflare IPv6 边缘网络
 IP-CIDR6,2c0f:f248::/32 # Cloudflare IPv6 边缘网络
 
-# > Speedtest（Ookla）网络测速平台
+# > Speedtest by Ookla（Speedtest 网络测速平台）
 # - 校对时间：2026-03-24
 
 DOMAIN-SUFFIX,speedtest.net # Speedtest 主域名
@@ -79,279 +79,255 @@ DOMAIN-SUFFIX,speedtestcustom.com # Ookla 自定义测速服务域名
 DOMAIN-SUFFIX,speed.misaka.one # Misaka 自定义测速服务域名
 DOMAIN-SUFFIX,cdn.ziffstatic.com # Ziff Davis 静态资源域名
 
-# > OpenSpeedTest 网络测速服务
+# > OpenSpeedTest（OpenSpeedTest 网络测速服务）
+# - 校对时间：2026-03-27
 
-DOMAIN-SUFFIX,openspeedtest.com # OpenSpeedTest 网络测速平台，用于浏览器 WebSocket / HTML5 带宽测速与网络性能测试
-DOMAIN-SUFFIX,raxcdn.com # OpenSpeedTest 静态资源分发 CDN（Rackspace CDN），用于加载测速相关脚本与资源
+DOMAIN-SUFFIX,openspeedtest.com # OpenSpeedTest 网络测速平台域名
 
-# > Test-IPv6 服务域名（IPv6 网络连通性测试平台）
+# > Test-IPv6（Test-IPv6 网络连通性测试平台）
+# - 校对时间：2026-03-27
 
-DOMAIN-SUFFIX,test-ipv6.com # Test-IPv6 官方测试域名，用于检测客户端对 IPv6 网络协议的支持能力与连通性评估
-DOMAIN-SUFFIX,cdn.cookielaw.org # CookieLaw 内容分发域名，用于加载 Cookie 合规弹窗与隐私政策模块 
-DOMAIN-SUFFIX,pg.ziffstatic.com # Ziff Davis 静态资源域名，主要用于技术与媒体网站的内容加载（如 PCMag、IGN） 
-DOMAIN-SUFFIX,mtu1280.losangeles.test-ipv6.com # Test-IPv6 美国洛杉矶 MTU 检测子域，用于 IPv6 网络最大传输单元测试 
-DOMAIN-SUFFIX,ipv6.losangeles.test-ipv6.com # Test-IPv6 洛杉矶节点 IPv6 连通性测试域名，若设备不支持 IPv6，可能触发 “Testing rules failed due to a DNS error” 报错提示
-DOMAIN-SUFFIX,ds.v6ns.losangeles.test-ipv6.com # Test-IPv6 洛杉矶节点 DNSSEC 验证测试域名 
-DOMAIN-SUFFIX,ipv6.lookup.test-ipv6.com # Test-IPv6 域名解析行为测试子域，用于 IPv6 优先级与响应行为分析 
+DOMAIN-SUFFIX,test-ipv6.com # Test-IPv6 官方测试域名
+DOMAIN-SUFFIX,mtu1280.losangeles.test-ipv6.com # Test-IPv6 洛杉矶节点 MTU 测试域名
+DOMAIN-SUFFIX,ipv6.losangeles.test-ipv6.com # Test-IPv6 洛杉矶节点 IPv6 连通性测试域名
+DOMAIN-SUFFIX,ds.v6ns.losangeles.test-ipv6.com # Test-IPv6 洛杉矶节点 DNSSEC 测试域名
+DOMAIN-SUFFIX,ipv6.lookup.test-ipv6.com # Test-IPv6 域名解析测试子域
 
-# > Whoer 服务域名（匿名性检测平台主功能与测试服务）
- 
-DOMAIN-SUFFIX,500px.com # 500px 摄影平台主站域名，Whoer 页面引用，用于图像展示测试 
-DOMAIN-SUFFIX,medium.com # Medium 博客平台域名，Whoer 页面引用，用于嵌入测试与内容加载 
-DOMAIN-SUFFIX,expedia.de # Expedia 德国站域名，Whoer 页面引用，用于跨境兼容性检测 
-DOMAIN-SUFFIX,de.foursquare.com # Foursquare 德国子域名，Whoer 页面用于地理定位测试 
-DOMAIN-SUFFIX,academia.edu # Academia 学术资源平台，Whoer 页面引用用于环境兼容性测试 
-DOMAIN-SUFFIX,secure.meetup.com # Meetup 安全登录子域名，Whoer 页面用于会话测试与安全验证 
+# > Whoer（Whoer 匿名性检测平台）
+# - 校对时间：2026-03-27
 
-# > Academia 教育平台主域名（学术论文访问与学术资源交流）
+DOMAIN-SUFFIX,whoer.net # Whoer 匿名性检测平台主域名
 
-DOMAIN-SUFFIX,academia.edu # Academia 学术社交平台主域名，用于论文发布、学术交流与研究资料访问
-DOMAIN-SUFFIX,a.academia-assets.com # Academia 教育平台静态资源子域，用于加载图像、脚本与样式等前端依赖
-DOMAIN-SUFFIX,secure.academia.edu # Academia 安全连接域名，用于登录、注册等敏感操作的 HTTPS 认证流程
-DOMAIN-SUFFIX,a.academia-assets.com # Academia 静态资源域名，用于加载样式、脚本与前端组件等网页依赖 
-DOMAIN-SUFFIX,0.academia-photos.com # Academia 图像内容资源域名，用于加载用户上传的论文图像与预览内容
-IP-CIDR,65.8.76.64/32 # Academia 图像资源 CDN 节点，归属 AWS CloudFront（0.academia-photos.com） 
-IP-CIDR,65.8.76.121/32 # Academia 图像资源 CDN 节点，归属 AWS CloudFront（0.academia-photos.com） 
+# > Scamalytics（Scamalytics IP 风险检测平台）
+# - 校对时间：2026-03-27
 
-# > IT狗（ITdog）网络运维工具平台域名
+DOMAIN-SUFFIX,scamalytics.com # Scamalytics IP 风险检测平台主域名
+DOMAIN-SUFFIX,api.scamalytics.com # Scamalytics IP 风险检测接口域名
+DOMAIN-SUFFIX,cdn.scamalytics.com # Scamalytics 静态资源域名
 
-DOMAIN-SUFFIX,itdog.cn # IT狗主域名，用于在线 ping/tcping 、网站测速、HTTP/API 测速、DNS 污染检测 等网络运维工具服务 
+# > Academia（Academia 学术论文访问与学术资源交流平台）
+# - 校对时间：2026-03-27
 
-# > 3UE 数字营销平台域名
+DOMAIN-SUFFIX,scamalytics.com # Scamalytics IP 风险检测平台主域名
+DOMAIN-SUFFIX,api.scamalytics.com # Scamalytics IP 风险检测接口域名
+DOMAIN-SUFFIX,cdn.scamalytics.com # Scamalytics 静态资源域名
 
-DOMAIN-SUFFIX,3ue.com  # 3UE 主域名，用于数字营销、数据分析与服务产品展示
-DOMAIN-SUFFIX,dash.3ue.com  # 3UE Dashboard 子域，用于用户登录、数据可视化及营销报告页面
+# > Academia（Academia 学术论文访问与学术资源交流平台）
+# - 校对时间：2026-03-27
 
-# > 和兴国际通关查询服务域名（E-KC 编码查询平台）
+DOMAIN-SUFFIX,academia.edu # Academia 学术平台主域名
+DOMAIN-SUFFIX,a.academia-assets.com # Academia 静态资源域名
+DOMAIN-SUFFIX,secure.academia.edu # Academia 安全连接域名
+DOMAIN-SUFFIX,0.academia-photos.com # Academia 图片资源域名
+IP-CIDR,65.8.76.64/32 # Academia 图片资源 CDN 节点（0.academia-photos.com）
+IP-CIDR,65.8.76.121/32 # Academia 图片资源 CDN 节点（0.academia-photos.com）
 
-DOMAIN-SUFFIX,e-kc.vip # 和兴国际货运平台主域名，用于展示公司服务、物流方案与通关工具入口 
-DOMAIN-SUFFIX,inspection.e-kc.vip # 深圳市和兴国际货运代理有限公司 “个人通关编码查询”服务域名，用于进口/出口通关信息查询 
+# > Kaspersky（卡巴斯基）相关域名
+# - 校对时间：2026-03-27
 
-# > Google Fiber 主服务域名（GFiber / Google 宽带）
+DOMAIN-SUFFIX,kaspersky.com # 卡巴斯基官方主域名
+DOMAIN-SUFFIX,kaspersky.com.cn # 卡巴斯基中国站点域名
+DOMAIN-SUFFIX,kaspersky-labs.com # 卡巴斯基历史服务域名
+DOMAIN-SUFFIX,kaspersky-lab.com # 卡巴斯基历史服务域名
+DOMAIN-SUFFIX,kasperskycontent.com # 卡巴斯基内容分发域名
+DOMAIN-SUFFIX,kasperskyapi.com # 卡巴斯基接口服务域名
+DOMAIN-SUFFIX,kasperskyupdate.com # 卡巴斯基更新服务域名
+DOMAIN-SUFFIX,kasperskylabs.net # 卡巴斯基服务域名
+DOMAIN-SUFFIX,kaspersky.ru # 卡巴斯基俄罗斯站点域名
+DOMAIN-SUFFIX,kas.pr # 卡巴斯基短链接域名
+DOMAIN-SUFFIX,telemetry.kaspersky.com # 卡巴斯基遥测上报域名
+DOMAIN-SUFFIX,ssl.kaspersky-labs.com # 卡巴斯基安全更新域名
+DOMAIN-SUFFIX,dnl-05.geo.kaspersky.com # 卡巴斯基更新节点域名
+DOMAIN-SUFFIX,dnl-06.geo.kaspersky.com # 卡巴斯基更新节点域名
+DOMAIN-SUFFIX,redirect.kaspersky-labs.com # 卡巴斯基跳转服务域名
+DOMAIN-SUFFIX,rthosts.kaspersky-labs.com # 卡巴斯基威胁情报服务域名
+DOMAIN-SUFFIX,login.kaspersky.com # 卡巴斯基账户登录域名
+DOMAIN-SUFFIX,activation-v2.kaspersky.com # 卡巴斯基授权激活域名
+DOMAIN-SUFFIX,screenshots-v2.kaspersky.com # 卡巴斯基远程分析服务域名
 
-DOMAIN-SUFFIX,gstaticcnapps.cn # GFiber CDN 中国节点域名，主要用于资源分发与测速验证 
-DOMAIN-SUFFIX,fiber.google.com # Google Fiber 主官网域名，用于服务介绍与用户登录 
-DOMAIN-SUFFIX,gigabit.google.com # GFiber 旧版本访问入口域名，部分地区仍在使用 
-DOMAIN-SUFFIX,fiberstatus.com # Google Fiber 网络状态查询平台，用于服务中断信息公告 
-DOMAIN-SUFFIX,gfiber.com # Google Fiber 品牌辅助域名，早期注册用于重定向或宣传页 
-DOMAIN-SUFFIX,gfiber.tv # GFiber 电视服务相关域名，主要用于流媒体与点播业务 
-DOMAIN-SUFFIX,gfiber.speedtestcustom.com # GFiber 定制测速平台域名，用于测速页面与回传数据通信 
+# > Dr.Web 相关域名
+# - 校对时间：2026-03-27
 
-# > Speedtest 测速平台域名（Ookla / Fast / Cloudflare）
+DOMAIN-SUFFIX,drweb.com # Dr.Web 官方主域名
+DOMAIN-SUFFIX,update.geo.drweb.com # Dr.Web 更新服务域名
+DOMAIN-SUFFIX,drweb.cn # Dr.Web 中文站点域名
+DOMAIN-SUFFIX,forum.drweb.com # Dr.Web 官方论坛域名
+IP-CIDR,95.216.203.236/32 # Dr.Web 更新节点
+IP-CIDR,3.5.134.254/32 # Dr.Web 更新节点
+IP-CIDR,3.5.136.38/32 # Dr.Web 更新节点
+IP-CIDR,3.5.138.33/32 # Dr.Web 更新节点
+IP-CIDR,3.5.138.170/32 # Dr.Web 更新节点
+IP-CIDR,3.5.139.23/32 # Dr.Web 更新节点
+IP-CIDR,52.219.75.79/32 # Dr.Web 更新节点
+IP-CIDR,52.219.169.1/32 # Dr.Web 更新节点
 
-DOMAIN-SUFFIX,speedtest.net # Ookla 主站测速服务域名，用户访问网页测速主入口 
-DOMAIN-SUFFIX,ooklaserver.net # Ookla 测速服务器分发域名，用于测速节点就近选择与数据上传 
-DOMAIN-SUFFIX,c.speedtestcustom.com # Ookla Speedtest 自定义测速域名，用于加载测速页面组件与通信脚本 
-DOMAIN-SUFFIX,fast.com # Netflix 旗下 Fast 测速服务主站域名，用于快速测速页面加载 
-DOMAIN-SUFFIX,api.fast.com # Fast 测速服务接口域名，用于测速数据交换与节点测试调度 
-DOMAIN-SUFFIX,logos.speedtestcustom.com # Ookla Speedtest 自定义测速平台图标域名，用于加载测速页面品牌标识与图像资源
+# > VPN and Self-Hosted Proxy Tools（VPN 与自建代理工具相关域名）
+# - 校对时间：2026-03-27
 
-# > Scamalytics 服务域名（IP 纯净度与匿名性检测平台）
+DOMAIN-SUFFIX,getoutline.org # Outline 官方域名
+DOMAIN-SUFFIX,surfshark.com # Surfshark 官方域名
+DOMAIN-SUFFIX,nordvpn.com # NordVPN 官方域名
+DOMAIN-SUFFIX,expressvpn.com # ExpressVPN 官方域名
+DOMAIN-SUFFIX,privateinternetaccess.com # PIA 官方域名
 
-DOMAIN-SUFFIX,scamalytics.com # Scamalytics 主站域名，用于访问风险评分页面与检测服务入口 
-DOMAIN-SUFFIX,api.scamalytics.com # Scamalytics API 接口域名，用于机器查询当前 IP 风险与匿名属性评分 
-DOMAIN-SUFFIX,cdn.scamalytics.com # Scamalytics 静态资源域名，用于加载前端页面组件与图表渲染服务 
+# > Subscription Conversion and Frontend Tools（订阅转换与前端工具相关域名）
+# - 校对时间：2026-03-27
 
-# > Kaspersky 相关域名
+DOMAIN-SUFFIX,api.subs.ee # 订阅转换服务域名
+DOMAIN-SUFFIX,sub-web.netlify.app # Sub-Web 前端部署域名
+DOMAIN-SUFFIX,sub-web.vercel.app # Sub-Web 前端部署域名
+DOMAIN-SUFFIX,sub.pmsub.me # 订阅服务域名
 
-DOMAIN-SUFFIX,kaspersky.com # 卡巴斯基主站域名，用于访问官网及通用服务
-DOMAIN-SUFFIX,kaspersky.com.cn # 卡巴斯基中国官网（安全产品下载、更新与威胁情报服务）
-DOMAIN-SUFFIX,kaspersky-labs.com # 卡巴斯基实验室官网旧域名，部分服务仍在使用
-DOMAIN-SUFFIX,kaspersky-lab.com # 卡巴斯基旧版官方域名，存在部分残留服务
-DOMAIN-SUFFIX,kasperskycontent.com # 卡巴斯基更新内容与规则库资源域名
-DOMAIN-SUFFIX,kasperskyapi.com # 卡巴斯基 API 接口调用域名
-DOMAIN-SUFFIX,kasperskyupdate.com # 卡巴斯基更新服务使用的辅助域名
-DOMAIN-SUFFIX,kasperskylabs.net # 卡巴斯基国际服务域名，部分 CDN 使用
-DOMAIN-SUFFIX,kaspersky.ru # 卡巴斯基俄罗斯官网，默认面向俄语地区
-DOMAIN-SUFFIX,kas.pr # 卡巴斯基缩写域名，用于跳转与内部识别
-DOMAIN-SUFFIX,telemetry.kaspersky.com # 卡巴斯基遥测数据回传接口
-DOMAIN-SUFFIX,ssl.kaspersky-labs.com # 卡巴斯基 HTTPS 安全更新通道
-DOMAIN-SUFFIX,dnl-05.geo.kaspersky.com # 卡巴斯基全球更新 CDN 节点之一
-DOMAIN-SUFFIX,dnl-06.geo.kaspersky.com # 卡巴斯基全球更新 CDN 节点之二
-DOMAIN-SUFFIX,redirect.kaspersky-labs.com # 卡巴斯基跳转与重定向服务域名
-DOMAIN-SUFFIX,rthosts.kaspersky-labs.com # 卡巴斯基威胁情报与实时主机通信域名
-DOMAIN-SUFFIX,login.kaspersky.com # 卡巴斯基账户登录服务域名
-DOMAIN-SUFFIX,activation-v2.kaspersky.com # 卡巴斯基授权激活服务域名
-DOMAIN-SUFFIX,screenshots-v2.kaspersky.com # 卡巴斯基截图上传与远程分析接口
+# > Subscription Distribution and Node Services（订阅分发与节点服务相关域名）
+# - 校对时间：2026-03-27
 
-# > Dr.web 相关域名
-
-DOMAIN-SUFFIX,drweb.com # Dr.Web 官方主站域名，用于产品信息、客户端下载与安全服务说明
-DOMAIN-SUFFIX,update.geo.drweb.com # Dr.Web 杀毒软件官方更新接口，提供分区化病毒库与规则更新服务
-DOMAIN-SUFFIX,storage.googleapis.com # Dr.Web 使用的云存储分发节点（共享云基础设施，用于更新或规则文件分发）
-DOMAIN-SUFFIX,drweb.cn # Dr.Web 中文资讯与信息发布域名（新闻 / 公告 / RSS 订阅）
-DOMAIN-SUFFIX,forum.drweb.com # Dr.Web 官方用户论坛域名，用于技术支持与社区交流
-IP-CIDR,95.216.203.236/32 # Dr.Web 更新镜像节点,托管于 Hetzner
-IP-CIDR,3.5.134.254/32 # Dr.Web 病毒库与规则更新节点
-IP-CIDR,3.5.136.38/32 # Dr.Web 病毒库与规则更新节点
-IP-CIDR,3.5.138.33/32 # Dr.Web 病毒库与规则更新节点
-IP-CIDR,3.5.138.170/32 # Dr.Web 病毒库与规则更新节点
-IP-CIDR,3.5.139.23/32 # Dr.Web 病毒库与规则更新节点
-IP-CIDR,52.219.75.79/32 # Dr.Web 更新文件分发节点
-IP-CIDR,52.219.169.1/32 # Dr.Web 更新文件分发节点
+DOMAIN-SUFFIX,cfmem.com # 节点分发相关域名
+DOMAIN-SUFFIX,nexitally.com # 节点服务相关域名
+DOMAIN-SUFFIX,v2rayssr.com # 节点配置相关域名
+DOMAIN-SUFFIX,VK6kTpJBIO.solastme.cc # 节点服务相关域名
+DOMAIN-SUFFIX,vk6tpjbio.solastme.cc # 节点服务相关域名
+DOMAIN-SUFFIX,fba02.fbsubcn01.cc # 节点服务相关域名
+DOMAIN-SUFFIX,mylac.cn # 节点服务相关域名
+DOMAIN-SUFFIX,lk02.fbsubcn01.pro # 节点服务相关域名
+DOMAIN-SUFFIX,lk01.fbsubcn01.pro # 节点服务相关域名
+DOMAIN-SUFFIX,aff01.fyb-aff01.com # 节点服务相关域名
+DOMAIN-SUFFIX,fbweb02.flyingbird.la # 节点服务相关域名
+DOMAIN-SUFFIX,fbweb03.flyingbird.id # 节点服务相关域名
+DOMAIN-SUFFIX,fbwebid06.fbwebid01.cc # 节点服务相关域名
+DOMAIN-SUFFIX,fbwebc01.cc # 节点服务相关域名
+DOMAIN-SUFFIX,w01.fbweb.cc # 节点服务相关域名
+DOMAIN-SUFFIX,fbsubcn01.pro # 节点服务相关域名
+DOMAIN-SUFFIX,fbsubcn01.cc # 节点服务相关域名
+DOMAIN-SUFFIX,fbweb.cc # 节点服务相关域名
+DOMAIN-SUFFIX,dexi009.com # 节点服务相关域名
+DOMAIN-SUFFIX,aks.xm002.com # 节点服务相关域名
+DOMAIN-SUFFIX,bygcloud.com # 节点服务相关域名
 
 # > AMZ123 跨境电商平台相关域名
+# - 校对时间：2026-03-27
 
-DOMAIN-SUFFIX,amz123.com # AMZ123 跨境电商卖家工具平台，提供资讯、选品、运营与社群服务
-DOMAIN-SUFFIX,cdn.amz123.com # AMZ123 静态资源加载域名，用于图像、JS/CSS 分发
-DOMAIN-SUFFIX,api.amz123.com # AMZ123 接口域名，用于内容加载、用户互动与工具调用
-DOMAIN-SUFFIX,tool.amz123.com # AMZ123 工具模块子域名，包含选品分析、广告评估等功能
-DOMAIN-SUFFIX,forum.amz123.com # AMZ123 社区论坛，供跨境卖家交流与经验分享
+DOMAIN-SUFFIX,amz123.com # AMZ123 跨境电商平台域名
+DOMAIN-SUFFIX,cdn.amz123.com # AMZ123 静态资源域名
+DOMAIN-SUFFIX,api.amz123.com # AMZ123 接口域名
+DOMAIN-SUFFIX,tool.amz123.com # AMZ123 工具服务域名
+DOMAIN-SUFFIX,forum.amz123.com # AMZ123 社区论坛域名
 
-# > 通用 VPN／节点订阅／中转服务／翻墙工具域名集合
+# > KFC 相关域名
+# - 校对时间：2026-03-27
 
-DOMAIN-SUFFIX,api.subs.ee // 常见订阅转换服务平台
-DOMAIN-SUFFIX,subconverter // Sub-Converter 节点格式转换工具
-DOMAIN-SUFFIX,sub-web.netlify.app // Sub-Web 可视化订阅前端
-DOMAIN-SUFFIX,sub-web.vercel.app // Sub-Web 部署版本（Vercel）
-DOMAIN-SUFFIX,sub.pmsub.me // PMSUB 节点订阅服务
-DOMAIN-SUFFIX,cfmem.com // cfmem.com 节点分发平台
-DOMAIN-SUFFIX,nexitally.com // Nexitally 节点/订阅服务平台
-DOMAIN-SUFFIX,getoutline.org // Outline VPN 官方域名
-DOMAIN-SUFFIX,surfshark.com // Surfshark VPN 官网
-DOMAIN-SUFFIX,nordvpn.com // NordVPN 官网与服务接口
-DOMAIN-SUFFIX,expressvpn.com // ExpressVPN 官网
-DOMAIN-SUFFIX,privateinternetaccess.com // PIA VPN 提供商
-DOMAIN-SUFFIX,relay.firefox.com // Firefox Relay 服务（匿名邮箱与中转）
-DOMAIN-SUFFIX,cloudcone.com // CloudCone VPS 提供商
-DOMAIN-SUFFIX,cloudways.com // Cloudways 云平台，部分代理部署平台
-DOMAIN-SUFFIX,v2rayssr.com // v2ray+ssr 综合配置下载站
-DOMAIN-SUFFIX,VK6kTpJBIO.solastme.cc # 代理节点域名
-DOMAIN-SUFFIX,vk6tpjbio.solastme.cc # 代理节点域名
-DOMAIN-SUFFIX,fba02.fbsubcn01.cc # 代理节点域名
-DOMAIN-SUFFIX,mylac.cn # 代理节点域名
-DOMAIN-SUFFIX,lk02.fbsubcn01.pro # 代理机场相关域名，可能用于配置拉取或节点测速
-DOMAIN-SUFFIX,lk01.fbsubcn01.pro # 代理机场相关域名，可能用于配置拉取或节点测速
-DOMAIN-SUFFIX,aff01.fyb-aff01.com # 代理机场相关域名，可能用于配置拉取或节点测速
-DOMAIN-SUFFIX,fbweb02.flyingbird.la # 代理机场相关域名，可能用于配置拉取或节点测速
-DOMAIN-SUFFIX,fbweb03.flyingbird.id # 代理机场相关域名，可能用于配置拉取或节点测速
-DOMAIN-SUFFIX,w01.fbweb.cc # 代理机场相关域名，可能用于配置拉取或节点测速
-DOMAIN-SUFFIX,fbsubcn01.pro # 代理机场相关域名，可能用于配置拉取或节点测速
-DOMAIN-SUFFIX,fbsubcn01.cc # 代理机场相关域名，可能用于配置拉取或节点测速
-DOMAIN-SUFFIX,dexi009.com # 代理机场相关第三方服务支付域名
-DOMAIN-SUFFIX,aks.xm002.com # 代理机场相关第三方服务支付域名
-DOMAIN-SUFFIX,bygcloud.com # Bygcloud 商用代理服务域名，常用于 Trojan/Vmess 等协议节点分发平台
+DOMAIN-SUFFIX,kfc.com # KFC 全球主站域名
+DOMAIN-SUFFIX,kfc.co.uk # KFC 英国站点域名
+DOMAIN-SUFFIX,kfc.ca # KFC 加拿大站点域名
+DOMAIN-SUFFIX,kfc.com.au # KFC 澳大利亚站点域名
+DOMAIN-SUFFIX,kfc.co.nz # KFC 新西兰站点域名
+DOMAIN-SUFFIX,kfc.co.jp # KFC 日本站点域名
+DOMAIN-SUFFIX,kfc.com.sg # KFC 新加坡站点域名
+DOMAIN-SUFFIX,kfc.com.my # KFC 马来西亚站点域名
+DOMAIN-SUFFIX,kfc.co.th # KFC 泰国站点域名
+DOMAIN-SUFFIX,kfc.co.kr # KFC 韩国站点域名
+DOMAIN-SUFFIX,kfc.co.in # KFC 印度站点域名
+DOMAIN-SUFFIX,kfc.com.ph # KFC 菲律宾站点域名
+DOMAIN-SUFFIX,kfc.com.tw # KFC 台湾站点域名
+DOMAIN-SUFFIX,kfchk.com # KFC 港澳服务域名
+DOMAIN-SUFFIX,global.kfc.com # KFC 全球品牌域名
 
-# > Sora by OpenAI 相关域名
+# > McDonald's 相关域名
+# - 校对时间：2026-03-27
 
-DOMAIN-SUFFIX,openai.com # OpenAI 主站，包括 Sora 所在入口页面
-DOMAIN-SUFFIX,chat.openai.com # ChatGPT 页面，Sora 视频生成功能或入口可能接入
-DOMAIN-SUFFIX,platform.openai.com # OpenAI 平台服务，API 与用户面板通用入口
-DOMAIN-SUFFIX,auth0.openai.com # OpenAI 身份认证系统，用于登录、权限校验
-DOMAIN-SUFFIX,openaipublic.blob.core.windows.net # OpenAI 视频内容或媒体分发（托管于 Azure Blob）
-DOMAIN-SUFFIX,sentry.io # OpenAI 使用的异常上报平台（含 Sora/ChatGPT）
-DOMAIN-SUFFIX,oaiusercontent.com # Sora/ChatGPT 返回内容静态资源托管（含图像/视频）
+DOMAIN-SUFFIX,mcdonalds.com # McDonald's 全球主站域名
+DOMAIN-SUFFIX,mcd.com # McDonald's 短链接域名
+DOMAIN-SUFFIX,mcdonalds.ca # McDonald's 加拿大站点域名
+DOMAIN-SUFFIX,mcdonalds.co.uk # McDonald's 英国站点域名
+DOMAIN-SUFFIX,mcdonalds.de # McDonald's 德国站点域名
+DOMAIN-SUFFIX,mcdonalds.fr # McDonald's 法国站点域名
+DOMAIN-SUFFIX,mcdonalds.com.au # McDonald's 澳大利亚站点域名
+DOMAIN-SUFFIX,mcdonalds.com.sg # McDonald's 新加坡站点域名
+DOMAIN-SUFFIX,mcdonalds.co.jp # McDonald's 日本站点域名
+DOMAIN-SUFFIX,mcdelivery.com.sg # McDonald's 新加坡外送服务域名
+DOMAIN-SUFFIX,mcdonalds.com.hk # McDonald's 香港站点域名
+DOMAIN-SUFFIX,experience.mcdonalds.com # McDonald's 客户体验服务域名
+DOMAIN-SUFFIX,global.mcdonalds.com # McDonald's 全球品牌域名
 
-# > KFC（肯德基）相关域名
+# > Papa John's 相关域名
+# - 校对时间：2026-03-27
 
-DOMAIN-SUFFIX,kfc.com # KFC 全球主站（美国）
-DOMAIN-SUFFIX,kfc.co.uk # KFC 英国站点
-DOMAIN-SUFFIX,kfc.ca # KFC 加拿大站点
-DOMAIN-SUFFIX,kfc.com.au # KFC 澳大利亚站点
-DOMAIN-SUFFIX,kfc.co.nz # KFC 新西兰站点
-DOMAIN-SUFFIX,kfc.co.jp # KFC 日本站点
-DOMAIN-SUFFIX,kfc.com.sg # KFC 新加坡站点
-DOMAIN-SUFFIX,kfc.com.my # KFC 马来西亚站点
-DOMAIN-SUFFIX,kfc.co.th # KFC 泰国站点
-DOMAIN-SUFFIX,kfc.co.kr # KFC 韩国站点
-DOMAIN-SUFFIX,kfc.co.in # KFC 印度站点
-DOMAIN-SUFFIX,kfc.com.ph # KFC 菲律宾站点
-DOMAIN-SUFFIX,kfc.com.tw # KFC 台湾站点
-DOMAIN-SUFFIX,kfchk.com # KFC 香港与澳门在线订餐与会员服务平台
-DOMAIN-SUFFIX,global.kfc.com # KFC 全球品牌与企业信息门户
-
-# > McDonald’s（麦当劳）相关域名
-
-DOMAIN-SUFFIX,mcdonalds.com # 麦当劳全球主站（美国）
-DOMAIN-SUFFIX,mcd.com # 麦当劳国际短链接主域（用于重定向与营销跳转）
-DOMAIN-SUFFIX,mcdonalds.ca # 麦当劳加拿大站点
-DOMAIN-SUFFIX,mcdonalds.co.uk # 麦当劳英国站点
-DOMAIN-SUFFIX,mcdonalds.de # 麦当劳德国站点
-DOMAIN-SUFFIX,mcdonalds.fr # 麦当劳法国站点
-DOMAIN-SUFFIX,mcdonalds.com.au # 麦当劳澳大利亚站点
-DOMAIN-SUFFIX,mcdonalds.com.sg # 麦当劳新加坡站点
-DOMAIN-SUFFIX,mcdonalds.co.jp # 麦当劳日本站点
-DOMAIN-SUFFIX,mcdelivery.com.sg # 麦当劳新加坡外卖服务
-DOMAIN-SUFFIX,mcdonalds.com.hk # 麦当劳香港站点
-DOMAIN-SUFFIX,experience.mcdonalds.com # 麦当劳顾客体验平台（问卷、积分等）
-DOMAIN-SUFFIX,global.mcdonalds.com # 麦当劳全球内容与品牌介绍门户
-
-# > Papa John’s 披萨官方网站
-
-DOMAIN-SUFFIX,papajohns.com # Papa John’s 全球官方网站域名，用于品牌信息发布、在线点餐与门店查询
+DOMAIN-SUFFIX,papajohns.com # Papa John's 官方主站域名
 
 # > Temu（拼多多旗下海外电商平台）相关域名
+# - 校对时间：2026-03-27
 
-DOMAIN-SUFFIX,temu.com # Temu 官方网站主域（美国、加拿大、欧洲等）
-DOMAIN-SUFFIX,temu.ca # Temu 加拿大国家域名
-DOMAIN-SUFFIX,temu.co.uk # Temu 英国站点
-DOMAIN-SUFFIX,temuapp.com # Temu 移动端 App 回连与接口调用主域
-DOMAIN-SUFFIX,temu.cn # Temu 备案使用的中国域名（与拼多多相关联）
-DOMAIN-SUFFIX,temu.io # Temu 技术测试与接口域名（部分服务后台调用）
-DOMAIN-SUFFIX,temu-cdn.com # Temu 静态资源 CDN 域名（图像、CSS、JS 等）
-DOMAIN-SUFFIX,img.temu.com # Temu 商品图片与前端静态资源域名
-DOMAIN-SUFFIX,api.temu.com # Temu 移动端 API 请求接口（需境外访问支持）
-DOMAIN-SUFFIX,log.temu.com # Temu 数据统计与客户端日志上报接口
+DOMAIN-SUFFIX,temu.com # Temu 主站域名
+DOMAIN-SUFFIX,temu.ca # Temu 加拿大站点域名
+DOMAIN-SUFFIX,temu.co.uk # Temu 英国站点域名
+DOMAIN-SUFFIX,temuapp.com # Temu 应用服务域名
+DOMAIN-SUFFIX,temu.cn # Temu 关联域名
+DOMAIN-SUFFIX,temu.io # Temu 服务域名
+DOMAIN-SUFFIX,temu-cdn.com # Temu 静态资源域名
+DOMAIN-SUFFIX,img.temu.com # Temu 图片资源域名
+DOMAIN-SUFFIX,api.temu.com # Temu 接口域名
+DOMAIN-SUFFIX,log.temu.com # Temu 日志上报域名
 
 # > CapCut（剪映国际版）相关域名
+# - 校对时间：2026-03-27
 
-DOMAIN-SUFFIX,capcut.com # CapCut 官方网站主域，用于网页版剪辑、登录等功能
-DOMAIN-SUFFIX,capcut.net # CapCut 技术接口与静态资源服务域
-DOMAIN-SUFFIX,api.capcut.net # CapCut 移动端与网页剪辑 API 接口
-DOMAIN-SUFFIX,lf3-capcut.faceulv.com # CapCut 素材与特效资源下载（Lark File CDN）
-DOMAIN-SUFFIX,lf6-capcut.faceulv.com # CapCut 视频模板与滤镜资源 CDN 域
-DOMAIN-SUFFIX,lf9-capcut.faceulv.com # CapCut 预设特效与剪辑组件资源
-DOMAIN-SUFFIX,static.capcut.net # CapCut 静态资源加载（CSS / JS / 图片等）
-DOMAIN-SUFFIX,ugcapcut.com # CapCut 用户内容分享短链服务
-DOMAIN-SUFFIX,v-cdn.capcut.com # CapCut 视频内容分发 CDN（预览视频、输出视频加载）
-IP-CIDR,161.117.0.0/16 # CapCut 所属 Bytedance 新加坡网络段（主服务器部署区域）
+DOMAIN-SUFFIX,capcut.com # CapCut 主站域名
+DOMAIN-SUFFIX,capcut.net # CapCut 服务域名
+DOMAIN-SUFFIX,api.capcut.net # CapCut 接口域名
+DOMAIN-SUFFIX,lf3-capcut.faceulv.com # CapCut 静态资源域名
+DOMAIN-SUFFIX,lf6-capcut.faceulv.com # CapCut 静态资源域名
+DOMAIN-SUFFIX,lf9-capcut.faceulv.com # CapCut 静态资源域名
+DOMAIN-SUFFIX,static.capcut.net # CapCut 静态资源域名
+DOMAIN-SUFFIX,ugcapcut.com # CapCut 分享服务域名
+DOMAIN-SUFFIX,v-cdn.capcut.com # CapCut 视频资源域名
 
 # > Uber（优步）相关域名
+# - 校对时间：2026-03-27
 
-DOMAIN-SUFFIX,uber.com # Uber 官方主站，用于注册、叫车、用户登录等功能
-DOMAIN-SUFFIX,uberstatic.com # Uber 静态资源加载域（JS / CSS / 图片等）
-DOMAIN-SUFFIX,maps.uberinternal.com # Uber 内部地图服务接口（调度、路线计算等）
-DOMAIN-SUFFIX,api.uber.com # Uber 移动端与网页 API 接口（打车、订单、状态更新等）
-DOMAIN-SUFFIX,riders.uber.com # Uber 乘客子域，订单与账户管理入口
-DOMAIN-SUFFIX,partners.uber.com # Uber 司机端入口，用于登录、订单管理等
-DOMAIN-SUFFIX,auth.uber.com # Uber 登录与授权系统
-DOMAIN-SUFFIX,profile.uber.com # Uber 用户资料中心
-DOMAIN-SUFFIX,safety.uber.com # Uber 安全中心与投诉系统
-DOMAIN-SUFFIX,delivery.uber.com # Uber Eats（优食）入口与配送功能页面
-DOMAIN-SUFFIX,ubereats.com # Uber Eats 官方主站（外卖服务）
-DOMAIN-SUFFIX,cdn.uber.com # Uber 内容分发网络（CDN 资源）
-IP-CIDR,143.204.0.0/16 # Uber 使用的 AWS CloudFront 节点 IP 段之一（用于内容分发）
+DOMAIN-SUFFIX,uber.com # Uber 主站域名
+DOMAIN-SUFFIX,uberstatic.com # Uber 静态资源域名
+DOMAIN-SUFFIX,maps.uberinternal.com # Uber 地图服务域名
+DOMAIN-SUFFIX,api.uber.com # Uber 接口域名
+DOMAIN-SUFFIX,riders.uber.com # Uber 乘客服务域名
+DOMAIN-SUFFIX,partners.uber.com # Uber 司机服务域名
+DOMAIN-SUFFIX,auth.uber.com # Uber 授权服务域名
+DOMAIN-SUFFIX,profile.uber.com # Uber 账户服务域名
+DOMAIN-SUFFIX,safety.uber.com # Uber 安全服务域名
+DOMAIN-SUFFIX,delivery.uber.com # Uber 配送服务域名
+DOMAIN-SUFFIX,ubereats.com # Uber Eats 主站域名
+DOMAIN-SUFFIX,cdn.uber.com # Uber 静态资源域名
 
 # > Lemon8 图文社区平台相关域名（字节跳动旗下）
+# - 校对时间：2026-03-27
 
-DOMAIN-SUFFIX,lemon8-app.com # Lemon8 主站及 API 接口域名
-DOMAIN-SUFFIX,api.lemon8-app.com # 主 API 请求接口，用于内容加载、评论、用户资料等
-DOMAIN-SUFFIX,web.lemon8-app.com # Web 端内容展示服务
-DOMAIN-SUFFIX,sg-image.lemon8-app.com # 图文内容图片 CDN（新加坡节点）
-DOMAIN-SUFFIX,jp-image.lemon8-app.com # 图文内容图片 CDN（日本节点）
-DOMAIN-SUFFIX,us-image.lemon8-app.com # 图文内容图片 CDN（美国节点）
-DOMAIN-SUFFIX,tiktokcdn.com # 依赖共用 TikTok CDN 的媒体资源
+DOMAIN-SUFFIX,lemon8-app.com # Lemon8 平台主域名
+DOMAIN-SUFFIX,api.lemon8-app.com # Lemon8 API 接口域名
+DOMAIN-SUFFIX,web.lemon8-app.com # Lemon8 Web 服务域名
+DOMAIN-SUFFIX,sg-image.lemon8-app.com # Lemon8 图片资源域名
+DOMAIN-SUFFIX,jp-image.lemon8-app.com # Lemon8 图片资源域名
+DOMAIN-SUFFIX,us-image.lemon8-app.com # Lemon8 图片资源域名
+DOMAIN-SUFFIX,tiktokcdn.com # 字节跳动媒体资源域名
 
 # > FOX Sports 体育平台相关域名
+# - 校对时间：2026-03-27
 
-DOMAIN-SUFFIX,foxsports.com # FOX Sports 主站，用于比赛直播、体育新闻等
-DOMAIN-SUFFIX,foxsportsgo.com # FOX Sports Go 平台（移动/OTT 端体育流媒体）
-DOMAIN-SUFFIX,login.foxsports.com # 登录认证服务域名
-DOMAIN-SUFFIX,api.foxsports.com # 数据与内容 API（比分、新闻、赛程）
-DOMAIN-SUFFIX,images.foxsports.com # 体育内容图像资源
-DOMAIN-SUFFIX,video.foxsports.com # 视频内容流媒体节点
-DOMAIN-SUFFIX,foxsports-fan.awsevents.com # AWS 上托管的交互/活动服务接口
-DOMAIN-SUFFIX,foxdcg.com # FOX Digital Consumer Group，内容分发与广告系统域名
+DOMAIN-SUFFIX,foxsports.com # FOX Sports 官方主站
+DOMAIN-SUFFIX,foxsportsgo.com # FOX Sports 流媒体服务域名
+DOMAIN-SUFFIX,login.foxsports.com # FOX Sports 登录服务域名
+DOMAIN-SUFFIX,api.foxsports.com # FOX Sports 数据接口域名
+DOMAIN-SUFFIX,images.foxsports.com # FOX Sports 图片资源域名
+DOMAIN-SUFFIX,video.foxsports.com # FOX Sports 视频服务域名
+DOMAIN-SUFFIX,foxsports-fan.awsevents.com # FOX Sports 互动活动服务域名
+DOMAIN-SUFFIX,foxdcg.com # FOX Sports 数字服务相关域名
 
 # > TikTok 相关域名
+# - 校对时间：2026-03-27
 
-DOMAIN-SUFFIX,tiktok.com # TikTok 主站与账号服务（含主页、视频浏览、创作者功能等）
-DOMAIN-SUFFIX,tiktokcdn.com # TikTok 静态资源 CDN（视频文件、图像封面、脚本加载）
-DOMAIN-SUFFIX,tiktokv.com # TikTok 视频内容短链跳转域名（用于外链视频分享）
-DOMAIN-SUFFIX,ttwstatic.com # TikTok 第三方托管静态资源域名（脚本、插件组件等）
-DOMAIN-SUFFIX,muscdn.com # TikTok 历史内容分发域（旧版本视频、音频资源）
-DOMAIN-SUFFIX,byteoversea.com # 字节跳动国际服务平台域名（TikTok 母公司海外 CDN 与接口）
-IP-CIDR,161.117.0.0/16 # TikTok / ByteDance 海外服务通信段（新加坡集群）
+DOMAIN-SUFFIX,tiktok.com # TikTok 主站域名
+DOMAIN-SUFFIX,tiktokcdn.com # TikTok 静态资源域名
+DOMAIN-SUFFIX,tiktokv.com # TikTok 视频服务域名
+DOMAIN-SUFFIX,ttwstatic.com # TikTok 静态资源域名
+DOMAIN-SUFFIX,muscdn.com # TikTok 媒体资源域名
+DOMAIN-SUFFIX,byteoversea.com # 字节跳动海外服务域名
 
 # > 字节跳动视频通话与多媒体通信服务域名（VCS）
 
@@ -6842,26 +6818,26 @@ DOMAIN-SUFFIX,mirrors.iu13.net # IU13 开源软件镜像与分发服务域名
 
 # > 第三方博客网站
 
-DOMAIN-SUFFIX,freedidi.com # 零度博客，用于发布个人文章、技术记录与观点分享
-DOMAIN-SUFFIX,skk.moe # Sukka 维护的网络规则分发平台，提供 Surge / Clash / QuantumultX 等客户端使用的规则列表与分流数据
-DOMAIN-SUFFIX,blog.skk.moe # Sukka 的技术博客，内容涵盖前端开发、网络优化、DNS 解析与代理工具使用
-DOMAIN-SUFFIX,cdn.skk.moe # skk.moe 静态资源 CDN 域名，用于托管图片、图标、样式等前端静态文件
-DOMAIN-SUFFIX,img.skk.moe # skk.moe 图片资源加载域名，用于站点内图片和媒体内容分发
-DOMAIN-SUFFIX,disqus.skk.moe # skk.moe 站点使用的 Disqus 评论系统代理子域，用于加载评论组件与用户交互内容
-DOMAIN-SUFFIX,blog.1ris.win # Blog 1RIS 个人博客主域名，用于技术分享、日志发布与项目更新
-DOMAIN-SUFFIX,beyondwickedmapping.org # 信息安全研究博客域名，用于发布网络威胁分析、Botnet 行为追踪与攻击路径溯源文章
-DOMAIN-SUFFIX,joeyblog.net # JoeyBlog 个人博客网站，用于发布个人文章、技术记录与观点分享
-DOMAIN-SUFFIX,bulianglin.com # Bulianglin 中文内容站点，用于信息整理、内容发布与网页访问
-DOMAIN-SUFFIX,ygkkk.blogspot.com # 甬哥侃侃侃 博客站点域名
-DOMAIN-SUFFIX,sorkai.com # Sorkai 博客站点域名
-DOMAIN-SUFFIX,bestoko.cc # Toko 的个人技术博客，分享 Linux、Docker、系统折腾等内容
-DOMAIN-SUFFIX,blog.cpen.top # Cpen 个人博客，记录技术文章与学习笔记
-DOMAIN-SUFFIX,steipete.me # Peter Steinberger（PSPDFKit 创始人）个人官网与技术博客，用于开源项目、开发文章与技术分享
-DOMAIN-SUFFIX,mscrmtools.blogspot.com # Microsoft CRM Tools 博客，用于 Dynamics 365 / XrmToolBox 插件工具分享与技术内容展示
-DOMAIN-SUFFIX,easys.cc.cd # “茉灵智库” 学术/技术教程与资源分享网站
-DOMAIN-SUFFIX,mashiro.pro # Mashiro 个人技术博客域名，主要发布开发技术、建站经验与资源分享内容，属于独立站点性质
-DOMAIN-SUFFIX,qichiyu.com # 七尺宇 个人技术博客域名，主要发布开发技术、建站经验与资源分享等内容
-DOMAIN-SUFFIX,sev7en.blog # Sev7en 个人技术博客域名，主要发布开发技术、建站经验与资源分享等内容
+DOMAIN-SUFFIX,freedidi.com # 零度博客技术内容网站
+DOMAIN-SUFFIX,skk.moe # Sukka 技术内容与规则分发网站
+DOMAIN-SUFFIX,blog.skk.moe # Sukka 技术博客网站
+DOMAIN-SUFFIX,cdn.skk.moe # skk.moe 静态资源域名
+DOMAIN-SUFFIX,img.skk.moe # skk.moe 图片资源域名
+DOMAIN-SUFFIX,disqus.skk.moe # skk.moe 评论组件代理域名
+DOMAIN-SUFFIX,blog.1ris.win # 1RIS 个人技术博客网站
+DOMAIN-SUFFIX,beyondwickedmapping.org # 信息安全研究博客网站
+DOMAIN-SUFFIX,joeyblog.net # JoeyBlog 个人博客网站
+DOMAIN-SUFFIX,bulianglin.com # Bulianglin 内容分享网站
+DOMAIN-SUFFIX,ygkkk.blogspot.com # 甬哥侃侃侃博客网站
+DOMAIN-SUFFIX,sorkai.com # Sorkai 博客网站
+DOMAIN-SUFFIX,bestoko.cc # Toko 个人技术博客网站
+DOMAIN-SUFFIX,blog.cpen.top # Cpen 个人技术博客网站
+DOMAIN-SUFFIX,steipete.me # Peter Steinberger 个人官网与技术博客
+DOMAIN-SUFFIX,mscrmtools.blogspot.com # Microsoft CRM Tools 技术博客网站
+DOMAIN-SUFFIX,easys.cc.cd # 茉灵智库教程与资源分享网站
+DOMAIN-SUFFIX,mashiro.pro # Mashiro 个人技术博客网站
+DOMAIN-SUFFIX,qichiyu.com # 七尺宇个人技术博客网站
+DOMAIN-SUFFIX,sev7en.blog # Sev7en 个人技术博客网站
 DOMAIN-SUFFIX,v2ray-agent.com # V2Ray Agent 教程与技术博客网站
 
 # > 第三方独立站
