@@ -4,8 +4,8 @@
 # - 特征：覆盖需依赖代理访问的高频主流服务域名
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-04-02
-# - 校对时间：2026-04-02
+# - 更新时间：2026-04-03
+# - 校对时间：2026-04-03
 
 # > Cloudflare Platform Infrastructure（Cloudflare 平台基础设施域名）
 # - 校对时间：2026-03-05
@@ -188,21 +188,6 @@ DOMAIN-SUFFIX,v2rayssr.com # 节点配置相关域名
 DOMAIN-SUFFIX,VK6kTpJBIO.solastme.cc # 节点服务相关域名
 DOMAIN-SUFFIX,vk6tpjbio.solastme.cc # 节点服务相关域名
 DOMAIN-SUFFIX,mylac.cn # 节点服务相关域名
-DOMAIN-SUFFIX,fba02.fbsubcn01.cc # 节点服务相关域名
-DOMAIN-SUFFIX,lk02.fbsubcn01.pro # 节点服务相关域名
-DOMAIN-SUFFIX,lk01.fbsubcn01.pro # 节点服务相关域名
-DOMAIN-SUFFIX,aff01.fyb-aff01.com # 节点服务相关域名
-DOMAIN-SUFFIX,fbweb02.flyingbird.la # 节点服务相关域名
-DOMAIN-SUFFIX,fbweb03.flyingbird.id # 节点服务相关域名
-DOMAIN-SUFFIX,fbwebid06.fbwebid01.cc # 节点服务相关域名
-DOMAIN-SUFFIX,fbwebc01.cc # 节点服务相关域名
-DOMAIN-SUFFIX,w01.fbweb.cc # 节点服务相关域名
-DOMAIN-SUFFIX,fbsubcn01.pro # 节点服务相关域名
-DOMAIN-SUFFIX,fbsubcn01.cc # 节点服务相关域名
-DOMAIN-SUFFIX,fbweb.cc # 节点服务相关域名
-DOMAIN-SUFFIX,dexi009.com # 节点服务相关域名
-DOMAIN-SUFFIX,aks.xm002.com # 节点服务相关域名
-DOMAIN-SUFFIX,bygcloud.com # 节点服务相关域名
 
 # > AMZ123 跨境电商平台相关域名
 # - 校对时间：2026-03-27
@@ -7448,6 +7433,41 @@ DOMAIN-SUFFIX,rutube.ru # Rutube 视频平台域名
 DOMAIN-SUFFIX,static.rtbcdn.ru # Rutube 静态资源分发节点
 DOMAIN-SUFFIX,pic.rtbcdn.ru # Rutube 图片资源分发节点
 DOMAIN-SUFFIX,premier-static.rtbcdn.ru # PREMIER 静态资源分发节点
+
+# > NetEase YXFW HTTPDNS Service（网易质云 HTTPDNS 解析服务）
+# - 校对时间：2026-04-03
+
+DOMAIN-SUFFIX,httpdns.yunxinfw.com # 网易质云 HTTPDNS 服务域名
+
+# > ByteDance Dispatch Infrastructure（字节跳动调度与内容分发基础设施）
+# - 校对时间：2026-04-03
+
+DOMAIN-SUFFIX,bytedns.net # 字节跳动调度与加速服务域名
+DOMAIN-SUFFIX,bytednsdoc.com # 字节跳动文档资源服务域
+DOMAIN-SUFFIX,smtcdns.com # 字节跳动内容调度 CDN
+DOMAIN-SUFFIX,smtcdns.net # 字节跳动内容调度服务域名
+IP-CIDR,58.211.83.135/32 # 字节跳动文档资源服务节点（lf3-static.bytednsdoc.com）
+IP-CIDR,58.211.83.156/32 # 字节跳动文档资源服务节点（lf3-static.bytednsdoc.com）
+IP-CIDR,111.170.168.115/32 # 字节跳动文档资源服务节点（lf3-static.bytednsdoc.com）
+IP-CIDR,180.97.171.98/32 # 字节跳动文档资源服务节点（lf3-static.bytednsdoc.com）
+IP-CIDR,180.97.248.187/32 # 字节跳动文档资源服务节点（lf3-static.bytednsdoc.com）
+IP-CIDR,180.119.119.150/32 # 字节跳动文档资源服务节点（lf3-static.bytednsdoc.com）
+
+# > AliDNS（阿里云公共 DNS）基础解析服务
+# - 校对时间：2026-03-23
+
+IP-CIDR,223.5.5.5/32 # 阿里云公共 DNS 解析节点
+IP-CIDR,223.6.6.6/32 # 阿里云公共 DNS 解析节点
+IP-CIDR6,2400:3200::1/128 # 阿里云公共 DNS IPv6 解析节点
+IP-CIDR6,2400:3200:baba::1/128 # 阿里云公共 DNS IPv6 解析节点
+
+# > Tencent DNSPod（DNS 解析与链路探测接口）
+# - 校对时间：2026-03-24
+
+DOMAIN-SUFFIX,ovscdns.com # 腾讯调度服务域名
+DOMAIN-SUFFIX,dnspod.cn # 腾讯 DNSPod 服务域名
+IP-CIDR,119.29.29.90/32 # 腾讯 DNSPod 公共 DNS 解析节点
+IP-CIDR,119.29.29.98/32 # 腾讯 DNSPod 公共 DNS 解析节点
 
 # > Independent Sites（第三方独立站）
 # - 校对时间：2026-03-28
