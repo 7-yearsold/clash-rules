@@ -4,8 +4,8 @@
 # - 特征：覆盖需依赖代理访问的高频主流服务域名
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-05-01
-# - 校对时间：2026-05-01
+# - 更新时间：2026-05-03
+# - 校对时间：2026-05-03
 
 # > Cloudflare Platform Infrastructure（Cloudflare 平台基础设施域名）
 # - 校对时间：2026-04-18
@@ -101,6 +101,16 @@ DOMAIN-SUFFIX,ipv6.lookup.test-ipv6.com # Test-IPv6 域名解析测试子域
 # - 校对时间：2026-03-27
 
 DOMAIN-SUFFIX,whoer.net # Whoer 匿名性检测平台主域名
+
+# > IPLeak Privacy Leak Test（IPLeak 隐私泄露检测平台）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,ipleak.net # IP 地址、DNS 与 WebRTC 泄露检测平台主域名
+
+# > DNSCheck DNS Diagnostic Tool（DNSCheck DNS 诊断工具）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,dnscheck.tools # DNS 解析、出口与泄露检测工具主域名
 
 # > Scamalytics（Scamalytics IP 风险检测平台）
 # - 校对时间：2026-03-27
@@ -379,9 +389,11 @@ DOMAIN-SUFFIX,cloudfront.net # AWS CloudFront CDN 通用内容分发域名
 DOMAIN-SUFFIX,redirect.prod.experiment.routing.cloudfront.aws.a2z.com # Amazon CloudFront 实验路由重定向服务域名
 
 # > Amazon S3 Storage Service（Amazon S3 对象存储服务）
-# - 校对时间：2026-04-28
+# - 校对时间：2026-05-02
 
+DOMAIN-SUFFIX,s3.amazonaws.com # Amazon S3 通用对象存储服务域名
 DOMAIN-SUFFIX,s3-us-west-1.amazonaws.com # Amazon S3 美国西部（北加州）区域存储服务域名
+DOMAIN-SUFFIX,s3.dualstack.us-east-2.amazonaws.com # Amazon S3 美国东部（俄亥俄）双栈区域存储服务域名
 
 # > Amazon Lightsail Cloud Service（Amazon Lightsail 云服务）
 # - 校对时间：2026-03-28
@@ -567,6 +579,13 @@ DOMAIN-SUFFIX,pinterest.de # 区域站点域名
 DOMAIN-SUFFIX,pinterest.fr # 区域站点域名
 DOMAIN-SUFFIX,pinterest.se # 区域站点域名
 DOMAIN-SUFFIX,pinterest.at # 区域站点域名
+
+# > Flickr Photo Sharing Platform（Flickr 图片分享平台）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,flickr.com # Flickr 图片分享平台主域名
+DOMAIN-SUFFIX,staticflickr.com # Flickr 图片与静态资源域名
+DOMAIN-SUFFIX,live.staticflickr.com # Flickr 图片资源 CDN 域名
 
 # > Venmo Payment Platform（Venmo 支付平台）
 # - 校对时间：2026-03-28
@@ -1088,27 +1107,43 @@ DOMAIN-SUFFIX,static.rust-lang.org # Rust 工具链与组件分发域名
 DOMAIN-SUFFIX,rustup.rs # Rustup 工具链安装入口域名
 DOMAIN-SUFFIX,sh.rustup.rs # Rustup 安装脚本服务域名
 
+# > Gophers Slack Community（Gophers Slack 社区）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,invite.slack.golangbridge.org # Gophers Slack 社区邀请入口域名
+
 # > Bluesky Social Platform（Bluesky 社交平台）
-# - 校对时间：2026-05-01
+# - 校对时间：2026-05-02
 
 DOMAIN-SUFFIX,bsky.app # Bluesky Web 应用域名
+DOMAIN-SUFFIX,bsky.social # Bluesky 官方主站与账号句柄域名
 
 # > Discourse Forum CDN（Discourse 论坛静态资源 CDN）
 # - 校对时间：2026-05-01
 
 DOMAIN-SUFFIX,sea1.discourse-cdn.com # Discourse 托管论坛静态资源 CDN 域名
 
-# > Mastodon Federated Social Platform（Mastodon 联邦式社交平台相关域名）
-# - 校对时间：2026-05-01
+# > Masto.host Managed Mastodon Hosting（Masto.host 托管 Mastodon 服务）
+# - 校对时间：2026-05-02
 
 DOMAIN-SUFFIX,masto.host # Masto.host 托管 Mastodon 实例服务主域名
 DOMAIN-SUFFIX,cdn.masto.host # Masto.host 托管 Mastodon 媒体 CDN 域名
-DOMAIN-SUFFIX,hachyderm.io # Hachyderm Mastodon 技术社区实例域名
 
-# > Stack Overflow Developer Q&A Platform（Stack Overflow 开发者问答平台）
+# > Hachyderm Mastodon Community Instance（Hachyderm Mastodon 社区实例）
 # - 校对时间：2026-05-01
 
+DOMAIN-SUFFIX,hachyderm.io # Hachyderm Mastodon 社区实例域名
+
+# > Fosstodon Mastodon Community Instance（Fosstodon Mastodon 开源社区实例）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,fosstodon.org # Fosstodon Mastodon 开源社区实例域名
+
+# > Stack Overflow Developer Q&A Platform（Stack Overflow 开发者问答平台）
+# - 校对时间：2026-05-02
+
 DOMAIN-SUFFIX,stackoverflow.com # Stack Overflow 开发者问答社区主域名
+DOMAIN-SUFFIX,i.sstatic.net # Stack Overflow / Stack Exchange 图片与静态资源域名
 
 # > GnuPG / OpenPGP Key Service（GnuPG / OpenPGP 密钥服务）
 # - 校对时间：2026-03-28
@@ -2396,6 +2431,12 @@ DOMAIN-SUFFIX,auth.wikimedia.org # 认证服务域名
 DOMAIN-SUFFIX,upload.wikimedia.org # 媒体资源域名
 DOMAIN-SUFFIX,meta.wikimedia.org # 协作平台域名
 DOMAIN-SUFFIX,commons.wikimedia.org # 媒体资料库域名
+
+# > Chaos Computer Club Media Archive（Chaos Computer Club 媒体档案平台）
+# - 校对时间：2026-05-03
+
+DOMAIN-SUFFIX,ccc.de # Chaos Computer Club 官方主域名
+DOMAIN-SUFFIX,media.ccc.de # Chaos Computer Club 视频与音频档案平台域名
 
 # > Skype Communication Tool（Skype 通讯工具）
 # - 校对时间：2026-03-28
@@ -4453,12 +4494,10 @@ DOMAIN-SUFFIX,api.axept.io # API 接口域名
 DOMAIN-SUFFIX,axeptio.imgix.net # 图片资源域名
 
 # > Privacy Compliance Services（Privacy Compliance 数据保护与隐私合规）
-# - 校对时间：2026-03-28
+# - 校对时间：2026-05-02
 
 DOMAIN-SUFFIX,prighter.com # 平台主域名
 DOMAIN-SUFFIX,api.prighter.com # API 接口域名
-DOMAIN-SUFFIX,trustarc.com # 平台主域名
-DOMAIN-SUFFIX,privacy.trustarc.com # 隐私门户域名
 DOMAIN-SUFFIX,onetrust.com # 平台主域名
 DOMAIN-SUFFIX,trust.oneprivacy.com # 处理服务域名
 DOMAIN-SUFFIX,osano.com # 平台主域名
@@ -5197,6 +5236,14 @@ DOMAIN-SUFFIX,w.hcaptcha.com # hCaptcha 前端验证组件与资源分发
 DOMAIN-SUFFIX,consent.cookiebot.com # Cookiebot API 域名
 DOMAIN-SUFFIX,consentcdn.cookiebot.com # Cookiebot 静态资源 CDN
 DOMAIN-SUFFIX,imgsct.cookiebot.com # Cookiebot 静态资源域名
+
+# > TrustArc Consent Management Platform（TrustArc 同意管理平台）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,trustarc.com # 平台主域名
+DOMAIN-SUFFIX,privacy.trustarc.com # 隐私门户域名
+DOMAIN-SUFFIX,truste.com # TrustArc / TRUSTe 隐私认证与同意管理服务主域名
+DOMAIN-SUFFIX,consent.truste.com # TrustArc 同意管理服务域名
 
 # > Fern Domains（Fern 文档平台资源加载域名）
 # - 校对时间：2026-03-28
@@ -7298,6 +7345,11 @@ DOMAIN-SUFFIX,videolan.org # VLC 媒体播放器开源项目官方网站
 DOMAIN-SUFFIX,archive.org # Internet Archive 主域名
 DOMAIN-SUFFIX,web.archive.org # Wayback Machine 子域名
 
+# > MoinMoin Wiki Engine（MoinMoin Wiki 引擎）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,moinmo.in # MoinMoin Wiki 引擎官方项目域名
+
 # > StarChart Analytics Platform（StarChart GitHub 项目趋势与统计分析平台）
 # - 校对时间：2026-03-28
 
@@ -7512,6 +7564,17 @@ DOMAIN-SUFFIX,assets.partnerpage.io # PartnerPage 静态资源域名
 DOMAIN-SUFFIX,directory.static.partnerpage.io # PartnerPage 目录静态资源域名
 DOMAIN-SUFFIX,content.partnerpage.io # PartnerPage 内容服务域名
 
+# > Nift Gift Discovery Platform（Nift 礼品发现平台）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,cdn.nift.me # Nift 礼品发现平台静态资源 CDN 域名
+
+# > Meetup Community Event Platform（Meetup 社群活动平台）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,secure-content.meetupstatic.com # Meetup 活动图片与内容资源域名
+DOMAIN-SUFFIX,secure.meetupstatic.com # Meetup 图片与媒体资源域名
+
 # > Rust Programming Language Platform（Rust 编程语言平台）
 # - 校对时间：2026-05-01
 
@@ -7521,6 +7584,215 @@ DOMAIN-SUFFIX,index.crates.io # Rust crates.io 包索引服务域名
 DOMAIN-SUFFIX,static.crates.io # Rust crates.io 包文件与静态资源域名
 DOMAIN-SUFFIX,static.rust-lang.org # Rust 工具链与组件分发域名
 DOMAIN-SUFFIX,rustup.rs # Rustup 工具链安装入口域名
+
+# > Go Programming Language Platform（Go 编程语言平台）
+# - 校对时间：2026-05-01
+
+DOMAIN-SUFFIX,go.dev # Go 官方主站与开发者文档域名
+DOMAIN-SUFFIX,golang.org # Go 历史官方主域名
+DOMAIN-SUFFIX,pkg.go.dev # Go 包文档服务域名
+DOMAIN-SUFFIX,proxy.golang.org # Go Module Proxy 服务域名
+DOMAIN-SUFFIX,sum.golang.org # Go Checksum Database 服务域名
+
+# > Golang Weekly Newsletter（Golang Weekly 周刊）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,golangweekly.com # Golang Weekly Go 语言开发者周刊域名
+
+# > Python Programming Language Platform（Python 编程语言平台）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,python.org # Python 官方主站与文档服务域名
+DOMAIN-SUFFIX,docs.python.org # Python 官方文档服务域名
+DOMAIN-SUFFIX,peps.python.org # Python PEP 提案文档域名
+DOMAIN-SUFFIX,packaging.python.org # Python 打包与分发文档域名
+DOMAIN-SUFFIX,brochure.getpython.info # PSF Python Brochure 宣传资料域名
+DOMAIN-SUFFIX,planetpython.org # Planet Python 社区博客聚合域名
+DOMAIN-SUFFIX,pypi.org # Python PyPI 包注册表域名
+DOMAIN-SUFFIX,files.pythonhosted.org # Python PyPI 包文件分发域名
+DOMAIN-SUFFIX,pythonhosted.org # Python 项目文档托管历史域名
+
+# > mathspp Python Education Blog（mathspp Python 教育博客）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,mathspp.com # mathspp Python 编程与数学教育博客域名
+
+# > JetBrains Developer Platform（JetBrains 开发者平台）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,jetbrains.com # JetBrains 官方主域名
+DOMAIN-SUFFIX,blog.jetbrains.com # JetBrains 官方开发者博客域名
+
+# > EuroPython Conference Platform（EuroPython 大会平台）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,europython.eu # EuroPython 大会官方主域名
+DOMAIN-SUFFIX,blog.europython.eu # EuroPython 大会官方博客域名
+
+# > Python GUIs Learning Platform（Python GUIs 图形界面开发学习平台）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,pythonguis.com # Python GUI 开发教程与学习资源域名
+
+# > Tryton Application Platform（Tryton 应用平台）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,tryton.org # Tryton 官方主域名
+DOMAIN-SUFFIX,discuss-cdn.tryton.org # Tryton 论坛静态资源 CDN 域名
+
+# > Python Library / Mouse Vs Python Blog（Python Library / Mouse Vs Python 博客）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,pythonlibrary.org # Python Library 项目与资源主域名
+DOMAIN-SUFFIX,blog.pythonlibrary.org # Mouse Vs Python / Python Library 博客域名
+
+# > Node.js JavaScript Runtime Platform（Node.js JavaScript 运行时平台）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,nodejs.org # Node.js 官方主站、文档与下载服务域名
+
+# > npm JavaScript Package Registry（npm JavaScript 包注册表）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,npmjs.com # npm 官方主站与包管理平台域名
+DOMAIN-SUFFIX,registry.npmjs.org # npm 包注册表 API 与依赖解析域名
+DOMAIN-SUFFIX,status.npmjs.org # npm 官方服务状态页面域名
+
+# > TypeScript Programming Language Platform（TypeScript 编程语言平台）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,typescriptlang.org # TypeScript 官方主站与文档服务域名
+
+# > ECMAScript Standards and TC39（ECMAScript 标准与 TC39 提案平台）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,tc39.es # TC39 ECMAScript 标准与提案文档域名
+DOMAIN-SUFFIX,ecma-international.org # Ecma International 官方标准组织域名
+
+# > Linux Foundation Platform（Linux Foundation 平台）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,linuxfoundation.org # Linux Foundation 官方主域名
+DOMAIN-SUFFIX,platform.linuxfoundation.org # Linux Foundation 平台服务域名
+DOMAIN-SUFFIX,cdn.dev.platform.linuxfoundation.org # Linux Foundation 平台开发环境静态资源 CDN 域名
+DOMAIN-SUFFIX,lf-master-project-logos-prod.s3.us-east-2.amazonaws.com # Linux Foundation 项目 Logo 资源存储域名
+
+# > OpenJS Foundation（OpenJS 基金会）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,openjsf.org # OpenJS Foundation 官方主域名
+DOMAIN-SUFFIX,javascriptlandia.com # OpenJS Foundation JavaScriptLandia 项目域名
+DOMAIN-SUFFIX,openvisualization.org # OpenJS Open Visualization 协作空间域名
+DOMAIN-SUFFIX,openjsf.cdn.prismic.io # OpenJS Foundation Prismic 内容资源 CDN 域名
+DOMAIN-SUFFIX,open-visualization.cdn.prismic.io # OpenJS Open Visualization Prismic 内容资源 CDN 域名
+
+# > Prismic Content Management Platform（Prismic 内容管理平台）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,prismic.io # Prismic 内容管理平台主域名
+DOMAIN-SUFFIX,static.cdn.prismic.io # Prismic 静态内容资源 CDN 域名
+DOMAIN-SUFFIX,openjsf.prismic.io # OpenJS Foundation Prismic 内容管理服务域名
+
+# > Atlassian Cloud Platform（Atlassian 云协作平台）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,atlassian.com # Atlassian 官方主域名
+DOMAIN-SUFFIX,atlassian.net # Atlassian Cloud 产品服务域名
+DOMAIN-SUFFIX,atl-paas.net # Atlassian Cloud 平台基础设施域名
+DOMAIN-SUFFIX,ds-cdn.prod-east.frontend.public.atl-paas.net # Atlassian Cloud 前端静态资源 CDN 域名
+
+# > LivePerson Customer Messaging Platform（LivePerson 客户沟通平台）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,liveperson.net # LivePerson 客户沟通平台主服务域名
+DOMAIN-SUFFIX,lpsnmedia.net # LivePerson 媒体与静态资源服务域名
+DOMAIN-SUFFIX,accdn.lpsnmedia.net # LivePerson 前端静态资源 CDN 域名
+DOMAIN-SUFFIX,lptag.liveperson.net # LivePerson 前端标签脚本服务域名
+
+# > Java Programming Language Platform（Java 编程语言平台）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,java.com # Java 官方主站域名
+DOMAIN-SUFFIX,dev.java # Java 官方开发者资源域名
+DOMAIN-SUFFIX,openjdk.org # OpenJDK 官方项目域名
+DOMAIN-SUFFIX,jdk.java.net # OpenJDK JDK 构建与早期访问版本域名
+DOMAIN-SUFFIX,jcp.org # Java Community Process 官方规范流程域名
+DOMAIN-SUFFIX,docs.oracle.com # Oracle Java 官方文档服务域名
+DOMAIN-SUFFIX,download.oracle.com # Oracle Java 下载资源域名
+
+# > Maven Central Repository（Maven Central 中央仓库）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,maven.org # Apache Maven 官方主域名
+DOMAIN-SUFFIX,repo.maven.apache.org # Maven Central 官方仓库服务域名
+DOMAIN-SUFFIX,repo1.maven.org # Maven Central 历史仓库服务域名
+DOMAIN-SUFFIX,search.maven.org # Maven Central 包检索服务域名
+DOMAIN-SUFFIX,central.sonatype.com # Sonatype Central Portal 包检索与发布平台域名
+DOMAIN-SUFFIX,sonatype.org # Sonatype 开源仓库文档与支持主域名
+DOMAIN-SUFFIX,central.sonatype.org # Sonatype Central Repository 支持文档域名
+
+# > Fastly Polyfill Service（Fastly Polyfill 浏览器兼容性填充服务）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,polyfill-fastly.io # Fastly Polyfill 浏览器兼容性填充服务域名
+
+# > Sonatype Software Supply Chain Platform（Sonatype 软件供应链平台）
+# - 校对时间：2026-05-02
+
+DOMAIN-SUFFIX,sonatype.com # Sonatype 官方主域名
+
+# > PHP Programming Language Platform（PHP 编程语言平台）
+# - 校对时间：2026-05-03
+
+DOMAIN-SUFFIX,php.net # PHP 官方主站、文档与下载服务域名
+DOMAIN-SUFFIX,thephp.foundation # The PHP Foundation 官方主域名
+DOMAIN-SUFFIX,windows.php.net # PHP Windows 官方构建与下载服务域名
+DOMAIN-SUFFIX,downloads.php.net # PHP 官方下载镜像服务域名
+
+# > PHP Extension and Application Repository（PHP 扩展与应用仓库）
+# - 校对时间：2026-05-03
+
+DOMAIN-SUFFIX,pecl.php.net # PECL PHP 扩展仓库域名
+DOMAIN-SUFFIX,pear.php.net # PEAR PHP 扩展与应用仓库域名
+
+# > Composer PHP Dependency Manager（Composer PHP 依赖管理工具）
+# - 校对时间：2026-05-03
+
+DOMAIN-SUFFIX,getcomposer.org # Composer 官方主站、文档与安装器域名
+
+# > Packagist PHP Package Repository（Packagist PHP 包仓库）
+# - 校对时间：2026-05-03
+
+DOMAIN-SUFFIX,packagist.org # Packagist 公共 PHP 包仓库域名
+DOMAIN-SUFFIX,packagist.com # Private Packagist 私有 PHP 包仓库服务域名
+
+# > Datadog Observability Platform（Datadog 可观测性平台）
+# - 校对时间：2026-05-03
+
+DOMAIN-SUFFIX,datadoghq.com # Datadog 官方主域名
+DOMAIN-SUFFIX,p.datadoghq.com # Datadog 公共监控面板与可观测性页面域名
+
+# > Ruby Programming Language Platform（Ruby 编程语言平台）
+# - 校对时间：2026-05-03
+
+DOMAIN-SUFFIX,ruby-lang.org # Ruby 官方主站、文档与下载服务域名
+DOMAIN-SUFFIX,docs.ruby-lang.org # Ruby 官方文档服务域名
+
+# > RubyGems Package Registry（RubyGems 包注册表）
+# - 校对时间：2026-05-03
+
+DOMAIN-SUFFIX,rubygems.org # RubyGems 官方包注册表域名
+DOMAIN-SUFFIX,guides.rubygems.org # RubyGems 官方指南文档域名
+
+# > Bundler Ruby Dependency Manager（Bundler Ruby 依赖管理工具）
+# - 校对时间：2026-05-03
+
+DOMAIN-SUFFIX,bundler.io # Bundler 官方主站与文档服务域名
+
+# > Ruby Central Community Organization（Ruby Central 社区组织）
+# - 校对时间：2026-05-03
+
+DOMAIN-SUFFIX,rubycentral.org # Ruby Central 官方主域名
 
 # > Independent Sites（第三方独立站）
 # - 校对时间：2026-03-28
