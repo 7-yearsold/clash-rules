@@ -817,3 +817,24 @@ DOMAIN-SUFFIX,sf14g.com # Upland SF14G 行为追踪服务主域名
 # - 校对时间：2026-05-03
 
 DOMAIN-SUFFIX,analytics.thephp.foundation # The PHP Foundation 网站分析服务域名
+
+# > Adobe Experience Platform Edge Network（Adobe Experience Platform 边缘网络数据采集服务）
+# - 校对时间：2026-05-03
+
+DOMAIN-SUFFIX,adobedc.net # Adobe Experience Platform Edge Network 数据采集主域名
+DOMAIN-SUFFIX,edge.adobedc.net # Adobe Experience Platform Web SDK 默认边缘数据采集域名
+
+# > Adobe Marketo Engage Munchkin Tracking（Adobe Marketo Engage Munchkin 营销自动化跟踪服务）
+# - 校对时间：2026-05-03
+
+DOMAIN-SUFFIX,marketo.net # Adobe Marketo Engage Munchkin 营销自动化跟踪服务域名
+
+# > Mutiny Website Personalization Service（Mutiny 网站个性化服务）
+# - 校对时间：2026-05-03
+
+DOMAIN-SUFFIX,mutinycdn.com # Mutiny 网站个性化服务 CDN 域名
+
+# > Salesforce Pardot Visitor Tracking（Salesforce Pardot 访客行为跟踪服务）
+# - 校对时间：2026-05-03
+
+DOMAIN-SUFFIX,pi.pardot.com # Salesforce Pardot 访客行为跟踪采集域名
