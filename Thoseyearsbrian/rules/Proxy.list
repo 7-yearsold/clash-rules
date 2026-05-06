@@ -2154,6 +2154,12 @@ DOMAIN-SUFFIX,v2.zopim.com # 聊天组件域名
 DOMAIN-SUFFIX,widget-mediator.zopim.com # 消息服务域名
 IP-CIDR,52.74.150.160/32 # 组件服务节点
 
+# > Crisp Customer Messaging Platform（Crisp 客服消息平台）
+# - 校对时间：2026-05-05
+
+DOMAIN-SUFFIX,crisp.chat # Crisp 官方主域名与客服聊天、消息协作平台入口
+DOMAIN-SUFFIX,client.relay.crisp.chat # Crisp 客户端实时消息中继与聊天连接服务域名
+
 # > Stripe Payment Platform（Stripe 支付平台）
 # - 校对时间：2026-05-03
 
@@ -4898,8 +4904,10 @@ DOMAIN-SUFFIX,dsarhub.com # DSAR 平台域名
 DOMAIN-SUFFIX,gdprform.io # 隐私请求域名
 
 # > AWS WAF CAPTCHA Verification Service（AWS WAF CAPTCHA 风控验证服务）
-# - 校对时间：2026-03-28
+# - 校对时间：2026-05-05
 
+DOMAIN-SUFFIX,awswaf.com # AWS WAF Web 应用防火墙边缘风控与挑战服务主域名
+DOMAIN-SUFFIX,edge.sdk.awswaf.com # AWS WAF Edge SDK 客户端风控、挑战验证与令牌交互服务域名
 DOMAIN-SUFFIX,edge.captcha-sdk.awswaf.com # Captcha 资源域名
 DOMAIN-SUFFIX,token.awswaf.com # 令牌域名
 DOMAIN-SUFFIX,aa91ab2ba082.3f34d406.us-west-1.token.awswaf.com # 令牌节点域名
@@ -8567,6 +8575,18 @@ DOMAIN-SUFFIX,srht.site # SourceHut Pages 静态站点托管默认域名
 DOMAIN-SUFFIX,huggingface.co # Hugging Face 官方主域名、模型、数据集与 Spaces 应用入口
 DOMAIN-SUFFIX,hf.co # Hugging Face 短链接、模型资源与平台跳转服务域名
 DOMAIN-SUFFIX,huggingfaceusercontent.com # Hugging Face 用户内容、Spaces 静态资源与托管应用资源域名
+DOMAIN-SUFFIX,fast.hf.co # HuggingFast / Hugging Face Hub 模型与数据集下载速度测试服务域名
+
+# > PostHog Product OS and Analytics Platform（PostHog 产品开发与分析平台）
+# - 校对时间：2026-05-05
+
+DOMAIN-SUFFIX,posthog.com # PostHog 官方主域名与 Product OS、产品分析、功能实验和开发者文档入口
+
+# > Better Stack Observability Platform（Better Stack 可观测性平台）
+# - 校对时间：2026-05-05
+
+DOMAIN-SUFFIX,betterstack.com # Better Stack 官方主域名与可观测性、日志、监控和事件管理平台入口
+DOMAIN-SUFFIX,betterstack.net # Better Stack 平台服务、日志接入与可观测性基础设施域名
 
 # > Independent Sites（第三方独立站）
 # - 校对时间：2026-03-28
