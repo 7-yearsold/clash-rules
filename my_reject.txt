@@ -6,6 +6,6 @@ DOMAIN-SUFFIX,app-measurement.com
 #DOMAIN-KEYWORD,154.89.148.122
 DOMAIN-SUFFIX,android.bugly.qq.com
 # xyqh5
-DOMAIN-SUFFIX,who.easebar.com
-DOMAIN-SUFFIX,who.nie.easebar.com
-DOMAIN-SUFFIX,whoami-ipv4.nie.easebar.com
+DOMAIN,who.easebar.com
+DOMAIN,who.nie.easebar.com
+DOMAIN,whoami-ipv4.nie.easebar.com

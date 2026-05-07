@@ -9,3 +9,4 @@ IP-CIDR,154.9.253.41/32
 #DOMAIN-SUFFIX,who.nie.easebar.com
 #DOMAIN-SUFFIX,whoami-ipv4.nie.easebar.com
 #DOMAIN-SUFFIX,httpdns.nie.easebar.com
+DOMAIN-SUFFIX,easebar.com
