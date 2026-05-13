@@ -4,8 +4,8 @@
 # - 特征：涵盖搜索引擎、电商平台、社交媒体、支付服务、地图导航、云服务、内容平台、工具服务等典型服务域名
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-05-11
-# - 校对时间：2026-05-11
+# - 更新时间：2026-05-12
+# - 校对时间：2026-05-12
 
 # > Alibaba Group - China（阿里巴巴中国站）相关域名
 # - 校对时间：2026-05-11
@@ -318,19 +318,31 @@ DOMAIN-SUFFIX,console.hunyuan.tencent.com # 腾讯混元控制台域名
 DOMAIN-SUFFIX,cdn.hunyuan.tencent.com # 腾讯混元静态资源域名
 
 # > ByteDance AI and Infrastructure Services（字节跳动 AI 与基础服务）
-# - 校对时间：2026-05-11
+# - 校对时间：2026-05-12
 
 DOMAIN-SUFFIX,doubao.com # 豆包主域名
 DOMAIN-SUFFIX,volcengine.com # 火山引擎主域名
 DOMAIN-SUFFIX,volcengineapi.com # 火山引擎 API 域名
 DOMAIN-SUFFIX,volces.com # 火山引擎资源服务域名
-DOMAIN-SUFFIX,volccdn.com # 火山引擎内容分发服务域名
+DOMAIN-SUFFIX,volccdn.com # 火山引擎内容分发域名
+DOMAIN-SUFFIX,vlabvod.com # 字节跳动视频点播资源服务域名
+DOMAIN-SUFFIX,open-douyin.com # 抖音开放平台服务域名
+DOMAIN-SUFFIX,draftstatic.com # 字节跳动协议与静态文档资源域名
+DOMAIN-SUFFIX,dahhxxttxs.com # 字节跳动备案服务域名
 DOMAIN-SUFFIX,zijieapi.com # 字节跳动 API 服务域名
 DOMAIN-SUFFIX,mcs.zijieapi.com # 字节跳动多媒体服务域名
 DOMAIN-SUFFIX,bytecdn.com # 字节跳动商业系统资源服务域名
 DOMAIN-SUFFIX,byted-static.com # 字节跳动静态资源服务域名
 DOMAIN-SUFFIX,bytegoofy.com # 字节跳动短链与静态资源服务域名
 DOMAIN-SUFFIX,byted-ug.com # 字节跳动用户增长资源服务域名
+
+# > CapCut / Jianying Video Creation Service（CapCut / 剪映视频创作服务）
+# - 校对时间：2026-05-12
+
+DOMAIN-SUFFIX,capcut.cn # CapCut / 剪映中国区主域名
+DOMAIN-SUFFIX,jianying.com # 剪映服务主域名
+DOMAIN-SUFFIX,jimeng.jianying.com # 即梦 AI 创作服务域名
+DOMAIN-SUFFIX,ulikecam.com # 剪映 / 轻颜相机服务主域名
 
 # > China Telecom（中国电信）服务相关域名
 # - 校对时间：2026-03-24
@@ -1574,6 +1586,12 @@ DOMAIN-SUFFIX,sso.sina.com.cn # 新浪单点登录服务域名
 DOMAIN-SUFFIX,csdn.net # CSDN 技术社区域名
 DOMAIN-SUFFIX,ps.gaoding.com # 稿定设计图片处理服务域名
 DOMAIN-SUFFIX,19ego.cn # 19EGO 营销服务域名
+
+# > Char123 Static Asset Service（Char123 静态资源服务）
+# - 校对时间：2026-05-12
+
+DOMAIN-SUFFIX,char123.com # Char123 服务主域名
+DOMAIN-SUFFIX,static.char123.com # Char123 静态资源服务域名
 
 # > DigitalYCHEE（数码荔枝）相关域名
 # - 校对时间：2026-03-26
