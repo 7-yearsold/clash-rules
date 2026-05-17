@@ -4,8 +4,8 @@
 # - 特征：涵盖搜索引擎、电商平台、社交媒体、支付服务、地图导航、云服务、内容平台、工具服务等典型服务域名
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-05-16
-# - 校对时间：2026-05-16
+# - 更新时间：2026-05-17
+# - 校对时间：2026-05-17
 
 # > Alibaba Group - China（阿里巴巴中国站）相关域名
 # - 校对时间：2026-05-11
@@ -2579,3 +2579,152 @@ DOMAIN-SUFFIX,1panel.cn # 1Panel 中文官网主域名
 
 DOMAIN-SUFFIX,fit2cloud.com # FIT2CLOUD 飞致云官方主域名
 DOMAIN-SUFFIX,community.fit2cloud.com # FIT2CLOUD 飞致云技术社区域名
+
+# > Tesla China Site（Tesla 中国站点）
+# - 校对时间：2026-05-16
+
+DOMAIN-SUFFIX,tesla.cn # Tesla 中国站点主域名
+
+# > BMW China Site（BMW 中国站点）
+# - 校对时间：2026-05-16
+
+DOMAIN-SUFFIX,bmw.com.cn # BMW 中国站点主域名
+
+# > Audi China Site（Audi 中国站点）
+# - 校对时间：2026-05-16
+
+DOMAIN-SUFFIX,audi.cn # Audi 中国站点主域名
+
+# > Mercedes-Benz China Site（梅赛德斯-奔驰 中国站点）
+# - 校对时间：2026-05-16
+
+DOMAIN-SUFFIX,mercedes-benz.com.cn # Mercedes-Benz 中国站点主域名
+
+# > Porsche China Site（Porsche 中国站点）
+# - 校对时间：2026-05-16
+
+DOMAIN-SUFFIX,porsche.cn # Porsche 中国站点主域名
+
+# > Volvo China Site（Volvo 中国站点）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,volvocars.com.cn # Volvo Cars 中国站点主域名
+
+# > Volkswagen China Site（Volkswagen 中国站点）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,volkswagen.com.cn # Volkswagen 中国站点主域名
+
+# > Toyota China Site（Toyota 中国站点）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,toyota.com.cn # Toyota 中国站点主域名
+
+# > Lexus China Site（Lexus 中国站点）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,lexus.com.cn # Lexus 中国站点主域名
+
+# > Honda China Site（Honda 中国站点）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,honda.com.cn # Honda 中国站点主域名
+
+# > Nissan China Site（Nissan 中国站点）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,nissan.com.cn # Nissan 中国站点主域名
+DOMAIN-SUFFIX,dongfeng-nissan.com.cn # 东风日产中国站点主域名
+
+# > Ford China Site（Ford 中国站点）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,ford.com.cn # Ford 中国站点主域名
+DOMAIN-SUFFIX,changanford.com.cn # 长安福特中国站点主域名
+
+# > General Motors China Sites（General Motors 中国站点）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,gmchina.com # General Motors 中国站点主域名
+DOMAIN-SUFFIX,saic-gm.com # 上汽通用汽车官方主域名
+DOMAIN-SUFFIX,buick.com.cn # Buick 中国站点主域名
+DOMAIN-SUFFIX,cadillac.com.cn # Cadillac 中国站点主域名
+DOMAIN-SUFFIX,chevrolet.com.cn # Chevrolet 中国站点主域名
+
+# > Ferrari China Site（Ferrari 中国站点）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,ferrari.com.cn # Ferrari 中国站点主域名
+
+# > Jaguar Land Rover China Sites（Jaguar Land Rover 中国站点）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,jaguar.com.cn # Jaguar 中国站点主域名
+DOMAIN-SUFFIX,landrover.com.cn # Land Rover 中国站点主域名
+
+# > Hyundai China Site（Hyundai 中国站点）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,hyundai.com.cn # Hyundai 中国站点主域名
+DOMAIN-SUFFIX,beijing-hyundai.com.cn # 北京现代中国站点主域名
+
+# > Kia China Site（Kia 中国站点）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,kia.cn # Kia 中国站点主域名
+
+# > Mazda China Site（Mazda 中国站点）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,mazda.com.cn # Mazda 中国站点主域名
+DOMAIN-SUFFIX,changan-mazda.com.cn # 长安马自达中国站点主域名
+
+# > Subaru China Site（Subaru 中国站点）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,subaru-china.cn # Subaru 中国官网主域名
+DOMAIN-SUFFIX,subaru.cn # Subaru 中国站点服务域名
+
+# > Mitsubishi Motors China Site（Mitsubishi Motors 中国站点）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,mitsubishi-motors.com.cn # Mitsubishi Motors 中国站点主域名
+
+# > Suzuki China Site（Suzuki 中国站点）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,suzuki-china.com # Suzuki 中国站点主域名
+
+# > Renault China Site（Renault 中国站点）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,renault.com.cn # Renault 中国站点主域名
+
+# > Peugeot China Site（Peugeot 中国站点）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,peugeot.com.cn # Peugeot 中国站点主域名
+
+# > Citroën China Site（Citroën 中国站点）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,citroen.com.cn # Citroën 中国站点主域名
+DOMAIN-SUFFIX,dpca.com.cn # 神龙汽车中国站点主域名
+
+# > Jeep China Site（Jeep 中国站点）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,jeep.com.cn # Jeep 中国站点主域名
+
+# > Maserati China Site（Maserati 中国站点）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,maserati.com.cn # Maserati 中国站点主域名
+
+# > ZXMOTO China Site（张雪机车中国站点）
+
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,cqzxmoto.com # 张雪机车中国官网主域名
+
+DOMAIN-SUFFIX,zxmoto.com # ZXMOTO 官方站点主域名

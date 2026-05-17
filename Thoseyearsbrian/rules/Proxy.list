@@ -4,8 +4,8 @@
 # - 特征：覆盖需依赖代理访问的高频主流服务域名
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-05-16
-# - 校对时间：2026-05-16
+# - 更新时间：2026-05-17
+# - 校对时间：2026-05-17
 
 # > Cloudflare Platform Infrastructure（Cloudflare 平台基础设施域名）
 # - 校对时间：2026-04-18
@@ -7484,8 +7484,8 @@ DOMAIN-SUFFIX,sbsem.ulb.be # Solvay Brussels School of Economics and Management 
 DOMAIN-SUFFIX,n1cloudcdnct.inter.71edge.com # 71Edge CDN 电信线路国际节点
 DOMAIN-SUFFIX,bscdnct.inter.71edge.com # 71Edge CDN 电信线路国际节点
 
-# > Broadcom Service（Broadcom 官方技术支持与客户服务平台）
-# - 校对时间：2026-03-28
+# > Broadcom（博通相关域名）
+# - 校对时间：2026-05-16
 
 DOMAIN-SUFFIX,broadcom.com # Broadcom 官方主域名
 DOMAIN-SUFFIX,support.broadcom.com # Broadcom 官方技术支持与客户服务平台
@@ -7795,6 +7795,13 @@ DOMAIN-SUFFIX,cdnapi.kaltura.com # Kaltura CDN API 服务域
 DOMAIN-SUFFIX,api.kaltura.com # Kaltura 平台 API 接口域名
 DOMAIN-SUFFIX,player.kaltura.com # Kaltura Web 播放器域名
 DOMAIN-SUFFIX,cfvod.kaltura.com # Kaltura 基于 CloudFront 的视频点播 CDN 节点
+
+# > Brightcove Video Platform（Brightcove 视频平台）
+# - 校对时间：2026-05-16
+
+DOMAIN-SUFFIX,brightcove.net # Brightcove 视频播放器与媒体分发服务主域名
+DOMAIN-SUFFIX,brightcove.com # Brightcove 官方平台主域名
+DOMAIN-SUFFIX,api.brightcove.com # Brightcove API 服务主域名
 
 # > Amnesty Tech / Security Lab Platform（Amnesty Tech / 技术研究与安全分析平台）
 # - 校对时间：2026-03-28
@@ -8831,6 +8838,320 @@ DOMAIN-SUFFIX,skylinewebcams.com # Skyline Webcams 官方平台主域名
 DOMAIN-SUFFIX,sublimetext.com # Sublime Text 官方主域名
 DOMAIN-SUFFIX,sublimehq.com # Sublime HQ 官方服务主域名
 DOMAIN-SUFFIX,packagecontrol.io # Sublime Text Package Control 插件管理服务域名
+
+# > Tesla Electric Vehicle Platform（Tesla 电动汽车平台）
+# - 校对时间：2026-05-16
+
+DOMAIN-SUFFIX,tesla.com # Tesla 官方主域名
+
+# > SpaceX Aerospace Platform（SpaceX 航天平台）
+# - 校对时间：2026-05-16
+
+DOMAIN-SUFFIX,spacex.com # SpaceX 官方主域名
+DOMAIN-SUFFIX,sxcontent9668.azureedge.us # SpaceX 内容分发服务域名
+
+# > Starlink Satellite Internet Service（Starlink 卫星互联网服务）
+# - 校对时间：2026-05-16
+
+DOMAIN-SUFFIX,starlink.com # Starlink 官方主域名
+
+# > The Boring Company Tunnel Infrastructure（The Boring Company 隧道基础设施）
+# - 校对时间：2026-05-16
+
+DOMAIN-SUFFIX,boringcompany.com # The Boring Company 官方主域名
+
+# > Neuralink Neurotechnology Company（Neuralink 神经技术公司）
+# - 校对时间：2026-05-16
+
+DOMAIN-SUFFIX,neuralink.com # Neuralink 官方主域名
+
+# > ZXMOTO Related Domains（张雪机车相关域名）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,zxmoto.com # ZXMOTO 国际站点主域名
+
+# > BMW Related Domains（宝马 相关域名）
+# - 校对时间：2026-05-16
+
+DOMAIN-SUFFIX,bmw.com # BMW 国际官网主域名
+DOMAIN-SUFFIX,bmwusa.com # BMW 美国站点主域名
+DOMAIN-SUFFIX,bmw.co.jp # BMW 日本站点主域名
+DOMAIN-SUFFIX,bmw.co.uk # BMW 英国站点主域名
+DOMAIN-SUFFIX,bmw.de # BMW 德国站点主域名
+DOMAIN-SUFFIX,bmw.ca # BMW 加拿大站点主域名
+DOMAIN-SUFFIX,bmw.com.au # BMW 澳大利亚站点主域名
+DOMAIN-SUFFIX,bmw.co.nz # BMW 新西兰站点主域名
+DOMAIN-SUFFIX,bmw.ie # BMW 爱尔兰站点主域名
+DOMAIN-SUFFIX,bmw.co.za # BMW 南非站点主域名
+DOMAIN-SUFFIX,bmw-m.com # BMW M 官方主域名
+DOMAIN-SUFFIX,bmwgroup.com # BMW Group 官方主域名
+DOMAIN-SUFFIX,lifestyle.bmw.com # BMW Lifestyle 官方商店域名
+
+# > Audi Related Domains（奥迪 相关域名）
+# - 校对时间：2026-05-16
+
+DOMAIN-SUFFIX,audi.com # Audi 国际官网主域名
+DOMAIN-SUFFIX,audiusa.com # Audi 美国站点主域名
+DOMAIN-SUFFIX,audi.de # Audi 德国站点主域名
+DOMAIN-SUFFIX,audi.co.uk # Audi 英国站点主域名
+DOMAIN-SUFFIX,audi.ca # Audi 加拿大站点主域名
+DOMAIN-SUFFIX,audi.com.au # Audi 澳大利亚站点主域名
+DOMAIN-SUFFIX,audi.co.jp # Audi 日本站点主域名
+
+# > Mercedes-Benz Related Domains（梅赛德斯-奔驰 相关域名）
+# - 校对时间：2026-05-16
+
+DOMAIN-SUFFIX,mercedes-benz.com # Mercedes-Benz 国际官网主域名
+DOMAIN-SUFFIX,mbusa.com # Mercedes-Benz 美国站点主域名
+DOMAIN-SUFFIX,mercedes-benz.de # Mercedes-Benz 德国站点主域名
+DOMAIN-SUFFIX,mercedes-benz.co.uk # Mercedes-Benz 英国站点主域名
+DOMAIN-SUFFIX,mercedes-benz.ca # Mercedes-Benz 加拿大站点主域名
+DOMAIN-SUFFIX,mercedes-benz.com.au # Mercedes-Benz 澳大利亚站点主域名
+DOMAIN-SUFFIX,mercedes-benz.co.jp # Mercedes-Benz 日本站点主域
+
+# > Porsche Related Domains（Porsche 相关域名）
+# - 校对时间：2026-05-16
+
+DOMAIN-SUFFIX,porsche.com # Porsche 国际官网主域名
+DOMAIN-SUFFIX,porscheusa.com # Porsche 美国站点主域名
+DOMAIN-SUFFIX,porsche.de # Porsche 德国站点主域名
+DOMAIN-SUFFIX,porsche.co.uk # Porsche 英国站点主域名
+DOMAIN-SUFFIX,porsche.ca # Porsche 加拿大站点主域名
+DOMAIN-SUFFIX,porsche.com.au # Porsche 澳大利亚站点主域名
+DOMAIN-SUFFIX,porsche.co.jp # Porsche 日本站点主域名
+
+# > Lamborghini Related Domains（Lamborghini 相关域名）
+# - 校对时间：2026-05-16
+
+DOMAIN-SUFFIX,lamborghini.com # Lamborghini 国际官网主域名
+DOMAIN-SUFFIX,lamborghinistore.com # Lamborghini 官方商店主域名
+
+# > Volvo Related Domains（Volvo 相关域名）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,volvocars.com # Volvo Cars 国际官网主域名
+DOMAIN-SUFFIX,volvo.com # Volvo 官方主域名
+DOMAIN-SUFFIX,volvogroup.com # Volvo Group 官方主域名
+
+# > Volkswagen Related Domains（Volkswagen 相关域名）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,volkswagen.com # Volkswagen 国际官网主域名
+DOMAIN-SUFFIX,vw.com # Volkswagen 美国站点主域名
+DOMAIN-SUFFIX,volkswagen.de # Volkswagen 德国站点主域名
+DOMAIN-SUFFIX,volkswagen.co.uk # Volkswagen 英国站点主域名
+DOMAIN-SUFFIX,volkswagen.ca # Volkswagen 加拿大站点主域名
+DOMAIN-SUFFIX,volkswagen.com.au # Volkswagen 澳大利亚站点主域名
+DOMAIN-SUFFIX,volkswagen.co.jp # Volkswagen 日本站点主域名
+DOMAIN-SUFFIX,volkswagengroup.com # Volkswagen Group 官方主域名
+
+# > Toyota Related Domains（Toyota 相关域名）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,toyota.com # Toyota 国际官网主域名
+DOMAIN-SUFFIX,toyota.jp # Toyota 日本站点主域名
+DOMAIN-SUFFIX,toyota.co.jp # Toyota 日本企业站点主域名
+DOMAIN-SUFFIX,toyota.eu # Toyota 欧洲站点主域名
+DOMAIN-SUFFIX,toyota.co.uk # Toyota 英国站点主域名
+DOMAIN-SUFFIX,toyota.ca # Toyota 加拿大站点主域名
+DOMAIN-SUFFIX,toyota.com.au # Toyota 澳大利亚站点主域名
+DOMAIN-SUFFIX,toyotaglobal.com # Toyota 全球企业信息主域名
+
+# > Lexus Related Domains（Lexus 相关域名）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,lexus.com # Lexus 国际官网主域名
+DOMAIN-SUFFIX,lexus.jp # Lexus 日本站点主域名
+DOMAIN-SUFFIX,lexus.eu # Lexus 欧洲站点主域名
+DOMAIN-SUFFIX,lexus.co.uk # Lexus 英国站点主域名
+DOMAIN-SUFFIX,lexus.ca # Lexus 加拿大站点主域名
+DOMAIN-SUFFIX,lexus.com.au # Lexus 澳大利亚站点主域名
+
+# > Honda Related Domains（Honda 相关域名）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,honda.com # Honda 国际官网主域名
+DOMAIN-SUFFIX,honda.co.jp # Honda 日本站点主域名
+DOMAIN-SUFFIX,honda.co.uk # Honda 英国站点主域名
+DOMAIN-SUFFIX,honda.ca # Honda 加拿大站点主域名
+DOMAIN-SUFFIX,honda.com.au # Honda 澳大利亚站点主域名
+DOMAIN-SUFFIX,hondanews.com # Honda 官方新闻站点主域名
+
+# > Nissan Related Domains（Nissan 相关域名）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,nissan-global.com # Nissan 全球企业官网主域名
+DOMAIN-SUFFIX,nissanusa.com # Nissan 美国站点主域名
+DOMAIN-SUFFIX,nissan.co.jp # Nissan 日本站点主域名
+DOMAIN-SUFFIX,nissan.co.uk # Nissan 英国站点主域名
+DOMAIN-SUFFIX,nissan.ca # Nissan 加拿大站点主域名
+DOMAIN-SUFFIX,nissan.com.au # Nissan 澳大利亚站点主域名
+DOMAIN-SUFFIX,nissannews.com # Nissan 官方新闻站点主域名
+DOMAIN-SUFFIX,nissanmotor.jobs # Nissan 全球招聘站点主域名
+
+# > Ford Related Domains（Ford 相关域名）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,ford.com # Ford 国际官网主域名
+DOMAIN-SUFFIX,ford.co.uk # Ford 英国站点主域名
+DOMAIN-SUFFIX,ford.ca # Ford 加拿大站点主域名
+DOMAIN-SUFFIX,ford.com.au # Ford 澳大利亚站点主域名
+DOMAIN-SUFFIX,ford.de # Ford 德国站点主域名
+DOMAIN-SUFFIX,ford.eu # Ford 欧洲站点主域名
+DOMAIN-SUFFIX,media.ford.com # Ford 官方新闻媒体站点主域名
+
+# > General Motors Related Domains（General Motors 相关域名）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,gm.com # General Motors 官方主域名
+DOMAIN-SUFFIX,gmc.com # GMC 官方主域名
+DOMAIN-SUFFIX,chevrolet.com # Chevrolet 官方主域名
+DOMAIN-SUFFIX,buick.com # Buick 官方主域名
+DOMAIN-SUFFIX,cadillac.com # Cadillac 官方主域名
+DOMAIN-SUFFIX,gm.ca # General Motors 加拿大站点主域名
+DOMAIN-SUFFIX,chevrolet.ca # Chevrolet 加拿大站点主域名
+DOMAIN-SUFFIX,buick.ca # Buick 加拿大站点主域名
+DOMAIN-SUFFIX,cadillac.ca # Cadillac 加拿大站点主域名
+
+# > Ferrari Related Domains（Ferrari 相关域名）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,ferrari.com # Ferrari 国际官网主域名
+DOMAIN-SUFFIX,ferrari.com.br # Ferrari 巴西站点主域名
+DOMAIN-SUFFIX,ferrari.co.uk # Ferrari 英国站点主域名
+DOMAIN-SUFFIX,ferrari.com.au # Ferrari 澳大利亚站点主域名
+DOMAIN-SUFFIX,ferrariworldabudhabi.com # Ferrari World Abu Dhabi 官方主域名
+
+# > Jaguar Land Rover Related Domains（Jaguar Land Rover 相关域名）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,jlr.com # Jaguar Land Rover 官方主域名
+DOMAIN-SUFFIX,jaguar.com # Jaguar 国际官网主域名
+DOMAIN-SUFFIX,landrover.com # Land Rover 国际官网主域名
+DOMAIN-SUFFIX,jaguarusa.com # Jaguar 美国站点主域名
+DOMAIN-SUFFIX,landroverusa.com # Land Rover 美国站点主域名
+DOMAIN-SUFFIX,jaguar.co.uk # Jaguar 英国站点主域名
+DOMAIN-SUFFIX,landrover.co.uk # Land Rover 英国站点主域名
+DOMAIN-SUFFIX,jaguar.ca # Jaguar 加拿大站点主域名
+DOMAIN-SUFFIX,landrover.ca # Land Rover 加拿大站点主域名
+DOMAIN-SUFFIX,jaguar.com.au # Jaguar 澳大利亚站点主域名
+DOMAIN-SUFFIX,landrover.com.au # Land Rover 澳大利亚站点主域名
+DOMAIN-SUFFIX,jaguar.co.jp # Jaguar 日本站点主域名
+DOMAIN-SUFFIX,landrover.co.jp # Land Rover 日本站点主域名
+
+# > Hyundai Related Domains（Hyundai 相关域名）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,hyundai.com # Hyundai 国际官网主域名
+DOMAIN-SUFFIX,hyundaiusa.com # Hyundai 美国站点主域名
+DOMAIN-SUFFIX,hyundai.co.uk # Hyundai 英国站点主域名
+DOMAIN-SUFFIX,hyundai.ca # Hyundai 加拿大站点主域名
+DOMAIN-SUFFIX,hyundai.com.au # Hyundai 澳大利亚站点主域名
+DOMAIN-SUFFIX,hyundai.co.jp # Hyundai 日本站点主域名
+DOMAIN-SUFFIX,hyundaimotorgroup.com # Hyundai Motor Group 官方主域名
+DOMAIN-SUFFIX,hyundainews.com # Hyundai 官方新闻站点主域名
+
+# > Kia Related Domains（Kia 相关域名）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,kia.com # Kia 国际官网主域名
+DOMAIN-SUFFIX,kia.co.uk # Kia 英国站点主域名
+DOMAIN-SUFFIX,kia.ca # Kia 加拿大站点主域名
+DOMAIN-SUFFIX,kia.com.au # Kia 澳大利亚站点主域名
+DOMAIN-SUFFIX,kianewscenter.com # Kia 官方新闻站点主域名
+
+# > Mazda Related Domains（Mazda 相关域名）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,mazda.com # Mazda 国际官网主域名
+DOMAIN-SUFFIX,mazdausa.com # Mazda 美国站点主域名
+DOMAIN-SUFFIX,mazda.co.jp # Mazda 日本站点主域名
+DOMAIN-SUFFIX,mazda.co.uk # Mazda 英国站点主域名
+DOMAIN-SUFFIX,mazda.ca # Mazda 加拿大站点主域名
+DOMAIN-SUFFIX,mazda.com.au # Mazda 澳大利亚站点主域名
+
+# > Subaru Related Domains（Subaru 相关域名）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,subaru.com # Subaru 美国站点主域名
+DOMAIN-SUFFIX,subaru.co.jp # Subaru 日本官方主域名
+DOMAIN-SUFFIX,subaru-global.com # Subaru 全球信息站点主域名
+DOMAIN-SUFFIX,subaru.co.uk # Subaru 英国站点主域名
+DOMAIN-SUFFIX,subaru.ca # Subaru 加拿大站点主域名
+DOMAIN-SUFFIX,subaru.com.au # Subaru 澳大利亚站点主域名
+DOMAIN-SUFFIX,subaru.asia # Subaru 亚洲区域站点主域名
+
+# > Mitsubishi Motors Related Domains（Mitsubishi Motors 相关域名）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,mitsubishi-motors.com # Mitsubishi Motors 国际官网主域名
+DOMAIN-SUFFIX,mitsubishicars.com # Mitsubishi Motors 美国站点主域名
+DOMAIN-SUFFIX,mitsubishi-motors.co.jp # Mitsubishi Motors 日本站点主域名
+DOMAIN-SUFFIX,mitsubishi-motors.co.uk # Mitsubishi Motors 英国站点主域名
+DOMAIN-SUFFIX,mitsubishi-motors.ca # Mitsubishi Motors 加拿大站点主域名
+DOMAIN-SUFFIX,mitsubishi-motors.com.au # Mitsubishi Motors 澳大利亚站点主域名
+DOMAIN-SUFFIX,mitsubishi-motors.eu # Mitsubishi Motors 欧洲站点主域名
+
+# > Suzuki Related Domains（Suzuki 相关域名）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,suzuki.com # Suzuki 国际官网主域名
+DOMAIN-SUFFIX,suzuki.co.jp # Suzuki 日本站点主域名
+DOMAIN-SUFFIX,suzuki.co.uk # Suzuki 英国站点主域名
+DOMAIN-SUFFIX,suzuki.ca # Suzuki 加拿大站点主域名
+DOMAIN-SUFFIX,suzuki.com.au # Suzuki 澳大利亚站点主域名
+DOMAIN-SUFFIX,globalsuzuki.com # Suzuki 
+
+# > Renault Related Domains（Renault 相关域名）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,renault.com # Renault 国际官网主域名
+DOMAIN-SUFFIX,renault.fr # Renault 法国站点主域名
+DOMAIN-SUFFIX,renault.co.uk # Renault 英国站点主域名
+DOMAIN-SUFFIX,renault.de # Renault 德国站点主域名
+DOMAIN-SUFFIX,renault.com.au # Renault 澳大利亚站点主域名
+DOMAIN-SUFFIX,renaultgroup.com # Renault Group 官方主域名
+
+# > Peugeot Related Domains（Peugeot 相关域名）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,peugeot.com # Peugeot 国际官网主域名
+DOMAIN-SUFFIX,peugeot.fr # Peugeot 法国站点主域名
+DOMAIN-SUFFIX,peugeot.co.uk # Peugeot 英国站点主域名
+DOMAIN-SUFFIX,peugeot.de # Peugeot 德国站点主域名
+DOMAIN-SUFFIX,peugeot.com.au # Peugeot 澳大利亚站点主域名
+DOMAIN-SUFFIX,stellantis.com # Stellantis 官方主域名
+
+# > Citroën Related Domains（Citroën 相关域名）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,citroen.com # Citroën 国际官网主域名
+DOMAIN-SUFFIX,citroen.fr # Citroën 法国站点主域名
+DOMAIN-SUFFIX,citroen.co.uk # Citroën 英国站点主域名
+DOMAIN-SUFFIX,citroen.de # Citroën 德国站点主域名
+DOMAIN-SUFFIX,citroen.com.au # Citroën 澳大利亚站点主域名
+
+# > Jeep Related Domains（Jeep 相关域名）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,jeep.com # Jeep 国际官网主域名
+DOMAIN-SUFFIX,jeep.ca # Jeep 加拿大站点主域名
+DOMAIN-SUFFIX,jeep.co.uk # Jeep 英国站点主域名
+DOMAIN-SUFFIX,jeep.com.au # Jeep 澳大利亚站点主域名
+DOMAIN-SUFFIX,jeep.de # Jeep 德国站点主域名
+DOMAIN-SUFFIX,jeep.fr # Jeep 法国站点主域名
+DOMAIN-SUFFIX,jeep.co.jp # Jeep 日本站点主域名
+
+# > Maserati Related Domains（Maserati 相关域名）
+# - 校对时间：2026-05-17
+
+DOMAIN-SUFFIX,maserati.com # Maserati 国际官网主域名
+DOMAIN-SUFFIX,maseratiusa.com # Maserati 美国站点主域名
+DOMAIN-SUFFIX,maserati.co.uk # Maserati 英国站点主域名
+DOMAIN-SUFFIX,maserati.ca # Maserati 加拿大站点主域名
+DOMAIN-SUFFIX,maserati.com.au # Maserati 澳大利亚站点主域名
+DOMAIN-SUFFIX,maserati.it # Maserati 意大利站点主域名
+DOMAIN-SUFFIX,maserati.co.jp # Maserati 日本站点主域名
 
 # > Independent Sites（第三方独立站）
 # - 校对时间：2026-03-28
