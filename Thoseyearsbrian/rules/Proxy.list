@@ -4,8 +4,8 @@
 # - 特征：覆盖需依赖代理访问的高频主流服务域名
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-06-04
-# - 校对时间：2026-06-04
+# - 更新时间：2026-06-07
+# - 校对时间：2026-06-07
 
 # > Cloudflare Platform Infrastructure（Cloudflare 平台基础设施域名）
 # - 校对时间：2026-06-03
@@ -799,6 +799,12 @@ IP-CIDR,3.175.207.59/32 # 服务节点
 IP-CIDR,185.18.139.0/24 # Serif 网络段
 IP-CIDR,185.18.138.0/24 # Serif 网络段
 
+# > Charlie Monroe Software（Charlie Monroe 独立软件平台）
+# - 校对时间：2026-06-07
+
+DOMAIN-SUFFIX,charliemonroesoftware.com # Charlie Monroe Software 历史站点与软件服务域名
+DOMAIN-SUFFIX,charliemonroe.net # Charlie Monroe Software 官方主站、应用下载、授权与支持服务域名
+
 # > Dave's Hot Chicken Restaurant Brand（Dave's Hot Chicken 餐饮品牌）
 # - 校对时间：2026-03-28
 
@@ -1118,9 +1124,9 @@ DOMAIN-SUFFIX,lnkd.in # 短链接域名
 DOMAIN-SUFFIX,linkedin.sc.omtrdc.net # 统计服务域名
 
 # > NBA Platform（NBA 体育平台）
-# - 校对时间：2026-03-28
+# - 校对时间：2026-06-07
 
-DOMAIN-SUFFIX,nba.com # 平台主域名
+DOMAIN-SUFFIX,nba.com # NBA 官方主站、NBA ID 账号与平台服务主域名
 DOMAIN-SUFFIX,watch.nba.com # 播放服务域名
 DOMAIN-SUFFIX,api.nba.com # API 接口域名
 DOMAIN-SUFFIX,assets.nba.com # 静态资源域名
@@ -9404,6 +9410,81 @@ DOMAIN-SUFFIX,ifanr.com # 爱范儿科技媒体与数字生活内容平台主域
 
 DOMAIN-SUFFIX,yarnpkg.com # Yarn 包注册表与依赖包下载服务域名
 DOMAIN-SUFFIX,registry.yarnpkg.com # Yarn 包注册表与依赖包下载服务域名
+
+# > Battle.net / Blizzard Gaming Platform（Battle.net / Blizzard 游戏平台）
+# - 校对时间：2026-06-07
+
+DOMAIN-SUFFIX,battle.net # Battle.net 游戏平台、账号与启动器服务主域名
+DOMAIN-SUFFIX,blizzard.com # Blizzard 官方主站、账号与游戏服务域名
+
+# > Electronic Arts Gaming Platform（Electronic Arts 游戏平台）
+# - 校对时间：2026-06-07
+
+DOMAIN-SUFFIX,ea.com # Electronic Arts 官方主站、账号与游戏服务主域名
+DOMAIN-SUFFIX,eahelp.com # EA Help 官方支持与账户帮助服务域名
+DOMAIN-SUFFIX,origin.com # Origin 历史游戏平台与兼容服务域名
+
+# > Epic Games Gaming Platform（Epic Games 游戏平台）
+# - 校对时间：2026-06-07
+
+DOMAIN-SUFFIX,epicgames.com # Epic Games 官方主站、账号、商店与启动器服务主域名
+DOMAIN-SUFFIX,epicgames.dev # Epic Games 开发者服务与平台文档域名
+DOMAIN-SUFFIX,epicgamescdn.com # Epic Games 静态资源与内容分发服务域名
+DOMAIN-SUFFIX,unrealengine.com # Unreal Engine 官方主站与 Epic Games 关联开发者服务域名
+
+# > Garena Gaming Platform（Garena 游戏平台）
+# - 校对时间：2026-06-07
+
+DOMAIN-SUFFIX,garena.com # Garena 官方主站、账号与游戏服务主域名
+DOMAIN-SUFFIX,garena.sg # Garena 新加坡区域站点与游戏服务域名
+DOMAIN-SUFFIX,garena.co.id # Garena 印尼区域站点与游戏服务域名
+DOMAIN-SUFFIX,garena.co.th # Garena 泰国区域站点与游戏服务域名
+DOMAIN-SUFFIX,garena.vn # Garena 越南区域站点与游戏服务域名
+DOMAIN-SUFFIX,garenanow.com # Garena 历史品牌与游戏服务域名
+
+# > KRAFTON Gaming Platform（KRAFTON 游戏平台）
+# - 校对时间：2026-06-07
+
+DOMAIN-SUFFIX,krafton.com # KRAFTON 官方主站、账号与游戏服务主域名
+DOMAIN-SUFFIX,pubg.com # PUBG: BATTLEGROUNDS 官方主站、账号与游戏服务域名
+DOMAIN-SUFFIX,pubgmobile.com # PUBG MOBILE 官方主站、账号与游戏服务域名
+DOMAIN-SUFFIX,battlegroundsmobileindia.com # Battlegrounds Mobile India 官方游戏服务域名
+
+# > Mobile Legends: Bang Bang Gaming Platform（Mobile Legends: Bang Bang 游戏平台）
+# - 校对时间：2026-06-07
+
+DOMAIN-SUFFIX,mobilelegends.com # Mobile Legends: Bang Bang 官方主站、账号与游戏服务主域名
+DOMAIN-SUFFIX,moonton.com # MOONTON 官方主站、账号与游戏服务域名
+
+# > NFL Platform（NFL 体育平台）
+# - 校对时间：2026-06-07
+
+DOMAIN-SUFFIX,nfl.com # NFL 官方主站、NFL ID 账号与平台服务主域名
+
+# > Riot Games Gaming Platform（Riot Games 游戏平台）
+# - 校对时间：2026-06-07
+
+DOMAIN-SUFFIX,riotgames.com # Riot Games 官方主站、账号与游戏服务主域名
+DOMAIN-SUFFIX,riotcdn.net # Riot Games 静态资源与内容分发服务域名
+DOMAIN-SUFFIX,leagueoflegends.com # League of Legends 官方主站与游戏服务域名
+DOMAIN-SUFFIX,valorant.com # VALORANT 官方主站与游戏服务域名
+DOMAIN-SUFFIX,playvalorant.com # VALORANT 官方游戏服务与品牌站点域名
+DOMAIN-SUFFIX,playruneterra.com # Legends of Runeterra 官方游戏服务域名
+
+# > Ubisoft Gaming Platform（Ubisoft 游戏平台）
+# - 校对时间：2026-06-07
+
+DOMAIN-SUFFIX,ubisoft.com # Ubisoft 官方主站、账号与游戏服务主域名
+DOMAIN-SUFFIX,ubi.com # Ubisoft 短域名、账号与游戏服务域名
+DOMAIN-SUFFIX,ubisoftconnect.com # Ubisoft Connect 启动器、账号与游戏联机服务域名
+
+# > Yahoo Fantasy Sports Platform（Yahoo Fantasy 体育梦幻联赛平台）
+# - 校对时间：2026-06-07
+
+DOMAIN-SUFFIX,fantasy.yahoo.com # Yahoo Fantasy 体育梦幻联赛服务域名
+DOMAIN-SUFFIX,sports.yahoo.com # Yahoo Sports 体育内容与赛事服务域名
+DOMAIN-SUFFIX,yahoofantasysports.com # Yahoo Fantasy Sports 官方应用与服务域名
+DOMAIN-SUFFIX,yimg.com # Yahoo 媒体、图片与静态资源服务域名
 
 # > Independent Sites（第三方独立站）
 # - 校对时间：2026-03-28
