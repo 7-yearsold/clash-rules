@@ -73,7 +73,7 @@ IP-CIDR,1.0.0.1/32 # Cloudflare 公共 DNS 备用地址
 # IP-CIDR6,2c0f:f248::/32 # Cloudflare IPv6 边缘网络
 
 # > Speedtest by Ookla（Speedtest 网络测速平台）
-# - 校对时间：2026-06-17
+# - 校对时间：2026-07-08
 
 DOMAIN-SUFFIX,speedtest.net # Speedtest 主域名
 DOMAIN-SUFFIX,ooklaserver.net # Ookla 测速节点域名
@@ -86,6 +86,7 @@ DOMAIN-SUFFIX,fdcservers.net # FDCServers Speedtest 测速节点域名
 DOMAIN-SUFFIX,sp-sea-01.ezeefiber.net # EzeeFiber 西雅图节点测速服务
 DOMAIN-SUFFIX,seattle.speedtest.centurylink.net # CenturyLink 西雅图 Speedtest 节点
 DOMAIN-SUFFIX,mbspeed.net # Ookla Speedtest 测速节点域名
+DOMAIN-SUFFIX,speed.udx.icscoe.jp # Ookla Speedtest 日本东京测速节点
 
 # > OpenSpeedTest（OpenSpeedTest 网络测速服务）
 # - 校对时间：2026-03-27
@@ -9750,6 +9751,41 @@ DOMAIN-SUFFIX,spreadshirt.com # Spreadshirt 官方电商平台主域名
 DOMAIN-SUFFIX,spreadshirtmedia.com # Spreadshirt 商品图片与媒体资源 CDN
 DOMAIN-SUFFIX,myspreadshop.com # Spreadshop 品牌周边商城与商品销售平台
 DOMAIN-SUFFIX,myspreadshop.co.uk # Spreadshop 英国区域品牌周边商城域名
+
+# > Soundly Sound Effects Platform（Soundly 音效素材平台）
+# - 更新时间：2026-07-08
+
+DOMAIN-SUFFIX,getsoundly.com # Soundly 音效库、声音素材管理与云端资源平台域名
+
+# > BOOM Library Sound Effects Platform（BOOM Library 音效素材平台）
+# - 更新时间：2026-07-08
+
+DOMAIN-SUFFIX,boomlibrary.com # BOOM Library 专业音效库、声音素材与音频工具平台域名
+
+# > Pro Sound Effects Platform（Pro Sound Effects 音效素材平台）
+# - 更新时间：2026-07-08
+
+DOMAIN-SUFFIX,prosoundeffects.com # Pro Sound Effects 专业音效库、声音素材与音频制作平台域名
+
+# > Artlist SFX Platform（Artlist 音效素材平台）
+# - 更新时间：2026-07-08
+
+DOMAIN-SUFFIX,artlist.io # Artlist 音乐、音效素材与创意资源平台域名
+
+# > Epidemic Sound SFX Platform（Epidemic Sound 音效素材平台）
+# - 更新时间：2026-07-08
+
+DOMAIN-SUFFIX,epidemicsound.com # Epidemic Sound 音乐、音效素材与音效库平台域名
+
+# > ZapSplat Sound Effects Platform（ZapSplat 音效素材平台）
+# - 更新时间：2026-07-08
+
+DOMAIN-SUFFIX,zapsplat.com # ZapSplat 免费音效库、声音素材与创意资源平台域名
+
+# > Quiver Quantitative Investment Research Platform（Quiver Quantitative 投资研究平台）
+# - 更新时间：2026-07-08
+
+DOMAIN-SUFFIX,quiverquant.com # 另类数据、股票研究与市场情报分析平台域名
 
 # > Third-Party Blogs（第三方博客）
 # - 校对时间：2026-07-08
