@@ -4,8 +4,8 @@
 # - 特征：覆盖需依赖代理访问的高频主流服务域名
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-07-15
-# - 校对时间：2026-07-15
+# - 更新时间：2026-07-17
+# - 校对时间：2026-07-17
 
 # > Cloudflare Platform Infrastructure（Cloudflare 平台基础设施域名）
 # - 校对时间：2026-06-03
@@ -73,7 +73,7 @@ IP-CIDR,1.0.0.1/32 # Cloudflare 公共 DNS 备用地址
 # IP-CIDR6,2c0f:f248::/32 # Cloudflare IPv6 边缘网络
 
 # > Speedtest by Ookla（Speedtest 网络测速平台）
-# - 校对时间：2026-07-08
+# - 校对时间：2026-07-16
 
 DOMAIN-SUFFIX,speedtest.net # Speedtest 主域名
 DOMAIN-SUFFIX,ooklaserver.net # Ookla 测速节点域名
@@ -87,6 +87,7 @@ DOMAIN-SUFFIX,sp-sea-01.ezeefiber.net # EzeeFiber 西雅图节点测速服务
 DOMAIN-SUFFIX,seattle.speedtest.centurylink.net # CenturyLink 西雅图 Speedtest 节点
 DOMAIN-SUFFIX,mbspeed.net # Ookla Speedtest 测速节点域名
 DOMAIN-SUFFIX,speed.udx.icscoe.jp # Ookla Speedtest 日本东京测速节点
+DOMAIN-SUFFIX,tyo.speedtest.contabo.net # Contabo 东京 Speedtest 测速节点域名
 
 # > OpenSpeedTest（OpenSpeedTest 网络测速服务）
 # - 校对时间：2026-03-27
@@ -3750,25 +3751,19 @@ DOMAIN-SUFFIX,telegram-group.com # 目录服务域名
 DOMAIN-SUFFIX,translate.googleapis.com # API 接口域名
 DOMAIN-SUFFIX,translate.google.com # Web 服务域名
 
-# > Surge Tool（Surge 代理工具）
-# - 校对时间：2026-07-13
+# > Surge Official Service（Surge 官方服务）
+# - 校对时间：2026-07-17
 
 DOMAIN-SUFFIX,nssurge.com # 平台主域名
-DOMAIN-SUFFIX,cdn.nssurge.com # 静态资源域名
-DOMAIN-SUFFIX,api.nssurge.com # API 接口域名
-DOMAIN-SUFFIX,surge.run # 平台域名
-DOMAIN-SUFFIX,dl.surge.run # 下载服务域名
-DOMAIN-SUFFIX,panel.surge.run # 面板服务域名
-DOMAIN-SUFFIX,conf.surge.run # 配置服务域名
-DOMAIN-SUFFIX,static.surge.run # 静态资源域名
 DOMAIN-SUFFIX,kb.nssurge.com # 知识库域名
 DOMAIN-SUFFIX,manual.nssurge.com # 文档服务域名
-DOMAIN-SUFFIX,wiki.surge.community # 社区文档域名
-DOMAIN-SUFFIX,nssurge.zendesk.com # 支持服务域名
-DOMAIN-SUFFIX,divineengine.net # 关联服务域名
-DOMAIN-SUFFIX,surge.mitsea.com # 社区文档域名
-DOMAIN-SUFFIX,surge-activation.com # 激活服务域名
 DOMAIN-SUFFIX,community.nssurge.com # Surge 社区服务域名
+
+# > Surge Third-Party Documentation（Surge 第三方文档）
+# - 校对时间：2026-07-17
+
+DOMAIN-SUFFIX,wiki.surge.community # 第三方社区入门指南域名
+DOMAIN-SUFFIX,surge.mitsea.com # 第三方手册汉化文档域名
 
 # > GitBook Documentation Platform（GitBook 文档平台）
 # - 校对时间：2026-03-28
