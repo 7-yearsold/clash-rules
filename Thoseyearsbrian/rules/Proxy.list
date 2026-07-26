@@ -4,8 +4,8 @@
 # - 特征：覆盖需依赖代理访问的高频主流服务域名
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-07-23
-# - 校对时间：2026-07-23
+# - 更新时间：2026-07-25
+# - 校对时间：2026-07-25
 
 # > Cloudflare Platform Infrastructure（Cloudflare 平台基础设施域名）
 # - 校对时间：2026-06-03
@@ -9782,6 +9782,31 @@ DOMAIN-SUFFIX,vectcut.com # VectCut 官方文档与资源服务域名
 # - 更新时间：2026-07-23
 
 DOMAIN-SUFFIX,cside.com # cside 官方安全分析与脚本目录服务域名
+
+# > Video Copilot Motion Design & Visual Effects Platform（Video Copilot 动效设计与视觉特效平台）
+# - 更新时间：2026-07-25
+
+DOMAIN-SUFFIX,videocopilot.net # Video Copilot 官方动效设计、视觉特效与创作资源平台主域名
+
+# > SONNISS Professional Sound Effects Marketplace（SONNISS 专业音效资源平台）
+# - 更新时间：2026-07-25
+
+DOMAIN-SUFFIX,sonniss.com # SONNISS 官方专业免版税音效库与市场平台主域名
+
+# > Illustration App Digital Illustration Platform（Illustration App 数字插画创作平台）
+# - 更新时间：2026-07-25
+
+DOMAIN-SUFFIX,illustration.app # Illustration App 官方数字插画资源与创作平台主域名
+
+# > Mixkit Free Creative Assets Platform（Mixkit 免费创意资源平台）
+# - 更新时间：2026-07-25
+
+DOMAIN-SUFFIX,mixkit.co # Mixkit 官方免费视频、音效、音乐与创意素材资源平台主域名
+
+# > Video Editing SFX Sound Effects Platform（Video Editing SFX 视频剪辑音效资源平台）
+# - 更新时间：2026-07-25
+
+DOMAIN-SUFFIX,videoeditingsfx.com # Video Editing SFX 官方视频剪辑音效与创意音效资源平台主域名
 
 # > Third-Party Blogs（第三方博客）
 # - 校对时间：2026-07-08
