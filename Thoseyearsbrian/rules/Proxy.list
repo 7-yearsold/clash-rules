@@ -4,8 +4,8 @@
 # - 特征：覆盖需依赖代理访问的高频主流服务域名
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-07-25
-# - 校对时间：2026-07-25
+# - 更新时间：2026-07-26
+# - 校对时间：2026-07-26
 
 # > Cloudflare Platform Infrastructure（Cloudflare 平台基础设施域名）
 # - 校对时间：2026-06-03
@@ -69,7 +69,7 @@ DOMAIN-SUFFIX,speedcurve.com # SpeedCurve 官方主域名与 Web 性能监控、
 DOMAIN-SUFFIX,cdn.speedcurve.com # SpeedCurve 前端性能监控脚本、静态资源与 RUM 数据采集组件加载域名
 
 # > Statsig Feature Management Platform（Statsig 功能开关与实验配置平台）
-# - 更新时间：2026-06-14
+# - 校对时间：2026-07-27
 
 DOMAIN-SUFFIX,statsigapi.net # Statsig 功能开关与实验配置 API 域名
 
@@ -773,9 +773,10 @@ IP-CIDR,185.18.139.0/24 # Serif 网络段
 IP-CIDR,185.18.138.0/24 # Serif 网络段
 
 # > Bending Spoons Digital Product Platform（Bending Spoons 数字产品运营平台）
-# - 更新时间：2026-06-14
+# - 校对时间：2026-07-27
 
 DOMAIN-SUFFIX,bendingspoons.com # Bending Spoons 数字产品运营平台域名
+DOMAIN-SUFFIX,bndspn.com # Bending Spoons 官方短域名与隐私政策服务域名
 
 # > Charlie Monroe Software（Charlie Monroe 独立软件平台）
 # - 校对时间：2026-06-07
@@ -7837,11 +7838,13 @@ DOMAIN-SUFFIX,player.kaltura.com # Kaltura Web 播放器域名
 DOMAIN-SUFFIX,cfvod.kaltura.com # Kaltura 基于 CloudFront 的视频点播 CDN 节点
 
 # > Brightcove Video Platform（Brightcove 视频平台）
-# - 校对时间：2026-05-16
+# - 校对时间：2026-07-27
 
 DOMAIN-SUFFIX,brightcove.net # Brightcove 视频播放器与媒体分发服务主域名
 DOMAIN-SUFFIX,brightcove.com # Brightcove 官方平台主域名
 DOMAIN-SUFFIX,api.brightcove.com # Brightcove API 服务主域名
+DOMAIN-SUFFIX,boltdns.net # Brightcove 官方视频播放 CDN 与媒体清单服务域名
+DOMAIN-SUFFIX,brightcovecdn.com # Brightcove 官方视频内容分发网络与媒体资源服务域名
 
 # > THEOplayer Video Player Platform（THEOplayer 视频播放器平台）
 # - 校对时间：2026-06-13
@@ -9807,6 +9810,16 @@ DOMAIN-SUFFIX,mixkit.co # Mixkit 官方免费视频、音效、音乐与创意�
 # - 更新时间：2026-07-25
 
 DOMAIN-SUFFIX,videoeditingsfx.com # Video Editing SFX 官方视频剪辑音效与创意音效资源平台主域名
+
+# > CreatorMix Creative Assets Platform（CreatorMix 创意资源平台）
+# - 更新时间：2026-07-26
+
+DOMAIN-SUFFIX,creatormix.com # CreatorMix 官方免版权音乐、音效与创意素材资源平台主域名
+
+# > vidIQ YouTube Channel Analytics & Growth Platform（vidIQ YouTube 频道分析与增长平台）
+# - 更新时间：2026-07-27
+
+DOMAIN-SUFFIX,vidiq.com # vidIQ 官方 YouTube 数据分析、SEO 优化与频道增长工具平台主域名
 
 # > Third-Party Blogs（第三方博客）
 # - 校对时间：2026-07-08
