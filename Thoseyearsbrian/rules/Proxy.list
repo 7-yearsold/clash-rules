@@ -4,8 +4,8 @@
 # - 特征：覆盖需依赖代理访问的高频主流服务域名
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-07-28
-# - 校对时间：2026-07-28
+# - 更新时间：2026-07-31
+# - 校对时间：2026-07-31
 
 # > Cloudflare Platform Infrastructure（Cloudflare 平台基础设施域名）
 # - 校对时间：2026-07-28
@@ -1164,7 +1164,7 @@ DOMAIN-SUFFIX,insided.com # inSided 客户社区平台主域名
 DOMAIN-SUFFIX,cdn-euw1.insided.com # inSided 欧洲区社区资源 CDN 域名
 
 # > Walls.io Social Wall Platform（Walls.io 社交墙平台）
-# - 更新时间：2026-06-13
+# - 校对时间：2026-07-30
 
 DOMAIN-SUFFIX,walls.io # Walls.io 社交墙平台域名
 
@@ -1180,14 +1180,14 @@ DOMAIN-SUFFIX,protechts.net # HUMAN 机器人防护服务域名
 DOMAIN-SUFFIX,px-cloud.net # HUMAN 机器人防护采集服务域
 
 # > OneTrust Cookie Consent Platform（OneTrust Cookie 同意管理平台）
-# - 更新时间：2026-06-13
+# - 校对间：2026-07-31
 
 DOMAIN-SUFFIX,cookielaw.org # OneTrust Cookie 同意管理服务域名
 
 # > PingOne Identity Platform（PingOne 身份认证平台）
-# - 更新时间：2026-06-13
+# - 校对时间：2026-07-31
 
-DOMAIN-SUFFIX,pingone.com # PingOne 身份认证平台域名
+DOMAIN-SUFFIX,pingone.com # PingOne 企业身份认证与访问管理平台域名
 
 # > Expedia Travel Platform（Expedia 旅游平台）
 # - 校对时间：2026-03-28
@@ -1327,10 +1327,12 @@ DOMAIN-SUFFIX,stackoverflow.blog # Stack Overflow 官方博客域名
 DOMAIN-SUFFIX,dev.to # DEV Community 官方开发者社区主域名
 DOMAIN-SUFFIX,forem.com # Forem 开源社区平台域名
 
-# > Cursor Origin Git Forge Platform（Cursor Origin AI 时代 Git 托管平台）
-# - 更新时间：2026-06-17
+# > Cursor AI Editor Platform（Cursor AI 编程工具平台）
+# - 校对时间：2026-07-31
 
-DOMAIN-SUFFIX,cursor.com # Cursor Origin Git 托管平台与 AI 编程工具域名
+DOMAIN-SUFFIX,cursor.com # Cursor AI 编程编辑器与开发者服务平台域名
+DOMAIN-SUFFIX,authenticate.cursor.sh # Cursor AI 编辑器登录与身份认证服务域名
+DOMAIN-SUFFIX,cursor-cdn.com # Cursor AI 编辑器资源服务域名
 
 # > Codeberg Open Source Code Hosting Platform（Codeberg 开源代码托管平台）
 # - 校对时间：2026-05-04
@@ -9860,6 +9862,21 @@ DOMAIN-SUFFIX,he.net # Hurricane Electric 公共 iPerf3 测试服务器域名
 # - 更新时间：2026-07-27
 
 DOMAIN-SUFFIX,2ip.io # 2ip 官方 IP 地址、网络信息与安全检测查询服务域名
+
+# > Fort Awesome Icon Kit CDN（Fort Awesome 图标套件 CDN）
+# - 更新时间：2026-07-30
+
+DOMAIN,use.fortawesome.com # Fort Awesome 图标套件相关静态资源加载域名
+
+# > Press Ranger AI PR Platform（Press Ranger AI 公关平台）
+# - 更新时间：2026-07-30
+
+DOMAIN-SUFFIX,pressranger.com # Press Ranger 媒体联络与新闻稿分发平台域名
+
+# > WorkOS Identity Platform（WorkOS 身份认证平台）
+# - 更新时间：2026-07-31
+
+DOMAIN-SUFFIX,workos.com # WorkOS 企业身份认证与开发者平台主域名
 
 # > Third-Party Blogs（第三方博客）
 # - 校对时间：2026-07-08
