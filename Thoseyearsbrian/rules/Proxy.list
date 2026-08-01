@@ -4,8 +4,8 @@
 # - 特征：覆盖需依赖代理访问的高频主流服务域名
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-07-31
-# - 校对时间：2026-07-31
+# - 更新时间：2026-08-01
+# - 校对时间：2026-08-01
 
 # > Cloudflare Platform Infrastructure（Cloudflare 平台基础设施域名）
 # - 校对时间：2026-07-28
@@ -35,6 +35,7 @@ DOMAIN-SUFFIX,speed.cloudflare.com # Cloudflare 网络测速服务
 DOMAIN-SUFFIX,cloudflareclient.com # Cloudflare WARP 与 Zero Trust 客户端服务
 DOMAIN-SUFFIX,support-chat.cloudflare.dev # Cloudflare 支持聊天服务域名
 DOMAIN-SUFFIX,cfapi.net # Cloudflare API 与身份认证服务域名
+DOMAIN-SUFFIX,r2.dev # Cloudflare R2 公共对象存储服务域名
 
 # > Cloudflare Public DNS（Cloudflare 公共 DNS 服务）
 
@@ -1330,9 +1331,10 @@ DOMAIN-SUFFIX,forem.com # Forem 开源社区平台域名
 # > Cursor AI Editor Platform（Cursor AI 编程工具平台）
 # - 校对时间：2026-07-31
 
-DOMAIN-SUFFIX,cursor.com # Cursor AI 编程编辑器与开发者服务平台域名
-DOMAIN-SUFFIX,authenticate.cursor.sh # Cursor AI 编辑器登录与身份认证服务域名
-DOMAIN-SUFFIX,cursor-cdn.com # Cursor AI 编辑器资源服务域名
+DOMAIN-SUFFIX,cursor.com # Cursor AI 编程编辑器平台域名
+DOMAIN-SUFFIX,authenticate.cursor.sh # Cursor AI 登录认证服务域名
+DOMAIN-SUFFIX,cursor-cdn.com # Cursor AI 资源服务域名
+DOMAIN-SUFFIX,anysphere.inc # Anysphere 公司服务域名
 
 # > Codeberg Open Source Code Hosting Platform（Codeberg 开源代码托管平台）
 # - 校对时间：2026-05-04
@@ -9877,6 +9879,58 @@ DOMAIN-SUFFIX,pressranger.com # Press Ranger 媒体联络与新闻稿分发平�
 # - 更新时间：2026-07-31
 
 DOMAIN-SUFFIX,workos.com # WorkOS 企业身份认证与开发者平台主域名
+
+# > Unify Intent Platform（Unify Intent 平台）
+# - 更新时间：2026-07-31
+
+DOMAIN-SUFFIX,unifyintent.com # Unify Intent 平台服务域名
+
+# > Remotion Video Framework（Remotion 视频开发框架）
+# - 校对时间：2026-07-31
+
+DOMAIN-SUFFIX,remotion.dev # Remotion 程序化视频开发平台域名
+DOMAIN-SUFFIX,remotion.media # Remotion 媒体资源服务域名
+DOMAIN-SUFFIX,remotion.pro # Remotion 专业服务域名
+
+# > Manim Community Documentation（Manim 社区文档）
+# - 更新时间：2026-07-31
+
+DOMAIN-SUFFIX,docs.manim.community # Manim 动画引擎文档服务域名
+
+# > Motion Canvas Animation Framework（Motion Canvas 动画框架）
+# - 更新时间：2026-07-31
+
+DOMAIN-SUFFIX,motioncanvas.io # Motion Canvas 动画开发平台域名
+
+# > Unavatar Avatar Service（Unavatar 头像服务）
+# - 更新时间：2026-07-31
+
+DOMAIN-SUFFIX,unavatar.io # Unavatar 用户头像服务域名
+
+# > Astral Python Toolchain Platform（Astral Python 工具链平台）
+# - 更新时间：2026-08-01
+
+DOMAIN-SUFFIX,astral.sh # Astral Python 开发工具平台域名
+
+# > Skills.sh AI Agent Skills Platform（Skills.sh AI Agent 技能平台）
+# - 更新时间：2026-08-01
+
+DOMAIN-SUFFIX,skills.sh # Skills.sh AI Agent 技能平台域名
+
+# > MotionSound Audio Platform（MotionSound 音效资源平台）
+# - 更新时间：2026-08-01
+
+DOMAIN-SUFFIX,motionsound.io # MotionSound 音效资源服务域名
+
+# > Freesound Audio Library（Freesound 音效库）
+# - 更新时间：2026-08-01
+
+DOMAIN-SUFFIX,freesound.org # Freesound 开放音效资源平台域名
+
+# > qBittorrent Open Source Project（qBittorrent 开源项目）
+# - 更新时间：2026-08-01
+
+DOMAIN-SUFFIX,qbittorrent.org # qBittorrent 开源项目服务域名
 
 # > Third-Party Blogs（第三方博客）
 # - 校对时间：2026-07-08
