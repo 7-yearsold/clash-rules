@@ -5,11 +5,11 @@
 # - 说明：本规则集收录国际主流生成式 AI 平台相关域名；中国大陆 AI 服务域名统一归入 China 规则集维护
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-07-31
-# - 校对时间：2026-07-31
+# - 更新时间：2026-08-03
+# - 校对时间：2026-08-03
 
 # > OpenAI Platform Infrastructure（OpenAI 平台基础设施域名）
-# - 校对时间：2026-07-29
+# - 校对时间：2026-08-02
 
 DOMAIN-SUFFIX,openai.com # OpenAI 官方主站、Codex 产品页面与开发者服务域名
 DOMAIN-SUFFIX,chat.openai.com # ChatGPT Web 服务入口
@@ -31,6 +31,7 @@ DOMAIN-SUFFIX,auth0.openai.com # OpenAI 身份认证服务域名
 DOMAIN-SUFFIX,openaifoundation.org # OpenAI Foundation 公益项目平台域名
 DOMAIN-SUFFIX,openaipublic.blob.core.windows.net # OpenAI 公共资源托管域名
 DOMAIN-SUFFIX,openai.gallerycdn.vsassets.io # OpenAI Codex IDE 扩展安装包、清单与静态资源分发域名
+IP-CIDR,104.244.43.229/32 # ChatGPT 服务节点（chatgpt.com）
 
 # > Sora（OpenAI 视频生成服务）
 # - 校对时间：2026-03-05
@@ -591,3 +592,18 @@ DOMAIN-SUFFIX,arena.ai # Arena AI 模型评测服务域名
 # - 更新时间：2026-07-31
 
 DOMAIN-SUFFIX,crawlchat.app # CrawlChat AI 对话与知识检索平台域名
+
+# > ComfyUI AI Workflow Platform（ComfyUI AI 工作流平台）
+# - 更新时间：2026-08-02
+
+DOMAIN-SUFFIX,comfy.org # ComfyUI AI 工作流平台域名
+
+# > MuleRun AI Agent Platform（MuleRun AI Agent 平台）
+# - 更新时间：2026-08-02
+
+DOMAIN-SUFFIX,mulerun.com # MuleRun AI Agent 平台域名
+
+# > LM Studio Local AI Platform（LM Studio 本地 AI 平台）
+# - 更新时间：2026-08-03
+
+DOMAIN-SUFFIX,lmstudio.ai # LM Studio 本地 AI 模型平台域名
