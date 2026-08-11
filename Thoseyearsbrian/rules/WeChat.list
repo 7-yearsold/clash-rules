@@ -5,8 +5,8 @@
 # - 说明：微信客户端大量使用自研 mmtls 长连接通信协议，部分服务节点通过自有 DNS 与 CDN 分发
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-07-07
-# - 校对时间：2026-07-07
+# - 更新时间：2026-08-10
+# - 校对时间：2026-08-10
 
 # > Core Communication（核心通信服务）
 
@@ -237,6 +237,7 @@ IP-CIDR,183.131.39.0/24 # 微信图片与消息资源 CDN
 
 # > WeChat Mini Program CDN（微信小程序资源 CDN）
 
+IP-CIDR,59.53.162.211/32 # 微信小程序资源 CDN 节点（res.servicewechat.com）
 IP-CIDR,61.170.59.0/24 # 微信小程序资源 CDN
 IP-CIDR,61.170.65.0/24 # 微信小程序资源 CDN
 IP-CIDR,117.68.71.0/24 # 微信小程序资源 CDN
@@ -274,6 +275,7 @@ IP-CIDR,222.186.162.0/24 # 微信客户端下载 CDN
 
 # > WeChat Core Communication Network（微信核心通信网络）
 
+IP-CIDR,1.13.35.125/32 # 微信 MMTLS 通信接入节点
 IP-CIDR,43.128.17.30/32 # 微信 MMTLS 通信接入节点
 IP-CIDR,43.153.165.171/32 # 微信 MMTLS 通信接入节点
 IP-CIDR,43.153.165.235/32 # 微信 MMTLS 通信接入节点
