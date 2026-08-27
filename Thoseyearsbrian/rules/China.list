@@ -4,8 +4,8 @@
 # - 特征：涵盖搜索引擎、电商平台、社交媒体、支付服务、地图导航、云服务、内容平台、工具服务等典型服务域名
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-08-24
-# - 校对时间：2026-08-24
+# - 更新时间：2026-08-27
+# - 校对时间：2026-08-27
 
 # > Alibaba Group - China（阿里巴巴中国站）相关域名
 # - 校对时间：2026-05-11
@@ -330,6 +330,11 @@ DOMAIN-SUFFIX,hunyuan.tencent.com # 腾讯混元主域名
 DOMAIN-SUFFIX,api.hunyuan.tencent.com # 腾讯混元接口域名
 DOMAIN-SUFFIX,console.hunyuan.tencent.com # 腾讯混元控制台域名
 DOMAIN-SUFFIX,cdn.hunyuan.tencent.com # 腾讯混元静态资源域名
+
+# > Tencent Security Services（腾讯安全服务）
+# - 更新时间：2026-08-26
+
+DOMAIN-SUFFIX,x.security.tencent.com # 腾讯安全资料与文件资源服务域名
 
 # > ByteDance AI and Infrastructure Services（字节跳动 AI 与基础服务）
 # - 校对时间：2026-06-17
@@ -2861,6 +2866,32 @@ DOMAIN-SUFFIX,likefont.com # 识字体在线字体识别与字体资源服务域
 # - 校对时间：2026-08-15
 
 DOMAIN-SUFFIX,gl-inet.cn # GL.iNet 中国站主域名
+
+# > NetEase Qiyu Customer Service Platform（网易七鱼智能客服平台）
+# - 校对时间：2026-08-27
+
+DOMAIN-SUFFIX,qiyukf.com # 网易七鱼智能客服与开放接口服务域名
+DOMAIN-SUFFIX,qiyukf.net # 网易七鱼静态资源与前端内容分发域名
+DOMAIN-SUFFIX,ysf.nosdn.127.net # 网易七鱼客服系统资源存储与 CDN 分发域名
+DOMAIN-SUFFIX,qiyukf.nosdn.127.net # 网易七鱼客服平台静态资源 CDN 域名
+DOMAIN-SUFFIX,lbs-qiyu.netease.im # 网易七鱼客服 IM 接入节点发现与连接调度服务域名
+DOMAIN-SUFFIX,weblink-qiyu.netease.im # 网易七鱼 Web 在线客服会话连接服务域名
+
+# > NetEase Qiyu Third-Party API Documentation（网易七鱼第三方 API 文档）
+# - 更新时间：2026-08-26
+
+DOMAIN-SUFFIX,qiyukf.apifox.cn # Apifox 承载的网易七鱼第三方 API 文档与接口调试服务域名
+
+# > NetEase Yunxin Communication Platform（网易云信通信平台）
+# - 更新时间：2026-08-27
+
+DOMAIN-SUFFIX,netease.im # 网易云信即时通讯与实时音视频服务域名
+DOMAIN-SUFFIX,doc.commsease.com # 网易云信通信服务 SDK、API 与开发文档域名
+
+# > 知识星球（知识社区及付费内容分发平台）
+# - 校对时间：2026-08-27
+
+DOMAIN-SUFFIX,zsxq.com # 知识星球域名
 
 # > Third-Party Blogs（第三方博客）
 # - 校对时间：2026-07-09

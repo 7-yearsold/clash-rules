@@ -4,8 +4,8 @@
 # - 特征：覆盖需依赖代理访问的高频主流服务域名
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-08-23
-# - 校对时间：2026-08-23
+# - 更新时间：2026-08-27
+# - 校对时间：2026-08-27
 
 # > Cloudflare Platform Infrastructure（Cloudflare 平台基础设施域名）
 # - 校对时间：2026-08-22
@@ -232,10 +232,20 @@ DOMAIN-SUFFIX,VK6kTpJBIO.solastme.cc # 节点服务相关域名
 DOMAIN-SUFFIX,vk6tpjbio.solastme.cc # 节点服务相关域名
 
 # > Bitly URL Shortening Service（Bitly 短链接服务）
-# - 校对时间：2026-05-08
+# - 校对时间：2026-08-27
 
 DOMAIN-SUFFIX,bitly.com # Bitly 官方平台主域名
 DOMAIN-SUFFIX,bit.ly # Bitly 短链接跳转服务域名
+
+# > QR Code Generator（二维码生成工具）
+# - 更新时间：2026-08-27
+
+DOMAIN-SUFFIX,qr-code-generator.com # QR Code Generator 二维码生成与管理平台域名
+
+# > UserWay Web Accessibility Platform（UserWay 网站无障碍平台）
+# - 更新时间：2026-08-27
+
+DOMAIN-SUFFIX,userway.org # UserWay 网站无障碍辅助与合规检测服务域名
 
 # > AMZ123 跨境电商平台相关域名
 # - 校对时间：2026-04-28
@@ -246,11 +256,6 @@ DOMAIN-SUFFIX,cdn.zfty.work # AMZ123 关联 CDN 静态资源域名
 DOMAIN-SUFFIX,api.amz123.com # AMZ123 接口域名
 DOMAIN-SUFFIX,tool.amz123.com # AMZ123 工具服务域名
 DOMAIN-SUFFIX,forum.amz123.com # AMZ123 社区论坛域名
-
-# > 知识星球（知识社区及付费内容分发平台）
-# - 校对时间：2026-04-20
-
-DOMAIN-SUFFIX,zsxq.com # 知识星球域名
 
 # > KFC 相关域名
 # - 校对时间：2026-04-21
@@ -4842,9 +4847,10 @@ DOMAIN-SUFFIX,member.fofa.info # 会员服务域名
 DOMAIN-SUFFIX,link.fofa.info # 跳转域名
 
 # > Mozilla Access Service（Mozilla 访问服务）
-# - 校对时间：2026-03-28
+# - 校对时间：2026-08-26
 
 DOMAIN-SUFFIX,mozilla.org # 官网主域名
+DOMAIN-SUFFIX,mozilla.com # 官网主域名
 DOMAIN-SUFFIX,firefox.com # Firefox 主域名
 DOMAIN-SUFFIX,addons.mozilla.org # 扩展商店域名
 DOMAIN-SUFFIX,monitor.mozilla.org # 监测服务域名
@@ -10026,6 +10032,11 @@ DOMAIN-SUFFIX,fischnet.ch # FischNet VPS 云服务器托管与管理服务官方
 # - 更新时间：2026-08-23
 
 DOMAIN-SUFFIX,vercel.com # Vercel Web 应用部署、托管与云基础设施平台官方域名
+
+# > V2Fly Network Proxy Platform（V2Fly 网络代理平台）
+# - 更新时间：2026-08-27
+
+DOMAIN-SUFFIX,v2fly.org # V2Fly 网络代理与 V2Ray 开源项目官方服务域名
 
 # > Third-Party Blogs（第三方博客）
 # - 校对时间：2026-08-13
