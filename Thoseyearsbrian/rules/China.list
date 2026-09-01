@@ -4,8 +4,8 @@
 # - 特征：涵盖搜索引擎、电商平台、社交媒体、支付服务、地图导航、云服务、内容平台、工具服务等典型服务域名
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-08-27
-# - 校对时间：2026-08-27
+# - 更新时间：2026-08-31
+# - 校对时间：2026-08-31
 
 # > Alibaba Group - China（阿里巴巴中国站）相关域名
 # - 校对时间：2026-05-11
@@ -33,7 +33,7 @@ DOMAIN-SUFFIX,pass.1688.com # 1688 账号认证服务域名
 DOMAIN-SUFFIX,pages-fast.1688.com # 1688 页面服务域名
 
 # > AliPay（支付宝）相关域名
-# - 校对时间：2026-08-24
+# - 校对时间：2026-08-31
 
 DOMAIN-SUFFIX,alipay.com # 支付宝主域名
 DOMAIN-SUFFIX,alipayobjects.com # 支付宝静态资源域名
@@ -56,8 +56,8 @@ DOMAIN-SUFFIX,ashort.alipay.com.cn # 支付宝短链服务域名
 DOMAIN-SUFFIX,datagw-edge.alipay.com # 支付宝数据网关边缘服务域名
 DOMAIN-SUFFIX,amdc-thirdparty.alipay.com # 支付宝第三方接入辅助接口域名
 DOMAIN-SUFFIX,render.alipay.com # 支付宝页面渲染服务
-DOMAIN-SUFFIX,mum.alibabachengdun.com # 阿里巴巴集团风控域名
-DOMAIN-SUFFIX,mum.alibabachengdun.net # 阿里巴巴集团风控域名
+DOMAIN-SUFFIX,alibabachengdun.com # 阿里巴巴集团风控服务域名
+DOMAIN-SUFFIX,alibabachengdun.net # 阿里巴巴集团风控服务域名
 IP-CIDR,49.79.229.64/32 # AliPay 静态资源服务节点（mdn.alipayobjects.com）
 IP-CIDR,49.79.229.65/32 # AliPay 静态资源服务节点（mdn.alipayobjects.com）
 IP-CIDR,58.215.50.237/32 # AliPay render 服务节点（render.alipay.com）
@@ -70,6 +70,8 @@ IP-CIDR,58.222.35.55/32 # AliPay 静态资源服务节点（mdn.alipayobjects.co
 IP-CIDR,58.222.35.97/32 # AliPay 数据网关边缘服务节点（datagw-edge.alipay.com）
 IP-CIDR,58.222.35.99/32 # AliPay 数据网关边缘服务节点（datagw-edge.alipay.com）
 IP-CIDR,58.222.35.101/32 # AliPay 数据网关边缘服务节点（datagw-edge.alipay.com）
+IP-CIDR,59.82.34.147/32 # 阿里巴巴 AMDC 移动调度服务节点（AMDC）
+IP-CIDR,59.82.113.219/32 # 阿里巴巴 AMDC 移动调度服务节点（AMDC）
 IP-CIDR,106.38.254.72/32 # AliPay 静态资源服务节点（mdn.alipayobjects.com）
 IP-CIDR,106.38.254.73/32 # AliPay 前端资源网关服务节点（gw.alipayobjects.com）
 IP-CIDR,110.76.24.139/32 # AliPay 静态资源服务节点（mdn.alicdn.com）
@@ -107,6 +109,7 @@ IP-CIDR,221.229.203.220/32 # AliPay render 服务节点（render.alipay.com）
 IP-CIDR,221.229.209.17/32 # AliPay 数据网关边缘服务节点（datagw-edge.alipay.com）
 IP-CIDR,221.229.209.18/32 # AliPay 数据网关边缘服务节点（datagw-edge.alipay.com）
 IP-CIDR,221.229.209.21/32 # AliPay 数据网关边缘服务节点（datagw-edge.alipay.com）
+IP-CIDR,221.229.209.36/32 # AliPay 静态资源服务节点（mdn.alipayobjects.com）
 IP-CIDR,221.231.47.28/32 # AliPay 数据网关边缘服务节点（datagw-edge.alipay.com）
 IP-CIDR,221.231.47.201/32 # AliPay render 服务节点（render.alipay.com）
 IP-CIDR,221.231.47.221/32 # AliPay 静态资源服务节点（mdn.alicdn.com）
@@ -155,6 +158,14 @@ DOMAIN-SUFFIX,v.koubei.com # 口碑页面服务域名
 # - 校对时间：2026-05-11
 
 DOMAIN-SUFFIX,i.antfin.com # 蚂蚁集团基础服务域名
+
+# > HTTPDNS Domain Resolution Service（HTTPDNS 域名解析服务）
+# - 更新时间：2026-08-31
+
+IP-CIDR,203.119.206.9/32 # 阿里云 HTTPDNS 域名解析节点（nexusedgeio.com）
+IP-CIDR,203.119.206.8/32 # 阿里云 HTTPDNS 域名解析节点（mall.bilibili.com）
+IP-CIDR,203.119.204.80/32 # 阿里云 HTTPDNS 域名解析节点（upos-sz-staticcos.bilivideo.com）
+IP-CIDR,203.119.238.194/32 # 阿里云 HTTPDNS 域名解析节点（member.bilibili.com）
 
 # > Qwen / DashScope（通义千问 / 灵积）相关域名
 # - 校对时间：2026-05-11
@@ -259,7 +270,7 @@ DOMAIN-SUFFIX,codimg.cn # CODING 图片资源域名
 DOMAIN-SUFFIX,codetencent.com # CODING 关联服务域名
 
 # > QQ（腾讯 QQ）相关域名
-# - 校对时间：2026-06-09
+# - 校对时间：2026-08-31
 
 DOMAIN-SUFFIX,qq.com # QQ 主域名
 DOMAIN-SUFFIX,myqq.com # QQ 账号服务域名
@@ -281,6 +292,7 @@ DOMAIN-SUFFIX,mail.qq.com # QQ 邮箱主域名
 DOMAIN-SUFFIX,foxmail.com # Foxmail 邮件服务域名
 DOMAIN-SUFFIX,mywebmail.mail.qq.com # QQ 邮箱网页服务域名
 DOMAIN-SUFFIX,imgcache.qq.com # QQ 邮箱图片缓存域名
+DOMAIN-SUFFIX,cdn-go.cn # 腾讯 CDN-Go Web 静态资源服务域名
 
 # > Tencent Maps（腾讯地图）相关域名
 # - 校对时间：2026-05-11
