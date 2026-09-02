@@ -4,8 +4,8 @@
 # - 特征：覆盖需依赖代理访问的高频主流服务域名
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-08-31
-# - 校对时间：2026-08-31
+# - 更新时间：2026-09-01
+# - 校对时间：2026-09-01
 
 # > Cloudflare Platform Infrastructure（Cloudflare 平台基础设施域名）
 # - 校对时间：2026-08-22
@@ -1716,14 +1716,15 @@ DOMAIN-SUFFIX,boogdan.com # Bogdan 个人开发者网站主域名
 DOMAIN-SUFFIX,fundraiseup.com # Fundraise Up 在线捐赠与筹款平台主域名
 DOMAIN-SUFFIX,sentry.fundraiseup.com # Fundraise Up 错误监控与前端异常上报服务域名
 
-# > GnuPG / OpenPGP Key Service（GnuPG / OpenPGP 密钥服务）
-# - 校对时间：2026-05-10
+# > GnuPG / OpenPGP Key Services（GnuPG / OpenPGP 密钥服务）
+# - 校对时间：2026-09-01
 
-DOMAIN-SUFFIX,gnupg.org # 官方主域名
-DOMAIN-SUFFIX,keys.gnupg.net # 历史密钥服务域名
-DOMAIN-SUFFIX,keys.openpgp.org # 密钥服务域名
-DOMAIN-SUFFIX,pgp.mit.edu # 密钥服务域名
-DOMAIN-SUFFIX,keys.mailvelope.com # 密钥服务域名
+DOMAIN-SUFFIX,gnupg.org # GnuPG 官方项目域名
+DOMAIN-SUFFIX,gnu.org # GNU 自由软件项目官方网站域名
+DOMAIN-SUFFIX,keys.gnupg.net # GnuPG 历史密钥服务器域名
+DOMAIN-SUFFIX,keys.openpgp.org # OpenPGP 公共密钥服务器域名
+DOMAIN-SUFFIX,pgp.mit.edu # MIT OpenPGP 公共密钥服务器域名
+DOMAIN-SUFFIX,keys.mailvelope.com # Mailvelope OpenPGP 公共密钥服务器域名
 
 # > DoorDash Delivery Platform（DoorDash 配送平台）
 # - 校对时间：2026-03-28
@@ -4160,7 +4161,7 @@ DOMAIN-SUFFIX,vpsbench.net # 测试服务域名
 DOMAIN-SUFFIX,letshost.pw # 服务域名
 
 # > Vultr Cloud Service（Vultr 云服务）
-# - 校对时间：2026-03-28
+# - 校对时间：2026-09-01
 
 DOMAIN-SUFFIX,vultr.com # 平台主域名
 DOMAIN-SUFFIX,api.vultr.com # API 接口域名
@@ -4179,6 +4180,7 @@ DOMAIN-SUFFIX,ipv6.vultr.com # IPv6 测试域名
 DOMAIN-SUFFIX,smtp.vultr.com # 邮件网关域名
 DOMAIN-SUFFIX,dns.vultr.com # DNS 服务域名
 DOMAIN-SUFFIX,mirror.vultr.com # 镜像站域名
+DOMAIN-SUFFIX,vultrdevrel.com # Vultr 开发者关系静态资源服务域名
 
 # > Linode Cloud Service（Linode 云服务）
 # - 校对时间：2026-03-28
@@ -10067,6 +10069,11 @@ DOMAIN-SUFFIX,v2fly.org # V2Fly 网络代理与 V2Ray 开源项目官方服务�
 # - 更新时间：2026-08-31
 
 DOMAIN-SUFFIX,ipaddress.com # IPAddress.com IP 与域名信息查询服务域名
+
+# > Ant International Cloud Service（蚂蚁国际云服务）
+# - 更新时间：2026-09-01
+
+DOMAIN-SUFFIX,marmot-cloud.com # 蚂蚁国际业务云服务域名
 
 # > Third-Party Blogs（第三方博客）
 # - 校对时间：2026-08-13
