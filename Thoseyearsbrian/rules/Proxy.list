@@ -10147,6 +10147,37 @@ DOMAIN-SUFFIX,salesforceliveagent.com # Salesforce 在线客服与实时聊天�
 
 DOMAIN-SUFFIX,halo.com # HALO 企业品牌商品、定制服装与员工认可服务域名
 
+# > MTCaptcha Bot Protection Service（MTCaptcha 机器人防护服务）
+# - 更新时间：2026-09-11
+
+DOMAIN-SUFFIX,mtcaptcha.com # MTCaptcha CAPTCHA 验证与自动化机器人防护服务域名
+
+# > Liferay Digital Experience Platform（Liferay 数字体验平台）
+# - 更新时间：2026-09-11
+
+DOMAIN-SUFFIX,liferay.com # Liferay 数字体验平台与企业服务域名
+DOMAIN-SUFFIX,lfr.cloud # Liferay 云平台项目、应用与基础设施服务域名
+
+# > Higher Logic Online Community Platform（Higher Logic 在线社区平台）
+# - 更新时间：2026-09-11
+
+DOMAIN-SUFFIX,connectedcommunity.org # Higher Logic 在线社区托管、成员协作与通知邮件服务域名
+
+# > Vidyard Video Platform（Vidyard 企业视频平台）
+# - 更新时间：2026-09-11
+
+DOMAIN-SUFFIX,vidyard.com # Vidyard 企业视频托管、播放与视频消息服务域名
+
+# > Knak Marketing Creation Platform（Knak 营销内容制作平台）
+# - 更新时间：2026-09-11
+
+DOMAIN-SUFFIX,knak.io # Knak 企业邮件、落地页与营销内容制作平台域名
+
+# > TalkShoe Podcast Platform（TalkShoe 播客与直播音频平台）
+# - 更新时间：2026-09-11
+
+DOMAIN-SUFFIX,talkshoe.com # TalkShoe 播客托管、直播音频与听众互动服务域名
+
 # > Third-Party Blogs（第三方博客）
 # - 校对时间：2026-08-13
 
