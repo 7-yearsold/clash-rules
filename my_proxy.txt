@@ -1,4 +1,5 @@
 # xyqh5
+DOMAIN-SUFFIX,easebar.com
 DOMAIN-SUFFIX,gate-global.xyqh5.com
 DOMAIN-SUFFIX,www.xyqh5.com
 #IP-CIDR,8.222.248.226/32
