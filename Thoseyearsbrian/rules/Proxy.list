@@ -4,11 +4,11 @@
 # - 特征：覆盖需依赖代理访问的高频主流服务域名
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-09-13
-# - 校对时间：2026-09-13
+# - 更新时间：2026-09-29
+# - 校对时间：2026-09-29
 
 # > Cloudflare Platform Infrastructure（Cloudflare 平台基础设施域名）
-# - 校对时间：2026-09-06
+# - 校对时间：2026-09-29
 
 DOMAIN-SUFFIX,cloudflare.com # Cloudflare 官方主站
 DOMAIN-SUFFIX,cloudflare.net # Cloudflare 网络基础设施与核心服务域名
@@ -39,6 +39,7 @@ DOMAIN-SUFFIX,r2.dev # Cloudflare R2 公共对象存储服务域名
 DOMAIN-SUFFIX,cloudflareinsights.com # Cloudflare 网站性能分析服务域名
 DOMAIN-SUFFIX,cloudflare.pay # Cloudflare Wallet 钱包标识预留与 AI Agent 身份服务官方域名
 DOMAIN-SUFFIX,cloudflareaccess.com # Cloudflare Access 身份认证与访问控制服务域名
+DOMAIN-SUFFIX,cloudflare-ech.com # Cloudflare ECH 加密 TLS ClientHello 与公共 SNI 服务域名
 
 # > Cloudflare Public DNS（Cloudflare 公共 DNS 服务）
 
@@ -3645,7 +3646,7 @@ DOMAIN-SUFFIX,de.freedif.org # 区域镜像域名
 DOMAIN-SUFFIX,mirror.freedif.org # 镜像服务域名
 
 # > Telestream Service（Telestream 媒体服务平台）
-# - 校对时间：2026-03-28
+# - 校对时间：2026-09-29
 
 DOMAIN-SUFFIX,telestream.net # 平台主域名
 DOMAIN-SUFFIX,cloud.telestream.net # 云服务域名
@@ -3653,6 +3654,7 @@ DOMAIN-SUFFIX,license.telestream.net # 授权服务域名
 DOMAIN-SUFFIX,static.telestream.net # 静态资源域名
 DOMAIN-SUFFIX,inapp.telestream.net # 应用服务域名
 DOMAIN-SUFFIX,cws.telestream.net # 云服务域名
+DOMAIN-SUFFIX,telestream.channeltivity.com # Telestream 合作伙伴门户服务域名
 
 # > Zoho Service（Zoho 企业服务平台）
 # - 校对时间：2026-03-28
@@ -10200,6 +10202,27 @@ DOMAIN-SUFFIX,opensourcepledge.com # Open Source Pledge 企业开源维护者资
 # - 更新时间：2026-09-12
 
 DOMAIN-SUFFIX,svdcdn.com # Servd 项目静态文件、图片转换与 CDN 分发服务域名
+
+# > TLS Encrypted Client Hello Test Site（TLS ECH 加密客户端问候测试站点）
+# - 校对时间：2026-09-29
+
+DOMAIN-SUFFIX,tls-ech.dev # TLS ECH 加密 ClientHello 支持状态与协议兼容性测试域名
+
+# > CrawlStop Robots.txt Test Site（CrawlStop Robots.txt 测试站点）
+# - 更新时间：2026-09-29
+
+DOMAIN-SUFFIX,crawlstop.com # Cloudflare AI 爬虫控制与 robots.txt 配置示例测试域名
+
+# > Channeltivity Partner Relationship Management（Channeltivity 合作伙伴关系管理平台）
+# - 更新时间：2026-09-29
+
+DOMAIN-SUFFIX,channeltivity.com # Channeltivity 企业合作伙伴门户与渠道关系管理平台域名
+
+# > Tillo Gift Card & Rewards Platform（Tillo 礼品卡与奖励平台）
+# - 更新时间：2026-09-29
+
+DOMAIN-SUFFIX,tillo.com # Tillo 礼品卡、奖励与激励平台官方域名
+DOMAIN-SUFFIX,tillo.io # Tillo 平台账户、API 与静态资源服务域名
 
 # > Third-Party Blogs（第三方博客）
 # - 校对时间：2026-08-13
