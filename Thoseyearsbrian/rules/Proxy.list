@@ -4,8 +4,8 @@
 # - 特征：覆盖需依赖代理访问的高频主流服务域名
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-10-08
-# - 校对时间：2026-10-08
+# - 更新时间：2026-10-09
+# - 校对时间：2026-10-09
 
 # > Cloudflare Platform Infrastructure（Cloudflare 平台基础设施域名）
 # - 校对时间：2026-09-29
@@ -1218,6 +1218,11 @@ DOMAIN-SUFFIX,px-cloud.net # HUMAN 机器人防护采集服务域
 # - 校对间：2026-07-31
 
 DOMAIN-SUFFIX,cookielaw.org # OneTrust Cookie 同意管理服务域名
+
+# > CIVIC Cookie Control（CIVIC Cookie 同意管理服务）
+# - 更新时间：2026-10-09
+
+DOMAIN-SUFFIX,apikeys.civiccomputing.com # CIVIC Cookie Control API 密钥验证服务域名
 
 # > PingOne Identity Platform（PingOne 身份认证平台）
 # - 校对时间：2026-07-31
@@ -5443,7 +5448,7 @@ DOMAIN-SUFFIX,tencent-cloud.com # Tencent Cloud 国际服务主域名
 DOMAIN-SUFFIX,cloudcache.tencent-cloud.com # Tencent Cloud 缓存与静态资源服务域名
 
 # > Adobe Service（Adobe 国际服务）
-# - 校对时间：2026-03-28
+# - 校对时间：2026-10-09
 
 DOMAIN-SUFFIX,adobe.com # 官网主域名
 DOMAIN-SUFFIX,adobelogin.com # 登录域名
@@ -5471,6 +5476,7 @@ DOMAIN-SUFFIX,uploads-us-west-2.insided.com # Adobe 社区（Insided 平台）�
 DOMAIN-SUFFIX,static.customer-hub.northpass.com # Adobe Customer Hub 学习与客户支持平台静态资源域名（Northpass）
 DOMAIN-SUFFIX,acrobat.com # Adobe Acrobat 在线 PDF 服务域名，用于文档处理、共享与协作
 DOMAIN-SUFFIX,documentcloud.adobe.com # Adobe Document Cloud 服务域名，用于 PDF 存储、同步与管理
+DOMAIN-SUFFIX,typekit.com # Adobe Fonts / Typekit Web 字体与资源服务域名
 
 # > AllOrigins Service Domains（AllOrigins 公共代理 API 服务域名）
 # - 校对时间：2026-03-28
@@ -10263,39 +10269,48 @@ DOMAIN-SUFFIX,loli.net # SM.MS 图床图片存储与 CDN 分发服务域名
 DOMAIN-SUFFIX,website-files.com # Webflow 静态资源与代码组件 CDN 服务域名
 
 # > Massachusetts Institute of Technology（麻省理工学院）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-08
 
 DOMAIN-SUFFIX,mit.edu # 麻省理工学院教学、科研与校园服务官方域名
 
 # > Imperial College London（帝国理工学院）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-08
 
 DOMAIN-SUFFIX,imperial.ac.uk # 帝国理工学院教学、科研与校园服务官方域名
+DOMAIN-SUFFIX,imperial.nhs.uk # Imperial College Healthcare NHS Trust 医疗与患者服务域名
+DOMAIN-SUFFIX,ahsc.org.uk # 帝国理工学院医疗研究、临床转化与医学教育服务域名
+DOMAIN-SUFFIX,imperialcollegehealthpartners.com # NHS 医疗创新、健康研究与合作服务域名
+DOMAIN-SUFFIX,imperial-consultants.co.uk # Imperial College London 学术与科研咨询服务域名
 
 # > Stanford University（斯坦福大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-08
 
 DOMAIN-SUFFIX,stanford.edu # 斯坦福大学教学、科研与校园服务官方域名
 
 # > University of Oxford（牛津大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-08
 
 DOMAIN-SUFFIX,ox.ac.uk # 牛津大学教学、研究与公共服务官方域名
+DOMAIN-SUFFIX,conference-oxford.com # 牛津大学会议、活动与场地预订服务域名
+DOMAIN-SUFFIX,oxford.shorthandstories.com # 牛津大学数字专题与故事内容托管服务域名
 
 # > Harvard University（哈佛大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-09
 
 DOMAIN-SUFFIX,harvard.edu # 哈佛大学官方教学、研究与公共服务域名
 
 # > University of Cambridge（剑桥大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-09
 
 DOMAIN-SUFFIX,cam.ac.uk # 剑桥大学官网、院系与研究机构服务域名
+DOMAIN-SUFFIX,map.cam.ac.uk # 剑桥大学校园地图与位置查询服务域名
+DOMAIN-SUFFIX,cambridge.org # 剑桥大学学术出版、教育与评估服务域名
 
 # > California Institute of Technology（加州理工学院）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-09
 
 DOMAIN-SUFFIX,caltech.edu # 加州理工学院科研、教育与学术服务域名
+DOMAIN-SUFFIX,digitalaccessibility.caltech.edu # Caltech 数字无障碍政策、指南与支持服务域名
 
 # > ETH Zurich（苏黎世联邦理工学院）
 # - 更新时间：2026-10-08
@@ -10486,6 +10501,81 @@ DOMAIN-SUFFIX,ucla.edu # UCLA 官方网站、院系与学术服务域名
 # - 更新时间：2026-10-08
 
 DOMAIN-SUFFIX,polyu.edu.hk # 香港理工大学官方教育、科研与校园服务域名
+
+# > Appzi User Feedback Platform（Appzi 用户反馈平台）
+# - 更新时间：2026-10-08
+
+DOMAIN-SUFFIX,appzi.io # Appzi 网站反馈与在线问卷服务域名
+
+# > Terminalfour Higher Education CMS（Terminalfour 高校内容管理平台）
+# - 更新时间：2026-10-08
+
+DOMAIN-SUFFIX,terminalfour.net # Terminalfour 高校内容管理与媒体 CDN 服务域名
+
+# > WPMU DEV / CampusPress CDN（WPMU DEV / CampusPress 内容分发网络）
+# - 更新时间：2026-10-08
+
+DOMAIN-SUFFIX,wpmucdn.com # WPMU DEV / CampusPress 静态资源 CDN 域名
+
+# > Brightcove Video.js CDN（Brightcove Video.js 内容分发服务）
+# - 更新时间：2026-10-08
+
+DOMAIN-SUFFIX,zencdn.net # Brightcove Video.js 播放器与静态资源 CDN 域名
+
+# > Technolutions Slate Platform（Technolutions Slate 平台）
+# - 更新时间：2026-10-08
+
+DOMAIN-SUFFIX,technolutions.net # Technolutions Slate 平台与邮件基础设施服务域名
+
+# > LightWidget Instagram Widget Platform（LightWidget Instagram 嵌入组件平台）
+# - 更新时间：2026-10-08
+
+DOMAIN-SUFFIX,lightwidget.com # LightWidget Instagram Feed 嵌入与组件服务域名
+
+# > Coursedog Academic Operations Platform（Coursedog 学术运营管理平台）
+# - 更新时间：2026-10-08
+
+DOMAIN-SUFFIX,coursedog.com # Coursedog 高校课程、排课与学术运营管理服务域名
+
+# > OnlineWebFonts Font Platform（OnlineWebFonts 在线字体平台）
+# - 更新时间：2026-10-08
+
+DOMAIN-SUFFIX,onlinewebfonts.com # OnlineWebFonts 字体下载与 Web Font CDN 服务域名
+
+# > WP Engine Hosted WordPress Environment（WP Engine WordPress 托管环境）
+# - 更新时间：2026-10-09
+
+DOMAIN-SUFFIX,iconsultants.wpengine.com # WP Engine 托管的 iConsultants WordPress 环境域名
+
+# > Stanford Health Care（Stanford Health Care 医疗服务）
+# - 更新时间：2026-10-09
+
+DOMAIN-SUFFIX,stanfordhealthcare.org # Stanford Health Care 医疗与患者服务官方域名
+
+# > LibraryH3lp Online Support Platform（LibraryH3lp 在线客户支持平台）
+# - 更新时间：2026-10-09
+
+DOMAIN-SUFFIX,libraryh3lp.com # LibraryH3lp 在线聊天、工单与客户支持服务域名
+
+# > MazeMap Indoor Mapping Platform（MazeMap 室内地图平台）
+# - 更新时间：2026-10-09
+
+DOMAIN-SUFFIX,mazemap.com # MazeMap 室内地图、定位与导航服务域名
+
+# > Esri ArcGIS Online（Esri ArcGIS 在线 GIS 平台）
+# - 更新时间：2026-10-09
+
+DOMAIN-SUFFIX,arcgis.com # Esri ArcGIS 在线地图、空间分析与 GIS 服务域名
+
+# > The Conversation Academic News Platform（The Conversation 学术新闻与知识平台）
+# - 更新时间：2026-10-09
+
+DOMAIN-SUFFIX,theconversation.com # The Conversation 学术新闻、研究解读与知识传播服务域名
+
+# > Trumba Event Calendar Platform（Trumba 活动日历平台）
+# - 更新时间：2026-10-09
+
+DOMAIN-SUFFIX,trumba.com # Trumba 活动日历管理、发布与报名服务域名
 
 # > Third-Party Blogs（第三方博客）
 # - 校对时间：2026-08-13
