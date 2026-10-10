@@ -4,8 +4,8 @@
 # - 特征：覆盖需依赖代理访问的高频主流服务域名
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-10-09
-# - 校对时间：2026-10-09
+# - 更新时间：2026-10-10
+# - 校对时间：2026-10-10
 
 # > Cloudflare Platform Infrastructure（Cloudflare 平台基础设施域名）
 # - 校对时间：2026-09-29
@@ -1223,6 +1223,11 @@ DOMAIN-SUFFIX,cookielaw.org # OneTrust Cookie 同意管理服务域名
 # - 更新时间：2026-10-09
 
 DOMAIN-SUFFIX,apikeys.civiccomputing.com # CIVIC Cookie Control API 密钥验证服务域名
+
+# > Consentmo Privacy & Consent Management Platform（Consentmo 隐私与同意管理平台）
+# - 更新时间：2026-10-09
+
+DOMAIN-SUFFIX,consentmo.com # Consentmo 隐私合规与 Cookie 同意管理服务域名
 
 # > PingOne Identity Platform（PingOne 身份认证平台）
 # - 校对时间：2026-07-31
@@ -5760,10 +5765,11 @@ DOMAIN-SUFFIX,cdn.unicorn.studio # Unicorn Studio 提供的静态内容分发域
 DOMAIN-SUFFIX,assets.unicorn.studio # Unicorn Studio 提供的静态资源子域
 
 # > BootstrapCDN Static Asset Service Domains（BootstrapCDN 静态资源服务域名）
-# - 校对时间：2026-03-28
+# - 校对时间：2026-10-10
 
 DOMAIN-SUFFIX,maxcdn.bootstrapcdn.com # Bootstrap 官方公共 CDN 域
 DOMAIN-SUFFIX,netdna.bootstrapcdn.com # BootstrapCDN（原 MaxCDN）前端公共资源分发服务
+DOMAIN-SUFFIX,bootstrapcdn.com # Bootstrap、Font Awesome 与前端静态资源 CDN 域名
 
 # > Zscdn Domains（Zscdn 用户内容分发域名）
 # - 校对时间：2026-03-28
@@ -10313,27 +10319,30 @@ DOMAIN-SUFFIX,caltech.edu # 加州理工学院科研、教育与学术服务域�
 DOMAIN-SUFFIX,digitalaccessibility.caltech.edu # Caltech 数字无障碍政策、指南与支持服务域名
 
 # > ETH Zurich（苏黎世联邦理工学院）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-09
 
 DOMAIN-SUFFIX,ethz.ch # ETH Zurich 教学、科研与校园服务官方域名
 
 # > University College London（伦敦大学学院）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-09
 
 DOMAIN-SUFFIX,ucl.ac.uk # 伦敦大学学院教育、研究与校园服务官方域名
+DOMAIN-SUFFIX,studentsunionucl.org # UCL 学生会、社团活动与学生支持服务域名
 
 # > National University of Singapore（新加坡国立大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-10
 
+DOMAIN-SUFFIX,nus.edu # 新加坡国立大学官方服务域名
 DOMAIN-SUFFIX,nus.edu.sg # 新加坡国立大学教学、科研与校园服务官方域名
+DOMAIN-SUFFIX,nusx.edu.sg # NUSX 创新创业、科研转化与深科技孵化服务域名
 
 # > The University of Hong Kong（香港大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-10
 
 DOMAIN-SUFFIX,hku.hk # 香港大学教学、科研与校园服务官方域名
 
 # > Nanyang Technological University Singapore（新加坡南洋理工大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-10
 
 DOMAIN-SUFFIX,ntu.edu.sg # 新加坡南洋理工大学教育、科研与校园服务官方域名
 
@@ -10576,6 +10585,57 @@ DOMAIN-SUFFIX,theconversation.com # The Conversation 学术新闻、研究解读
 # - 更新时间：2026-10-09
 
 DOMAIN-SUFFIX,trumba.com # Trumba 活动日历管理、发布与报名服务域名
+
+# > Bloomsbury Theatre（布鲁姆斯伯里剧院）
+# - 更新时间：2026-10-09
+
+DOMAIN-SUFFIX,bloomsburytheatre.com # Bloomsbury Theatre 演出、活动与票务服务域名
+
+# > Glassdoor UK Career Platform（Glassdoor 英国职业招聘平台）
+# - 更新时间：2026-10-09
+
+DOMAIN-SUFFIX,glassdoor.co.uk # Glassdoor 英国职位搜索、企业评价与薪资信息服务域名
+
+# > Springshare LibAnswers Platform（Springshare 图书馆在线咨询平台）
+# - 更新时间：2026-10-09
+
+DOMAIN-SUFFIX,libanswers.com # Springshare 图书馆咨询、工单与在线聊天服务域名
+
+# > Presspage PR & Communications Platform（Presspage 公关与传播平台）
+# - 更新时间：2026-10-10
+
+DOMAIN-SUFFIX,presspage.com # Presspage 企业新闻发布、媒体关系与内容分发服务域名
+
+# > Embedly Rich Media Platform（Embedly 富媒体嵌入平台）
+# - 更新时间：2026-10-10
+
+DOMAIN-SUFFIX,embed.ly # Embedly 富媒体嵌入与内容处理平台域名
+DOMAIN-SUFFIX,cdn.embedly.com # Embedly 富媒体组件与脚本 CDN 域名
+
+# > PageUp Talent Acquisition Platform（PageUp 人才招聘与管理平台）
+# - 更新时间：2026-10-10
+
+DOMAIN-SUFFIX,pageuppeople.com # PageUp 企业招聘、人才管理与平台服务域名
+
+# > Usetiful Digital Adoption Platform（Usetiful 数字化采用平台）
+# - 更新时间：2026-10-10
+
+DOMAIN-SUFFIX,usetiful.com # Usetiful 用户引导、产品导览与数字化采用服务域名
+
+# > ShareThis Publisher & Data Platform（ShareThis 内容分享与数据平台）
+# - 更新时间：2026-10-10
+
+DOMAIN-SUFFIX,sharethis.com # ShareThis 内容分享、平台管理与数据服务官方域名
+
+# > Maglr Interactive Content Platform（Maglr 互动内容平台）
+# - 更新时间：2026-10-10
+
+DOMAIN-SUFFIX,maglr.com # Maglr 互动内容创建、发布与嵌入服务域名
+
+# > DialogShield Admission CX（DialogShield 招生客户体验服务）
+# - 更新时间：2026-10-10
+
+DOMAIN-SUFFIX,admission-cx.dialogshield.ai # DialogShield 招生客户体验服务域名
 
 # > Third-Party Blogs（第三方博客）
 # - 校对时间：2026-08-13
