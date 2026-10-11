@@ -10347,29 +10347,37 @@ DOMAIN-SUFFIX,hku.hk # 香港大学教学、科研与校园服务官方域名
 DOMAIN-SUFFIX,ntu.edu.sg # 新加坡南洋理工大学教育、科研与校园服务官方域名
 
 # > Penn Engineering Online（宾夕法尼亚大学工程学院在线教育平台）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-10
 
 DOMAIN-SUFFIX,online.engineering.upenn.edu # Penn Engineering 在线学位与专业教育服务域名
+DOMAIN-SUFFIX,online-education.seas.upenn.edu # Penn Engineering 在线学位与课程服务域名
+DOMAIN-SUFFIX,gradadmissions.seas.upenn.edu # Penn Engineering 研究生招生与申请服务域名
+DOMAIN-SUFFIX,upenn.edu # 宾夕法尼亚大学官方教育与校园服务域名
 
 # > Yale University（耶鲁大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-10
 
 DOMAIN-SUFFIX,yale.edu # 耶鲁大学官方网站与教育科研服务域名
+DOMAIN-SUFFIX,yale-webfonts.yalespace.org # 耶鲁大学官方 Web 字体资源服务域名
+DOMAIN-SUFFIX,collections.yale.edu # 耶鲁大学数字馆藏检索与文化遗产资源服务域名
 
 # > Cornell University（康奈尔大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-10
 
 DOMAIN-SUFFIX,cornell.edu # 康奈尔大学教学、科研与校园服务官方域名
 
 # > The Chinese University of Hong Kong（香港中文大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-10
 
 DOMAIN-SUFFIX,cuhk.edu.hk # 香港中文大学教学、研究与校园服务官方域名
+DOMAIN-SUFFIX,cuhk.canto.global # 香港中文大学 Canto 数字媒体资源库服务域名
+DOMAIN-SUFFIX,admission.cuhk.edu.hk # 香港中文大学本科招生与入学申请服务域名
 
 # > University of New South Wales（新南威尔士大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-10
 
 DOMAIN-SUFFIX,unsw.edu.au # 新南威尔士大学教学、科研与校园服务官方域名
+DOMAIN-SUFFIX,unsw-search.funnelback.squiz.cloud # UNSW 基于 Squiz Funnelback 的站内搜索服务域名
 
 # > University of California, Berkeley（加州大学伯克利分校）
 # - 更新时间：2026-10-08
@@ -10636,6 +10644,66 @@ DOMAIN-SUFFIX,maglr.com # Maglr 互动内容创建、发布与嵌入服务域名
 # - 更新时间：2026-10-10
 
 DOMAIN-SUFFIX,admission-cx.dialogshield.ai # DialogShield 招生客户体验服务域名
+
+# > Datawrapper Visualization CDN（Datawrapper 数据可视化 CDN）
+# - 更新时间：2026-10-10
+
+DOMAIN-SUFFIX,dwcdn.net # Datawrapper 图表、地图与可视化资源 CDN 域名
+
+# > Juicer Social Media Aggregator（Juicer 社交媒体聚合平台）
+# - 更新时间：2026-10-10
+
+DOMAIN-SUFFIX,juicer.io # Juicer 社交媒体内容聚合与网站嵌入服务域名
+
+# > NMC Content Delivery Network（NMC 内容分发网络）
+# - 更新时间：2026-10-10
+
+DOMAIN-SUFFIX,nmcdn.io # NMC 网站静态资源与媒体文件 CDN 域名
+
+# > Esri ArcGIS Online（Esri ArcGIS 在线地理信息平台）
+# - 更新时间：2026-10-10
+
+DOMAIN-SUFFIX,arcgisonline.com # Esri ArcGIS 在线地图与地理信息服务域名
+
+# > Cornell Botanic Gardens（康奈尔植物园）
+# - 更新时间：2026-10-10
+
+DOMAIN-SUFFIX,cornellbotanicgardens.org # 康奈尔植物园、科研教育与自然保护服务域名
+
+# > Curator Social Media Aggregator（Curator 社交媒体聚合平台）
+# - 更新时间：2026-10-10
+
+DOMAIN-SUFFIX,curator.io # Curator 社交媒体聚合与嵌入式内容展示服务域名
+
+# > Canto Digital Asset Management Platform（Canto 数字资产管理平台）
+# - 更新时间：2026-10-10
+
+DOMAIN-SUFFIX,canto.global # Canto 全球区域数字资产管理平台服务域名
+
+# > Altmetric Research Attention Analytics（Altmetric 科研关注度分析平台）
+# - 更新时间：2026-10-10
+
+DOMAIN-SUFFIX,altmetric.com # Altmetric 科研成果关注度追踪与影响力分析服务域名
+
+# > PlumX Research Metrics Platform（PlumX 科研影响力指标平台）
+# - 更新时间：2026-10-10
+
+DOMAIN-SUFFIX,plu.mx # PlumX 科研成果影响力与替代计量服务域名
+
+# > Elsevier Academic Publishing Platform（Elsevier 学术出版平台）
+# - 更新时间：2026-10-10
+
+DOMAIN-SUFFIX,elsevier.com # Elsevier 学术出版、科研信息与专业内容服务域名
+
+# > PLuS Alliance Global University Partnership（PLuS Alliance 全球高校联盟）
+# - 更新时间：2026-10-10
+
+DOMAIN-SUFFIX,plusalliance.org # PLuS Alliance 全球高校教育与科研合作服务域名
+
+# > Uluru Statement from the Heart（乌鲁鲁之心声明）
+# - 更新时间：2026-10-10
+
+DOMAIN-SUFFIX,ulurustatement.org # 乌鲁鲁之心声明与原住民公共教育倡议官方域名
 
 # > Third-Party Blogs（第三方博客）
 # - 校对时间：2026-08-13
