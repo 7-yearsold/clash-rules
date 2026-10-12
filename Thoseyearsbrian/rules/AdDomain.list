@@ -4,11 +4,14 @@
 # - 特征：识别广告投放、广告竞价、广告请求、广告资源分发、广告追踪及明确广告子域等通信特征
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-10-10
-# - 校对时间：2026-10-10
+# - 更新时间：2026-10-12
+# - 校对时间：2026-10-12
 
 # > 广告相关域名
 
+DOMAIN-SUFFIX,s.zzcdn.me # Zalo Ads Pixel 广告转化追踪脚本域名
+DOMAIN-SUFFIX,consentag.eu # Crimtan 广告同意管理与受众识别服务域名
+DOMAIN-SUFFIX,adnxs.com # Microsoft Advertising 广告投放、素材分发与追踪服务域名
 DOMAIN-SUFFIX,turn.com # Turn / Amobee 广告投放、受众追踪与程序化营销服务域名
 DOMAIN-SUFFIX,demdex.net # Adobe 受众识别、数据采集与广告定向服务域名
 DOMAIN-SUFFIX,quantserve.com # Quantcast 广告测量、转化追踪与受众定向服务域名
@@ -392,3 +395,5 @@ DOMAIN-SUFFIX,personagraph.com # 广告数据平台域名
 DOMAIN-SUFFIX,pixel.sojern.com # 广告追踪子域
 DOMAIN-SUFFIX,pokkt.com # 移动广告平台域名
 DOMAIN-SUFFIX,servedby-buysellads.com # 广告分发域名
+DOMAIN-SUFFIX,sl-11a463aaedf44600a99367660fd6fa70.ecs.us-east-1.on.aws # Meta 广告分发域名
+DOMAIN-SUFFIX,7s-d309b5b93ece4e188e0aa4e9c7906f0f.ecs.us-west-1.on.aws # Meta CAPI 广告转化追踪事件服务域名

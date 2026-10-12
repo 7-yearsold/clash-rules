@@ -4,8 +4,8 @@
 # - 特征：覆盖需依赖代理访问的高频主流服务域名
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-10-10
-# - 校对时间：2026-10-10
+# - 更新时间：2026-10-12
+# - 校对时间：2026-10-12
 
 # > Cloudflare Platform Infrastructure（Cloudflare 平台基础设施域名）
 # - 校对时间：2026-09-29
@@ -1228,6 +1228,11 @@ DOMAIN-SUFFIX,apikeys.civiccomputing.com # CIVIC Cookie Control API 密钥验证
 # - 更新时间：2026-10-09
 
 DOMAIN-SUFFIX,consentmo.com # Consentmo 隐私合规与 Cookie 同意管理服务域名
+
+# > iubenda Privacy Compliance Platform（iubenda 隐私合规平台）
+# - 更新时间：2026-10-11
+
+DOMAIN-SUFFIX,iubenda.com # iubenda 隐私合规、Cookie 与同意管理服务域名
 
 # > PingOne Identity Platform（PingOne 身份认证平台）
 # - 校对时间：2026-07-31
@@ -4170,9 +4175,9 @@ DOMAIN-SUFFIX,status.rapidssl.com # 状态服务域名
 DOMAIN-SUFFIX,globalsign.com # 平台主域名
 
 # > DigiCert OCSP Certificate Service（DigiCert OCSP 证书服务）
-# - 校对时间：2026-03-28
+# - 校对时间：2026-10-11
 
-DOMAIN-SUFFIX,ocsp.digicert.com # OCSP 服务域名
+DOMAIN-SUFFIX,digicert.com # DigiCert TLS/SSL 证书、PKI 与数字信任服务域名
 
 # > Shields.io Service（Shields.io 徽章服务）
 # - 校对时间：2026-03-28
@@ -6303,11 +6308,10 @@ DOMAIN-SUFFIX,bitfinex.recruitee.com # Bitfinex 官方招聘页面与职位管�
 
 DOMAIN-SUFFIX,careers.recruiteecdn.com # Recruitee 招聘站点页面与静态资源分发（CDN）
 
-# > Kakao / Daum Front-End Static Asset Distribution Service（Kakao / Daum 平台前端静态资源分发服务）
-# - 校对时间：2026-03-28
+# > Kakao / Daum CDN（Kakao / Daum 内容分发网络）
+# - 更新时间：2026-10-12
 
-DOMAIN-SUFFIX,t1.daumcdn.net # Kakao（Daum）平台图片、脚本等前端静态资源分发（CDN）
-DOMAIN-SUFFIX,img1.daumcdn.net # Daum / Kakao 官方图片 CDN
+DOMAIN-SUFFIX,daumcdn.net # Kakao 地图、静态资源与内容分发 CDN 域名
 
 # > 7moor Customer Support Service（7moor 七陌客服）
 # - 校对时间：2026-03-28
@@ -10380,104 +10384,116 @@ DOMAIN-SUFFIX,unsw.edu.au # 新南威尔士大学教学、科研与校园服务�
 DOMAIN-SUFFIX,unsw-search.funnelback.squiz.cloud # UNSW 基于 Squiz Funnelback 的站内搜索服务域名
 
 # > University of California, Berkeley（加州大学伯克利分校）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-11
 
 DOMAIN-SUFFIX,berkeley.edu # 加州大学伯克利分校官方教育、研究与校园服务域名
+DOMAIN-SUFFIX,calbears.com # UC Berkeley 校际体育新闻、赛程与赛事服务域名
+DOMAIN-SUFFIX,escholarship.org # 加州大学开放获取学术出版与机构知识库服务域名
 
 # > Johns Hopkins University（约翰斯·霍普金斯大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-11
 
 DOMAIN-SUFFIX,jhu.edu # 约翰斯·霍普金斯大学教学、科研与校园服务官方域名
+DOMAIN-SUFFIX,johnshopkins.edu # Johns Hopkins 教育、医疗与信息技术服务域名
 
 # > University of Melbourne（墨尔本大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-11
 
 DOMAIN-SUFFIX,unimelb.edu.au # 墨尔本大学教育、研究与校园服务官方域名
+DOMAIN-SUFFIX,uom-search.funnelback.squiz.cloud # 墨尔本大学基于 Squiz Funnelback 的站内搜索服务域名
 
 # > École Polytechnique Fédérale de Lausanne（洛桑联邦理工学院）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-11
 
 DOMAIN-SUFFIX,epfl.ch # 洛桑联邦理工学院教育、科研与校园服务官方域名
+DOMAIN-SUFFIX,epflalumni.ch # EPFL 校友社区、职业发展与活动服务域名
 
 # > The University of Chicago（芝加哥大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-11
 
 DOMAIN-SUFFIX,uchicago.edu # 芝加哥大学教学、研究与校园服务官方域名
 
 # > Technical University of Munich（慕尼黑工业大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-11
 
 DOMAIN-SUFFIX,tum.de # 慕尼黑工业大学教学、科研与校园服务官方域名
+DOMAIN-SUFFIX,mytum.de # 慕尼黑工业大学学生与教职员工门户服务域名
+DOMAIN-SUFFIX,tum-universitaetsstiftung.de # TUM 科研、教育与大学发展基金会官方域名
 
 # > Princeton University（普林斯顿大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-11
 
 DOMAIN-SUFFIX,princeton.edu # 普林斯顿大学教学、科研与校园服务官方域名
+DOMAIN-SUFFIX,goprincetontigers.com # 普林斯顿大学校队赛事、新闻与体育服务域名
 
 # > The University of Sydney（悉尼大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-11
 
 DOMAIN-SUFFIX,sydney.edu.au # 悉尼大学教学、研究与校园服务官方域名
 
 # > Australian National University（澳大利亚国立大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-08
 
 DOMAIN-SUFFIX,anu.edu.au # 澳大利亚国立大学教育、研究与学生服务官方域名
 
 # > McGill University（麦吉尔大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-11
 
 DOMAIN-SUFFIX,mcgill.ca # 麦吉尔大学官网、教学、科研与校园服务域名
 
 # > Monash University（莫纳什大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-11
 
 DOMAIN-SUFFIX,monash.edu # 莫纳什大学教育、研究与学生服务官方域名
+DOMAIN-SUFFIX,study.monash # 蒙纳士大学课程查询、招生与申请服务域名
 
 # > University of Toronto（多伦多大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-11
 
 DOMAIN-SUFFIX,utoronto.ca # 多伦多大学教学、科研与校务服务官方域名
 
 # > Hong Kong University of Science and Technology（香港科技大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-11
 
 DOMAIN-SUFFIX,hkust.edu.hk # 香港科技大学教学、科研与校园服务官方域名
 
 # > Université PSL（巴黎文理研究大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-12
 
 DOMAIN-SUFFIX,psl.eu # 巴黎文理研究大学教育、科研与学生服务官方域名
 
 # > The University of Edinburgh（爱丁堡大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-12
 
 DOMAIN-SUFFIX,ed.ac.uk # 爱丁堡大学教学、研究与校园服务官方域名
+DOMAIN-SUFFIX,edin.ac # 爱丁堡大学官方短链接服务域名
 
 # > King's College London（伦敦国王学院）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-12
 
 DOMAIN-SUFFIX,kcl.ac.uk # 伦敦国王学院教学、科研与校园服务官方域名
+DOMAIN-SUFFIX,kclsu.org # 伦敦国王学院学生会与校园学生服务域名
 
 # > Seoul National University（首尔大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-12
 
 DOMAIN-SUFFIX,snu.ac.kr # 首尔大学官网、招生与教学研究服务域名
 
 # > The University of Tokyo（东京大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-12
 
 DOMAIN-SUFFIX,u-tokyo.ac.jp # 东京大学教育、科研与校园服务官方域名
 
 # > The University of Manchester（英国曼彻斯特大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-12
 
 DOMAIN-SUFFIX,manchester.ac.uk # 英国曼彻斯特大学教学、研究与校园服务官方域名
 
 # > The University of Queensland（澳大利亚昆士兰大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-12
 
 DOMAIN-SUFFIX,uq.edu.au # 澳大利亚昆士兰大学教学、科研与校园服务官方域名
+DOMAIN-SUFFIX,uq.net.au # 昆士兰大学网站与静态资源服务域名
 
 # > Yonsei University（韩国延世大学）
 # - 更新时间：2026-10-08
@@ -10704,6 +10720,162 @@ DOMAIN-SUFFIX,plusalliance.org # PLuS Alliance 全球高校教育与科研合作
 # - 更新时间：2026-10-10
 
 DOMAIN-SUFFIX,ulurustatement.org # 乌鲁鲁之心声明与原住民公共教育倡议官方域名
+
+# > SIDEARM Sports Platform Infrastructure（SIDEARM Sports 平台基础设施）
+# - 更新时间：2026-10-11
+
+DOMAIN-SUFFIX,sidearmdev.com # SIDEARM Sports 网站托管、图片与媒体资源服务域名
+
+# > FEVO Social Commerce Platform（FEVO 社交电商与票务平台）
+# - 更新时间：2026-10-11
+
+DOMAIN-SUFFIX,fevo.com # FEVO 活动票务、社交结账与电商服务域名
+
+# > SrcSpot JavaScript CDN（SrcSpot JavaScript 静态资源服务）
+# - 更新时间：2026-10-11
+
+DOMAIN-SUFFIX,static.srcspot.com # SrcSpot 第三方 JavaScript 静态资源 CDN 域名
+
+# > Swiss Federal Geoportal（瑞士联邦地理信息平台）
+# - 更新时间：2026-10-11
+
+DOMAIN-SUFFIX,geo.admin.ch # 瑞士联邦官方地理数据与地图服务域名
+
+# > SWITCHcast Video Platform（SWITCHcast 教育视频平台）
+# - 更新时间：2026-10-11
+
+DOMAIN-SUFFIX,cast.switch.ch # SWITCHcast 教育视频管理、API 与流媒体服务域名
+
+# > FlowPaper Digital Publishing Platform（FlowPaper 数字出版平台）
+# - 更新时间：2026-10-11
+
+DOMAIN-SUFFIX,flowpaper.com # FlowPaper PDF 查看、电子翻页与数字出版服务域名
+
+# > Unbounce Landing Page Platform（Unbounce 落地页构建平台）
+# - 更新时间：2026-10-11
+
+DOMAIN-SUFFIX,unbounce.com # Unbounce 落地页构建与营销优化平台域名
+
+# > BayernCollab Collaboration Platform（BayernCollab 高校协作平台）
+# - 更新时间：2026-10-11
+
+DOMAIN-SUFFIX,collab.dvb.bayern # BayernCollab 高校项目、知识管理与协作服务域名
+
+# > SAP Careers Platform（SAP 招聘与职业平台）
+# - 更新时间：2026-10-11
+
+DOMAIN-SUFFIX,sap-careers-cdn.happydance.website # SAP Careers 招聘站点静态资源 CDN 域名
+
+# > Digitalverbund Bayern Services（巴伐利亚高校数字联盟服务）
+# - 更新时间：2026-10-11
+
+DOMAIN-SUFFIX,dvb.bayern # 巴伐利亚高校数字联盟协作与身份服务域名
+
+# > Mapbox Location Platform（Mapbox 地图与位置服务平台）
+# - 更新时间：2026-10-11
+
+DOMAIN-SUFFIX,mapbox.com # Mapbox 地图、导航与位置服务平台域名
+
+# > Workday Enterprise Cloud Platform（Workday 企业云平台）
+# - 更新时间：2026-10-11
+
+DOMAIN-SUFFIX,myworkday.com # Workday 企业租户登录与云应用服务域名
+
+# > D2L Brightspace Learning Platform（D2L Brightspace 在线学习平台）
+# - 更新时间：2026-10-11
+
+DOMAIN-SUFFIX,brightspace.com # D2L Brightspace 在线学习与课程管理服务域名
+
+# > Squiz Funnelback Search（Squiz Funnelback 网站搜索服务）
+# - 更新时间：2026-10-11
+
+DOMAIN-SUFFIX,funnelback.squiz.cloud # Squiz Funnelback 网站搜索与内容检索服务域名
+
+# > Concept3D Digital Experience Platform（Concept3D 数字体验平台）
+# - 更新时间：2026-10-11
+
+DOMAIN-SUFFIX,concept3d.com # Concept3D 互动地图、虚拟导览与数字体验平台域名
+
+# > Alertable Emergency Notification Platform（Alertable 紧急通知平台）
+# - 更新时间：2026-10-11
+
+DOMAIN-SUFFIX,alertable.ca # Alertable 紧急警报与公共安全通知服务域名
+
+# > SAP SuccessFactors HCM Platform（SAP SuccessFactors 人力资源管理平台）
+# - 更新时间：2026-10-11
+
+DOMAIN-SUFFIX,sapsf.com # SAP SuccessFactors HCM 平台与数据中心服务域名
+
+# > Digital Accessibility Recognition Scheme（香港数码无障碍嘉许计划）
+# - 更新时间：2026-10-11
+
+DOMAIN-SUFFIX,digital-accessibility.hk # 香港数码无障碍嘉许计划官方服务域名
+
+# > Caring Company Scheme（香港商界展关怀计划）
+# - 更新时间：2026-10-11
+
+DOMAIN-SUFFIX,caringcompany.org.hk # 香港社联商界展关怀与企业社会责任服务域名
+
+# > AddToCalendar Event Calendar Service（AddToCalendar 活动日历服务）
+# - 更新时间：2026-10-12
+
+DOMAIN-SUFFIX,addtocalendar.com # AddToCalendar 活动日历添加与事件链接服务域名
+
+# > Unibuddy Student Recruitment Platform（Unibuddy 学生招募与社区平台）
+# - 更新时间：2026-10-12
+
+DOMAIN-SUFFIX,unibuddy.co # Unibuddy 学生招募、院校社区与互动服务域名
+
+# > iF Design Award Platform（iF 国际设计奖平台）
+# - 更新时间：2026-10-12
+
+DOMAIN-SUFFIX,ifdesign.com # iF Design Award 官方设计奖与获奖项目平台域名
+DOMAIN-SUFFIX,ifworlddesignguide.com # iF WORLD DESIGN GUIDE 历史官方设计奖平台域名
+
+# > Elsevier Pure Research Information Platform（Elsevier Pure 科研信息管理平台）
+# - 更新时间：2026-10-12
+
+DOMAIN-SUFFIX,elsevierpure.com # Elsevier Pure 科研信息管理与研究成果展示平台域名
+
+# > NAVER Static Content Delivery Network（NAVER 静态资源分发服务）
+# - 更新时间：2026-10-12
+
+DOMAIN-SUFFIX,pstatic.net # NAVER 图片、字体与静态资源 CDN 服务域名
+
+# > SyncSearch Site Search Platform（SyncSearch 站内搜索平台）
+# - 更新时间：2026-10-12
+
+DOMAIN-SUFFIX,syncsearch.jp # SyncSearch 企业站内搜索服务域名
+
+# > SECOM Trust Systems（SECOM Trust Systems 信任服务平台）
+# - 更新时间：2026-10-12
+
+DOMAIN-SUFFIX,secomtrust.net # SECOM Trust Systems 数字证书、认证机构与信任服务域名
+
+# > Gecko Chat Platform（Gecko 在线聊天平台）
+# - 更新时间：2026-10-12
+
+DOMAIN-SUFFIX,geckochat.io # Gecko 在线聊天与实时会话服务域名
+
+# > JW Player Video Platform（JW Player 视频平台）
+# - 更新时间：2026-10-12
+
+DOMAIN-SUFFIX,jwplayer.com # JW Player 视频托管、播放与内容分发服务域名
+
+# > H5P Interactive Learning Platform（H5P 互动学习平台）
+# - 更新时间：2026-10-12
+
+DOMAIN-SUFFIX,h5p.com # H5P 互动学习内容创建与 LMS 集成服务域名
+
+# > Friendly Captcha Bot Protection Service（Friendly Captcha 机器人防护服务）
+# - 更新时间：2026-10-12
+
+DOMAIN-SUFFIX,frcapi.com # Friendly Captcha CAPTCHA 验证与机器人防护 API 服务域名
+
+# > Dcard Social Community Platform（Dcard 社群平台）
+# - 更新时间：2026-10-12
+
+DOMAIN-SUFFIX,dcard.tw # Dcard 社群讨论与内容服务域名
 
 # > Third-Party Blogs（第三方博客）
 # - 校对时间：2026-08-13
