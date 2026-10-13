@@ -4,8 +4,8 @@
 # - 特征：覆盖需依赖代理访问的高频主流服务域名
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-10-12
-# - 校对时间：2026-10-12
+# - 更新时间：2026-10-13
+# - 校对时间：2026-10-13
 
 # > Cloudflare Platform Infrastructure（Cloudflare 平台基础设施域名）
 # - 校对时间：2026-09-29
@@ -1233,6 +1233,11 @@ DOMAIN-SUFFIX,consentmo.com # Consentmo 隐私合规与 Cookie 同意管理服�
 # - 更新时间：2026-10-11
 
 DOMAIN-SUFFIX,iubenda.com # iubenda 隐私合规、Cookie 与同意管理服务域名
+
+# > CookieFirst Consent Management Platform（CookieFirst 隐私同意管理平台）
+# - 更新时间：2026-10-13
+
+DOMAIN-SUFFIX,cookiefirst.com # CookieFirst Cookie 同意与隐私管理平台域名
 
 # > PingOne Identity Platform（PingOne 身份认证平台）
 # - 校对时间：2026-07-31
@@ -10496,22 +10501,25 @@ DOMAIN-SUFFIX,uq.edu.au # 澳大利亚昆士兰大学教学、科研与校园服
 DOMAIN-SUFFIX,uq.net.au # 昆士兰大学网站与静态资源服务域名
 
 # > Yonsei University（韩国延世大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-13
 
 DOMAIN-SUFFIX,yonsei.ac.kr # 韩国延世大学官方教育、学术与校园服务域名
+DOMAIN-SUFFIX,yonsein.net # 延世大学校友门户与校友服务官方域名
 
 # > Columbia University（哥伦比亚大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-13
 
 DOMAIN-SUFFIX,columbia.edu # 哥伦比亚大学教学、研究与校园服务官方域名
+DOMAIN-SUFFIX,columbiabookstore.com # 哥伦比亚大学校园书店与教材零售服务域名
+DOMAIN-SUFFIX,cupblog.org # 哥伦比亚大学出版社学术出版与文化资讯博客域名
 
 # > Institut Polytechnique de Paris（巴黎理工学院）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-13
 
 DOMAIN-SUFFIX,ip-paris.fr # 巴黎理工学院高等教育、科研与学术服务域名
 
 # > The University of British Columbia（不列颠哥伦比亚大学）
-# - 更新时间：2026-10-08
+# - 校对时间：2026-10-13
 
 DOMAIN-SUFFIX,ubc.ca # 不列颠哥伦比亚大学教学、研究与校园服务官方域名
 
@@ -10876,6 +10884,77 @@ DOMAIN-SUFFIX,frcapi.com # Friendly Captcha CAPTCHA 验证与机器人防护 API
 # - 更新时间：2026-10-12
 
 DOMAIN-SUFFIX,dcard.tw # Dcard 社群讨论与内容服务域名
+
+# > Curator Social Media Aggregator（Curator 社交媒体内容聚合平台）
+# - 更新时间：2026-10-13
+
+DOMAIN-SUFFIX,curator.io # Curator 社交媒体内容聚合与展示平台域名
+DOMAIN-SUFFIX,curator-assets.b-cdn.net # Curator 社交媒体图片与媒体资源 CDN 域名
+
+# > Union Theological Seminary（纽约协和神学院）
+# - 更新时间：2026-10-13
+
+DOMAIN-SUFFIX,utsnyc.edu # 纽约协和神学院神学教育与学术研究服务域名
+
+# > Jewish Theological Seminary（美国犹太神学院）
+# - 更新时间：2026-10-13
+
+DOMAIN-SUFFIX,jtsa.edu # 美国犹太神学院教育、学术研究与宗教文化服务域名
+
+# > Barnard College（巴纳德学院）
+# - 更新时间：2026-10-13
+
+DOMAIN-SUFFIX,barnard.edu # 巴纳德学院官方教育、学术研究与校园服务域名
+
+# > Net Natives Education Marketing（Net Natives 教育营销平台）
+# - 更新时间：2026-10-13
+
+DOMAIN-SUFFIX,netnatives.com # Net Natives 教育招生与数字营销服务域名
+
+# > EULER Partner Relationship Management Platform（EULER 合作伙伴关系管理平台）
+# - 更新时间：2026-10-13
+
+DOMAIN-SUFFIX,eulerapp.com # EULER 合作伙伴管理、门户与 API 服务域名
+
+# > Accor Hospitality Platform（雅高酒店服务平台）
+# - 更新时间：2026-10-13
+
+DOMAIN-SUFFIX,accor.com # 雅高酒店预订、会员与集团服务官方域名
+
+# > École nationale des ponts et chaussées（法国国立路桥学校）
+# - 更新时间：2026-10-13
+
+DOMAIN-SUFFIX,ecoledesponts.fr # 法国国立路桥学校教育、科研与校园服务域名
+
+# > ENSTA Engineering Institute（ENSTA 法国国立高等先进技术学校）
+# - 更新时间：2026-10-13
+
+DOMAIN-SUFFIX,ensta.fr # ENSTA 工程教育、科研与院校服务官方域名
+
+# > École Polytechnique（巴黎综合理工学院）
+# - 更新时间：2026-10-13
+
+DOMAIN-SUFFIX,polytechnique.edu # 巴黎综合理工学院教育、科研与校园服务官方域名
+
+# > Centre for Digital Media（加拿大数字媒体中心）
+# - 更新时间：2026-10-13
+
+DOMAIN-SUFFIX,thecdm.ca # 加拿大数字媒体教育、技术培训与产业合作服务域名
+
+# > The Guardian Media CDN（卫报媒体资源分发服务）
+# - 更新时间：2026-10-13
+
+DOMAIN-SUFFIX,guim.co.uk # The Guardian 图片与静态媒体资源 CDN 域名
+
+# > CBC/Radio-Canada Media Platform（加拿大广播公司媒体平台）
+# - 更新时间：2026-10-13
+
+DOMAIN-SUFFIX,cbc.ca # CBC 新闻、广播、电视与媒体资源服务域名
+
+# > BLOX Digital Media Publishing Platform（BLOX Digital 数字媒体出版平台）
+# - 更新时间：2026-10-13
+
+DOMAIN-SUFFIX,townnews.com # BLOX Digital 新闻内容管理与媒体资源 CDN 服务域名
 
 # > Third-Party Blogs（第三方博客）
 # - 校对时间：2026-08-13
