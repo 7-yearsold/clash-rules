@@ -4,8 +4,8 @@
 # - 特征：结合 DNS、TLS 与请求路径等通信特征，对行为遥测、数据采集及分析服务节点进行识别与归类
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-10-13
-# - 校对时间：2026-10-13
+# - 更新时间：2026-10-14
+# - 校对时间：2026-10-14
 
 # > WeChat（微信）行为遥测服务
 # - 校对时间：2026-03-25
@@ -1057,3 +1057,33 @@ DOMAIN-SUFFIX,matomo-ip-paris.netcomdev2.com # IP Paris Matomo 网站访问与�
 # - 更新时间：2026-10-13
 
 DOMAIN-SUFFIX,googleoptimize.com # Google Optimize 网站 A/B 测试与实验分析域名（已停用）
+
+# > Siteimprove Analytics（Siteimprove 网站行为分析服务）
+# - 更新时间：2026-10-13
+
+DOMAIN-SUFFIX,siteimproveanalytics.com # Siteimprove 网站访问与用户行为分析服务域名
+
+# > True Anthem Social Analytics（True Anthem 社交内容分析服务）
+# - 更新时间：2026-10-13
+
+DOMAIN-SUFFIX,tru.am # True Anthem 网站流量与社交内容表现分析域名
+
+# > Coralogix Real User Monitoring（Coralogix 真实用户监控服务）
+# - 更新时间：2026-10-14
+
+DOMAIN-SUFFIX,rum-ingress-coralogix.com # Coralogix 用户体验监测与前端遥测服务域名
+
+# > Eolas Matomo Analytics（Eolas Matomo 网站行为分析服务）
+# - 更新时间：2026-10-14
+
+DOMAIN-SUFFIX,matomo.eolas-services.com # Eolas Matomo 网站访问与用户行为分析服务域名
+
+# > Proof Pulse Conversion Analytics（Proof Pulse 转化分析服务）
+# - 更新时间：2026-10-14
+
+DOMAIN-SUFFIX,cdn.useproof.com # Proof Pulse 访客行为追踪与转化分析脚本 CDN 域名
+
+# > Umeng+ CNZZ Website Analytics（友盟+ CNZZ 网站统计服务）
+# - 更新时间：2026-10-14
+
+DOMAIN-SUFFIX,cnzz.com # 友盟+ CNZZ 网站流量统计与用户行为分析服务域名

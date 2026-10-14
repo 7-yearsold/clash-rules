@@ -4,8 +4,57 @@
 # - 特征：涵盖搜索引擎、电商平台、社交媒体、支付服务、地图导航、云服务、内容平台、工具服务等典型服务域名
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-10-10
-# - 校对时间：2026-10-10
+# - 更新时间：2026-10-14
+# - 校对时间：2026-10-14
+
+# > Harbin Institute of Technology（哈尔滨工业大学）
+# - 校对时间：2026-10-14
+
+DOMAIN-SUFFIX,hit.edu.cn # 哈尔滨工业大学官网及教学科研服务域名
+DOMAIN-SUFFIX,i.hit.edu.cn # 哈尔滨工业大学校园门户与师生服务域名
+DOMAIN-SUFFIX,ihwrm.com # 华文融媒云电子报刊与融媒体内容发布服务域名
+DOMAIN-SUFFIX,hit.alljournals.cn # 哈尔滨工业大学学术期刊与论文服务域名
+DOMAIN-SUFFIX,hitwh.edu.cn # 哈尔滨工业大学（威海）官方网站与校园服务域名
+DOMAIN-SUFFIX,hitsz.edu.cn # 哈尔滨工业大学（深圳）官方教育与校园服务域名
+DOMAIN-SUFFIX,oa.hit.edu.cn # 哈尔滨工业大学 OA 办公自动化系统域名
+DOMAIN-SUFFIX,alljournals.cn # 哈尔滨工业大学期刊界学术期刊检索与期刊网站服务域名
+DOMAIN-SUFFIX,ihwrm.com # 哈尔滨工业大学华文融媒云电子报刊与融媒体服务域名
+
+# > Peking University（北京大学）
+# - 更新时间：2026-10-14
+
+DOMAIN-SUFFIX,pku.edu.cn # 北京大学教学、科研与校园服务官方域名
+DOMAIN-SUFFIX,pkuef.org # 北京大学教育基金会公益捐赠与教育资助服务域名
+DOMAIN-SUFFIX,liveclass.org.cn # 北京大学燕云直播与在线教学服务域名
+DOMAIN-SUFFIX,bjmu.edu.cn # 北京大学医学部医学教育、科研与医疗服务域名
+DOMAIN-SUFFIX,pku.org.cn # 北京大学校友会官方服务域名
+DOMAIN-SUFFIX,chinesemooc.org # 北京大学华文慕课在线教育与课程学习服务域名
+
+# > Tsinghua University（清华大学）
+# - 校对时间：2026-10-14
+
+DOMAIN-SUFFIX,tsinghua.edu.cn # 清华大学官方网站与教育科研服务域名
+DOMAIN-SUFFIX,tsinghua.org.cn # 清华大学校友联络、活动与服务平台官方域名
+
+# > Fudan University（复旦大学）
+# - 校对时间：2026-10-14
+
+DOMAIN-SUFFIX,fudan.edu.cn # 复旦大学官方网站与校园服务域名
+
+# > Shanghai Jiao Tong University（上海交通大学）
+# - 校对时间：2026-10-14
+
+DOMAIN-SUFFIX,sjtu.edu.cn # 上海交通大学官网、教学与科研服务域名
+
+# > Zhejiang University（浙江大学）
+# - 更新时间：2026-10-08
+
+DOMAIN-SUFFIX,zju.edu.cn # 浙江大学教学、科研与校园服务官方域名
+
+# > CNKI Academic Database（中国知网学术数据库）
+# - 校对时间：2026-10-08
+
+DOMAIN-SUFFIX,cnki.net # 中国知网学术文献检索与知识服务域名
 
 # > Alibaba Group - China（阿里巴巴中国站）相关域名
 # - 校对时间：2026-05-11
@@ -2933,35 +2982,30 @@ DOMAIN-SUFFIX,broadcom.cn # Broadcom 中国官方网站域名
 
 DOMAIN-SUFFIX,jsd.cdn.noisework.cn # NOISE jsDelivr GitHub 与 npm 资源加速服务域名
 
-# > Peking University（北京大学）
-# - 更新时间：2026-10-08
+# > Gpower Software Platform（通元软件服务平台）
+# - 更新时间：2026-10-14
 
-DOMAIN-SUFFIX,pku.edu.cn # 北京大学教学、科研与校园服务官方域名
+DOMAIN-SUFFIX,gpowersoft.com # 通元软件 CMS、网站群与媒资管理服务域名
 
-# > Tsinghua University（清华大学）
-# - 更新时间：2026-10-08
+# > Chaoxing Cloud Storage & Content Delivery（超星云盘与资源分发服务）
+# - 更新时间：2026-10-14
 
-DOMAIN-SUFFIX,tsinghua.edu.cn # 清华大学官方网站与教育科研服务域名
+DOMAIN-SUFFIX,cldisk.com # 超星学习通云盘与教学资源分发服务域名
 
-# > Fudan University（复旦大学）
-# - 更新时间：2026-10-08
+# > EastWonder E-Government Cloud Platform（东方怡动电子政务应用云平台）
+# - 更新时间：2026-10-14
 
-DOMAIN-SUFFIX,fudan.edu.cn # 复旦大学官方网站与校园服务域名
+DOMAIN-SUFFIX,ewdcloud.com # 东方怡动政务云平台与网站应用服务域名
 
-# > Shanghai Jiao Tong University（上海交通大学）
-# - 更新时间：2026-10-08
+# > Aishu Cloud ERP（爱书云图书电商管理平台）
+# - 更新时间：2026-10-14
 
-DOMAIN-SUFFIX,sjtu.edu.cn # 上海交通大学官网、教学与科研服务域名
+DOMAIN-SUFFIX,tushu.cloud # 爱书云图书电商、库存与订单管理服务域名
 
-# > Zhejiang University（浙江大学）
-# - 更新时间：2026-10-08
+# > BG Online Service（BG Online 服务）
+# - 更新时间：2026-10-14
 
-DOMAIN-SUFFIX,zju.edu.cn # 浙江大学教学、科研与校园服务官方域名
-
-# > CNKI Academic Database（中国知网学术数据库）
-# - 更新时间：2026-10-08
-
-DOMAIN-SUFFIX,cnki.net # 中国知网学术文献检索与知识服务域名
+DOMAIN-SUFFIX,jxgy.bg-online.com.cn # BG Online 服务域名（具体用途待核实）
 
 # > Third-Party Blogs（第三方博客）
 # - 校对时间：2026-07-09
