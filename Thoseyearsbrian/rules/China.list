@@ -217,6 +217,141 @@ DOMAIN-SUFFIX,nwpu.edu.cn # 西北工业大学官方教育与科研服务域名
 DOMAIN-SUFFIX,nwsuaf.edu.cn # 西北农林科技大学官方服务域名
 DOMAIN-SUFFIX,nwafu.edu.cn # 西北农林科技大学校园服务域名
 
+# > Beijing Jiaotong University（北京交通大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,bjtu.edu.cn # 北京交通大学官方教育、科研与校园服务域名
+
+# > Beijing University of Posts and Telecommunications（北京邮电大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,bupt.edu.cn # 北京邮电大学官方网站与教育服务域名
+
+# > Communication University of China（中国传媒大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,cuc.edu.cn # 中国传媒大学官方网站与教育服务域名
+
+# > China University of Political Science and Law（中国政法大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,cupl.edu.cn # 中国政法大学官方教学与科研服务域名
+
+# > Beijing Sport University（北京体育大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,bsu.edu.cn # 北京体育大学官方教育、科研与校园服务域名
+
+# > Hebei University of Technology（河北工业大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,hebut.edu.cn # 河北工业大学官方网站与教育服务域名
+
+# > Inner Mongolia University（内蒙古大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,imu.edu.cn # 内蒙古大学高等教育与科研服务官方域名
+
+# > Taiyuan University of Technology（太原理工大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,tyut.edu.cn # 太原理工大学官方教育与科研服务域名
+
+# > Northeast Agricultural University（东北农业大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,neau.edu.cn # 东北农业大学官方教育与科研服务域名
+
+# > Naval Medical University（海军军医大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,smmu.edu.cn # 海军军医大学（第二军医大学）官方教育服务域名
+
+# > Shanghai International Studies University（上海外国语大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,shisu.edu.cn # 上海外国语大学官方网站与教学科研服务域名
+
+# > Hohai University（河海大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,hhu.edu.cn # 河海大学官方教育与科研服务域名
+
+# > Jiangnan University（江南大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,jiangnan.edu.cn # 江南大学官方教育与科研服务域名
+
+# > Fuzhou University（福州大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,fzu.edu.cn # 福州大学官方教育与科研服务域名
+
+# > Nanchang University（南昌大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,ncu.edu.cn # 南昌大学官方网站与高等教育服务域名
+
+# > Zhengzhou University（郑州大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,zzu.edu.cn # 郑州大学官方网站与教育科研服务域名
+
+# > Zhongnan University of Economics and Law（中南财经政法大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,zuel.edu.cn # 中南财经政法大学官方教育与学术服务域名
+
+# > Guangxi University（广西大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,gxu.edu.cn # 广西大学官方教育与科研服务域名
+
+# > Hainan University（海南大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,hainanu.edu.cn # 海南大学官方教育、科研与校园服务域名
+
+# > Guizhou University（贵州大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,gzu.edu.cn # 贵州大学官方教育、科研与校园服务域名
+
+# > Sichuan Agricultural University（四川农业大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,sicau.edu.cn # 四川农业大学官方网站与教育科研服务域名
+
+# > Tibet University（西藏大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,xzu.edu.cn # 西藏大学官方教育与学术服务域名
+
+# > Xidian University（西安电子科技大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,xidian.edu.cn # 西安电子科技大学官方网站与校园服务域名
+
+# > Lanzhou University（兰州大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,lzu.edu.cn # 兰州大学官方高等教育与科研服务域名
+
+# > Qinghai University（青海大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,qhu.edu.cn # 青海大学官方教育与科研服务域名
+
+# > Ningxia University（宁夏大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,nxu.edu.cn # 宁夏大学官方网站与教育科研服务域名
+
+# > Xinjiang University（新疆大学）
+# - 更新时间：2026-10-15
+
+DOMAIN-SUFFIX,xju.edu.cn # 新疆大学官方教育与科研服务域名
+
 # > CNKI Academic Database（中国知网学术数据库）
 # - 校对时间：2026-10-08
 
