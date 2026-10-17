@@ -5,11 +5,11 @@
 # - 说明：本规则集收录国际主流生成式 AI 平台相关域名；中国大陆 AI 服务域名统一归入 China 规则集维护
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-10-13
-# - 校对时间：2026-10-13
+# - 更新时间：2026-10-16
+# - 校对时间：2026-10-16
 
 # > OpenAI Platform Infrastructure（OpenAI 平台基础设施域名）
-# - 校对时间：2026-09-29
+# - 校对时间：2026-10-16
 
 DOMAIN-SUFFIX,openai.com # OpenAI 官方主站、Codex 产品页面与开发者服务域名
 DOMAIN-SUFFIX,chat.openai.com # ChatGPT Web 服务入口
@@ -32,6 +32,8 @@ DOMAIN-SUFFIX,openaifoundation.org # OpenAI Foundation 公益项目平台域名
 DOMAIN-SUFFIX,openaipublic.blob.core.windows.net # OpenAI 公共资源托管域名
 DOMAIN-SUFFIX,openai.gallerycdn.vsassets.io # OpenAI Codex IDE 扩展安装包、清单与静态资源分发域名
 DOMAIN-SUFFIX,tidal-rush-paradise-gp.skirano.chatgpt.site # ChatGPT Sites 托管的 Tidal Rush 竞速 Web 应用域名
+DOMAIN-SUFFIX,codex-cloud-environments.chatgpt.com # OpenAI Codex 云环境命令与执行结果通信域名
+DOMAIN-SUFFIX,codex-cloud-backend.chatgpt.com # OpenAI Codex 云端任务与持久连接后端服务域名
 IP-CIDR,104.244.43.229/32 # ChatGPT 服务节点（chatgpt.com）
 
 # > Claude Platform Infrastructure（Claude 平台基础设施域名）
@@ -723,3 +725,9 @@ DOMAIN-SUFFIX,ivo.ai # Ivo AI 合同审查与合同智能服务域名
 # - 更新时间：2026-10-13
 
 DOMAIN-SUFFIX,texttoquant.com # TextToQuant AI 量化策略分析与回测服务域名
+
+# > ArtCraft AI Creative Platform（ArtCraft AI 创作平台）
+# - 校对时间：2026-10-16
+
+DOMAIN-SUFFIX,getartcraft.com # ArtCraft AI 内容生成与创意工具平台域名
+DOMAIN-SUFFIX,storyteller.ai # ArtCraft / Storyteller AI 图像、视频与媒体生成服务域名
