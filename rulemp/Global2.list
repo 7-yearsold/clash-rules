@@ -4,8 +4,8 @@
 # - 特征：覆盖需依赖代理访问的高频主流服务域名
 # - 用途：本规则集用于防御性安全研究，禁止用于任何非法用途
 # - 维护：https://github.com/Thoseyearsbrian/Aegis
-# - 更新时间：2026-10-18
-# - 校对时间：2026-10-18
+# - 更新时间：2026-10-28
+# - 校对时间：2026-10-28
 
 # > Massachusetts Institute of Technology（麻省理工学院）
 # - 校对时间：2026-10-08
@@ -5588,7 +5588,7 @@ DOMAIN-SUFFIX,abuse-sslbl.abuse.ch # SSLBL 附属查询端点，用于恶意证�
 DOMAIN-SUFFIX,api.abuse.ch # Abuse.ch 综合 API 端点，用于威胁数据抓取、项目查询与自动化安全集成
 
 # > Trend Micro Smart Protection Network（Trend Micro Smart Protection 云安全情报 / 威胁分析）
-# - 校对时间：2026-03-28
+# - 校对时间：2026-10-19
 
 DOMAIN-SUFFIX,trendmicro.com # 趋势科技官方网站，用于产品信息、威胁更新与云安全服务访问
 DOMAIN-SUFFIX,smartprotectionnetwork.com # Smart Protection Network 主域名，用于恶意软件情报、信誉评分与实时威胁查询
@@ -5598,6 +5598,8 @@ DOMAIN-SUFFIX,cloudone.trendmicro.com # Trend Micro Cloud One 平台，用于云
 DOMAIN-SUFFIX,tmqa.trendmicro.com # 趋势科技质量/检测分析域名，用于威胁分析、信誉数据与安全验证
 DOMAIN-SUFFIX,tmcloud.trendmicro.com # 云安全服务节点，用于样本分析、信誉查询与实时威胁拦截策略同步
 DOMAIN-SUFFIX,ws.trendmicro.com # 趋势科技 Web 服务端点，用于 cloud reputation、URL 分析与安全规则更新
+DOMAIN-SUFFIX,trendlife.com # Trend Micro TrendLife 数字安全与用户支持服务域名
+DOMAIN-SUFFIX,powerbox-na-file.trend.org # 趋势科技技术支持文档与附件下载服务域名
 
 # > ESET Threat Intelligence（ESET 恶意软件分析 / 威胁信誉服务）
 # - 校对时间：2026-03-28
@@ -11143,13 +11145,105 @@ DOMAIN-SUFFIX,recordly.dev # Recordly 屏幕录制与视频编辑服务域名
 
 DOMAIN-SUFFIX,ko-fi.com # Ko-fi 创作者赞助、会员与数字商品服务域名
 
-# > TrendLife Digital Safety Platform（TrendLife 数字安全平台）
-# - 更新时间：2026-10-17
+# > Bazaarvoice（用户生成内容与商品评价平台）相关域名
+# - 校对时间：2026-10-19
 
-DOMAIN-SUFFIX,trendlife.com # Trend Micro TrendLife 数字安全与用户支持服务域名
+DOMAIN-SUFFIX,display.ugc.bazaarvoice.com # Bazaarvoice 用户评价与商品评分展示服务域名
+
+# > VoiceStudio（开源 AI 语音生成与克隆平台）相关域名
+# - 校对时间：2026-10-23
+
+DOMAIN-SUFFIX,voicestudio.sh # VoiceStudio 官方网站与 AI 语音服务域名
+
+# > CJ Affiliate（联盟营销）相关域名
+# - 校对时间：2026-10-19
+
+DOMAIN-SUFFIX,public.cj.com # CJ Affiliate 联盟营销服务域名
+
+# > Workable（招聘管理与求职申请平台）相关域名
+# - 校对时间：2026-10-20
+
+DOMAIN-SUFFIX,apply.workable.com # Workable 职位发布与在线求职申请服务域名
+
+# > Better Stack（可观测性与日志管理平台）相关域名
+# - 校对时间：2026-10-20
+
+DOMAIN-SUFFIX,betterstackdata.com # Better Stack 可观测性数据接收服务节点
+
+# > Yubico（硬件安全密钥与身份认证解决方案）相关域名
+# - 校对时间：2026-10-22
+
+DOMAIN-SUFFIX,yubico.com # Yubico 官方网站与 YubiKey 安全认证服务域名
+
+# > Sequel（在线研讨会与视频活动平台）相关域名
+# - 更新时间：2026-10-22
+
+DOMAIN-SUFFIX,prod-assets.sequelvideo.com # Sequel 视频活动资源分发域名
+
+# > Spline（交互式 3D 设计与协作平台）相关域名
+# - 更新时间：2026-10-22
+
+DOMAIN-SUFFIX,app.spline.design # Spline 在线 3D 设计编辑器与协作服务域名
+DOMAIN-SUFFIX,apis.spline.design # Spline 平台 API 通信服务域名
+
+# > WebGL Report（浏览器 WebGL 图形能力检测工具）相关域名
+# - 更新时间：2026-10-22
+
+DOMAIN-SUFFIX,webglreport.com # WebGL 浏览器图形能力与 GPU 信息检测服务域名
+DOMAIN-SUFFIX,get.webgl.org # WebGL 浏览器兼容性与图形渲染支持检测域名
+
+# > Staqlab（电商应用与营销自动化服务）相关域名
+# - 更新时间：2026-10-22
+
+DOMAIN-SUFFIX,js-server.staqlab.com # Staqlab 电商应用 JavaScript 脚本服务域名
+
+# > Staqlab（电商应用与营销自动化服务）相关域名
+# - 更新时间：2026-10-22
+
+DOMAIN-SUFFIX,s1.staq-cdn.com # Staqlab CartBite 电商应用脚本分发域名
+
+# > Nitro Apps（Shopify 电商应用与店铺优化平台）相关域名
+# - 更新时间：2026-10-22
+
+DOMAIN-SUFFIX,cdn.nitroapps.co # Nitro Apps 电商应用 CDN 资源分发域名
+
+# > Palash Debnath（开源软件开发者与技术博客）相关域名
+# - 更新时间：2026-10-23
+
+DOMAIN-SUFFIX,palash.dev # Palash Debnath 个人官方网站与开源软件项目展示域名
+
+# > Dusty（开源 macOS 磁盘清理工具）相关域名
+# - 更新时间：2026-10-27
+
+DOMAIN-SUFFIX,toprak.sh # Dusty 开源项目与开发者官方网站域名
+
+# > IP.SB（公网 IP 地址与网络信息查询平台）相关域名
+# - 更新时间：2026-10-27
+
+DOMAIN-SUFFIX,api.ip.sb # IP.SB 公网 IP 查询与地理位置解析 API 服务域名
+
+# > ipapi（公网 IP 地址与地理位置信息查询平台）相关域名
+# - 更新时间：2026-10-27
+
+DOMAIN-SUFFIX,ipapi.co # ipapi 公网 IP、地理位置及 ASN 信息查询 API 服务域名
+
+# > HackerOne（漏洞赏金与安全漏洞披露平台）相关域名
+# - 更新时间：2026-10-27
+
+DOMAIN-SUFFIX,hackerone.com # HackerOne 漏洞赏金与安全漏洞披露平台主域名
+
+# > Gumroad（数字商品销售与创作者电商平台）相关域名
+# - 更新时间：2026-10-28
+
+DOMAIN-SUFFIX,gumroad.com # Gumroad 数字商品销售与创作者商店平台主域名
+
+# > CGTrader（3D 模型与数字资产交易平台）相关域名
+# - 更新时间：2026-10-28
+
+DOMAIN-SUFFIX,cgtrader.com # CGTrader 3D 模型与数字资产交易平台主域名
 
 # > Third-Party Blogs（第三方博客）
-# - 校对时间：2026-10-16
+# - 校对时间：2026-10-20
 
 DOMAIN-SUFFIX,freedidi.com # 零度博客技术博客域名
 DOMAIN-SUFFIX,skk.moe # Sukka 主站域名
@@ -11179,3 +11273,4 @@ DOMAIN-SUFFIX,simhaoka.com # Simhaoka 博客与资源分享域名
 DOMAIN-SUFFIX,bushidotoken.net # BushidoToken 威胁情报博客域名
 DOMAIN-SUFFIX,yachen.com # Yachen's Blog 个人博客域名
 DOMAIN-SUFFIX,morluto.bearblog.dev # Morluto AI、机器学习与 Agent 研究博客域名
+DOMAIN-SUFFIX,blog.imouto.in # Tianling's Blog 技术博客域名
